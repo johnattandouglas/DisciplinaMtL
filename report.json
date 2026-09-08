@@ -1,0 +1,247 @@
+[
+  {
+    "name": "abalone",
+    "ok": true,
+    "time": 12.17931056022644,
+    "n_features": 179,
+    "n_nan": 7
+  },
+  {
+    "name": "annealing",
+    "ok": true,
+    "time": 2.898082971572876,
+    "n_features": 179,
+    "n_nan": 8
+  },
+  {
+    "name": "balloons",
+    "ok": true,
+    "time": 0.13851380348205566,
+    "n_features": 179,
+    "n_nan": 42
+  },
+  {
+    "name": "bank",
+    "ok": true,
+    "time": 19.286298751831055,
+    "n_features": 179,
+    "n_nan": 14
+  },
+  {
+    "name": "blood",
+    "ok": true,
+    "time": 0.8063414096832275,
+    "n_features": 179,
+    "n_nan": 17
+  },
+  {
+    "name": "car",
+    "ok": true,
+    "time": 2.4829134941101074,
+    "n_features": 179,
+    "n_nan": 8
+  },
+  {
+    "name": "contrac",
+    "ok": true,
+    "time": 2.3147900104522705,
+    "n_features": 179,
+    "n_nan": 9
+  },
+  {
+    "name": "dermatology",
+    "ok": true,
+    "time": 1.4382100105285645,
+    "n_features": 179,
+    "n_nan": 10
+  },
+  {
+    "name": "echocardiogram",
+    "ok": true,
+    "time": 0.69669508934021,
+    "n_features": 179,
+    "n_nan": 15
+  },
+  {
+    "name": "ecoli",
+    "ok": true,
+    "time": 0.7191934585571289,
+    "n_features": 179,
+    "n_nan": 10
+  },
+  {
+    "name": "fertility",
+    "ok": true,
+    "time": 0.557748556137085,
+    "n_features": 179,
+    "n_nan": 14
+  },
+  {
+    "name": "flags",
+    "ok": true,
+    "time": 1.6053454875946045,
+    "n_features": 179,
+    "n_nan": 10
+  },
+  {
+    "name": "glass",
+    "ok": true,
+    "time": 1.11733078956604,
+    "n_features": 179,
+    "n_nan": 8
+  },
+  {
+    "name": "hepatitis",
+    "ok": true,
+    "time": 1.0551836490631104,
+    "n_features": 179,
+    "n_nan": 15
+  },
+  {
+    "name": "ionosphere",
+    "ok": true,
+    "time": 1.6891250610351562,
+    "n_features": 179,
+    "n_nan": 14
+  },
+  {
+    "name": "iris",
+    "ok": true,
+    "time": 0.37743544578552246,
+    "n_features": 179,
+    "n_nan": 7
+  },
+  {
+    "name": "lenses",
+    "ok": true,
+    "time": 0.31348538398742676,
+    "n_features": 179,
+    "n_nan": 10
+  },
+  {
+    "name": "libras",
+    "ok": true,
+    "time": 6.345397472381592,
+    "n_features": 179,
+    "n_nan": 8
+  },
+  {
+    "name": "lymphography",
+    "ok": true,
+    "time": 1.0155658721923828,
+    "n_features": 179,
+    "n_nan": 8
+  },
+  {
+    "name": "mammographic",
+    "ok": true,
+    "time": 0.9505586624145508,
+    "n_features": 179,
+    "n_nan": 16
+  },
+  {
+    "name": "nursery",
+    "ok": true,
+    "time": 112.81829309463501,
+    "n_features": 179,
+    "n_nan": 10
+  },
+  {
+    "name": "parkinsons",
+    "ok": true,
+    "time": 1.390117883682251,
+    "n_features": 179,
+    "n_nan": 15
+  },
+  {
+    "name": "pima",
+    "ok": true,
+    "time": 0.9067466259002686,
+    "n_features": 179,
+    "n_nan": 14
+  },
+  {
+    "name": "planning",
+    "ok": true,
+    "time": 0.8685886859893799,
+    "n_features": 179,
+    "n_nan": 14
+  },
+  {
+    "name": "seeds",
+    "ok": true,
+    "time": 0.4507894515991211,
+    "n_features": 179,
+    "n_nan": 8
+  },
+  {
+    "name": "soybean",
+    "ok": true,
+    "time": 2.932838201522827,
+    "n_features": 179,
+    "n_nan": 8
+  },
+  {
+    "name": "spect",
+    "ok": true,
+    "time": 0.9945054054260254,
+    "n_features": 179,
+    "n_nan": 17
+  },
+  {
+    "name": "spectf",
+    "ok": true,
+    "time": 1.4612114429473877,
+    "n_features": 179,
+    "n_nan": 14
+  },
+  {
+    "name": "teaching",
+    "ok": true,
+    "time": 0.3173201084136963,
+    "n_features": 179,
+    "n_nan": 9
+  },
+  {
+    "name": "titanic",
+    "ok": true,
+    "time": 2.5713937282562256,
+    "n_features": 179,
+    "n_nan": 17
+  },
+  {
+    "name": "trains",
+    "ok": true,
+    "time": 0.8994419574737549,
+    "n_features": 179,
+    "n_nan": 43
+  },
+  {
+    "name": "waveform",
+    "ok": true,
+    "time": 23.458428382873535,
+    "n_features": 179,
+    "n_nan": 7
+  },
+  {
+    "name": "wine",
+    "ok": true,
+    "time": 0.9567112922668457,
+    "n_features": 179,
+    "n_nan": 7
+  },
+  {
+    "name": "yeast",
+    "ok": true,
+    "time": 2.3726677894592285,
+    "n_features": 179,
+    "n_nan": 10
+  },
+  {
+    "name": "zoo",
+    "ok": true,
+    "time": 0.9795525074005127,
+    "n_features": 179,
+    "n_nan": 10
+  }
+]
