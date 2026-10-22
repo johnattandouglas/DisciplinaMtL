@@ -1,0 +1,21 @@
+120 alvos | K=3456 | T=100 | n_init=20 | sementes=5 | representações=['PyMFE', 'MF1', 'MF2', 'D2V', 'Our-Trained'] | k=[1, 3, 5] | contexto em 2.0s
+[Padrão] 0s (serial 0s) | perda normalizada média em t=20: 0.1700 | t=100: 0.1700
+[Random Search] 0s (serial 0s) | perda normalizada média em t=20: 0.0834 | t=100: 0.0467
+[SMBO frio] 485s (serial 5184s) | perda normalizada média em t=20: 0.0842 | t=100: 0.0375
+[WS independente] 489s (serial 5198s) | perda normalizada média em t=20: 0.0755 | t=100: 0.0377
+[WS-PyMFE (k=1)] 515s (serial 5512s) | perda normalizada média em t=20: 0.0733 | t=100: 0.0341
+[WS-MF1 (k=1)] 519s (serial 5582s) | perda normalizada média em t=20: 0.0771 | t=100: 0.0363
+[WS-MF2 (k=1)] 481s (serial 5013s) | perda normalizada média em t=20: 0.0773 | t=100: 0.0373
+[WS-D2V (k=1)] 444s (serial 4709s) | perda normalizada média em t=20: 0.0757 | t=100: 0.0353
+[WS-Our-Trained (k=1)] 502s (serial 5343s) | perda normalizada média em t=20: 0.0845 | t=100: 0.0367
+[WS-PyMFE (k=3)] 477s (serial 5055s) | perda normalizada média em t=20: 0.0635 | t=100: 0.0338
+[WS-MF1 (k=3)] 452s (serial 4761s) | perda normalizada média em t=20: 0.0670 | t=100: 0.0365
+[WS-MF2 (k=3)] 462s (serial 4819s) | perda normalizada média em t=20: 0.0671 | t=100: 0.0354
+[WS-D2V (k=3)] 492s (serial 5301s) | perda normalizada média em t=20: 0.0667 | t=100: 0.0347
+[WS-Our-Trained (k=3)] 402s (serial 4240s) | perda normalizada média em t=20: 0.0689 | t=100: 0.0377
+[WS-PyMFE (k=5)] 422s (serial 4365s) | perda normalizada média em t=20: 0.0645 | t=100: 0.0326
+[WS-MF1 (k=5)] 424s (serial 4501s) | perda normalizada média em t=20: 0.0601 | t=100: 0.0335
+[WS-MF2 (k=5)] 400s (serial 4296s) | perda normalizada média em t=20: 0.0616 | t=100: 0.0336
+[WS-D2V (k=5)] 341s (serial 3665s) | perda normalizada média em t=20: 0.0634 | t=100: 0.0354
+[WS-Our-Trained (k=5)] 337s (serial 3616s) | perda normalizada média em t=20: 0.0627 | t=100: 0.0349
+Pronto em 127.4 min. Curvas em D:\Projetos\DisciplinaMtL\entrega3\results\curvas

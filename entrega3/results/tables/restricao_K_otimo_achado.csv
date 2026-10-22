@@ -1,0 +1,10 @@
+,alvos com o ótimo do grid achado até T (%),"avaliações até o ótimo (mediana, quando acha)"
+Padrão,5.833333333333333,1.0
+Random Search,12.5,15.0
+SMBO frio,10.833333333333334,26.0
+WS independente,18.333333333333332,16.0
+WS-PyMFE,19.166666666666668,23.0
+WS-MF1,16.666666666666664,19.0
+WS-MF2,19.166666666666668,17.0
+WS-D2V,17.5,21.0
+WS-Our-Trained,15.833333333333332,26.5
