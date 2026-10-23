@@ -1,26 +1,25 @@
-"""Etapa 2 — buscas simuladas sobre a matriz de perdas (métodos 1 a 5 do enunciado).
+"""Etapa 2 — buscas simuladas sobre a matriz de perdas (os 5 métodos do enunciado).
 
 Avaliar uma configuração = consultar uma célula da matriz de perdas L (n_ds x K; perda = 1 - acurácia de validação na
 época 50). Toda busca registra a perda NORMALIZADA da melhor configuração encontrada até a i-ésima avaliação:
 
     r_i(d) = (min_{j<=i} L[d, θ_j] - L*_d) / (L^pior_d - L*_d)        (L*_d, L^pior_d = mínimo e máximo da linha d)
 
-A média de r_i sobre datasets é o ADTM (average distance to the minimum) usado no paper do Dataset2Vec.
-
 Métodos (os três SMBO usam o MESMO substituto — GP Matérn 3/2 com ARD — e a MESMA aquisição — EI):
-  1. default            configuração padrão (fixa, sem busca)
-  2. random_search      permutação aleatória das K configurações (sem reposição)
-  3. smbo_cold          n_init configurações aleatórias + SMBO
-  4. smbo_ws_<rep>_k<k> n_init configurações iniciais dos k datasets mais próximos de d_t no espaço da representação
-                        <rep>, em rodízio (a melhor de cada vizinho, depois a 2ª melhor, ...). Com k=1 é o protocolo do
-                        paper do D2V (as n_init melhores do vizinho mais próximo); com k >= n_init, o de Feurer et al.
-                        (2014) (a melhor configuração de cada um dos n_init vizinhos mais próximos)
-  5. smbo_ws_avgrank    as n_init configurações de melhor rank médio sobre os datasets de treino (não olha para d_t)
+  1. Configuração padrão  [default]            configuração padrão (fixa, sem busca)
+  2. Random Search        [random_search]      permutação aleatória das K configurações (sem reposição)
+  3. SMBO-Cold            [smbo_cold]          n_init configurações aleatórias + SMBO
+  4. SMBO-Similarity      [smbo_ws_PyMFE_k<k>] n_init configurações iniciais dos k datasets mais próximos de d_t no espaço
+                                               PyMFE, em rodízio (a melhor de cada vizinho, depois a 2ª melhor, ...). Com
+                                               k=1 são as n_init melhores do vizinho mais próximo; com k >= n_init, a melhor
+                                               de cada um dos n_init vizinhos (Feurer et al., 2014)
+  5. SMBO-Independent     [smbo_ws_avgrank]    as n_init configurações de melhor rank médio sobre os datasets de treino (não
+                                               olha para d_t) — o controle que dá sentido ao método 4
+Os nomes entre colchetes são as chaves dos arquivos em results/curvas/ (mantidas para o cache).
 
 Protocolo leave-one-dataset-out: para o alvo d_t, a linha de d_t sai da matriz de perdas usada para montar o warm-start
 (vizinhos e ranks médios vêm só dos outros 119) e a preparação das meta-características (descarte de colunas, imputação e
-min-max) é ajustada só nos outros 119. As representações aprendidas (D2V, Our-Trained) usam o extrator do split em que
-d_t é de teste: ele nunca viu d_t, nem no treino nem na seleção de época.
+min-max) é ajustada só nos outros 119.
 
 Empates (muitos datasets têm várias configurações com a mesma acurácia de validação) são desfeitos por sorteio com a
 semente da execução, tanto na ordenação das configurações de um vizinho quanto no argmax da aquisição.
@@ -79,22 +78,14 @@ def config_rank_matrix(L: np.ndarray) -> np.ndarray:
 
 
 # ---------------------------------------------------------------------------
-# Representações (meta-características) e vizinhos, sob leave-one-dataset-out
+# Meta-características e vizinhos, sob leave-one-dataset-out
 # ---------------------------------------------------------------------------
-def load_representations(names: list[str], reps=cfg.REP_ALL) -> dict:
-    """{rep: matriz crua (n_ds x d)} ou {rep: {split: matriz crua}} para as representações por split."""
-    out = {}
-    for rep in reps:
-        if rep in cfg.REP_BY_SPLIT:
-            out[rep] = {}
-            for k in range(cfg.N_SPLITS):
-                path = cfg.REPR_DIR / (cfg.REP_BY_SPLIT[rep].format(k=k) + ".csv")
-                df = pd.read_csv(path, index_col=0).drop(columns="role", errors="ignore").loc[names]
-                out[rep][k] = df.apply(pd.to_numeric, errors="coerce").to_numpy(dtype=np.float64)
-        else:
-            df = pd.read_csv(cfg.REPR_DIR / f"{rep}.csv", index_col=0).loc[names]
-            out[rep] = df.apply(pd.to_numeric, errors="coerce").to_numpy(dtype=np.float64)
-    return out
+def load_metafeatures(names: list[str]) -> np.ndarray:
+    """Matriz crua (n_ds x d) do PyMFE, na ordem de `names` (gravada pelo notebook 02)."""
+    if not cfg.PYMFE_CSV.exists():
+        raise FileNotFoundError(f"Falta {cfg.PYMFE_CSV}. Rode o 02_MetaCaracteristicas-PyMFE.ipynb.")
+    df = pd.read_csv(cfg.PYMFE_CSV, index_col=0).loc[names]
+    return df.apply(pd.to_numeric, errors="coerce").to_numpy(dtype=np.float64)
 
 
 def lodo_normalize(F: np.ndarray, target: int, max_missing: float = 0.05) -> np.ndarray:
@@ -111,17 +102,14 @@ def lodo_normalize(F: np.ndarray, target: int, max_missing: float = 0.05) -> np.
     return (F[:, keep] - lo[keep]) / (hi[keep] - lo[keep])
 
 
-def neighbor_table(raw, test_split_of: np.ndarray) -> tuple[np.ndarray, np.ndarray, np.ndarray]:
-    """Para cada alvo: os outros datasets em ordem crescente de distância euclidiana, as distâncias e a dimensão usada.
-
-    `raw` é uma matriz (representação fixa) ou {split: matriz} (o alvo usa a do split em que ele é de teste).
-    Retorna (ordem [n, n-1], distâncias [n, n-1], dimensão [n])."""
-    n = len(test_split_of)
+def neighbor_table(F: np.ndarray) -> tuple[np.ndarray, np.ndarray, np.ndarray]:
+    """Para cada alvo: os outros datasets em ordem crescente de distância euclidiana (no espaço normalizado em LODO),
+    as distâncias e o nº de colunas usadas. Retorna (ordem [n, n-1], distâncias [n, n-1], dimensão [n])."""
+    n = F.shape[0]
     order = np.zeros((n, n - 1), dtype=np.int64)
     dist = np.zeros((n, n - 1))
     dims = np.zeros(n, dtype=np.int64)
     for t in range(n):
-        F = raw[int(test_split_of[t])] if isinstance(raw, dict) else raw
         Z = lodo_normalize(F, t)
         d = np.linalg.norm(Z - Z[t], axis=1)
         d[t] = np.inf
@@ -177,7 +165,7 @@ def _gp_predict(Xo, yo, Xall, state):
         warnings.simplefilter("ignore")
         gp.fit(Xo, yo)
         mu, sd = gp.predict(Xall, return_std=True)
-    # variância preditiva da função latente (sem o ruído de observação), como no código oficial do D2V
+    # variância preditiva da função latente (sem o ruído de observação)
     y_std = float(np.ravel(getattr(gp, "_y_train_std", 1.0))[0])
     noise = float(gp.kernel_.k2.noise_level) * y_std ** 2
     sd = np.sqrt(np.maximum(sd ** 2 - noise, 1e-12))
@@ -223,22 +211,24 @@ def incumbent_curve(r_row: np.ndarray, evaluated: np.ndarray, T: int) -> np.ndar
 # ---------------------------------------------------------------------------
 # Especificação dos métodos
 # ---------------------------------------------------------------------------
-def method_key(kind: str, rep: str | None = None, k: int | None = None) -> str:
-    return f"smbo_ws_{rep}_k{k}" if kind == "ws_knn" else kind
+def ws_key(k: int) -> str:
+    return f"smbo_ws_{cfg.REP}_k{k}"
+
+
+METHOD_NAMES = {"default": "Configuração padrão", "random_search": "Random Search", "smbo_cold": "SMBO-Cold",
+                "smbo_ws_avgrank": "SMBO-Independent"}
+SIMILARITY = "SMBO-Similarity"      # método 4: warm-start pelos k datasets mais próximos no espaço PyMFE
 
 
 def method_label(key: str) -> str:
-    fixed = {"default": "Padrão", "random_search": "Random Search", "smbo_cold": "SMBO frio",
-             "smbo_ws_avgrank": "WS independente"}
-    if key in fixed:
-        return fixed[key]
-    rep, k = key.removeprefix("smbo_ws_").rsplit("_k", 1)
-    return f"WS-{rep} (k={k})"
+    """Nome do método usado no relatório (o método 4 leva o k entre parênteses)."""
+    if key in METHOD_NAMES:
+        return METHOD_NAMES[key]
+    return f"{SIMILARITY} (k={key.rsplit('_k', 1)[1]})"
 
 
-def all_method_keys(reps=cfg.REP_ALL, ks=cfg.K_NEIGHBORS) -> list[str]:
-    return (["default", "random_search", "smbo_cold", "smbo_ws_avgrank"]
-            + [method_key("ws_knn", r, k) for r in reps for k in ks])
+def all_method_keys(ks=cfg.K_NEIGHBORS) -> list[str]:
+    return ["default", "random_search", "smbo_cold", "smbo_ws_avgrank"] + [ws_key(k) for k in ks]
 
 
 def _rng(key: str, target: int, seed: int) -> np.random.Generator:
@@ -254,8 +244,8 @@ def initial_design(key: str, target: int, seed: int, ctx: dict) -> np.ndarray | 
     if key == "smbo_ws_avgrank":
         return avgrank_design(ctx["ranks"], target, n_init, rng)
     if key.startswith("smbo_ws_"):
-        rep, k = key.removeprefix("smbo_ws_").rsplit("_k", 1)
-        return knn_design(ctx["L"], ctx["neighbors"][rep][target], int(k), n_init, rng)
+        k = int(key.rsplit("_k", 1)[1])
+        return knn_design(ctx["L"], ctx["neighbors"][target], k, n_init, rng)
     return None
 
 
@@ -281,17 +271,12 @@ def run_target(key: str, target: int, loss_row: np.ndarray, r_row: np.ndarray, X
 # ---------------------------------------------------------------------------
 # Contexto + execução em lote com cache em results/curvas/<método>.npz
 # ---------------------------------------------------------------------------
-def build_context(meta, reps=cfg.REP_ALL, T: int = cfg.T_BUDGET, n_init: int = cfg.N_INIT,
-                  n_seeds: int = cfg.N_SEEDS) -> dict:
+def build_context(meta, T: int = cfg.T_BUDGET, n_init: int = cfg.N_INIT, n_seeds: int = cfg.N_SEEDS) -> dict:
     L = loss_matrix(meta)
-    test_split_of = meta.test_split_of()
-    raw = load_representations(meta.names, reps)
-    neighbors, distances, dims = {}, {}, {}
-    for rep in reps:
-        neighbors[rep], distances[rep], dims[rep] = neighbor_table(raw[rep], test_split_of)
+    neighbors, distances, dims = neighbor_table(load_metafeatures(meta.names))
     return {"names": list(meta.names), "L": L, "R": normalized_regret(L), "ranks": config_rank_matrix(L),
             "Xenc": encode_config_space(meta.configs), "default_idx": default_config_index(meta.configs),
-            "test_split_of": test_split_of, "neighbors": neighbors, "distances": distances, "dims": dims,
+            "neighbors": neighbors, "distances": distances, "dims": dims,
             "T": T, "n_init": n_init, "n_seeds": n_seeds}
 
 
@@ -348,8 +333,3 @@ def run_method(key: str, ctx: dict, n_jobs: int = -2, force: bool = False, verbo
               f"perda normalizada média em t={ctx['n_init']}: {out['curves'][:, :, ctx['n_init'] - 1].mean():.4f} | "
               f"t={ctx['T']}: {out['curves'][:, :, -1].mean():.4f}")
     return out
-
-
-def run_all(ctx: dict, keys: list[str] | None = None, n_jobs: int = -2, force: bool = False) -> dict:
-    keys = keys or all_method_keys(list(ctx["neighbors"]))
-    return {k: run_method(k, ctx, n_jobs=n_jobs, force=force) for k in keys}

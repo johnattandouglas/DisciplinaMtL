@@ -20,10 +20,9 @@ from . import search
 ALPHA = 0.05
 
 # ---------------------------------------------------------------------------
-# Cores: fixas por entidade em todas as figuras (paleta categórica validada, slots 1-6 em ordem; baselines em tinta neutra)
+# Cores: fixas por método em todas as figuras (paleta categórica validada; baselines sem busca em tinta neutra)
 # ---------------------------------------------------------------------------
-REP_COLORS = {"Our-Trained": "#2a78d6", "D2V": "#eb6834", "PyMFE": "#1baf7a", "MF1": "#eda100", "MF2": "#e87ba4",
-              "Random": "#52514e"}   # controle (vizinhos arbitrários) em tinta neutra
+WS_COLOR = "#2a78d6"                           # SMBO-Similarity (método 4); k distingue pelo traço
 FIXED_STYLE = {
     "smbo_ws_avgrank": {"color": "#008300", "ls": "-", "lw": 2.0},
     "smbo_cold": {"color": "#0b0b0b", "ls": "-", "lw": 1.6},
@@ -32,12 +31,20 @@ FIXED_STYLE = {
 }
 INK, INK2, MUTED, GRID = "#0b0b0b", "#52514e", "#898781", "#e1e0d9"
 
+# Nomes dos métodos nas FIGURAS (em inglês); tabelas e notebooks usam os nomes de `search.method_label`
+FIG_NAMES = {"Configuração padrão": "Default configuration"}
+
+
+def fig_name(label: str) -> str:
+    """Nome do método como aparece nas figuras (em inglês)."""
+    return FIG_NAMES.get(label, label)
+
 
 def style_of(key: str) -> dict:
     if key in FIXED_STYLE:
         return FIXED_STYLE[key]
-    rep, k = key.removeprefix("smbo_ws_").rsplit("_k", 1)
-    return {"color": REP_COLORS.get(rep, INK2), "ls": {"1": "-", "3": "--", "5": ":"}.get(k, "-"), "lw": 2.0}
+    k = key.rsplit("_k", 1)[1]
+    return {"color": WS_COLOR, "ls": {"1": "-", "3": "--", "5": ":"}.get(k, "-"), "lw": 2.0}
 
 
 def setup_matplotlib() -> None:
@@ -166,13 +173,13 @@ def plot_cd(res: dict, ax, title: str = "", label_map: dict | None = None):
     """Diagrama de diferença crítica (estilo Demšar/Orange): eixo de rank médio (1 = melhor, à esquerda), barras grossas
     ligando métodos cuja diferença de rank médio não excede a CD de Nemenyi."""
     ranks = res["ranks"]
-    names = [(label_map or {}).get(n, n) for n in ranks.index]
+    names = [(label_map or FIG_NAMES).get(n, n) for n in ranks.index]
     r = ranks.to_numpy()
     k, cd = len(r), res["cd"]
     lo, hi = math.floor(r.min()), math.ceil(r.max())
     hi = max(hi, lo + 1)
     half = math.ceil(k / 2)
-    text_w = (hi - lo) * 0.42
+    text_w = (hi - lo) * 0.8           # espaço para os nomes dentro do painel (não invadem o painel vizinho)
     ax.set_xlim(lo - text_w, hi + text_w)
     ax.axis("off")
     ax.grid(False)
@@ -237,9 +244,9 @@ def _design_from_orders(orders_s: np.ndarray, neighbors: np.ndarray, k: int, n_i
     return np.asarray(chosen)
 
 
-def init_regret_vs_k(ctx: dict, orders: np.ndarray, rep: str, ks=range(1, 21)) -> pd.DataFrame:
+def init_regret_vs_k(ctx: dict, orders: np.ndarray, ks=range(1, 21)) -> pd.DataFrame:
     """(dataset x k): perda normalizada após os n_init pontos do warm-start por similaridade com k vizinhos."""
-    R, n_init, nb = ctx["R"], ctx["n_init"], ctx["neighbors"][rep]
+    R, n_init, nb = ctx["R"], ctx["n_init"], ctx["neighbors"]
     out = np.zeros((R.shape[0], len(ks)))
     for t in range(R.shape[0]):
         for c, k in enumerate(ks):
@@ -261,27 +268,26 @@ def transfer_matrix(ctx: dict, orders: np.ndarray) -> np.ndarray:
     return M
 
 
-def neighbor_quality(ctx: dict, M: np.ndarray, reps: list[str]) -> pd.DataFrame:
-    """Para cada representação: perda após o warm-start com o vizinho escolhido (k=1), percentil desse vizinho entre os
-    119 candidatos (0 = o melhor vizinho possível, 50 = um vizinho qualquer) e correlação de Spearman, por alvo, entre a
-    distância no espaço da representação e a perda transferida M[i, ·] (> 0: mais perto => configurações mais úteis)."""
+def neighbor_quality(ctx: dict, M: np.ndarray) -> pd.DataFrame:
+    """Vizinho escolhido pelo PyMFE (k=1): perda após o warm-start, percentil desse vizinho entre os 119 candidatos
+    (0 = o melhor vizinho possível, 50 = um vizinho qualquer) e correlação de Spearman, por alvo, entre a distância no
+    espaço PyMFE e a perda transferida M[i, ·] (> 0: mais perto => configurações mais úteis). Inclui as referências
+    oráculo (melhor vizinho possível) e vizinho aleatório (média sobre os 119)."""
     n = M.shape[0]
-    rows = {}
-    for rep in reps:
-        nb, dist = ctx["neighbors"][rep], ctx["distances"][rep]
-        chosen, pct, rho = [], [], []
-        for i in range(n):
-            cand = np.delete(M[i], i)
-            v = M[i, nb[i, 0]]
-            chosen.append(v)
-            pct.append(100.0 * ((cand < v).sum() + 0.5 * ((cand == v).sum() - 1)) / (len(cand) - 1))
-            m = M[i, nb[i]]
-            rho.append(np.nan if np.ptp(m) == 0 else spearmanr(dist[i], m).statistic)   # alvo trivial: todo vizinho serve
-        rho = np.asarray(rho)
-        rows[rep] = {"perda após n_init (vizinho escolhido)": np.mean(chosen),
-                     "percentil do vizinho (0 = melhor)": np.mean(pct),
-                     "ρ(distância, perda transferida) médio": np.nanmean(rho),
-                     "p (Wilcoxon ρ ≠ 0)": float(wilcoxon(rho[~np.isnan(rho)]).pvalue)}
+    nb, dist = ctx["neighbors"], ctx["distances"]
+    chosen, pct, rho = [], [], []
+    for i in range(n):
+        cand = np.delete(M[i], i)
+        v = M[i, nb[i, 0]]
+        chosen.append(v)
+        pct.append(100.0 * ((cand < v).sum() + 0.5 * ((cand == v).sum() - 1)) / (len(cand) - 1))
+        m = M[i, nb[i]]
+        rho.append(np.nan if np.ptp(m) == 0 else spearmanr(dist[i], m).statistic)   # alvo trivial: todo vizinho serve
+    rho = np.asarray(rho)
+    rows = {cfg.REP: {"perda após n_init (vizinho escolhido)": np.mean(chosen),
+                      "percentil do vizinho (0 = melhor)": np.mean(pct),
+                      "ρ(distância, perda transferida) médio": np.nanmean(rho),
+                      "p (Wilcoxon ρ ≠ 0)": float(wilcoxon(rho[~np.isnan(rho)]).pvalue)}}
     rows["Oráculo (melhor vizinho)"] = {"perda após n_init (vizinho escolhido)": np.nanmin(M, axis=1).mean(),
                                         "percentil do vizinho (0 = melhor)": 0.0}
     rows["Vizinho aleatório"] = {"perda após n_init (vizinho escolhido)": np.nanmean(M, axis=1).mean(),
