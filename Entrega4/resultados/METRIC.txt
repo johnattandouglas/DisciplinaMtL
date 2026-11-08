@@ -1,0 +1,145 @@
+POR QUE É DIFÍCIL GERAR REPRESENTAÇÕES DE DATASETS PARA META-LEARNING?
+(gerado por relatorio_neurips/metrica_dificuldade.py; só representações existentes, sem o método proposto no main)
+
+PERGUNTA. Uma representação de datasets serve a um meta-modelo de vizinhança: ela escolhe, para cada dataset novo, os
+datasets antigos cujas melhores configurações serão reaproveitadas. Medimos quanto as sete representações existentes
+(pré-treinada: TabPFN; feitas à mão: PyMFE, ECoL; aprendidas: Dataset2Vec, MetaBu, Dida, TRIO) acrescentam a uma
+recomendação que não usa representação nenhuma, e por quê acrescentam pouco.
+
+PROTOCOLO. Meta-tarefas: HPO (120 datasets, 3.456 configurações; ADTM), PIPES (105 datasets, 8.873 pipelines; acurácia),
+IR (215 datasets, 42 pares modelo-estratégia; F1). Cada alvo usa o embedding da partição em que é de teste; distância
+euclidiana após min-max; vizinhos entre todos os outros datasets. Meta-modelo k-NN: escore da configuração c = média de
+ỹ_{j,c} (linha de Y normalizada por min-max; IR: F1 bruto) nos k vizinhos; recomenda a de maior escore (top-1; empates
+pelo valor esperado). Escala usada abaixo: G = valor no alvo, maior = melhor (no HPO, G = 1 - ADTM).
+
+AS QUATRO RECOMENDAÇÕES DE REFERÊNCIA (dependem só de Y):
+  constante  : k-NN com todos os outros datasets (k = n-1). Popularidade pura.
+  acaso(k)   : k-NN com k datasets sorteados (média de 20 sorteios; k=1: valor esperado exato). Popularidade sem similaridade.
+  oráculo(k) : k-NN com os k datasets que melhor transferem para o alvo (maior G[i,j], a melhor configuração de j avaliada
+               em i). O que uma representação perfeita escolheria. Limite superior, não alcançável.
+  oráculo q  : k-NN no espaço de q_i (a fração de cada valor de cada componente entre as κ melhores configurações do
+               dataset, κ = 20, 10, 1). O que uma representação que codificasse q sem erro alcançaria.
+
+MEDIDAS.
+  Folga(k)        = [oráculo(k) - max(acaso(k), constante)] / [oráculo(1) - acaso(1)]   (médias sobre os alvos)
+                    Quanto uma representação perfeita ganharia sobre a popularidade com aquele k, em unidades do ganho do
+                    1-NN perfeito sobre o acaso. Só de Y: caracteriza a meta-tarefa.
+  Aproveitamento  = [rep(k) - max(acaso(k), constante)] / [oráculo(k) - max(acaso(k), constante)]
+                    Fração da folga que a representação alcança. Negativo: abaixo da popularidade.
+  kDN (Smith, Martinez e Giraud-Carrier, 2014) = fração dos k vizinhos com rótulo diferente do alvo, com o rótulo de cada
+                    componente = valor dominante entre as κ melhores (argmax de q_{i,h}), média sobre componentes; k = 5.
+Testes: Wilcoxon pareado por dataset; Holm nas sete representações.
+
+RESULTADOS
+
+=== HPO (120 datasets; N de treino = 80); escala G (maior melhor)
+  constante 0.8135
+  k                  1       3       5      11      21      30      60
+  oráculo       0.9553  0.8801  0.8954  0.8788  0.8640  0.8840  0.8675
+  oráculo q     0.8390  0.8593  0.8688  0.8719  0.8764  0.8640  0.8643
+  acaso         0.7881  0.8157  0.8201  0.8258  0.8294  0.8330  0.8309
+  TabPFN        0.7854  0.8357  0.8261  0.8414  0.8432  0.8383  0.8499
+  D2V           0.7884  0.8246  0.8238  0.8332  0.8445  0.8419  0.8391
+  PyMFE         0.8165  0.8305  0.8389  0.8280  0.8350  0.8440  0.8400
+  ECoL          0.8220  0.8173  0.8298  0.8452  0.8289  0.8358  0.8424
+  MetaBu        0.8067  0.8294  0.8236  0.8393  0.8446  0.8414  0.8430
+  Dida          0.8102  0.8187  0.8556  0.8531  0.8510  0.8378  0.8318
+  TRIO          0.7986  0.8189  0.8222  0.8164  0.8239  0.8330  0.8235
+  folga          0.848   0.385   0.450   0.317   0.206   0.306   0.219
+  k=1: aproveitamento sobre constante (Holm nas 7): TabPFN -0.198 (0.026) | D2V -0.177 (0.45) | PyMFE +0.021 (1) | ECoL +0.060 (1) | MetaBu -0.048 (1) | Dida -0.023 (1) | TRIO -0.105 (1)
+  k=11: aproveitamento sobre acaso (Holm nas 7): TabPFN +0.295 (0.085) | D2V +0.140 (0.42) | PyMFE +0.040 (0.37) | ECoL +0.365 (0.02) | MetaBu +0.254 (0.063) | Dida +0.515 (0.0081) | TRIO -0.178 (0.61)
+  kDN (k=5): acaso 0.572 | oráculo q 0.356 | TabPFN 0.543 | D2V 0.569 | PyMFE 0.547 | ECoL 0.540 | MetaBu 0.561 | Dida 0.563 | TRIO 0.554
+    redução sobre o acaso (Holm nas 7): TabPFN +0.029 (0.011) | D2V +0.003 (0.87) | PyMFE +0.025 (0.0094) | ECoL +0.032 (0.0011) | MetaBu +0.011 (0.87) | Dida +0.009 (0.6) | TRIO +0.018 (0.12)
+    kDN menos o acaso, datasets de ajuste / de teste de cada partição: TabPFN -0.026/-0.029 | D2V -0.010/-0.003 | PyMFE -0.023/-0.025 | ECoL -0.029/-0.032 | MetaBu -0.037/-0.011 | Dida -0.030/-0.009 | TRIO -0.007/-0.018
+  oráculo q, 1-NN: percentil do vizinho 34.0 (acaso = 50)
+
+=== PIPES (105 datasets; N de treino = 67); escala G (maior melhor)
+  constante 0.7941
+  k                  1       3       5      11      21      30      60
+  oráculo       0.8235  0.7998  0.8014  0.8007  0.7999  0.7995  0.7971
+  oráculo q     0.7671  0.7822  0.7882  0.7950  0.7936  0.7955  0.7933
+  acaso         0.6953  0.7266  0.7457  0.7719  0.7840  0.7892  0.7909
+  TabPFN        0.7390  0.7568  0.7719  0.7854  0.7958  0.7993  0.7896
+  D2V           0.7125  0.7429  0.7583  0.7833  0.7887  0.7952  0.7941
+  PyMFE         0.7303  0.7569  0.7693  0.7811  0.7941  0.7951  0.7907
+  ECoL          0.7340  0.7576  0.7721  0.7839  0.7968  0.7949  0.7937
+  MetaBu        0.7177  0.7424  0.7627  0.7779  0.7831  0.7893  0.7931
+  Dida          0.7071  0.7509  0.7748  0.7854  0.7934  0.7886  0.7931
+  TRIO          0.7064  0.7430  0.7610  0.7781  0.7914  0.7936  0.7919
+  folga          0.229   0.045   0.057   0.051   0.045   0.042   0.023
+  k=1: aproveitamento sobre constante (Holm nas 7): TabPFN -1.875 (2e-05) | D2V -2.773 (1.5e-09) | PyMFE -2.169 (1.5e-05) | ECoL -2.043 (0.0016) | MetaBu -2.599 (9.9e-06) | Dida -2.958 (2e-08) | TRIO -2.981 (2.9e-10)
+  k=11: aproveitamento sobre constante (Holm nas 7): TabPFN -1.331 (1) | D2V -1.661 (1) | PyMFE -1.983 (1) | ECoL -1.569 (1) | MetaBu -2.481 (1) | Dida -1.330 (1) | TRIO -2.454 (0.42)
+  kDN (k=5): acaso 0.666 | oráculo q 0.512 | TabPFN 0.628 | D2V 0.619 | PyMFE 0.620 | ECoL 0.626 | MetaBu 0.624 | Dida 0.630 | TRIO 0.653
+    redução sobre o acaso (Holm nas 7): TabPFN +0.038 (0.0073) | D2V +0.047 (0.00025) | PyMFE +0.046 (0.00063) | ECoL +0.040 (0.0073) | MetaBu +0.042 (0.0013) | Dida +0.036 (0.0073) | TRIO +0.013 (0.12)
+    kDN menos o acaso, datasets de ajuste / de teste de cada partição: TabPFN -0.034/-0.038 | D2V -0.034/-0.047 | PyMFE -0.039/-0.046 | ECoL -0.030/-0.040 | MetaBu -0.043/-0.042 | Dida -0.039/-0.036 | TRIO -0.007/-0.013
+  oráculo q, 1-NN: percentil do vizinho 26.0 (acaso = 50)
+
+=== IR (215 datasets; N de treino = 138); escala G (maior melhor)
+  constante 0.3004
+  k                  1       3       5      11      21      30      60
+  oráculo       0.3457  0.3429  0.3438  0.3400  0.3315  0.3273  0.3078
+  oráculo q     0.3422  0.3402  0.3379  0.3341  0.3296  0.3140  0.3011
+  acaso         0.2179  0.2506  0.2697  0.2900  0.2955  0.2976  0.2999
+  TabPFN        0.2580  0.2911  0.2992  0.3005  0.2995  0.2999  0.3016
+  D2V           0.2556  0.2740  0.2770  0.2871  0.2962  0.2971  0.2988
+  PyMFE         0.2433  0.2706  0.2721  0.2916  0.2999  0.3012  0.3010
+  ECoL          0.2601  0.2889  0.2967  0.2962  0.3006  0.3015  0.3009
+  MetaBu        0.2291  0.2686  0.2847  0.2909  0.2978  0.2994  0.2989
+  Dida          0.2318  0.2747  0.2835  0.2949  0.2968  0.2981  0.2996
+  TRIO          0.2352  0.2556  0.2739  0.2907  0.2965  0.2959  0.2979
+  folga          0.354   0.332   0.339   0.310   0.243   0.210   0.058
+  k=1: aproveitamento sobre constante (Holm nas 7): TabPFN -0.937 (0.036) | D2V -0.988 (0.00092) | PyMFE -1.260 (0.0002) | ECoL -0.889 (0.029) | MetaBu -1.574 (3.5e-07) | Dida -1.513 (1.4e-06) | TRIO -1.438 (1.1e-08)
+  k=11: aproveitamento sobre constante (Holm nas 7): TabPFN +0.003 (0.1) | D2V -0.336 (0.42) | PyMFE -0.222 (0.72) | ECoL -0.105 (0.72) | MetaBu -0.241 (0.7) | Dida -0.140 (0.71) | TRIO -0.246 (0.025)
+  kDN (k=5): acaso 0.789 | oráculo q 0.093 | TabPFN 0.667 | D2V 0.679 | PyMFE 0.682 | ECoL 0.674 | MetaBu 0.732 | Dida 0.716 | TRIO 0.780
+    redução sobre o acaso (Holm nas 7): TabPFN +0.122 (9.7e-13) | D2V +0.110 (9.2e-11) | PyMFE +0.107 (3.4e-10) | ECoL +0.115 (1.5e-10) | MetaBu +0.058 (0.00027) | Dida +0.073 (5.7e-06) | TRIO +0.010 (0.76)
+    kDN menos o acaso, datasets de ajuste / de teste de cada partição: TabPFN -0.116/-0.122 | D2V -0.107/-0.110 | PyMFE -0.098/-0.107 | ECoL -0.111/-0.115 | MetaBu -0.058/-0.058 | Dida -0.082/-0.073 | TRIO -0.053/-0.010
+  oráculo q, 1-NN: percentil do vizinho 4.3 (acaso = 50)
+
+RESUMO DA FOLGA (maior = mais espaço para uma representação sobre a popularidade)
+         k=1     k=3     k=5     k=11    k=21    k=30    k=60   
+  HPO      0.848   0.385   0.450   0.317   0.206   0.306   0.219
+  PIPES    0.229   0.045   0.057   0.051   0.045   0.042   0.023
+  IR       0.354   0.332   0.339   0.310   0.243   0.210   0.058
+
+ÍNDICE DR DA PRIMEIRA VERSÃO (E * R * I / log2 N; substituído pela folga, que tem interpretação direta)
+  HPO    E 0.848 | R 0.943 | I 0.711 | DR 0.0900
+  PIPES  E 0.229 | R 0.917 | I 0.787 | DR 0.0273
+  IR     E 0.354 | R 0.846 | I 0.884 | DR 0.0373
+
+LEITURA (números de 07/11/2026; conferir se o script for rodado de novo)
+
+1. A popularidade explica quase todo o resultado. Com k vizinhos ao acaso, sem representação nenhuma, o k-NN sobe junto
+   com as representações: com k=11, acaso 0,826 / 0,772 / 0,290 (HPO em 1-ADTM, PIPES, IR), contra 0,816 a 0,853,
+   0,778 a 0,785 e 0,287 a 0,301 das sete representações. No PIPES e no IR nenhuma das sete supera a constante com k=11
+   (aproveitamento negativo ou nulo; Holm p>=0,1, exceto TRIO abaixo dela no IR, p=0,025).
+
+2. O espaço para uma representação depende da meta-tarefa e de k (folga). Com k=1 a folga é exatamente o E da primeira
+   versão (0,85, 0,23, 0,35). Com k=11: HPO 0,32, IR 0,31, PIPES 0,05. No PIPES nem uma representação perfeita ganharia
+   da popularidade ao fazer média (oráculo 0,801 contra constante 0,794): a meta-tarefa quase não deixa espaço. No HPO e
+   no IR o espaço existe e não é aproveitado: com k=11, só ECoL (0,37 da folga; Holm p=0,02) e Dida (0,52; p=0,008)
+   superam o acaso no HPO, e nenhuma representação passa a constante no IR.
+
+3. O que uma representação deveria codificar existe e é simples. Usar q (a distribuição dos valores de cada componente
+   entre as κ melhores configurações) como representação escolhe vizinhos no percentil 34, 26 e 4 (acaso = 50) e, com
+   k=11, chega a 0,334 de F1 no IR, contra 0,300 da constante. No PIPES nem q supera a constante (0,795 contra 0,794).
+
+4. As representações quase não organizam as vizinhanças pelo que importa (kDN, k=5). A redução sobre o acaso é de
+   0,003 a 0,032 no HPO (acaso 0,572; oráculo q 0,356), 0,013 a 0,047 no PIPES (0,666; 0,512) e 0,010 a 0,122 no IR
+   (0,789; 0,093). As feitas à mão e a pré-treinada reduzem tanto quanto as aprendidas.
+
+5. As representações aprendidas perdem no teste o que organizam no treino (HPO). kDN menos o acaso, nos datasets de ajuste
+   contra os de teste de cada partição: MetaBu -0,037 contra -0,011, Dida -0,030 contra -0,009, Dataset2Vec -0,010 contra
+   -0,003. As que não treinam são o controle e não mostram essa queda (PyMFE -0,023/-0,025, ECoL -0,029/-0,032, TabPFN
+   -0,026/-0,029). No PIPES e no IR a queda não aparece. Diferenças não testadas: falta um teste pareado por dataset.
+
+HIPÓTESES PARA O ARTIGO (não testadas)
+  - Benchmarks de meta-learning com folga pequena (como o PIPES) não conseguem separar representações; a folga deveria ser
+    reportada antes de comparar representações.
+  - O gargalo das representações aprendidas é a generalização a datasets novos (item 5), não a falta de informação útil
+    (item 3).
+
+FALTA PARA UM ARTIGO (IJCNN)
+  - Mais meta-tarefas (6 a 8) para validar a folga como medida de dificuldade; com três, tudo acima é descrição.
+  - Teste pareado do item 5 e repetição com outras sementes das representações aprendidas.
+  - k escolhido na validação, ou a curva inteira; aqui k=11 foi escolhido olhando o teste.
+
