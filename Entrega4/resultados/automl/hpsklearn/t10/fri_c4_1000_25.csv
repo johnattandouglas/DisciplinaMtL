@@ -1,0 +1,3 @@
+dataset,sistema,orcamento_s,nucleos,semente,n_treino,n_teste,p,metrica_propria,erro,t_pred_s,parede_s,cpu_s,cpu_por_parede,ram_pico_mb,max_threads,max_filhos,paralelizou,modelo,familia_6,ensemble,composicao,preproc,config,n_configs,f1_val,entre_os_6,f1_teste_thr1,f1_teste_thr08,sera_teste,versao
+fri_c4_1000_25,hpsklearn,10,2,42,700,300,25,True,,0.017774000007193536,11.770670099998824,1.359375,0.1154883272108812,345.4609375,6,1,False,SVR,SVR,False,,PCA,"SVR(C=1.084787258207099, coef0=0.8677198463329159, epsilon=0.05199380056059791,
+    gamma='auto', kernel='sigmoid', tol=0.0017574369559116845)",2,0.10653467159259122,True,0.15727903663082274,0.23156986691376927,2654.8612176849438,1.1.1

@@ -1,0 +1,20 @@
+protocolo rkf: 2 datasets, 20 partição(ões) por dataset
+[F1, limiar de evento 1] 2 datasets, 84 células
+  Pearson (todas as células) = 0.357; Spearman = 0.168
+  Spearman dentro do dataset (42 pares): mediana = 0.310, quartis = 0.268 a 0.352 (2 datasets sem empate total)
+  melhor par re-rodado = melhor da matriz em 0% dos datasets; entre os 3 melhores em 0%
+  média por par (42 valores): Pearson = 0.457, Spearman = 0.473; melhor par médio: re-rodado DT.RU, matriz ML.GN
+  média geral: re-rodado 0.1485, matriz 0.1103
+[F1, limiar de evento 08] 2 datasets, 84 células
+  Pearson (todas as células) = -0.032; Spearman = -0.189
+  Spearman dentro do dataset (42 pares): mediana = -0.100, quartis = -0.236 a 0.035 (2 datasets sem empate total)
+  melhor par re-rodado = melhor da matriz em 0% dos datasets; entre os 3 melhores em 0%
+  média por par (42 valores): Pearson = 0.005, Spearman = -0.100; melhor par médio: re-rodado RF.WC, matriz ML.GN
+  média geral: re-rodado 0.3333, matriz 0.1103
+[SERA (menor = melhor)] 2 datasets, 84 células
+  Pearson (todas as células) = 0.481; Spearman = 0.658
+  Spearman dentro do dataset (42 pares): mediana = 0.259, quartis = 0.136 a 0.381 (2 datasets sem empate total)
+  melhor par re-rodado = melhor da matriz em 0% dos datasets; entre os 3 melhores em 0%
+  média por par (42 valores): Pearson = 0.456, Spearman = 0.630; melhor par médio: re-rodado SV.GN, matriz RF.NO
+  média geral: re-rodado 12678.8228, matriz 836791.1221
+balanceamento que falhou (fração das partições): GN 0%, NO 0%, RO 0%, RU 0%, SG 2%, SM 48%, WC 0%

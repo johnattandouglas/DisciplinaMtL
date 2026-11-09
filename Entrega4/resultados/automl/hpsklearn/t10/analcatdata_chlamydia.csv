@@ -1,0 +1,3 @@
+dataset,sistema,orcamento_s,nucleos,semente,n_treino,n_teste,p,metrica_propria,erro,t_pred_s,parede_s,cpu_s,cpu_por_parede,ram_pico_mb,max_threads,max_filhos,paralelizou,modelo,familia_6,ensemble,composicao,preproc,config,n_configs,f1_val,entre_os_6,f1_teste_thr1,f1_teste_thr08,sera_teste,versao
+analcatdata_chlamydia,hpsklearn,10,2,42,70,30,17,True,,0.016367999953217804,10.664564199978486,1.28125,0.12014086801620874,341.203125,5,1,False,KNeighborsRegressor,,False,,PCA,"KNeighborsRegressor(algorithm='ball_tree', leaf_size=37, metric='euclidean',
+                    n_jobs=2, n_neighbors=7, p=3.4481044126545854)",2,1.9999326647868187e-05,False,0.3062631979949612,0.33606440316737324,2769488703.809,1.1.1

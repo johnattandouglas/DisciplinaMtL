@@ -1,0 +1,8 @@
+dataset,sistema,orcamento_s,nucleos,semente,n_treino,n_teste,p,metrica_propria,erro,t_pred_s,parede_s,cpu_s,cpu_por_parede,ram_pico_mb,max_threads,max_filhos,paralelizou,modelo,familia_6,ensemble,composicao,preproc,config,n_configs,f1_val,entre_os_6,f1_teste_thr1,f1_teste_thr08,sera_teste,versao
+QSAR-TID-10478,tpot,10,2,42,60,26,1024,True,,0.35324149997904897,101.66763640003046,46.875,0.46106117600257257,1712.9453125,71,6,False,SGDRegressor,,False,,StandardScaler;SelectFromModel;FeatureUnion;FeatureUnion,"Pipeline(steps=[('standardscaler', StandardScaler()),
+                ('selectfrommodel',
+                 SelectFromModel(estimator=ExtraTreesRegressor(bootstrap=np.False_,
+                                                               criterion=np.str_('poisson'),
+                                                               max_features=0.3976769448665,
+                                                               min_samples_leaf=6,
+                                                         ",,,False,0.0,0.006352179247310766,73.05804330862681,1.1.0

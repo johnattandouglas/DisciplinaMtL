@@ -1,0 +1,4 @@
+dataset,sistema,orcamento_s,nucleos,semente,n_treino,n_teste,p,metrica_propria,erro,t_pred_s,parede_s,cpu_s,cpu_por_parede,ram_pico_mb,max_threads,max_filhos,paralelizou,modelo,familia_6,ensemble,composicao,preproc,config,n_configs,f1_val,entre_os_6,f1_teste_thr1,f1_teste_thr08,sera_teste,versao
+liver-disorders,hpsklearn,10,2,42,241,104,5,True,,0.0153701999806799,10.706738700042479,1.234375,0.11528954190271802,341.0390625,7,1,False,KNeighborsRegressor,,False,,Normalizer,"KNeighborsRegressor(algorithm='kd_tree', leaf_size=24, metric='euclidean',
+                    n_jobs=2, n_neighbors=3, p=4.584956413439177,
+                    weights='distance')",2,0.605589757992946,False,1.9999504323392725e-05,0.5231577216295998,456.98508677513996,1.1.1

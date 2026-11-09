@@ -1,0 +1,4 @@
+dataset,sistema,orcamento_s,nucleos,semente,n_treino,n_teste,p,metrica_propria,erro,t_pred_s,parede_s,cpu_s,cpu_por_parede,ram_pico_mb,max_threads,max_filhos,paralelizou,modelo,familia_6,ensemble,composicao,preproc,config,n_configs,f1_val,entre_os_6,f1_teste_thr1,f1_teste_thr08,sera_teste,versao
+QSAR-TID-101312,hpsklearn,10,2,42,56,24,1024,True,,0.016373499995097518,12.794413199997507,1.578125,0.12334485179830737,344.2109375,6,1,False,KNeighborsRegressor,,False,,StandardScaler,"KNeighborsRegressor(algorithm='ball_tree', leaf_size=32, metric='euclidean',
+                    n_jobs=2, n_neighbors=2, p=3.3247806011339915,
+                    weights='distance')",2,1.9999613630417024e-05,False,1.9999646130480784e-05,0.8021281307015515,12.86685667073208,1.1.1

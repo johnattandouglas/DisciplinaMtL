@@ -1,0 +1,13 @@
+215 datasets (F1 re-rodado no holdout, limiar 1,0)
+  constante        média 0.4447  mediana 0.4543
+  knn1_ECoL        média 0.3557  mediana 0.3138
+  knn11_TabPFN     média 0.4314  mediana 0.4335
+  ws_B3            média 0.3631  mediana 0.3291
+  ws_B5            média 0.3869  mediana 0.4049
+  ws_B10           média 0.3956  mediana 0.4183
+  oraculo          média 0.6159  mediana 0.6610
+  knn1_ECoL vs constante: dif. média -0.0890, V/E/D 76/26/113, Wilcoxon p = 4.88e-05 (sem correção)
+  knn11_TabPFN vs constante: dif. média -0.0132, V/E/D 49/120/46, Wilcoxon p = 0.789 (sem correção)
+  ws_B3 vs constante: dif. média -0.0815, V/E/D 87/17/111, Wilcoxon p = 0.00303 (sem correção)
+  ws_B5 vs constante: dif. média -0.0577, V/E/D 93/22/100, Wilcoxon p = 0.085 (sem correção)
+  ws_B10 vs constante: dif. média -0.0491, V/E/D 94/22/99, Wilcoxon p = 0.16 (sem correção)

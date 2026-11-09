@@ -1,0 +1,4 @@
+dataset,sistema,orcamento_s,nucleos,semente,n_treino,n_teste,p,metrica_propria,erro,t_pred_s,parede_s,cpu_s,cpu_por_parede,ram_pico_mb,max_threads,max_filhos,paralelizou,modelo,familia_6,ensemble,composicao,preproc,config,n_configs,f1_val,entre_os_6,f1_teste_thr1,f1_teste_thr08,sera_teste,versao
+QSAR-TID-101278,lightautoml,10,2,42,55,24,1024,True,,1.4013697999762371,9.109030799998436,11.390625,1.2504760660159318,1156.90625,21,4,True,LightAutoML blend,,True,"Final prediction for new objects (level 0) = 
+	 0.05573 * (1 averaged models Lvl_0_Pipe_0_Mod_0_LinearL2) +
+	 0.94427 * (1 averaged models Lvl_0_Pipe_1_Mod_0_LightGBM) ","LAMA (codificação, imputação)",,,,False,1.99994535435249e-05,1.99994535435249e-05,10.171863786235367,0.4.2

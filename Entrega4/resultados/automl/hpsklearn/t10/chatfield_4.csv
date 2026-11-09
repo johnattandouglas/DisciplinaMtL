@@ -1,0 +1,3 @@
+dataset,sistema,orcamento_s,nucleos,semente,n_treino,n_teste,p,metrica_propria,erro,t_pred_s,parede_s,cpu_s,cpu_por_parede,ram_pico_mb,max_threads,max_filhos,paralelizou,modelo,familia_6,ensemble,composicao,preproc,config,n_configs,f1_val,entre_os_6,f1_teste_thr1,f1_teste_thr08,sera_teste,versao
+chatfield_4,hpsklearn,10,2,42,164,71,12,True,,0.0012823999859392643,11.991997200006153,1.390625,0.11596275222606676,341.3828125,7,1,False,ExtraTreeRegressor,,False,,PCA,"ExtraTreeRegressor(max_features=0.6753585304265358, random_state=np.int64(2),
+                   splitter='best')",2,0.7797104823092618,False,0.6522883403127456,0.7269935743524577,37533.22732,1.1.1

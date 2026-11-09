@@ -1,0 +1,3 @@
+dataset,sistema,orcamento_s,nucleos,semente,n_treino,n_teste,p,metrica_propria,erro,t_pred_s,parede_s,cpu_s,cpu_por_parede,ram_pico_mb,max_threads,max_filhos,paralelizou,modelo,familia_6,ensemble,composicao,preproc,config,n_configs,f1_val,entre_os_6,f1_teste_thr1,f1_teste_thr08,sera_teste,versao
+mortgage,lightautoml,10,2,42,734,315,15,True,,0.011973800021223724,13.69198060000781,25.65625,1.8738158305589014,1169.82421875,20,4,True,LightAutoML blend,,True,"Final prediction for new objects (level 0) = 
+	 1.00000 * (1 averaged models Lvl_0_Pipe_0_Mod_0_LinearL2) ","LAMA (codificação, imputação)",,,,False,0.9811443061999487,0.9838493640437268,3.5367278264586717,0.4.2

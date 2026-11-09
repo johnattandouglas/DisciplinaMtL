@@ -1,0 +1,4 @@
+dataset,sistema,orcamento_s,nucleos,semente,n_treino,n_teste,p,metrica_propria,erro,t_pred_s,parede_s,cpu_s,cpu_por_parede,ram_pico_mb,max_threads,max_filhos,paralelizou,modelo,familia_6,ensemble,composicao,preproc,config,n_configs,f1_val,entre_os_6,f1_teste_thr1,f1_teste_thr08,sera_teste,versao
+cholesterol,hpsklearn,10,2,42,212,91,13,True,,0.39209509995998815,13.85225310001988,4.875,0.35192830832646305,342.33984375,12,1,False,RandomForestRegressor,RF,False,,MinMaxScaler,"RandomForestRegressor(max_features=None, max_leaf_nodes=5, min_samples_leaf=8,
+                      n_estimators=1432, n_jobs=2, random_state=np.int64(4),
+                      verbose=False)",1,9.99999999995449e-06,True,1.999961307200683e-05,1.999967376686577e-05,165625.7807640447,1.1.1

@@ -1,0 +1,3 @@
+dataset,sistema,orcamento_s,nucleos,semente,n_treino,n_teste,p,metrica_propria,erro,t_pred_s,parede_s,cpu_s,cpu_por_parede,ram_pico_mb,max_threads,max_filhos,paralelizou,modelo,familia_6,ensemble,composicao,preproc,config,n_configs,f1_val,entre_os_6,f1_teste_thr1,f1_teste_thr08,sera_teste,versao
+a4,hpsklearn,10,2,42,138,60,11,True,,0.0010661999695003033,12.572611499985214,1.515625,0.12054973622638243,340.2890625,7,1,False,ExtraTreeRegressor,,False,,MinMaxScaler,"ExtraTreeRegressor(max_depth=4, max_features=0.3824941180781297,
+                   random_state=np.int64(3))",2,0.46555231605931935,False,0.4174303488642899,0.4692949836610442,2015.0360053450345,1.1.1

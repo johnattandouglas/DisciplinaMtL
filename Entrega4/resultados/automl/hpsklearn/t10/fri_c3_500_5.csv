@@ -1,0 +1,3 @@
+dataset,sistema,orcamento_s,nucleos,semente,n_treino,n_teste,p,metrica_propria,erro,t_pred_s,parede_s,cpu_s,cpu_por_parede,ram_pico_mb,max_threads,max_filhos,paralelizou,modelo,familia_6,ensemble,composicao,preproc,config,n_configs,f1_val,entre_os_6,f1_teste_thr1,f1_teste_thr08,sera_teste,versao
+fri_c3_500_5,hpsklearn,10,2,42,350,150,5,True,,0.00273060001200065,10.89665009995224,1.234375,0.11328022728796351,343.51171875,5,1,False,KNeighborsRegressor,,False,,StandardScaler,"KNeighborsRegressor(algorithm='brute', leaf_size=32, metric='manhattan',
+                    n_jobs=2, n_neighbors=1, p=4.414315974263941)",2,0.8568453650593735,False,0.8114659905304678,0.8461501321073024,12.420725545341863,1.1.1

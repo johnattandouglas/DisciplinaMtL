@@ -1,0 +1,10 @@
+dataset,sistema,orcamento_s,nucleos,semente,n_treino,n_teste,p,metrica_propria,erro,t_pred_s,parede_s,cpu_s,cpu_por_parede,ram_pico_mb,max_threads,max_filhos,paralelizou,modelo,familia_6,ensemble,composicao,preproc,config,n_configs,f1_val,entre_os_6,f1_teste_thr1,f1_teste_thr08,sera_teste,versao
+analcatdata_supreme,tpot,10,2,42,2836,1216,7,True,,7.732752000039909,6459.066615900025,4794.265625,0.7422536273581928,1649.51953125,145,16,False,MLPRegressor,MLP,False,,RobustScaler;SelectPercentile;FeatureUnion;FeatureUnion,"Pipeline(steps=[('robustscaler',
+                 RobustScaler(quantile_range=(0.2803199365091,
+                                              0.7827322211669))),
+                ('selectpercentile',
+                 SelectPercentile(percentile=22.3328382547858)),
+                ('featureunion-1',
+                 FeatureUnion(transformer_list=[('featureunion',
+                                                 FeatureUnion(transformer_list=[('kbinsdiscretizer-1',
+                                 ",,,True,0.5302929670480863,0.5431617555088395,6.8037785413064835,1.1.0

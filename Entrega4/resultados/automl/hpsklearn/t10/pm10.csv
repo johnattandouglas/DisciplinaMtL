@@ -1,0 +1,6 @@
+dataset,sistema,orcamento_s,nucleos,semente,n_treino,n_teste,p,metrica_propria,erro,t_pred_s,parede_s,cpu_s,cpu_por_parede,ram_pico_mb,max_threads,max_filhos,paralelizou,modelo,familia_6,ensemble,composicao,preproc,config,n_configs,f1_val,entre_os_6,f1_teste_thr1,f1_teste_thr08,sera_teste,versao
+pm10,hpsklearn,10,2,42,350,150,7,True,,0.0010875000152736902,10.980043999967165,1.203125,0.10957378677203823,344.296875,8,1,False,SGDRegressor,,False,,MinMaxScaler,"SGDRegressor(alpha=6.148537152052128e-05, eta0=0.0004287047424551612,
+             l1_ratio=0.008102250592979414, learning_rate='optimal',
+             loss='huber', max_iter=1072, penalty='elasticnet',
+             power_t=0.37990875243510236, random_state=np.int64(3),
+             tol=0.0007701916874152736)",2,1.999918848427651e-05,False,1.999920003199872e-05,1.9999198644773312e-05,20.210247661175156,1.1.1

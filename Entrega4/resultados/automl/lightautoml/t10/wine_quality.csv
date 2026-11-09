@@ -1,0 +1,4 @@
+dataset,sistema,orcamento_s,nucleos,semente,n_treino,n_teste,p,metrica_propria,erro,t_pred_s,parede_s,cpu_s,cpu_por_parede,ram_pico_mb,max_threads,max_filhos,paralelizou,modelo,familia_6,ensemble,composicao,preproc,config,n_configs,f1_val,entre_os_6,f1_teste_thr1,f1_teste_thr08,sera_teste,versao
+wine_quality,lightautoml,10,2,42,4547,1950,11,True,,0.10374480002792552,23.30139939999208,40.21875,1.7260229443564523,1156.140625,20,4,True,LightAutoML blend,,True,"Final prediction for new objects (level 0) = 
+	 0.05573 * (1 averaged models Lvl_0_Pipe_0_Mod_0_LinearL2) +
+	 0.94427 * (1 averaged models Lvl_0_Pipe_1_Mod_0_LightGBM) ","LAMA (codificação, imputação)",,,,False,0.6347865090428502,0.6282027406320143,583.0575137611338,0.4.2

@@ -1,0 +1,4 @@
+dataset,sistema,orcamento_s,nucleos,semente,n_treino,n_teste,p,metrica_propria,erro,t_pred_s,parede_s,cpu_s,cpu_por_parede,ram_pico_mb,max_threads,max_filhos,paralelizou,modelo,familia_6,ensemble,composicao,preproc,config,n_configs,f1_val,entre_os_6,f1_teste_thr1,f1_teste_thr08,sera_teste,versao
+forestFires,hpsklearn,10,2,42,361,156,12,True,,0.18634000001475215,13.701872700010426,3.984375,0.29079054281368183,343.55078125,12,1,False,RandomForestRegressor,RF,False,,MinMaxScaler,"RandomForestRegressor(bootstrap=False, max_features=None, min_samples_leaf=8,
+                      n_estimators=628, n_jobs=2, random_state=np.int64(1),
+                      verbose=False)",2,0.27955257779142384,True,0.26364714776524817,0.3195069061981958,582980.5250655453,1.1.1

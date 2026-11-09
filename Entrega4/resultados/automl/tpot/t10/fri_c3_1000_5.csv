@@ -1,0 +1,10 @@
+dataset,sistema,orcamento_s,nucleos,semente,n_treino,n_teste,p,metrica_propria,erro,t_pred_s,parede_s,cpu_s,cpu_por_parede,ram_pico_mb,max_threads,max_filhos,paralelizou,modelo,familia_6,ensemble,composicao,preproc,config,n_configs,f1_val,entre_os_6,f1_teste_thr1,f1_teste_thr08,sera_teste,versao
+fri_c3_1000_5,tpot,10,2,42,700,300,5,True,,0.9291198000428267,1107.3417999999947,1275.421875,1.1517869866377357,4429.43359375,184,28,False,MLPRegressor,MLP,False,,RobustScaler;SelectPercentile;FeatureUnion;FeatureUnion,"Pipeline(steps=[('robustscaler',
+                 RobustScaler(quantile_range=(0.2803199365091,
+                                              0.7827322211669))),
+                ('selectpercentile',
+                 SelectPercentile(percentile=22.3328382547858)),
+                ('featureunion-1',
+                 FeatureUnion(transformer_list=[('featureunion',
+                                                 FeatureUnion(transformer_list=[('kbinsdiscretizer-1',
+                                 ",,,True,1.999961880613752e-05,0.3843331946623122,137.67383897903156,1.1.0

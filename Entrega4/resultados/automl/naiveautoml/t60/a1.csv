@@ -1,0 +1,4 @@
+dataset,sistema,orcamento_s,nucleos,semente,n_treino,n_teste,p,metrica_propria,erro,t_pred_s,parede_s,cpu_s,cpu_por_parede,ram_pico_mb,max_threads,max_filhos,paralelizou,modelo,familia_6,ensemble,composicao,preproc,config,n_configs,f1_val,entre_os_6,f1_teste_thr1,f1_teste_thr08,sera_teste,versao
+a1,naiveautoml,60,2,42,138,60,11,True,,0.0026362999924458563,78.34625919995597,20.3125,0.2592657289246991,359.2734375,11,1,False,DecisionTreeRegressor,DT,False,,VarianceThreshold;FeatureAgglomeration,"Pipeline(steps=[('data-pre-processor', VarianceThreshold()),
+                ('feature-pre-processor', FeatureAgglomeration()),
+                ('learner', DecisionTreeRegressor())])",29,,True,0.5639527871613874,0.5840647275064553,12375.122445000003,0.1.6

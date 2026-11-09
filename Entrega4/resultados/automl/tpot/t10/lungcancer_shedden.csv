@@ -1,0 +1,10 @@
+dataset,sistema,orcamento_s,nucleos,semente,n_treino,n_teste,p,metrica_propria,erro,t_pred_s,parede_s,cpu_s,cpu_por_parede,ram_pico_mb,max_threads,max_filhos,paralelizou,modelo,familia_6,ensemble,composicao,preproc,config,n_configs,f1_val,entre_os_6,f1_teste_thr1,f1_teste_thr08,sera_teste,versao
+lungcancer_shedden,tpot,10,2,42,309,133,24,True,,6.440867300028913,3550.938600900001,3056.171875,0.8606659304741006,2453.18359375,139,20,False,MLPRegressor,MLP,False,,RobustScaler;SelectPercentile;FeatureUnion;FeatureUnion,"Pipeline(steps=[('robustscaler',
+                 RobustScaler(quantile_range=(0.2803199365091,
+                                              0.7827322211669))),
+                ('selectpercentile',
+                 SelectPercentile(percentile=22.3328382547858)),
+                ('featureunion-1',
+                 FeatureUnion(transformer_list=[('featureunion',
+                                                 FeatureUnion(transformer_list=[('kbinsdiscretizer-1',
+                                 ",,,True,1.999959689780001e-05,1.9999649000094984e-05,644.6491902633047,1.1.0

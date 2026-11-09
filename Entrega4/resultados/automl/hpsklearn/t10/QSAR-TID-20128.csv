@@ -1,0 +1,4 @@
+dataset,sistema,orcamento_s,nucleos,semente,n_treino,n_teste,p,metrica_propria,erro,t_pred_s,parede_s,cpu_s,cpu_por_parede,ram_pico_mb,max_threads,max_filhos,paralelizou,modelo,familia_6,ensemble,composicao,preproc,config,n_configs,f1_val,entre_os_6,f1_teste_thr1,f1_teste_thr08,sera_teste,versao
+QSAR-TID-20128,hpsklearn,10,2,42,70,30,1024,True,,0.001931500039063394,12.516150399984326,1.484375,0.11859676917927248,343.33984375,6,1,False,SVR,SVR,False,,StandardScaler,"SVR(C=1.026081904994642, coef0=0.1469050122285146, degree=1,
+    epsilon=0.10302766039072547, kernel='poly', shrinking=False,
+    tol=2.487963521429024e-05)",2,1.9999489692890116e-05,True,1e-05,1.9999636561540017e-05,17.755292433263808,1.1.1

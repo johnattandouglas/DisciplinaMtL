@@ -1,0 +1,3 @@
+dataset,sistema,orcamento_s,nucleos,semente,n_treino,n_teste,p,metrica_propria,erro,t_pred_s,parede_s,cpu_s,cpu_por_parede,ram_pico_mb,max_threads,max_filhos,paralelizou,modelo,familia_6,ensemble,composicao,preproc,config,n_configs,f1_val,entre_os_6,f1_teste_thr1,f1_teste_thr08,sera_teste,versao
+analcatdata_apnea3,hpsklearn,10,2,42,315,135,11,True,,0.001047800004016608,11.131611599994358,1.171875,0.10527451388984808,341.15234375,7,1,False,ExtraTreeRegressor,,False,,StandardScaler,"ExtraTreeRegressor(criterion='friedman_mse', max_features=0.24716898299037282,
+                   random_state=np.int64(4), splitter='best')",2,0.09591169763551233,False,0.1569469395471975,0.15785907954942993,268588748.3955,1.1.1

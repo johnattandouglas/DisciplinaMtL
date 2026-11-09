@@ -1,0 +1,4 @@
+dataset,sistema,orcamento_s,nucleos,semente,n_treino,n_teste,p,metrica_propria,erro,t_pred_s,parede_s,cpu_s,cpu_por_parede,ram_pico_mb,max_threads,max_filhos,paralelizou,modelo,familia_6,ensemble,composicao,preproc,config,n_configs,f1_val,entre_os_6,f1_teste_thr1,f1_teste_thr08,sera_teste,versao
+QSAR-TID-101399,hpsklearn,10,2,42,52,23,1024,True,,0.029565799981355667,11.631931199983228,1.625,0.13970165160556858,343.7265625,11,1,False,RandomForestRegressor,RF,False,,Normalizer,"RandomForestRegressor(criterion='absolute_error', max_features=None,
+                      min_samples_leaf=7, n_estimators=54, n_jobs=2,
+                      random_state=np.int64(0), verbose=False)",2,1.999948096398363e-05,True,1.9999519094091746e-05,1.999957896605944e-05,21.888499991307466,1.1.1

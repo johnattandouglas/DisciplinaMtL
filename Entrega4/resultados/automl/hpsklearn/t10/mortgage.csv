@@ -1,0 +1,8 @@
+dataset,sistema,orcamento_s,nucleos,semente,n_treino,n_teste,p,metrica_propria,erro,t_pred_s,parede_s,cpu_s,cpu_por_parede,ram_pico_mb,max_threads,max_filhos,paralelizou,modelo,familia_6,ensemble,composicao,preproc,config,n_configs,f1_val,entre_os_6,f1_teste_thr1,f1_teste_thr08,sera_teste,versao
+mortgage,hpsklearn,10,2,42,734,315,15,True,,0.007625899976119399,24.663897299964447,11.640625,0.47197021859220845,345.76171875,5,1,False,GradientBoostingRegressor,,False,,MinMaxScaler,"GradientBoostingRegressor(alpha=0.9002913052657819,
+                          learning_rate=0.6457900884009655,
+                          loss='absolute_error', max_depth=5,
+                          max_features=0.684502908520213,
+                          min_impurity_decrease=0.01, min_samples_leaf=2,
+                          n_estimators=820, random_state=np.int64(3),
+                          verbose=False)",1,0.9760782498592545,False,0.9799411603850307,0.9743707087117041,8.502222029158109,1.1.1

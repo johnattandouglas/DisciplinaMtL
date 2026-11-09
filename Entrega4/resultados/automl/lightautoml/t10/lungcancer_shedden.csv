@@ -1,0 +1,6 @@
+dataset,sistema,orcamento_s,nucleos,semente,n_treino,n_teste,p,metrica_propria,erro,t_pred_s,parede_s,cpu_s,cpu_por_parede,ram_pico_mb,max_threads,max_filhos,paralelizou,modelo,familia_6,ensemble,composicao,preproc,config,n_configs,f1_val,entre_os_6,f1_teste_thr1,f1_teste_thr08,sera_teste,versao
+lungcancer_shedden,lightautoml,10,2,42,309,133,24,True,,0.11341660004109144,9.93543850001879,16.640625,1.6748757490641735,1174.4765625,20,4,True,LightAutoML blend,,True,"Final prediction for new objects (level 0) = 
+	 0.25000 * (1 averaged models Lvl_0_Pipe_0_Mod_0_LinearL2) +
+	 0.25000 * (1 averaged models Lvl_0_Pipe_1_Mod_0_LightGBM) +
+	 0.25000 * (2 averaged models Lvl_0_Pipe_1_Mod_2_CatBoost) +
+	 0.25000 * (5 averaged models Lvl_0_Pipe_1_Mod_3_Tuned_CatBoost) ","LAMA (codificação, imputação)",,,,False,1.9999656534949737e-05,1.9999674968985952e-05,411.00207487514643,0.4.2
