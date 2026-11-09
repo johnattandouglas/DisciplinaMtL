@@ -1,0 +1,11 @@
+Figuras do IJCNN (autor, 08/11): (1) distribuição das "classes" de cada meta-tarefa, mostrando a popularidade;
+
+== HPO κ=20 C=3456: uniforme 0.0058; mais popular 0.175 (30x); top-5 0.175, 0.158, 0.150, 0.142, 0.142; configurações em nenhum top-κ: 0.750
+   rótulo majoritário por componente (fração de datasets): 0.44, 0.56, 0.69, 0.33, 0.64, 0.60, 0.56
+   PCA do PyMFE: variância explicada 0.33; componente colorido 2 com 5 valores (maior classe 0.56); kDN(5) no plano 0.542, no espaço completo 0.585, acaso 0.629
+== PIPES κ=10 C=8873: uniforme 0.0011; mais popular 0.057 (51x); top-5 0.057, 0.048, 0.038, 0.038, 0.038; configurações em nenhum top-κ: 0.906
+   rótulo majoritário por componente (fração de datasets): 0.82, 0.71, 0.24, 0.27, 0.22
+   PCA do PyMFE: variância explicada 0.33; componente colorido 5 com 14 valores (maior classe 0.22); kDN(5) no plano 0.859, no espaço completo 0.865, acaso 0.888
+== IR κ=1 C=42: uniforme 0.0238; mais popular 0.098 (4x); top-5 0.098, 0.079, 0.065, 0.065, 0.060; configurações em nenhum top-κ: 0.119
+   rótulo majoritário por componente (fração de datasets): 0.27, 0.33
+   PCA do PyMFE: variância explicada 0.73; componente colorido 1 com 6 valores (maior classe 0.27); kDN(5) no plano 0.713, no espaço completo 0.649, acaso 0.804
