@@ -1,0 +1,11 @@
+{"chave": "autosklearn_ml|iris|60", "acc_teste": 0.9166666666666666, "seg_ajuste": 45.023523385000004, "melhor": "data_preprocessor=FeatTypeSplit|balancing=Balancing|feature_preprocessor=SelectPercentileClassification|classifier=RandomForest", "erro": null}
+{"chave": "autosklearn_ml|pima|60", "acc_teste": 0.7708333333333334, "seg_ajuste": 45.21396592300002, "melhor": "data_preprocessor=FeatTypeSplit|balancing=Balancing|feature_preprocessor=NoPreprocessing|classifier=RandomForest", "erro": null}
+{"chave": "autosklearn_ml|abalone|60", "acc_teste": 0.6650717703349283, "seg_ajuste": 51.33750715899998, "melhor": "data_preprocessor=FeatTypeSplit|balancing=Balancing|feature_preprocessor=SelectClassificationRates|classifier=PassiveAggressive", "erro": null}
+{"chave": "autosklearn_ml|wine-quality-white|60", "acc_teste": null, "seg_ajuste": 38.16477115999999, "melhor": null, "erro": "UnboundLocalError(\"local variable 'result' referenced before assignment\")"}
+    reg = {"chave": chave, "sistema": a.sistema, "dataset": nome, "orcamento": orc, **hw}
+{"chave": "autosklearn_ml|letter|60", "acc_teste": null, "seg_ajuste": 41.67514237500001, "melhor": null, "erro": "UnboundLocalError(\"local variable 'result' referenced before assignment\")"}
+{"chave": "autosklearn_noml|iris|60", "acc_teste": 0.8888888888888888, "seg_ajuste": 44.27862432500001, "melhor": "random_forest+no_preprocessing", "erro": null}
+{"chave": "autosklearn_noml|pima|60", "acc_teste": 0.7447916666666666, "seg_ajuste": 43.055604829, "melhor": "bernoulli_nb+select_percentile_classification", "erro": null}
+{"chave": "autosklearn_noml|abalone|60", "acc_teste": 0.6564593301435406, "seg_ajuste": 44.27672496999992, "melhor": "random_forest+select_rates_classification", "erro": null}
+{"chave": "autosklearn_noml|wine-quality-white|60", "acc_teste": 0.6408163265306123, "seg_ajuste": 45.42860620199997, "melhor": "random_forest+no_preprocessing", "erro": null}
+{"chave": "autosklearn_noml|letter|60", "acc_teste": null, "seg_ajuste": 30.361391172000026, "melhor": null, "erro": "UnboundLocalError(\"local variable 'result' referenced before assignment\")"}

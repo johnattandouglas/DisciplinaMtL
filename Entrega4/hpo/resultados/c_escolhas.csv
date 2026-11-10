@@ -1,0 +1,5 @@
+sistema,orcamento,n,ensemble,melhor_mais_comum
+autogluon,30,5,1.0,WeightedEnsemble_L2
+autosklearn_ml,60,3,,data_preprocessor=FeatTypeSplit|balancing=Balancing|feature_preprocessor=NoPreprocessing|classifier=RandomForest
+autosklearn_noml,60,1,,random_forest
+flaml,30,5,0.0,lgbm

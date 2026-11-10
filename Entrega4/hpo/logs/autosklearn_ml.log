@@ -1,0 +1,142 @@
+/home/jviana/autosklearn-env/lib/python3.9/site-packages/autosklearn/__init__.py:5: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  import pkg_resources
+/home/jviana/autosklearn-env/lib/python3.9/site-packages/autosklearn/__init__.py:5: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  import pkg_resources
+Traceback (most recent call last):
+  File "/mnt/d/Projetos/DisciplinaMtL/Entrega4/hpo/rodar_automl_hpo.py", line 129, in main
+    m, desc = ajustar(a.sistema, Xtr, ytr, orc, a.nucleos, pasta)
+  File "/mnt/d/Projetos/DisciplinaMtL/Entrega4/hpo/rodar_automl_hpo.py", line 38, in ajustar
+    m.fit(Xtr, ytr)
+  File "/home/jviana/autosklearn-env/lib/python3.9/site-packages/autosklearn/estimators.py", line 1448, in fit
+    super().fit(
+  File "/home/jviana/autosklearn-env/lib/python3.9/site-packages/autosklearn/estimators.py", line 540, in fit
+    self.automl_.fit(load_models=self.load_models, **kwargs)
+  File "/home/jviana/autosklearn-env/lib/python3.9/site-packages/autosklearn/automl.py", line 2304, in fit
+    return super().fit(
+  File "/home/jviana/autosklearn-env/lib/python3.9/site-packages/autosklearn/automl.py", line 962, in fit
+    raise e
+  File "/home/jviana/autosklearn-env/lib/python3.9/site-packages/autosklearn/automl.py", line 932, in fit
+    if result:
+UnboundLocalError: local variable 'result' referenced before assignment
+{"chave": "autosklearn_ml|abalone|30", "acc_teste": 0.3464114832535885, "seg_ajuste": 25.206054932, "melhor": null, "erro": "UnboundLocalError(\"local variable 'result' referenced before assignment\")"}
+Traceback (most recent call last):
+  File "/mnt/d/Projetos/DisciplinaMtL/Entrega4/hpo/rodar_automl_hpo.py", line 129, in main
+    m, desc = ajustar(a.sistema, Xtr, ytr, orc, a.nucleos, pasta)
+  File "/mnt/d/Projetos/DisciplinaMtL/Entrega4/hpo/rodar_automl_hpo.py", line 38, in ajustar
+    m.fit(Xtr, ytr)
+  File "/home/jviana/autosklearn-env/lib/python3.9/site-packages/autosklearn/estimators.py", line 1448, in fit
+    super().fit(
+  File "/home/jviana/autosklearn-env/lib/python3.9/site-packages/autosklearn/estimators.py", line 540, in fit
+    self.automl_.fit(load_models=self.load_models, **kwargs)
+  File "/home/jviana/autosklearn-env/lib/python3.9/site-packages/autosklearn/automl.py", line 2304, in fit
+    return super().fit(
+  File "/home/jviana/autosklearn-env/lib/python3.9/site-packages/autosklearn/automl.py", line 962, in fit
+    raise e
+  File "/home/jviana/autosklearn-env/lib/python3.9/site-packages/autosklearn/automl.py", line 932, in fit
+    if result:
+UnboundLocalError: local variable 'result' referenced before assignment
+{"chave": "autosklearn_ml|acute-inflammation|30", "acc_teste": 0.5, "seg_ajuste": 26.350995024, "melhor": null, "erro": "UnboundLocalError(\"local variable 'result' referenced before assignment\")"}
+--- Logging error ---
+Traceback (most recent call last):
+  File "/home/jviana/autosklearn-env/lib/python3.9/logging/handlers.py", line 669, in emit
+    self.send(s)
+  File "/home/jviana/autosklearn-env/lib/python3.9/logging/handlers.py", line 611, in send
+    self.createSocket()
+  File "/home/jviana/autosklearn-env/lib/python3.9/logging/handlers.py", line 591, in createSocket
+    self.sock = self.makeSocket()
+  File "/home/jviana/autosklearn-env/lib/python3.9/logging/handlers.py", line 564, in makeSocket
+    result = socket.create_connection(self.address, timeout=timeout)
+  File "/home/jviana/autosklearn-env/lib/python3.9/socket.py", line 844, in create_connection
+    sock.connect(sa)
+  File "/home/jviana/autosklearn-env/lib/python3.9/site-packages/pynisher/limit_function_call.py", line 70, in handler
+    raise (TimeoutException)
+pynisher.limit_function_call.TimeoutException
+Call stack:
+  File "<string>", line 1, in <module>
+  File "/home/jviana/autosklearn-env/lib/python3.9/multiprocessing/forkserver.py", line 274, in main
+    code = _serve_one(child_r, fds,
+  File "/home/jviana/autosklearn-env/lib/python3.9/multiprocessing/forkserver.py", line 313, in _serve_one
+    code = spawn._main(child_r, parent_sentinel)
+  File "/home/jviana/autosklearn-env/lib/python3.9/multiprocessing/spawn.py", line 129, in _main
+    return self._bootstrap(parent_sentinel)
+  File "/home/jviana/autosklearn-env/lib/python3.9/multiprocessing/process.py", line 315, in _bootstrap
+    self.run()
+  File "/home/jviana/autosklearn-env/lib/python3.9/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "/home/jviana/autosklearn-env/lib/python3.9/site-packages/pynisher/limit_function_call.py", line 133, in subprocess_func
+    return_value = ((func(*args, **kwargs), 0))
+  File "/home/jviana/autosklearn-env/lib/python3.9/site-packages/autosklearn/smbo.py", line 119, in _calculate_metafeatures
+    logger_.info("Start calculating metafeatures for %s", basename)
+  File "/home/jviana/autosklearn-env/lib/python3.9/site-packages/autosklearn/util/logging_.py", line 117, in info
+    self.logger.info(msg, *args, **kwargs)
+Message: 'Start calculating metafeatures for %s'
+Arguments: ('59d9e191-dc9b-11f1-8185-7cb27d7d5eec',)
+Traceback (most recent call last):
+  File "/mnt/d/Projetos/DisciplinaMtL/Entrega4/hpo/rodar_automl_hpo.py", line 129, in main
+    m, desc = ajustar(a.sistema, Xtr, ytr, orc, a.nucleos, pasta)
+  File "/mnt/d/Projetos/DisciplinaMtL/Entrega4/hpo/rodar_automl_hpo.py", line 38, in ajustar
+    m.fit(Xtr, ytr)
+  File "/home/jviana/autosklearn-env/lib/python3.9/site-packages/autosklearn/estimators.py", line 1448, in fit
+    super().fit(
+  File "/home/jviana/autosklearn-env/lib/python3.9/site-packages/autosklearn/estimators.py", line 540, in fit
+    self.automl_.fit(load_models=self.load_models, **kwargs)
+  File "/home/jviana/autosklearn-env/lib/python3.9/site-packages/autosklearn/automl.py", line 2304, in fit
+    return super().fit(
+  File "/home/jviana/autosklearn-env/lib/python3.9/site-packages/autosklearn/automl.py", line 962, in fit
+    raise e
+  File "/home/jviana/autosklearn-env/lib/python3.9/site-packages/autosklearn/automl.py", line 932, in fit
+    if result:
+UnboundLocalError: local variable 'result' referenced before assignment
+{"chave": "autosklearn_ml|acute-nephritis|30", "acc_teste": 0.6, "seg_ajuste": 33.47703260899999, "melhor": null, "erro": "UnboundLocalError(\"local variable 'result' referenced before assignment\")"}
+--- Logging error ---
+Traceback (most recent call last):
+  File "/home/jviana/autosklearn-env/lib/python3.9/logging/handlers.py", line 669, in emit
+    self.send(s)
+  File "/home/jviana/autosklearn-env/lib/python3.9/logging/handlers.py", line 611, in send
+    self.createSocket()
+  File "/home/jviana/autosklearn-env/lib/python3.9/logging/handlers.py", line 591, in createSocket
+    self.sock = self.makeSocket()
+  File "/home/jviana/autosklearn-env/lib/python3.9/logging/handlers.py", line 564, in makeSocket
+    result = socket.create_connection(self.address, timeout=timeout)
+  File "/home/jviana/autosklearn-env/lib/python3.9/socket.py", line 844, in create_connection
+    sock.connect(sa)
+  File "/home/jviana/autosklearn-env/lib/python3.9/site-packages/pynisher/limit_function_call.py", line 70, in handler
+    raise (TimeoutException)
+pynisher.limit_function_call.TimeoutException
+Call stack:
+  File "<string>", line 1, in <module>
+  File "/home/jviana/autosklearn-env/lib/python3.9/multiprocessing/forkserver.py", line 274, in main
+    code = _serve_one(child_r, fds,
+  File "/home/jviana/autosklearn-env/lib/python3.9/multiprocessing/forkserver.py", line 313, in _serve_one
+    code = spawn._main(child_r, parent_sentinel)
+  File "/home/jviana/autosklearn-env/lib/python3.9/multiprocessing/spawn.py", line 129, in _main
+    return self._bootstrap(parent_sentinel)
+  File "/home/jviana/autosklearn-env/lib/python3.9/multiprocessing/process.py", line 315, in _bootstrap
+    self.run()
+  File "/home/jviana/autosklearn-env/lib/python3.9/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "/home/jviana/autosklearn-env/lib/python3.9/site-packages/pynisher/limit_function_call.py", line 133, in subprocess_func
+    return_value = ((func(*args, **kwargs), 0))
+  File "/home/jviana/autosklearn-env/lib/python3.9/site-packages/autosklearn/smbo.py", line 119, in _calculate_metafeatures
+    logger_.info("Start calculating metafeatures for %s", basename)
+  File "/home/jviana/autosklearn-env/lib/python3.9/site-packages/autosklearn/util/logging_.py", line 117, in info
+    self.logger.info(msg, *args, **kwargs)
+Message: 'Start calculating metafeatures for %s'
+Arguments: ('6ea75cf6-dc9b-11f1-8185-7cb27d7d5eec',)
+Traceback (most recent call last):
+  File "/mnt/d/Projetos/DisciplinaMtL/Entrega4/hpo/rodar_automl_hpo.py", line 129, in main
+    m, desc = ajustar(a.sistema, Xtr, ytr, orc, a.nucleos, pasta)
+  File "/mnt/d/Projetos/DisciplinaMtL/Entrega4/hpo/rodar_automl_hpo.py", line 38, in ajustar
+    m.fit(Xtr, ytr)
+  File "/home/jviana/autosklearn-env/lib/python3.9/site-packages/autosklearn/estimators.py", line 1448, in fit
+    super().fit(
+  File "/home/jviana/autosklearn-env/lib/python3.9/site-packages/autosklearn/estimators.py", line 540, in fit
+    self.automl_.fit(load_models=self.load_models, **kwargs)
+  File "/home/jviana/autosklearn-env/lib/python3.9/site-packages/autosklearn/automl.py", line 2304, in fit
+    return super().fit(
+  File "/home/jviana/autosklearn-env/lib/python3.9/site-packages/autosklearn/automl.py", line 962, in fit
+    raise e
+  File "/home/jviana/autosklearn-env/lib/python3.9/site-packages/autosklearn/automl.py", line 932, in fit
+    if result:
+UnboundLocalError: local variable 'result' referenced before assignment
+{"chave": "autosklearn_ml|adult|30", "acc_teste": 0.7607075587584964, "seg_ajuste": 33.45231236999999, "melhor": null, "erro": "UnboundLocalError(\"local variable 'result' referenced before assignment\")"}

@@ -1,0 +1,1441 @@
+dataset,abordagem,rotulo,config,perda_d2v,seg_busca,ACTIVATION,ARCHITECTURE,DROPOUT,LAYERS,NEURONS,NORMALIZATION,OPTIMZERS
+abalone,padrao,Configuração padrão,1818,0.3622000217437744,,relu,SQU,0.0,1,32,0,adam
+abalone,media,Melhor configuração média,309,0.34939998388290405,,leaky_relu,DES,0.2,3,32,1,adam
+abalone,rec_k1,Recomendação PyMFE (k=1),372,0.3718000054359436,,leaky_relu,DES,0.5,3,16,0,adam
+abalone,rec_k3,Recomendação PyMFE (k=3),372,0.3718000054359436,,leaky_relu,DES,0.5,3,16,0,adam
+abalone,rec_k5,Recomendação PyMFE (k=5),372,0.3718000054359436,,leaky_relu,DES,0.5,3,16,0,adam
+abalone,random_search_T,"Random Search, T=100",2958,0.34460002183914185,0.0001946199918165803,selu,SQU,0.0,1,8,0,adam
+abalone,smbo_cold_T,"SMBO-Cold, T=100",1461,0.34130001068115234,10.297359760012478,relu,DES,0.2,3,32,1,adam
+abalone,smbo_ws_PyMFE_k1_T,"SMBO-Similarity (k=1), T=100",2660,0.34130001068115234,9.989392800000497,selu,DES,0.2,7,32,0,sgd
+abalone,smbo_ws_PyMFE_k3_T,"SMBO-Similarity (k=3), T=100",669,0.33810001611709595,14.431816300004721,leaky_relu,SQU,0.0,1,32,1,adam
+abalone,smbo_ws_PyMFE_k5_T,"SMBO-Similarity (k=5), T=100",2733,0.34289997816085815,12.537983099999838,selu,DES,0.5,7,32,1,adam
+abalone,smbo_ws_avgrank_T,"SMBO-Independent, T=100",3331,0.33810001611709595,11.138980680005625,selu,SYM,0.2,3,32,0,rmsprop
+abalone,oraculo,Oráculo (D2V),2394,0.33170002698898315,,selu,ASC,0.2,3,32,0,adam
+acute-inflammation,padrao,Configuração padrão,1818,0.0,,relu,SQU,0.0,1,32,0,adam
+acute-inflammation,media,Melhor configuração média,309,0.0,,leaky_relu,DES,0.2,3,32,1,adam
+acute-inflammation,rec_k1,Recomendação PyMFE (k=1),666,0.0,,leaky_relu,SQU,0.0,1,32,0,adam
+acute-inflammation,rec_k3,Recomendação PyMFE (k=3),2959,0.0,,selu,SQU,0.0,1,8,0,rmsprop
+acute-inflammation,rec_k5,Recomendação PyMFE (k=5),1387,0.0,,relu,DES,0.0,3,32,0,rmsprop
+acute-inflammation,random_search_T,"Random Search, T=100",2173,0.0,0.0001380999805405736,relu,SYM,0.2,3,16,0,rmsprop
+acute-inflammation,smbo_cold_T,"SMBO-Cold, T=100",167,0.0,0.00020483999978750944,leaky_relu,ASC,0.5,3,32,1,sgd
+acute-inflammation,smbo_ws_PyMFE_k1_T,"SMBO-Similarity (k=1), T=100",666,0.0,0.0001601599855348468,leaky_relu,SQU,0.0,1,32,0,adam
+acute-inflammation,smbo_ws_PyMFE_k3_T,"SMBO-Similarity (k=3), T=100",2959,0.0,7.799998857080937e-05,selu,SQU,0.0,1,8,0,rmsprop
+acute-inflammation,smbo_ws_PyMFE_k5_T,"SMBO-Similarity (k=5), T=100",1387,0.0,0.00020451999735087155,relu,DES,0.0,3,32,0,rmsprop
+acute-inflammation,smbo_ws_avgrank_T,"SMBO-Independent, T=100",309,0.0,6.88800122588873e-05,leaky_relu,DES,0.2,3,32,1,adam
+acute-inflammation,oraculo,Oráculo (D2V),0,0.0,,leaky_relu,ASC,0.0,3,4,0,adam
+acute-nephritis,padrao,Configuração padrão,1818,0.0,,relu,SQU,0.0,1,32,0,adam
+acute-nephritis,media,Melhor configuração média,309,0.0,,leaky_relu,DES,0.2,3,32,1,adam
+acute-nephritis,rec_k1,Recomendação PyMFE (k=1),3384,0.125,,selu,SYM,0.5,3,4,0,adam
+acute-nephritis,rec_k3,Recomendação PyMFE (k=3),852,0.0,,leaky_relu,SQU,0.5,1,16,0,adam
+acute-nephritis,rec_k5,Recomendação PyMFE (k=5),2512,0.0,,selu,ASC,0.5,7,16,1,rmsprop
+acute-nephritis,random_search_T,"Random Search, T=100",120,0.0,0.00013123999815434217,leaky_relu,ASC,0.2,7,4,0,adam
+acute-nephritis,smbo_cold_T,"SMBO-Cold, T=100",1198,0.0,0.0001838000025600195,relu,ASC,0.0,5,32,1,rmsprop
+acute-nephritis,smbo_ws_PyMFE_k1_T,"SMBO-Similarity (k=1), T=100",1375,0.0,0.00010261998977512121,relu,DES,0.0,3,8,0,rmsprop
+acute-nephritis,smbo_ws_PyMFE_k3_T,"SMBO-Similarity (k=3), T=100",852,0.0,9.79200005531311e-05,leaky_relu,SQU,0.5,1,16,0,adam
+acute-nephritis,smbo_ws_PyMFE_k5_T,"SMBO-Similarity (k=5), T=100",2512,0.0,0.00014877999201416968,selu,ASC,0.5,7,16,1,rmsprop
+acute-nephritis,smbo_ws_avgrank_T,"SMBO-Independent, T=100",309,0.0,8.243999909609556e-05,leaky_relu,DES,0.2,3,32,1,adam
+acute-nephritis,oraculo,Oráculo (D2V),0,0.0,,leaky_relu,ASC,0.0,3,4,0,adam
+adult,padrao,Configuração padrão,1818,0.15079998970031738,,relu,SQU,0.0,1,32,0,adam
+adult,media,Melhor configuração média,309,0.1509000062942505,,leaky_relu,DES,0.2,3,32,1,adam
+adult,rec_k1,Recomendação PyMFE (k=1),1379,0.1629999876022339,,relu,DES,0.0,3,8,1,sgd
+adult,rec_k3,Recomendação PyMFE (k=3),1379,0.1629999876022339,,relu,DES,0.0,3,8,1,sgd
+adult,rec_k5,Recomendação PyMFE (k=5),1379,0.1629999876022339,,relu,DES,0.0,3,8,1,sgd
+adult,random_search_T,"Random Search, T=100",2611,0.1495000123977661,9.96400136500597e-05,selu,DES,0.2,3,32,0,rmsprop
+adult,smbo_cold_T,"SMBO-Cold, T=100",525,0.14969998598098755,10.658725220011547,leaky_relu,ENC,0.2,3,32,1,adam
+adult,smbo_ws_PyMFE_k1_T,"SMBO-Similarity (k=1), T=100",943,0.14910000562667847,15.454064680007287,leaky_relu,SYM,0.0,3,8,0,rmsprop
+adult,smbo_ws_PyMFE_k3_T,"SMBO-Similarity (k=3), T=100",2964,0.1499999761581421,12.735016300017014,selu,SQU,0.0,1,16,0,adam
+adult,smbo_ws_PyMFE_k5_T,"SMBO-Similarity (k=5), T=100",2557,0.14969998598098755,11.489865399990231,selu,DES,0.0,5,16,0,rmsprop
+adult,smbo_ws_avgrank_T,"SMBO-Independent, T=100",525,0.14969998598098755,10.987617280008271,leaky_relu,ENC,0.2,3,32,1,adam
+adult,oraculo,Oráculo (D2V),3039,0.147599995136261,,selu,SQU,0.0,7,16,1,adam
+annealing,padrao,Configuração padrão,1818,0.0625,,relu,SQU,0.0,1,32,0,adam
+annealing,media,Melhor configuração média,309,0.0681999921798706,,leaky_relu,DES,0.2,3,32,1,adam
+annealing,rec_k1,Recomendação PyMFE (k=1),2991,0.07389998435974121,,selu,SQU,0.0,3,16,1,adam
+annealing,rec_k3,Recomendação PyMFE (k=3),2751,0.0625,,selu,ENC,0.0,3,16,1,adam
+annealing,rec_k5,Recomendação PyMFE (k=5),2752,0.0681999921798706,,selu,ENC,0.0,3,16,1,rmsprop
+annealing,random_search_T,"Random Search, T=100",270,0.05110001564025879,0.00010047999676316976,leaky_relu,DES,0.0,7,8,0,adam
+annealing,smbo_cold_T,"SMBO-Cold, T=100",2572,0.03979998826980591,11.47732202000916,selu,DES,0.0,7,4,1,rmsprop
+annealing,smbo_ws_PyMFE_k1_T,"SMBO-Similarity (k=1), T=100",1483,0.05110001564025879,18.48121334000025,relu,DES,0.2,5,32,0,rmsprop
+annealing,smbo_ws_PyMFE_k3_T,"SMBO-Similarity (k=3), T=100",2559,0.045499980449676514,18.372981319995596,selu,DES,0.0,5,16,1,adam
+annealing,smbo_ws_PyMFE_k5_T,"SMBO-Similarity (k=5), T=100",2568,0.03979998826980591,12.947438760008662,selu,DES,0.0,7,4,0,adam
+annealing,smbo_ws_avgrank_T,"SMBO-Independent, T=100",2613,0.05110001564025879,11.900715839979238,selu,DES,0.2,3,32,1,adam
+annealing,oraculo,Oráculo (D2V),2623,0.0340999960899353,,selu,DES,0.2,5,8,0,rmsprop
+arrhythmia,padrao,Configuração padrão,1818,0.32499998807907104,,relu,SQU,0.0,1,32,0,adam
+arrhythmia,media,Melhor configuração média,309,0.3500000238418579,,leaky_relu,DES,0.2,3,32,1,adam
+arrhythmia,rec_k1,Recomendação PyMFE (k=1),1510,0.3374999761581421,,relu,DES,0.2,7,32,1,rmsprop
+arrhythmia,rec_k3,Recomendação PyMFE (k=3),1510,0.3374999761581421,,relu,DES,0.2,7,32,1,rmsprop
+arrhythmia,rec_k5,Recomendação PyMFE (k=5),1510,0.3374999761581421,,relu,DES,0.2,7,32,1,rmsprop
+arrhythmia,random_search_T,"Random Search, T=100",1432,0.30000001192092896,0.00011098000686615705,relu,DES,0.0,7,16,1,rmsprop
+arrhythmia,smbo_cold_T,"SMBO-Cold, T=100",2657,0.2875000238418579,7.994571700016968,selu,DES,0.2,7,16,1,sgd
+arrhythmia,smbo_ws_PyMFE_k1_T,"SMBO-Similarity (k=1), T=100",2253,0.2749999761581421,11.938360740011557,relu,SYM,0.5,3,32,1,adam
+arrhythmia,smbo_ws_PyMFE_k3_T,"SMBO-Similarity (k=3), T=100",1696,0.2875000238418579,11.069051839993335,relu,ENC,0.2,5,16,1,rmsprop
+arrhythmia,smbo_ws_PyMFE_k5_T,"SMBO-Similarity (k=5), T=100",1696,0.2875000238418579,11.362524079997092,relu,ENC,0.2,5,16,1,rmsprop
+arrhythmia,smbo_ws_avgrank_T,"SMBO-Independent, T=100",1318,0.2749999761581421,11.327177120000124,relu,ASC,0.5,3,32,1,rmsprop
+arrhythmia,oraculo,Oráculo (D2V),1317,0.23750001192092896,,relu,ASC,0.5,3,32,1,adam
+audiology-std,padrao,Configuração padrão,1818,0.46880000829696655,,relu,SQU,0.0,1,32,0,adam
+audiology-std,media,Melhor configuração média,309,0.375,,leaky_relu,DES,0.2,3,32,1,adam
+audiology-std,rec_k1,Recomendação PyMFE (k=1),978,0.375,,leaky_relu,SYM,0.0,5,32,0,adam
+audiology-std,rec_k3,Recomendação PyMFE (k=3),978,0.375,,leaky_relu,SYM,0.0,5,32,0,adam
+audiology-std,rec_k5,Recomendação PyMFE (k=5),978,0.375,,leaky_relu,SYM,0.0,5,32,0,adam
+audiology-std,random_search_T,"Random Search, T=100",1429,0.125,0.00010806000791490078,relu,DES,0.0,7,16,0,rmsprop
+audiology-std,smbo_cold_T,"SMBO-Cold, T=100",1429,0.125,9.845520660001785,relu,DES,0.0,7,16,0,rmsprop
+audiology-std,smbo_ws_PyMFE_k1_T,"SMBO-Similarity (k=1), T=100",259,0.15619999170303345,11.84492654001806,leaky_relu,DES,0.0,5,32,0,rmsprop
+audiology-std,smbo_ws_PyMFE_k3_T,"SMBO-Similarity (k=3), T=100",276,0.125,14.031752960011364,leaky_relu,DES,0.0,7,16,0,adam
+audiology-std,smbo_ws_PyMFE_k5_T,"SMBO-Similarity (k=5), T=100",259,0.15619999170303345,8.669005220010877,leaky_relu,DES,0.0,5,32,0,rmsprop
+audiology-std,smbo_ws_avgrank_T,"SMBO-Independent, T=100",526,0.21880000829696655,9.769799720006995,leaky_relu,ENC,0.2,3,32,1,rmsprop
+audiology-std,oraculo,Oráculo (D2V),229,0.09380000829696655,,leaky_relu,DES,0.0,3,16,0,rmsprop
+balance-scale,padrao,Configuração padrão,1818,0.02499997615814209,,relu,SQU,0.0,1,32,0,adam
+balance-scale,media,Melhor configuração média,309,0.012499988079071045,,leaky_relu,DES,0.2,3,32,1,adam
+balance-scale,rec_k1,Recomendação PyMFE (k=1),719,0.0625,,leaky_relu,SQU,0.0,5,32,1,sgd
+balance-scale,rec_k3,Recomendação PyMFE (k=3),109,0.03750002384185791,,leaky_relu,ASC,0.2,5,16,0,rmsprop
+balance-scale,rec_k5,Recomendação PyMFE (k=5),719,0.0625,,leaky_relu,SQU,0.0,5,32,1,sgd
+balance-scale,random_search_T,"Random Search, T=100",1026,0.012499988079071045,9.969999082386494e-05,leaky_relu,SYM,0.2,3,32,0,adam
+balance-scale,smbo_cold_T,"SMBO-Cold, T=100",1671,0.012499988079071045,10.365745879989117,relu,ENC,0.2,3,16,1,adam
+balance-scale,smbo_ws_PyMFE_k1_T,"SMBO-Similarity (k=1), T=100",1671,0.012499988079071045,14.004615600011311,relu,ENC,0.2,3,16,1,adam
+balance-scale,smbo_ws_PyMFE_k3_T,"SMBO-Similarity (k=3), T=100",2802,0.012499988079071045,16.573986599990167,selu,ENC,0.0,7,32,0,adam
+balance-scale,smbo_ws_PyMFE_k5_T,"SMBO-Similarity (k=5), T=100",2611,0.012499988079071045,2.334007619996555,selu,DES,0.2,3,32,0,rmsprop
+balance-scale,smbo_ws_avgrank_T,"SMBO-Independent, T=100",2230,0.0,0.12812576000578701,relu,SYM,0.2,7,32,1,rmsprop
+balance-scale,oraculo,Oráculo (D2V),216,0.0,,leaky_relu,DES,0.0,3,4,0,adam
+balloons,padrao,Configuração padrão,1818,0.25,,relu,SQU,0.0,1,32,0,adam
+balloons,media,Melhor configuração média,309,0.0,,leaky_relu,DES,0.2,3,32,1,adam
+balloons,rec_k1,Recomendação PyMFE (k=1),2100,0.25,,relu,SYM,0.0,3,16,0,adam
+balloons,rec_k3,Recomendação PyMFE (k=3),2101,0.5,,relu,SYM,0.0,3,16,0,rmsprop
+balloons,rec_k5,Recomendação PyMFE (k=5),3300,0.5,,selu,SYM,0.0,7,16,0,adam
+balloons,random_search_T,"Random Search, T=100",15,0.0,9.87200066447258e-05,leaky_relu,ASC,0.0,3,16,1,adam
+balloons,smbo_cold_T,"SMBO-Cold, T=100",1906,0.0,0.2347458800068125,relu,SQU,0.2,1,8,1,rmsprop
+balloons,smbo_ws_PyMFE_k1_T,"SMBO-Similarity (k=1), T=100",1527,0.0,1.2412771000061185,relu,DES,0.5,3,16,1,adam
+balloons,smbo_ws_PyMFE_k3_T,"SMBO-Similarity (k=3), T=100",2789,0.0,2.901749800005928,selu,ENC,0.0,7,4,1,sgd
+balloons,smbo_ws_PyMFE_k5_T,"SMBO-Similarity (k=5), T=100",1488,0.0,1.1014651200035588,relu,DES,0.2,7,4,0,adam
+balloons,smbo_ws_avgrank_T,"SMBO-Independent, T=100",309,0.0,0.00016287998296320437,leaky_relu,DES,0.2,3,32,1,adam
+balloons,oraculo,Oráculo (D2V),15,0.0,,leaky_relu,ASC,0.0,3,16,1,adam
+bank,padrao,Configuração padrão,1818,0.12929999828338623,,relu,SQU,0.0,1,32,0,adam
+bank,media,Melhor configuração média,309,0.125,,leaky_relu,DES,0.2,3,32,1,adam
+bank,rec_k1,Recomendação PyMFE (k=1),2552,0.11790001392364502,,selu,DES,0.0,5,8,0,sgd
+bank,rec_k3,Recomendação PyMFE (k=3),2552,0.11790001392364502,,selu,DES,0.0,5,8,0,sgd
+bank,rec_k5,Recomendação PyMFE (k=5),2552,0.11790001392364502,,selu,DES,0.0,5,8,0,sgd
+bank,random_search_T,"Random Search, T=100",1009,0.11510002613067627,9.882000740617514e-05,leaky_relu,SYM,0.2,3,4,0,rmsprop
+bank,smbo_cold_T,"SMBO-Cold, T=100",2812,0.11510002613067627,7.92266306001693,selu,ENC,0.2,3,4,1,rmsprop
+bank,smbo_ws_PyMFE_k1_T,"SMBO-Similarity (k=1), T=100",2722,0.11510002613067627,15.573257160000503,selu,DES,0.5,7,8,1,rmsprop
+bank,smbo_ws_PyMFE_k3_T,"SMBO-Similarity (k=3), T=100",2396,0.11360001564025879,14.749656040011905,selu,ASC,0.2,3,32,0,sgd
+bank,smbo_ws_PyMFE_k5_T,"SMBO-Similarity (k=5), T=100",2312,0.11360001564025879,10.652724680001848,selu,ASC,0.0,3,8,0,sgd
+bank,smbo_ws_avgrank_T,"SMBO-Independent, T=100",2977,0.11220002174377441,11.879760299995542,selu,SQU,0.0,3,4,0,rmsprop
+bank,oraculo,Oráculo (D2V),1379,0.11080002784729004,,relu,DES,0.0,3,8,1,sgd
+blood,padrao,Configuração padrão,1818,0.1718999743461609,,relu,SQU,0.0,1,32,0,adam
+blood,media,Melhor configuração média,309,0.16409999132156372,,leaky_relu,DES,0.2,3,32,1,adam
+blood,rec_k1,Recomendação PyMFE (k=1),2553,0.16409999132156372,,selu,DES,0.0,5,8,1,adam
+blood,rec_k3,Recomendação PyMFE (k=3),2553,0.16409999132156372,,selu,DES,0.0,5,8,1,adam
+blood,rec_k5,Recomendação PyMFE (k=5),2553,0.16409999132156372,,selu,DES,0.0,5,8,1,adam
+blood,random_search_T,"Random Search, T=100",1169,0.16409999132156372,0.00010114000178873539,relu,ASC,0.0,3,16,1,sgd
+blood,smbo_cold_T,"SMBO-Cold, T=100",1703,0.14840000867843628,9.326309899985791,relu,ENC,0.2,5,32,1,sgd
+blood,smbo_ws_PyMFE_k1_T,"SMBO-Similarity (k=1), T=100",1509,0.14840000867843628,11.744692020001821,relu,DES,0.2,7,32,1,adam
+blood,smbo_ws_PyMFE_k3_T,"SMBO-Similarity (k=3), T=100",2371,0.14840000867843628,14.774907959997654,selu,ASC,0.0,7,32,0,rmsprop
+blood,smbo_ws_PyMFE_k5_T,"SMBO-Similarity (k=5), T=100",1510,0.1406000256538391,10.515770260011777,relu,DES,0.2,7,32,1,rmsprop
+blood,smbo_ws_avgrank_T,"SMBO-Independent, T=100",1462,0.15619999170303345,9.703591699991374,relu,DES,0.2,3,32,1,rmsprop
+blood,oraculo,Oráculo (D2V),15,0.125,,leaky_relu,ASC,0.0,3,16,1,adam
+breast-cancer,padrao,Configuração padrão,1818,0.0625,,relu,SQU,0.0,1,32,0,adam
+breast-cancer,media,Melhor configuração média,309,0.15619999170303345,,leaky_relu,DES,0.2,3,32,1,adam
+breast-cancer,rec_k1,Recomendação PyMFE (k=1),2552,0.0625,,selu,DES,0.0,5,8,0,sgd
+breast-cancer,rec_k3,Recomendação PyMFE (k=3),2552,0.0625,,selu,DES,0.0,5,8,0,sgd
+breast-cancer,rec_k5,Recomendação PyMFE (k=5),2552,0.0625,,selu,DES,0.0,5,8,0,sgd
+breast-cancer,random_search_T,"Random Search, T=100",2685,0.031199991703033447,9.923998732119799e-05,selu,DES,0.5,3,32,1,adam
+breast-cancer,smbo_cold_T,"SMBO-Cold, T=100",672,0.0625,3.9096160599961878,leaky_relu,SQU,0.0,3,4,0,adam
+breast-cancer,smbo_ws_PyMFE_k1_T,"SMBO-Similarity (k=1), T=100",2868,0.031199991703033447,3.873673820006661,selu,ENC,0.2,7,16,0,adam
+breast-cancer,smbo_ws_PyMFE_k3_T,"SMBO-Similarity (k=3), T=100",2469,0.031199991703033447,3.567886499990709,selu,ASC,0.5,3,32,1,adam
+breast-cancer,smbo_ws_PyMFE_k5_T,"SMBO-Similarity (k=5), T=100",994,0.031199991703033447,3.914290500013158,leaky_relu,SYM,0.0,7,8,1,rmsprop
+breast-cancer,smbo_ws_avgrank_T,"SMBO-Independent, T=100",3335,0.031199991703033447,9.075789779983461,selu,SYM,0.2,3,32,1,sgd
+breast-cancer,oraculo,Oráculo (D2V),77,0.031199991703033447,,leaky_relu,ASC,0.2,3,4,1,sgd
+breast-cancer-wisc,padrao,Configuração padrão,1818,0.008899986743927002,,relu,SQU,0.0,1,32,0,adam
+breast-cancer-wisc,media,Melhor configuração média,309,0.008899986743927002,,leaky_relu,DES,0.2,3,32,1,adam
+breast-cancer-wisc,rec_k1,Recomendação PyMFE (k=1),3038,0.01789999008178711,,selu,SQU,0.0,7,16,0,sgd
+breast-cancer-wisc,rec_k3,Recomendação PyMFE (k=3),1169,0.01789999008178711,,relu,ASC,0.0,3,16,1,sgd
+breast-cancer-wisc,rec_k5,Recomendação PyMFE (k=5),3038,0.01789999008178711,,selu,SQU,0.0,7,16,0,sgd
+breast-cancer-wisc,random_search_T,"Random Search, T=100",2963,0.008899986743927002,0.00010734000243246555,selu,SQU,0.0,1,8,1,sgd
+breast-cancer-wisc,smbo_cold_T,"SMBO-Cold, T=100",2119,0.008899986743927002,0.00016580000519752502,relu,SYM,0.0,5,8,0,rmsprop
+breast-cancer-wisc,smbo_ws_PyMFE_k1_T,"SMBO-Similarity (k=1), T=100",3256,0.008899986743927002,0.00019123998936265707,selu,SYM,0.0,3,16,1,rmsprop
+breast-cancer-wisc,smbo_ws_PyMFE_k3_T,"SMBO-Similarity (k=3), T=100",1371,0.008899986743927002,0.00018868001643568277,relu,DES,0.0,3,4,1,adam
+breast-cancer-wisc,smbo_ws_PyMFE_k5_T,"SMBO-Similarity (k=5), T=100",1371,0.008899986743927002,0.00016596000641584397,relu,DES,0.0,3,4,1,adam
+breast-cancer-wisc,smbo_ws_avgrank_T,"SMBO-Independent, T=100",309,0.008899986743927002,0.0001672800164669752,leaky_relu,DES,0.2,3,32,1,adam
+breast-cancer-wisc,oraculo,Oráculo (D2V),0,0.008899986743927002,,leaky_relu,ASC,0.0,3,4,0,adam
+breast-cancer-wisc-diag,padrao,Configuração padrão,1818,0.02499997615814209,,relu,SQU,0.0,1,32,0,adam
+breast-cancer-wisc-diag,media,Melhor configuração média,309,0.012499988079071045,,leaky_relu,DES,0.2,3,32,1,adam
+breast-cancer-wisc-diag,rec_k1,Recomendação PyMFE (k=1),2585,0.012499988079071045,,selu,DES,0.0,7,16,1,sgd
+breast-cancer-wisc-diag,rec_k3,Recomendação PyMFE (k=3),2569,0.050000011920928955,,selu,DES,0.0,7,4,0,rmsprop
+breast-cancer-wisc-diag,rec_k5,Recomendação PyMFE (k=5),19,0.03750002384185791,,leaky_relu,ASC,0.0,3,32,0,rmsprop
+breast-cancer-wisc-diag,random_search_T,"Random Search, T=100",678,0.012499988079071045,0.00010065999813377858,leaky_relu,SQU,0.0,3,8,0,adam
+breast-cancer-wisc-diag,smbo_cold_T,"SMBO-Cold, T=100",2720,0.012499988079071045,8.856611040001734,selu,DES,0.5,7,8,0,sgd
+breast-cancer-wisc-diag,smbo_ws_PyMFE_k1_T,"SMBO-Similarity (k=1), T=100",3256,0.0,8.388095619995147,selu,SYM,0.0,3,16,1,rmsprop
+breast-cancer-wisc-diag,smbo_ws_PyMFE_k3_T,"SMBO-Similarity (k=3), T=100",2553,0.012499988079071045,11.02730537999887,selu,DES,0.0,5,8,1,adam
+breast-cancer-wisc-diag,smbo_ws_PyMFE_k5_T,"SMBO-Similarity (k=5), T=100",17,0.0,5.61430287999101,leaky_relu,ASC,0.0,3,16,1,sgd
+breast-cancer-wisc-diag,smbo_ws_avgrank_T,"SMBO-Independent, T=100",309,0.012499988079071045,9.260297560016625,leaky_relu,DES,0.2,3,32,1,adam
+breast-cancer-wisc-diag,oraculo,Oráculo (D2V),17,0.0,,leaky_relu,ASC,0.0,3,16,1,sgd
+breast-cancer-wisc-prog,padrao,Configuração padrão,1818,0.5,,relu,SQU,0.0,1,32,0,adam
+breast-cancer-wisc-prog,media,Melhor configuração média,309,0.5,,leaky_relu,DES,0.2,3,32,1,adam
+breast-cancer-wisc-prog,rec_k1,Recomendação PyMFE (k=1),1431,0.5625,,relu,DES,0.0,7,16,1,adam
+breast-cancer-wisc-prog,rec_k3,Recomendação PyMFE (k=3),1431,0.5625,,relu,DES,0.0,7,16,1,adam
+breast-cancer-wisc-prog,rec_k5,Recomendação PyMFE (k=5),1431,0.5625,,relu,DES,0.0,7,16,1,adam
+breast-cancer-wisc-prog,random_search_T,"Random Search, T=100",1672,0.1875,0.00010059999767690897,relu,ENC,0.2,3,16,1,rmsprop
+breast-cancer-wisc-prog,smbo_cold_T,"SMBO-Cold, T=100",1871,0.1875,7.191924780001864,relu,SQU,0.0,5,32,1,sgd
+breast-cancer-wisc-prog,smbo_ws_PyMFE_k1_T,"SMBO-Similarity (k=1), T=100",594,0.125,4.59946938001085,leaky_relu,ENC,0.5,3,32,0,adam
+breast-cancer-wisc-prog,smbo_ws_PyMFE_k3_T,"SMBO-Similarity (k=3), T=100",1824,0.125,7.693189919996075,relu,SQU,0.0,3,4,0,adam
+breast-cancer-wisc-prog,smbo_ws_PyMFE_k5_T,"SMBO-Similarity (k=5), T=100",2885,0.1875,4.341743059991859,selu,ENC,0.5,3,4,1,sgd
+breast-cancer-wisc-prog,smbo_ws_avgrank_T,"SMBO-Independent, T=100",3239,0.125,4.652403960004449,selu,SQU,0.5,7,32,1,sgd
+breast-cancer-wisc-prog,oraculo,Oráculo (D2V),132,0.125,,leaky_relu,ASC,0.2,7,16,0,adam
+breast-tissue,padrao,Configuração padrão,1818,0.75,,relu,SQU,0.0,1,32,0,adam
+breast-tissue,media,Melhor configuração média,309,0.4375,,leaky_relu,DES,0.2,3,32,1,adam
+breast-tissue,rec_k1,Recomendação PyMFE (k=1),2644,0.625,,selu,DES,0.2,7,4,1,rmsprop
+breast-tissue,rec_k3,Recomendação PyMFE (k=3),2644,0.625,,selu,DES,0.2,7,4,1,rmsprop
+breast-tissue,rec_k5,Recomendação PyMFE (k=5),2644,0.625,,selu,DES,0.2,7,4,1,rmsprop
+breast-tissue,random_search_T,"Random Search, T=100",2788,0.375,0.00010083999950438738,selu,ENC,0.0,7,4,1,rmsprop
+breast-tissue,smbo_cold_T,"SMBO-Cold, T=100",310,0.375,8.203285760013387,leaky_relu,DES,0.2,3,32,1,rmsprop
+breast-tissue,smbo_ws_PyMFE_k1_T,"SMBO-Similarity (k=1), T=100",597,0.375,9.663503980007954,leaky_relu,ENC,0.5,3,32,1,adam
+breast-tissue,smbo_ws_PyMFE_k3_T,"SMBO-Similarity (k=3), T=100",2148,0.375,9.721617219992913,relu,SYM,0.0,7,16,0,adam
+breast-tissue,smbo_ws_PyMFE_k5_T,"SMBO-Similarity (k=5), T=100",2148,0.375,7.4129734799964355,relu,SYM,0.0,7,16,0,adam
+breast-tissue,smbo_ws_avgrank_T,"SMBO-Independent, T=100",1462,0.375,12.28911317999009,relu,DES,0.2,3,32,1,rmsprop
+breast-tissue,oraculo,Oráculo (D2V),353,0.3125,,leaky_relu,DES,0.2,7,16,1,sgd
+car,padrao,Configuração padrão,1818,0.051500022411346436,,relu,SQU,0.0,1,32,0,adam
+car,media,Melhor configuração média,309,0.022099971771240234,,leaky_relu,DES,0.2,3,32,1,adam
+car,rec_k1,Recomendação PyMFE (k=1),2611,0.029399991035461426,,selu,DES,0.2,3,32,0,rmsprop
+car,rec_k3,Recomendação PyMFE (k=3),2611,0.029399991035461426,,selu,DES,0.2,3,32,0,rmsprop
+car,rec_k5,Recomendação PyMFE (k=5),2611,0.029399991035461426,,selu,DES,0.2,3,32,0,rmsprop
+car,random_search_T,"Random Search, T=100",2545,0.0,9.906000923365355e-05,selu,DES,0.0,5,4,0,rmsprop
+car,smbo_cold_T,"SMBO-Cold, T=100",3306,0.0037000179290771484,5.521275940001942,selu,SYM,0.0,7,32,0,adam
+car,smbo_ws_PyMFE_k1_T,"SMBO-Similarity (k=1), T=100",2635,0.0037000179290771484,7.017424319987185,selu,DES,0.2,5,32,0,rmsprop
+car,smbo_ws_PyMFE_k3_T,"SMBO-Similarity (k=3), T=100",2635,0.0037000179290771484,14.660999460006133,selu,DES,0.2,5,32,0,rmsprop
+car,smbo_ws_PyMFE_k5_T,"SMBO-Similarity (k=5), T=100",3300,0.0037000179290771484,3.849794579995796,selu,SYM,0.0,7,16,0,adam
+car,smbo_ws_avgrank_T,"SMBO-Independent, T=100",1026,0.0073999762535095215,10.681121359998361,leaky_relu,SYM,0.2,3,32,0,adam
+car,oraculo,Oráculo (D2V),282,0.0,,leaky_relu,DES,0.0,7,32,0,adam
+cardiotocography-10clases,padrao,Configuração padrão,1818,0.15939998626708984,,relu,SQU,0.0,1,32,0,adam
+cardiotocography-10clases,media,Melhor configuração média,309,0.1499999761581421,,leaky_relu,DES,0.2,3,32,1,adam
+cardiotocography-10clases,rec_k1,Recomendação PyMFE (k=1),2806,0.1718999743461609,,selu,ENC,0.0,7,32,1,rmsprop
+cardiotocography-10clases,rec_k3,Recomendação PyMFE (k=3),2806,0.1718999743461609,,selu,ENC,0.0,7,32,1,rmsprop
+cardiotocography-10clases,rec_k5,Recomendação PyMFE (k=5),2806,0.1718999743461609,,selu,ENC,0.0,7,32,1,rmsprop
+cardiotocography-10clases,random_search_T,"Random Search, T=100",1698,0.1499999761581421,0.00010065999813377858,relu,ENC,0.2,5,32,0,adam
+cardiotocography-10clases,smbo_cold_T,"SMBO-Cold, T=100",2830,0.13440001010894775,11.65491738000419,selu,ENC,0.2,3,32,1,rmsprop
+cardiotocography-10clases,smbo_ws_PyMFE_k1_T,"SMBO-Similarity (k=1), T=100",331,0.125,11.873822439997458,leaky_relu,DES,0.2,5,32,0,rmsprop
+cardiotocography-10clases,smbo_ws_PyMFE_k3_T,"SMBO-Similarity (k=3), T=100",331,0.125,12.5324213600019,leaky_relu,DES,0.2,5,32,0,rmsprop
+cardiotocography-10clases,smbo_ws_PyMFE_k5_T,"SMBO-Similarity (k=5), T=100",331,0.125,8.122901040012948,leaky_relu,DES,0.2,5,32,0,rmsprop
+cardiotocography-10clases,smbo_ws_avgrank_T,"SMBO-Independent, T=100",1458,0.13440001010894775,11.222281259996816,relu,DES,0.2,3,32,0,adam
+cardiotocography-10clases,oraculo,Oráculo (D2V),2791,0.11250001192092896,,selu,ENC,0.0,7,8,0,rmsprop
+cardiotocography-3clases,padrao,Configuração padrão,1818,0.09060001373291016,,relu,SQU,0.0,1,32,0,adam
+cardiotocography-3clases,media,Melhor configuração média,309,0.08749997615814209,,leaky_relu,DES,0.2,3,32,1,adam
+cardiotocography-3clases,rec_k1,Recomendação PyMFE (k=1),2991,0.07810002565383911,,selu,SQU,0.0,3,16,1,adam
+cardiotocography-3clases,rec_k3,Recomendação PyMFE (k=3),2752,0.08749997615814209,,selu,ENC,0.0,3,16,1,rmsprop
+cardiotocography-3clases,rec_k5,Recomendação PyMFE (k=5),2991,0.07810002565383911,,selu,SQU,0.0,3,16,1,adam
+cardiotocography-3clases,random_search_T,"Random Search, T=100",2346,0.05620002746582031,9.908000938594342e-05,selu,ASC,0.0,5,32,0,adam
+cardiotocography-3clases,smbo_cold_T,"SMBO-Cold, T=100",2577,0.04689997434616089,14.216816340014338,selu,DES,0.0,7,8,1,adam
+cardiotocography-3clases,smbo_ws_PyMFE_k1_T,"SMBO-Similarity (k=1), T=100",2538,0.053099989891052246,20.881894839997404,selu,DES,0.0,3,32,0,adam
+cardiotocography-3clases,smbo_ws_PyMFE_k3_T,"SMBO-Similarity (k=3), T=100",2559,0.0437999963760376,13.347402420011349,selu,DES,0.0,5,16,1,adam
+cardiotocography-3clases,smbo_ws_PyMFE_k5_T,"SMBO-Similarity (k=5), T=100",2559,0.0437999963760376,12.025687319994905,selu,DES,0.0,5,16,1,adam
+cardiotocography-3clases,smbo_ws_avgrank_T,"SMBO-Independent, T=100",228,0.05940002202987671,14.795348100014962,leaky_relu,DES,0.0,3,16,0,adam
+cardiotocography-3clases,oraculo,Oráculo (D2V),2559,0.0437999963760376,,selu,DES,0.0,5,16,1,adam
+chess-krvk,padrao,Configuração padrão,1818,0.4876999855041504,,relu,SQU,0.0,1,32,0,adam
+chess-krvk,media,Melhor configuração média,309,0.486299991607666,,leaky_relu,DES,0.2,3,32,1,adam
+chess-krvk,rec_k1,Recomendação PyMFE (k=1),2394,0.5056999921798706,,selu,ASC,0.2,3,32,0,adam
+chess-krvk,rec_k3,Recomendação PyMFE (k=3),2394,0.5056999921798706,,selu,ASC,0.2,3,32,0,adam
+chess-krvk,rec_k5,Recomendação PyMFE (k=5),2394,0.5056999921798706,,selu,ASC,0.2,3,32,0,adam
+chess-krvk,random_search_T,"Random Search, T=100",1428,0.15390002727508545,0.00010200000833719969,relu,DES,0.0,7,16,0,adam
+chess-krvk,smbo_cold_T,"SMBO-Cold, T=100",1434,0.1704999804496765,6.459642620012164,relu,DES,0.0,7,32,0,adam
+chess-krvk,smbo_ws_PyMFE_k1_T,"SMBO-Similarity (k=1), T=100",2154,0.2156999707221985,8.953964859992265,relu,SYM,0.0,7,32,0,adam
+chess-krvk,smbo_ws_PyMFE_k3_T,"SMBO-Similarity (k=3), T=100",1428,0.15390002727508545,0.00019241999834775924,relu,DES,0.0,7,16,0,adam
+chess-krvk,smbo_ws_PyMFE_k5_T,"SMBO-Similarity (k=5), T=100",1428,0.15390002727508545,0.00021403999999165536,relu,DES,0.0,7,16,0,adam
+chess-krvk,smbo_ws_avgrank_T,"SMBO-Independent, T=100",1194,0.218999981880188,11.979766499996185,relu,ASC,0.0,5,32,0,adam
+chess-krvk,oraculo,Oráculo (D2V),1428,0.15390002727508545,,relu,DES,0.0,7,16,0,adam
+chess-krvkp,padrao,Configuração padrão,1818,0.0065000057220458984,,relu,SQU,0.0,1,32,0,adam
+chess-krvkp,media,Melhor configuração média,309,0.0042999982833862305,,leaky_relu,DES,0.2,3,32,1,adam
+chess-krvkp,rec_k1,Recomendação PyMFE (k=1),2375,0.01940000057220459,,selu,ASC,0.0,7,32,1,sgd
+chess-krvkp,rec_k3,Recomendação PyMFE (k=3),1175,0.03659999370574951,,relu,ASC,0.0,3,32,1,sgd
+chess-krvkp,rec_k5,Recomendação PyMFE (k=5),2375,0.01940000057220459,,selu,ASC,0.0,7,32,1,sgd
+chess-krvkp,random_search_T,"Random Search, T=100",271,0.0042999982833862305,9.906000923365355e-05,leaky_relu,DES,0.0,7,8,0,rmsprop
+chess-krvkp,smbo_cold_T,"SMBO-Cold, T=100",2805,0.002200007438659668,6.578784979996271,selu,ENC,0.0,7,32,1,adam
+chess-krvkp,smbo_ws_PyMFE_k1_T,"SMBO-Similarity (k=1), T=100",2374,0.002200007438659668,10.913267299998552,selu,ASC,0.0,7,32,1,rmsprop
+chess-krvkp,smbo_ws_PyMFE_k3_T,"SMBO-Similarity (k=3), T=100",1510,0.0,12.126181560009718,relu,DES,0.2,7,32,1,rmsprop
+chess-krvkp,smbo_ws_PyMFE_k5_T,"SMBO-Similarity (k=5), T=100",2778,0.002200007438659668,10.132600099989213,selu,ENC,0.0,5,32,0,adam
+chess-krvkp,smbo_ws_avgrank_T,"SMBO-Independent, T=100",1480,0.0,6.962454520002939,relu,DES,0.2,5,16,1,rmsprop
+chess-krvkp,oraculo,Oráculo (D2V),486,0.0,,leaky_relu,ENC,0.0,7,8,0,adam
+congressional-voting,padrao,Configuração padrão,1818,0.4375,,relu,SQU,0.0,1,32,0,adam
+congressional-voting,media,Melhor configuração média,309,0.41670000553131104,,leaky_relu,DES,0.2,3,32,1,adam
+congressional-voting,rec_k1,Recomendação PyMFE (k=1),1289,0.5,,relu,ASC,0.2,7,16,1,sgd
+congressional-voting,rec_k3,Recomendação PyMFE (k=3),2272,0.375,,relu,SYM,0.5,5,16,1,rmsprop
+congressional-voting,rec_k5,Recomendação PyMFE (k=5),2808,0.4375,,selu,ENC,0.2,3,4,0,adam
+congressional-voting,random_search_T,"Random Search, T=100",2360,0.35420000553131104,0.00010030001867562532,selu,ASC,0.0,7,8,0,sgd
+congressional-voting,smbo_cold_T,"SMBO-Cold, T=100",2720,0.35420000553131104,8.455441440013237,selu,DES,0.5,7,8,0,sgd
+congressional-voting,smbo_ws_PyMFE_k1_T,"SMBO-Similarity (k=1), T=100",911,0.33329999446868896,10.112179840006865,leaky_relu,SQU,0.5,5,32,1,sgd
+congressional-voting,smbo_ws_PyMFE_k3_T,"SMBO-Similarity (k=3), T=100",3200,0.35420000553131104,12.260924059990794,selu,SQU,0.5,5,8,0,sgd
+congressional-voting,smbo_ws_PyMFE_k5_T,"SMBO-Similarity (k=5), T=100",3272,0.35420000553131104,9.429855239996687,selu,SYM,0.0,5,8,0,sgd
+congressional-voting,smbo_ws_avgrank_T,"SMBO-Independent, T=100",3189,0.35420000553131104,11.823891599988565,selu,SQU,0.5,3,32,1,adam
+congressional-voting,oraculo,Oráculo (D2V),2912,0.3125,,selu,ENC,0.5,5,8,0,sgd
+conn-bench-sonar-mines-rocks,padrao,Configuração padrão,1818,0.3125,,relu,SQU,0.0,1,32,0,adam
+conn-bench-sonar-mines-rocks,media,Melhor configuração média,309,0.375,,leaky_relu,DES,0.2,3,32,1,adam
+conn-bench-sonar-mines-rocks,rec_k1,Recomendação PyMFE (k=1),709,0.28119999170303345,,leaky_relu,SQU,0.0,5,16,0,rmsprop
+conn-bench-sonar-mines-rocks,rec_k3,Recomendação PyMFE (k=3),731,0.4375,,leaky_relu,SQU,0.0,7,8,1,sgd
+conn-bench-sonar-mines-rocks,rec_k5,Recomendação PyMFE (k=5),2603,0.34380000829696655,,selu,DES,0.2,3,8,1,sgd
+conn-bench-sonar-mines-rocks,random_search_T,"Random Search, T=100",3040,0.125,9.973999112844467e-05,selu,SQU,0.0,7,16,1,rmsprop
+conn-bench-sonar-mines-rocks,smbo_cold_T,"SMBO-Cold, T=100",1924,0.15619999170303345,8.547591580008156,relu,SQU,0.2,3,4,1,rmsprop
+conn-bench-sonar-mines-rocks,smbo_ws_PyMFE_k1_T,"SMBO-Similarity (k=1), T=100",1816,0.15619999170303345,11.71955905999057,relu,SQU,0.0,1,16,1,rmsprop
+conn-bench-sonar-mines-rocks,smbo_ws_PyMFE_k3_T,"SMBO-Similarity (k=3), T=100",1816,0.15619999170303345,8.428238260000944,relu,SQU,0.0,1,16,1,rmsprop
+conn-bench-sonar-mines-rocks,smbo_ws_PyMFE_k5_T,"SMBO-Similarity (k=5), T=100",132,0.21880000829696655,3.124269159999676,leaky_relu,ASC,0.2,7,16,0,adam
+conn-bench-sonar-mines-rocks,smbo_ws_avgrank_T,"SMBO-Independent, T=100",1293,0.15619999170303345,11.489306299993768,relu,ASC,0.2,7,32,1,adam
+conn-bench-sonar-mines-rocks,oraculo,Oráculo (D2V),13,0.125,,leaky_relu,ASC,0.0,3,16,0,rmsprop
+conn-bench-vowel-deterding,padrao,Configuração padrão,1818,0.178600013256073,,relu,SQU,0.0,1,32,0,adam
+conn-bench-vowel-deterding,media,Melhor configuração média,309,0.08039999008178711,,leaky_relu,DES,0.2,3,32,1,adam
+conn-bench-vowel-deterding,rec_k1,Recomendação PyMFE (k=1),37,0.1428999900817871,,leaky_relu,ASC,0.0,5,16,0,rmsprop
+conn-bench-vowel-deterding,rec_k3,Recomendação PyMFE (k=3),37,0.1428999900817871,,leaky_relu,ASC,0.0,5,16,0,rmsprop
+conn-bench-vowel-deterding,rec_k5,Recomendação PyMFE (k=5),37,0.1428999900817871,,leaky_relu,ASC,0.0,5,16,0,rmsprop
+conn-bench-vowel-deterding,random_search_T,"Random Search, T=100",1435,0.01789999008178711,9.902000892907381e-05,relu,DES,0.0,7,32,0,rmsprop
+conn-bench-vowel-deterding,smbo_cold_T,"SMBO-Cold, T=100",282,0.008899986743927002,15.219189999997615,leaky_relu,DES,0.0,7,32,0,adam
+conn-bench-vowel-deterding,smbo_ws_PyMFE_k1_T,"SMBO-Similarity (k=1), T=100",1630,0.008899986743927002,13.966392740001902,relu,ENC,0.0,5,32,1,rmsprop
+conn-bench-vowel-deterding,smbo_ws_PyMFE_k3_T,"SMBO-Similarity (k=3), T=100",1404,0.008899986743927002,12.139065359998494,relu,DES,0.0,5,16,0,adam
+conn-bench-vowel-deterding,smbo_ws_PyMFE_k5_T,"SMBO-Similarity (k=5), T=100",1404,0.008899986743927002,10.866657259990461,relu,DES,0.0,5,16,0,adam
+conn-bench-vowel-deterding,smbo_ws_avgrank_T,"SMBO-Independent, T=100",228,0.01789999008178711,13.671129360003397,leaky_relu,DES,0.0,3,16,0,adam
+conn-bench-vowel-deterding,oraculo,Oráculo (D2V),1410,0.0,,relu,DES,0.0,5,32,0,adam
+connect-4,padrao,Configuração padrão,1818,0.1534000039100647,,relu,SQU,0.0,1,32,0,adam
+connect-4,media,Melhor configuração média,309,0.15640002489089966,,leaky_relu,DES,0.2,3,32,1,adam
+connect-4,rec_k1,Recomendação PyMFE (k=1),3039,0.17640000581741333,,selu,SQU,0.0,7,16,1,adam
+connect-4,rec_k3,Recomendação PyMFE (k=3),3039,0.17640000581741333,,selu,SQU,0.0,7,16,1,adam
+connect-4,rec_k5,Recomendação PyMFE (k=5),3039,0.17640000581741333,,selu,SQU,0.0,7,16,1,adam
+connect-4,random_search_T,"Random Search, T=100",253,0.12470000982284546,0.00010677999816834926,leaky_relu,DES,0.0,5,16,0,rmsprop
+connect-4,smbo_cold_T,"SMBO-Cold, T=100",279,0.11070001125335693,10.430727160000242,leaky_relu,DES,0.0,7,16,1,adam
+connect-4,smbo_ws_PyMFE_k1_T,"SMBO-Similarity (k=1), T=100",1437,0.1119999885559082,2.971309920004569,relu,DES,0.0,7,32,1,adam
+connect-4,smbo_ws_PyMFE_k3_T,"SMBO-Similarity (k=3), T=100",276,0.10979998111724854,3.4729657599935306,leaky_relu,DES,0.0,7,16,0,adam
+connect-4,smbo_ws_PyMFE_k5_T,"SMBO-Similarity (k=5), T=100",276,0.10979998111724854,4.669632919994183,leaky_relu,DES,0.0,7,16,0,adam
+connect-4,smbo_ws_avgrank_T,"SMBO-Independent, T=100",1389,0.11500000953674316,12.649272480001674,relu,DES,0.0,3,32,1,adam
+connect-4,oraculo,Oráculo (D2V),276,0.10979998111724854,,leaky_relu,DES,0.0,7,16,0,adam
+contrac,padrao,Configuração padrão,1818,0.4470999836921692,,relu,SQU,0.0,1,32,0,adam
+contrac,media,Melhor configuração média,309,0.42309999465942383,,leaky_relu,DES,0.2,3,32,1,adam
+contrac,rec_k1,Recomendação PyMFE (k=1),1800,0.5,,relu,SQU,0.0,1,4,0,adam
+contrac,rec_k3,Recomendação PyMFE (k=3),3041,0.46149998903274536,,selu,SQU,0.0,7,16,1,sgd
+contrac,rec_k5,Recomendação PyMFE (k=5),648,0.5096000134944916,,leaky_relu,SQU,0.0,1,4,0,adam
+contrac,random_search_T,"Random Search, T=100",186,0.3654000163078308,0.00010211998596787453,leaky_relu,ASC,0.5,5,32,0,adam
+contrac,smbo_cold_T,"SMBO-Cold, T=100",2683,0.379800021648407,10.416921359999105,selu,DES,0.5,3,32,0,rmsprop
+contrac,smbo_ws_PyMFE_k1_T,"SMBO-Similarity (k=1), T=100",1505,0.39420002698898315,15.157741019991226,relu,DES,0.2,7,16,1,sgd
+contrac,smbo_ws_PyMFE_k3_T,"SMBO-Similarity (k=3), T=100",1711,0.36059999465942383,12.783835340011866,relu,ENC,0.2,7,8,0,rmsprop
+contrac,smbo_ws_PyMFE_k5_T,"SMBO-Similarity (k=5), T=100",1558,0.35579997301101685,7.062522499985062,relu,DES,0.5,5,32,1,rmsprop
+contrac,smbo_ws_avgrank_T,"SMBO-Independent, T=100",790,0.375,8.715062500000931,leaky_relu,SQU,0.2,3,32,1,rmsprop
+contrac,oraculo,Oráculo (D2V),1558,0.35579997301101685,,relu,DES,0.5,5,32,1,rmsprop
+credit-approval,padrao,Configuração padrão,1818,0.1875,,relu,SQU,0.0,1,32,0,adam
+credit-approval,media,Melhor configuração média,309,0.15619999170303345,,leaky_relu,DES,0.2,3,32,1,adam
+credit-approval,rec_k1,Recomendação PyMFE (k=1),2738,0.3228999972343445,,selu,ENC,0.0,3,4,0,sgd
+credit-approval,rec_k3,Recomendação PyMFE (k=3),2738,0.3228999972343445,,selu,ENC,0.0,3,4,0,sgd
+credit-approval,rec_k5,Recomendação PyMFE (k=5),2963,0.21880000829696655,,selu,SQU,0.0,1,8,1,sgd
+credit-approval,random_search_T,"Random Search, T=100",1258,0.125,9.995999280363322e-05,relu,ASC,0.2,5,8,1,rmsprop
+credit-approval,smbo_cold_T,"SMBO-Cold, T=100",2614,0.125,8.675359199987724,selu,DES,0.2,3,32,1,rmsprop
+credit-approval,smbo_ws_PyMFE_k1_T,"SMBO-Similarity (k=1), T=100",383,0.14579999446868896,12.474919699993915,leaky_relu,DES,0.5,3,32,1,sgd
+credit-approval,smbo_ws_PyMFE_k3_T,"SMBO-Similarity (k=3), T=100",548,0.125,12.650688660005107,leaky_relu,ENC,0.2,5,32,0,sgd
+credit-approval,smbo_ws_PyMFE_k5_T,"SMBO-Similarity (k=5), T=100",1439,0.125,10.370420440007,relu,DES,0.0,7,32,1,sgd
+credit-approval,smbo_ws_avgrank_T,"SMBO-Independent, T=100",453,0.125,7.710849240003154,leaky_relu,ENC,0.0,3,32,1,adam
+credit-approval,oraculo,Oráculo (D2V),2149,0.08329999446868896,,relu,SYM,0.0,7,16,0,rmsprop
+cylinder-bands,padrao,Configuração padrão,1818,0.2875000238418579,,relu,SQU,0.0,1,32,0,adam
+cylinder-bands,media,Melhor configuração média,309,0.2875000238418579,,leaky_relu,DES,0.2,3,32,1,adam
+cylinder-bands,rec_k1,Recomendação PyMFE (k=1),2963,0.512499988079071,,selu,SQU,0.0,1,8,1,sgd
+cylinder-bands,rec_k3,Recomendação PyMFE (k=3),2963,0.512499988079071,,selu,SQU,0.0,1,8,1,sgd
+cylinder-bands,rec_k5,Recomendação PyMFE (k=5),2738,0.4624999761581421,,selu,ENC,0.0,3,4,0,sgd
+cylinder-bands,random_search_T,"Random Search, T=100",2578,0.2124999761581421,0.00010089999996125698,selu,DES,0.0,7,8,1,rmsprop
+cylinder-bands,smbo_cold_T,"SMBO-Cold, T=100",451,0.1625000238418579,5.403386239986867,leaky_relu,ENC,0.0,3,32,0,rmsprop
+cylinder-bands,smbo_ws_PyMFE_k1_T,"SMBO-Similarity (k=1), T=100",451,0.1625000238418579,10.281555099994875,leaky_relu,ENC,0.0,3,32,0,rmsprop
+cylinder-bands,smbo_ws_PyMFE_k3_T,"SMBO-Similarity (k=3), T=100",451,0.1625000238418579,11.045410680002533,leaky_relu,ENC,0.0,3,32,0,rmsprop
+cylinder-bands,smbo_ws_PyMFE_k5_T,"SMBO-Similarity (k=5), T=100",2541,0.17500001192092896,12.191687380010261,selu,DES,0.0,3,32,1,adam
+cylinder-bands,smbo_ws_avgrank_T,"SMBO-Independent, T=100",2542,0.17500001192092896,13.432353139994666,selu,DES,0.0,3,32,1,rmsprop
+cylinder-bands,oraculo,Oráculo (D2V),451,0.1625000238418579,,leaky_relu,ENC,0.0,3,32,0,rmsprop
+dermatology,padrao,Configuração padrão,1818,0.031199991703033447,,relu,SQU,0.0,1,32,0,adam
+dermatology,media,Melhor configuração média,309,0.015600025653839111,,leaky_relu,DES,0.2,3,32,1,adam
+dermatology,rec_k1,Recomendação PyMFE (k=1),132,0.031199991703033447,,leaky_relu,ASC,0.2,7,16,0,adam
+dermatology,rec_k3,Recomendação PyMFE (k=3),1246,0.0,,relu,ASC,0.2,3,32,1,rmsprop
+dermatology,rec_k5,Recomendação PyMFE (k=5),2565,0.0,,selu,DES,0.0,5,32,1,adam
+dermatology,random_search_T,"Random Search, T=100",1006,0.0,0.00011418000794947148,leaky_relu,SYM,0.0,7,32,1,rmsprop
+dermatology,smbo_cold_T,"SMBO-Cold, T=100",1051,0.0,0.00023182001896202565,leaky_relu,SYM,0.2,5,32,0,rmsprop
+dermatology,smbo_ws_PyMFE_k1_T,"SMBO-Similarity (k=1), T=100",318,0.0,0.0002512600040063262,leaky_relu,DES,0.2,5,8,0,adam
+dermatology,smbo_ws_PyMFE_k3_T,"SMBO-Similarity (k=3), T=100",1246,0.0,0.00017719999887049197,relu,ASC,0.2,3,32,1,rmsprop
+dermatology,smbo_ws_PyMFE_k5_T,"SMBO-Similarity (k=5), T=100",2565,0.0,0.00017251998651772736,selu,DES,0.0,5,32,1,adam
+dermatology,smbo_ws_avgrank_T,"SMBO-Independent, T=100",1245,0.0,0.00021510000806301832,relu,ASC,0.2,3,32,1,adam
+dermatology,oraculo,Oráculo (D2V),0,0.0,,leaky_relu,ASC,0.0,3,4,0,adam
+echocardiogram,padrao,Configuração padrão,1818,0.25,,relu,SQU,0.0,1,32,0,adam
+echocardiogram,media,Melhor configuração média,309,0.125,,leaky_relu,DES,0.2,3,32,1,adam
+echocardiogram,rec_k1,Recomendação PyMFE (k=1),2963,0.375,,selu,SQU,0.0,1,8,1,sgd
+echocardiogram,rec_k3,Recomendação PyMFE (k=3),2963,0.375,,selu,SQU,0.0,1,8,1,sgd
+echocardiogram,rec_k5,Recomendação PyMFE (k=5),2738,0.375,,selu,ENC,0.0,3,4,0,sgd
+echocardiogram,random_search_T,"Random Search, T=100",1032,0.0625,0.00010327999480068684,leaky_relu,SYM,0.2,5,4,0,adam
+echocardiogram,smbo_cold_T,"SMBO-Cold, T=100",385,0.0625,7.693627880001441,leaky_relu,DES,0.5,5,4,0,rmsprop
+echocardiogram,smbo_ws_PyMFE_k1_T,"SMBO-Similarity (k=1), T=100",652,0.0625,15.151142160012387,leaky_relu,SQU,0.0,1,4,1,rmsprop
+echocardiogram,smbo_ws_PyMFE_k3_T,"SMBO-Similarity (k=3), T=100",1199,0.0625,11.57304082000628,relu,ASC,0.0,5,32,1,sgd
+echocardiogram,smbo_ws_PyMFE_k5_T,"SMBO-Similarity (k=5), T=100",1199,0.0625,10.134671219997108,relu,ASC,0.0,5,32,1,sgd
+echocardiogram,smbo_ws_avgrank_T,"SMBO-Independent, T=100",1534,0.0625,5.097093339986168,relu,DES,0.5,3,32,1,rmsprop
+echocardiogram,oraculo,Oráculo (D2V),14,0.0,,leaky_relu,ASC,0.0,3,16,0,sgd
+ecoli,padrao,Configuração padrão,1818,0.1875,,relu,SQU,0.0,1,32,0,adam
+ecoli,media,Melhor configuração média,309,0.20829999446868896,,leaky_relu,DES,0.2,3,32,1,adam
+ecoli,rec_k1,Recomendação PyMFE (k=1),2791,0.16670000553131104,,selu,ENC,0.0,7,8,0,rmsprop
+ecoli,rec_k3,Recomendação PyMFE (k=3),2791,0.16670000553131104,,selu,ENC,0.0,7,8,0,rmsprop
+ecoli,rec_k5,Recomendação PyMFE (k=5),2791,0.16670000553131104,,selu,ENC,0.0,7,8,0,rmsprop
+ecoli,random_search_T,"Random Search, T=100",658,0.125,9.882000740617514e-05,leaky_relu,SQU,0.0,1,8,1,rmsprop
+ecoli,smbo_cold_T,"SMBO-Cold, T=100",3013,0.125,13.170358380000106,selu,SQU,0.0,5,16,0,rmsprop
+ecoli,smbo_ws_PyMFE_k1_T,"SMBO-Similarity (k=1), T=100",2553,0.125,10.815114139998332,selu,DES,0.0,5,8,1,adam
+ecoli,smbo_ws_PyMFE_k3_T,"SMBO-Similarity (k=3), T=100",2008,0.14579999446868896,9.18252762001939,relu,SQU,0.5,1,16,1,rmsprop
+ecoli,smbo_ws_PyMFE_k5_T,"SMBO-Similarity (k=5), T=100",3280,0.125,6.778827739995904,selu,SYM,0.0,5,16,1,rmsprop
+ecoli,smbo_ws_avgrank_T,"SMBO-Independent, T=100",1534,0.125,8.617065520002507,relu,DES,0.5,3,32,1,rmsprop
+ecoli,oraculo,Oráculo (D2V),81,0.08329999446868896,,leaky_relu,ASC,0.2,3,8,1,adam
+energy-y1,padrao,Configuração padrão,1818,0.10710000991821289,,relu,SQU,0.0,1,32,0,adam
+energy-y1,media,Melhor configuração média,309,0.08929997682571411,,leaky_relu,DES,0.2,3,32,1,adam
+energy-y1,rec_k1,Recomendação PyMFE (k=1),1195,0.09820002317428589,,relu,ASC,0.0,5,32,0,rmsprop
+energy-y1,rec_k3,Recomendação PyMFE (k=3),66,0.03570002317428589,,leaky_relu,ASC,0.0,7,32,0,adam
+energy-y1,rec_k5,Recomendação PyMFE (k=5),1195,0.09820002317428589,,relu,ASC,0.0,5,32,0,rmsprop
+energy-y1,random_search_T,"Random Search, T=100",1404,0.02679997682571411,0.00010132000315934419,relu,DES,0.0,5,16,0,adam
+energy-y1,smbo_cold_T,"SMBO-Cold, T=100",1477,0.01789999008178711,10.507938039978034,relu,DES,0.2,5,16,0,rmsprop
+energy-y1,smbo_ws_PyMFE_k1_T,"SMBO-Similarity (k=1), T=100",1378,0.01789999008178711,11.746180379996076,relu,DES,0.0,3,8,1,rmsprop
+energy-y1,smbo_ws_PyMFE_k3_T,"SMBO-Similarity (k=3), T=100",1378,0.01789999008178711,8.993148420006037,relu,DES,0.0,3,8,1,rmsprop
+energy-y1,smbo_ws_PyMFE_k5_T,"SMBO-Similarity (k=5), T=100",274,0.01789999008178711,5.868980220006779,leaky_relu,DES,0.0,7,8,1,rmsprop
+energy-y1,smbo_ws_avgrank_T,"SMBO-Independent, T=100",268,0.01789999008178711,10.914228620007634,leaky_relu,DES,0.0,7,4,1,rmsprop
+energy-y1,oraculo,Oráculo (D2V),478,0.008899986743927002,,leaky_relu,ENC,0.0,5,32,1,rmsprop
+energy-y2,padrao,Configuração padrão,1818,0.08039999008178711,,relu,SQU,0.0,1,32,0,adam
+energy-y2,media,Melhor configuração média,309,0.04460000991821289,,leaky_relu,DES,0.2,3,32,1,adam
+energy-y2,rec_k1,Recomendação PyMFE (k=1),478,0.09820002317428589,,leaky_relu,ENC,0.0,5,32,1,rmsprop
+energy-y2,rec_k3,Recomendação PyMFE (k=3),478,0.09820002317428589,,leaky_relu,ENC,0.0,5,32,1,rmsprop
+energy-y2,rec_k5,Recomendação PyMFE (k=5),1438,0.04460000991821289,,relu,DES,0.0,7,32,1,rmsprop
+energy-y2,random_search_T,"Random Search, T=100",1638,0.01789999008178711,0.000101200002245605,relu,ENC,0.0,7,8,0,adam
+energy-y2,smbo_cold_T,"SMBO-Cold, T=100",2154,0.01789999008178711,10.216669999994338,relu,SYM,0.0,7,32,0,adam
+energy-y2,smbo_ws_PyMFE_k1_T,"SMBO-Similarity (k=1), T=100",1378,0.01789999008178711,10.992516480013728,relu,DES,0.0,3,8,1,rmsprop
+energy-y2,smbo_ws_PyMFE_k3_T,"SMBO-Similarity (k=3), T=100",1378,0.01789999008178711,7.086183159984648,relu,DES,0.0,3,8,1,rmsprop
+energy-y2,smbo_ws_PyMFE_k5_T,"SMBO-Similarity (k=5), T=100",454,0.03570002317428589,9.337022619997152,leaky_relu,ENC,0.0,3,32,1,rmsprop
+energy-y2,smbo_ws_avgrank_T,"SMBO-Independent, T=100",1386,0.01789999008178711,11.552957279980182,relu,DES,0.0,3,32,0,adam
+energy-y2,oraculo,Oráculo (D2V),66,0.008899986743927002,,leaky_relu,ASC,0.0,7,32,0,adam
+fertility,padrao,Configuração padrão,1818,0.125,,relu,SQU,0.0,1,32,0,adam
+fertility,media,Melhor configuração média,309,0.25,,leaky_relu,DES,0.2,3,32,1,adam
+fertility,rec_k1,Recomendação PyMFE (k=1),1216,0.125,,relu,ASC,0.0,7,16,1,rmsprop
+fertility,rec_k3,Recomendação PyMFE (k=3),1216,0.125,,relu,ASC,0.0,7,16,1,rmsprop
+fertility,rec_k5,Recomendação PyMFE (k=5),1216,0.125,,relu,ASC,0.0,7,16,1,rmsprop
+fertility,random_search_T,"Random Search, T=100",979,0.0625,0.00010112000163644552,leaky_relu,SYM,0.0,5,32,0,rmsprop
+fertility,smbo_cold_T,"SMBO-Cold, T=100",2793,0.0625,3.577584040001966,selu,ENC,0.0,7,8,1,adam
+fertility,smbo_ws_PyMFE_k1_T,"SMBO-Similarity (k=1), T=100",3288,0.0625,2.9254546799929813,selu,SYM,0.0,7,4,0,adam
+fertility,smbo_ws_PyMFE_k3_T,"SMBO-Similarity (k=3), T=100",757,0.0625,2.4098050399916247,leaky_relu,SQU,0.2,1,16,0,rmsprop
+fertility,smbo_ws_PyMFE_k5_T,"SMBO-Similarity (k=5), T=100",2870,0.0625,3.761994599993341,selu,ENC,0.2,7,16,0,sgd
+fertility,smbo_ws_avgrank_T,"SMBO-Independent, T=100",1029,0.0625,0.00029436000622808935,leaky_relu,SYM,0.2,3,32,1,adam
+fertility,oraculo,Oráculo (D2V),61,0.0625,,leaky_relu,ASC,0.0,7,16,0,rmsprop
+flags,padrao,Configuração padrão,1818,0.5,,relu,SQU,0.0,1,32,0,adam
+flags,media,Melhor configuração média,309,0.5,,leaky_relu,DES,0.2,3,32,1,adam
+flags,rec_k1,Recomendação PyMFE (k=1),1193,0.6875,,relu,ASC,0.0,5,16,1,sgd
+flags,rec_k3,Recomendação PyMFE (k=3),1193,0.6875,,relu,ASC,0.0,5,16,1,sgd
+flags,rec_k5,Recomendação PyMFE (k=5),1193,0.6875,,relu,ASC,0.0,5,16,1,sgd
+flags,random_search_T,"Random Search, T=100",1908,0.3125,0.0001012600027024746,relu,SQU,0.2,1,16,0,adam
+flags,smbo_cold_T,"SMBO-Cold, T=100",1909,0.3125,8.414598140004092,relu,SQU,0.2,1,16,0,rmsprop
+flags,smbo_ws_PyMFE_k1_T,"SMBO-Similarity (k=1), T=100",742,0.3125,13.301435000007041,leaky_relu,SQU,0.0,7,32,1,rmsprop
+flags,smbo_ws_PyMFE_k3_T,"SMBO-Similarity (k=3), T=100",735,0.3125,9.698374340008012,leaky_relu,SQU,0.0,7,16,1,adam
+flags,smbo_ws_PyMFE_k5_T,"SMBO-Similarity (k=5), T=100",1632,0.3125,8.886299000005238,relu,ENC,0.0,7,4,0,adam
+flags,smbo_ws_avgrank_T,"SMBO-Independent, T=100",544,0.3125,8.98678240000736,leaky_relu,ENC,0.2,5,16,1,rmsprop
+flags,oraculo,Oráculo (D2V),250,0.25,,leaky_relu,DES,0.0,5,8,1,rmsprop
+glass,padrao,Configuração padrão,1818,0.27079999446868896,,relu,SQU,0.0,1,32,0,adam
+glass,media,Melhor configuração média,309,0.33329999446868896,,leaky_relu,DES,0.2,3,32,1,adam
+glass,rec_k1,Recomendação PyMFE (k=1),943,0.3125,,leaky_relu,SYM,0.0,3,8,0,rmsprop
+glass,rec_k3,Recomendação PyMFE (k=3),2446,0.39579999446868896,,selu,ASC,0.2,7,32,1,rmsprop
+glass,rec_k5,Recomendação PyMFE (k=5),943,0.3125,,leaky_relu,SYM,0.0,3,8,0,rmsprop
+glass,random_search_T,"Random Search, T=100",2848,0.25,9.8840007558465e-05,selu,ENC,0.2,5,16,1,rmsprop
+glass,smbo_cold_T,"SMBO-Cold, T=100",3403,0.25,12.354613219993189,selu,SYM,0.5,3,32,0,rmsprop
+glass,smbo_ws_PyMFE_k1_T,"SMBO-Similarity (k=1), T=100",3250,0.25,9.245811439980752,selu,SYM,0.0,3,8,1,rmsprop
+glass,smbo_ws_PyMFE_k3_T,"SMBO-Similarity (k=3), T=100",2362,0.20829999446868896,7.958072279999032,selu,ASC,0.0,7,8,1,rmsprop
+glass,smbo_ws_PyMFE_k5_T,"SMBO-Similarity (k=5), T=100",244,0.22920000553131104,7.372479800018482,leaky_relu,DES,0.0,5,4,1,rmsprop
+glass,smbo_ws_avgrank_T,"SMBO-Independent, T=100",2523,0.20829999446868896,8.669733979995362,selu,DES,0.0,3,4,1,adam
+glass,oraculo,Oráculo (D2V),2644,0.1875,,selu,DES,0.2,7,4,1,rmsprop
+haberman-survival,padrao,Configuração padrão,1818,0.22920000553131104,,relu,SQU,0.0,1,32,0,adam
+haberman-survival,media,Melhor configuração média,309,0.27079999446868896,,leaky_relu,DES,0.2,3,32,1,adam
+haberman-survival,rec_k1,Recomendação PyMFE (k=1),3371,0.20829999446868896,,selu,SYM,0.2,7,8,1,sgd
+haberman-survival,rec_k3,Recomendação PyMFE (k=3),3371,0.20829999446868896,,selu,SYM,0.2,7,8,1,sgd
+haberman-survival,rec_k5,Recomendação PyMFE (k=5),3371,0.20829999446868896,,selu,SYM,0.2,7,8,1,sgd
+haberman-survival,random_search_T,"Random Search, T=100",654,0.1875,0.00010075999889522791,leaky_relu,SQU,0.0,1,8,0,adam
+haberman-survival,smbo_cold_T,"SMBO-Cold, T=100",2306,0.16670000553131104,3.5021341199986638,selu,ASC,0.0,3,4,0,sgd
+haberman-survival,smbo_ws_PyMFE_k1_T,"SMBO-Similarity (k=1), T=100",851,0.16670000553131104,0.00028943999204784633,leaky_relu,SQU,0.5,1,8,1,sgd
+haberman-survival,smbo_ws_PyMFE_k3_T,"SMBO-Similarity (k=3), T=100",851,0.16670000553131104,0.00035236000549048184,leaky_relu,SQU,0.5,1,8,1,sgd
+haberman-survival,smbo_ws_PyMFE_k5_T,"SMBO-Similarity (k=5), T=100",851,0.16670000553131104,1.4878694199956954,leaky_relu,SQU,0.5,1,8,1,sgd
+haberman-survival,smbo_ws_avgrank_T,"SMBO-Independent, T=100",3396,0.16670000553131104,7.47192760000471,selu,SYM,0.5,3,16,0,adam
+haberman-survival,oraculo,Oráculo (D2V),755,0.16670000553131104,,leaky_relu,SQU,0.2,1,8,1,sgd
+hayes-roth,padrao,Configuração padrão,1818,0.375,,relu,SQU,0.0,1,32,0,adam
+hayes-roth,media,Melhor configuração média,309,0.031199991703033447,,leaky_relu,DES,0.2,3,32,1,adam
+hayes-roth,rec_k1,Recomendação PyMFE (k=1),2230,0.3125,,relu,SYM,0.2,7,32,1,rmsprop
+hayes-roth,rec_k3,Recomendação PyMFE (k=3),2637,0.5,,selu,DES,0.2,5,32,1,adam
+hayes-roth,rec_k5,Recomendação PyMFE (k=5),216,0.28119999170303345,,leaky_relu,DES,0.0,3,4,0,adam
+hayes-roth,random_search_T,"Random Search, T=100",2567,0.0,0.00010092000011354684,selu,DES,0.0,5,32,1,sgd
+hayes-roth,smbo_cold_T,"SMBO-Cold, T=100",1290,0.0,6.339773340011016,relu,ASC,0.2,7,32,0,adam
+hayes-roth,smbo_ws_PyMFE_k1_T,"SMBO-Similarity (k=1), T=100",2626,0.031199991703033447,4.594186539994553,selu,DES,0.2,5,8,1,rmsprop
+hayes-roth,smbo_ws_PyMFE_k3_T,"SMBO-Similarity (k=3), T=100",427,0.031199991703033447,2.96749430000782,leaky_relu,DES,0.5,7,32,0,rmsprop
+hayes-roth,smbo_ws_PyMFE_k5_T,"SMBO-Similarity (k=5), T=100",2614,0.031199991703033447,4.506574140000157,selu,DES,0.2,3,32,1,rmsprop
+hayes-roth,smbo_ws_avgrank_T,"SMBO-Independent, T=100",1029,0.0,0.0001861399970948696,leaky_relu,SYM,0.2,3,32,1,adam
+hayes-roth,oraculo,Oráculo (D2V),35,0.0,,leaky_relu,ASC,0.0,5,8,1,sgd
+heart-cleveland,padrao,Configuração padrão,1818,0.4375,,relu,SQU,0.0,1,32,0,adam
+heart-cleveland,media,Melhor configuração média,309,0.47920000553131104,,leaky_relu,DES,0.2,3,32,1,adam
+heart-cleveland,rec_k1,Recomendação PyMFE (k=1),250,0.45829999446868896,,leaky_relu,DES,0.0,5,8,1,rmsprop
+heart-cleveland,rec_k3,Recomendação PyMFE (k=3),250,0.45829999446868896,,leaky_relu,DES,0.0,5,8,1,rmsprop
+heart-cleveland,rec_k5,Recomendação PyMFE (k=5),250,0.45829999446868896,,leaky_relu,DES,0.0,5,8,1,rmsprop
+heart-cleveland,random_search_T,"Random Search, T=100",1045,0.3125,0.00010673999786376953,leaky_relu,SYM,0.2,5,16,0,rmsprop
+heart-cleveland,smbo_cold_T,"SMBO-Cold, T=100",1915,0.33329999446868896,9.311642179987393,relu,SQU,0.2,1,32,0,rmsprop
+heart-cleveland,smbo_ws_PyMFE_k1_T,"SMBO-Similarity (k=1), T=100",3447,0.3125,13.927419500006362,selu,SYM,0.5,7,16,1,adam
+heart-cleveland,smbo_ws_PyMFE_k3_T,"SMBO-Similarity (k=3), T=100",1801,0.27079999446868896,9.882584619987757,relu,SQU,0.0,1,4,0,rmsprop
+heart-cleveland,smbo_ws_PyMFE_k5_T,"SMBO-Similarity (k=5), T=100",1800,0.25,8.474196919985115,relu,SQU,0.0,1,4,0,adam
+heart-cleveland,smbo_ws_avgrank_T,"SMBO-Independent, T=100",3350,0.27079999446868896,12.13829177999869,selu,SYM,0.2,5,16,0,sgd
+heart-cleveland,oraculo,Oráculo (D2V),648,0.25,,leaky_relu,SQU,0.0,1,4,0,adam
+heart-hungarian,padrao,Configuração padrão,1818,0.125,,relu,SQU,0.0,1,32,0,adam
+heart-hungarian,media,Melhor configuração média,309,0.21880000829696655,,leaky_relu,DES,0.2,3,32,1,adam
+heart-hungarian,rec_k1,Recomendação PyMFE (k=1),2247,0.15619999170303345,,relu,SYM,0.5,3,16,1,adam
+heart-hungarian,rec_k3,Recomendação PyMFE (k=3),1001,0.15619999170303345,,leaky_relu,SYM,0.0,7,16,1,sgd
+heart-hungarian,rec_k5,Recomendação PyMFE (k=5),1096,0.125,,leaky_relu,SYM,0.5,3,16,1,rmsprop
+heart-hungarian,random_search_T,"Random Search, T=100",2699,0.125,9.930001106113195e-05,selu,DES,0.5,5,8,1,sgd
+heart-hungarian,smbo_cold_T,"SMBO-Cold, T=100",383,0.0625,10.826469659991563,leaky_relu,DES,0.5,3,32,1,sgd
+heart-hungarian,smbo_ws_PyMFE_k1_T,"SMBO-Similarity (k=1), T=100",1726,0.09380000829696655,8.466249460005201,relu,ENC,0.2,7,32,1,rmsprop
+heart-hungarian,smbo_ws_PyMFE_k3_T,"SMBO-Similarity (k=3), T=100",2963,0.031199991703033447,7.651365660014562,selu,SQU,0.0,1,8,1,sgd
+heart-hungarian,smbo_ws_PyMFE_k5_T,"SMBO-Similarity (k=5), T=100",2511,0.09380000829696655,9.308207360003143,selu,ASC,0.5,7,16,1,adam
+heart-hungarian,smbo_ws_avgrank_T,"SMBO-Independent, T=100",1534,0.125,11.679849239997566,relu,DES,0.5,3,32,1,rmsprop
+heart-hungarian,oraculo,Oráculo (D2V),2738,0.031199991703033447,,selu,ENC,0.0,3,4,0,sgd
+heart-switzerland,padrao,Configuração padrão,1818,0.6875,,relu,SQU,0.0,1,32,0,adam
+heart-switzerland,media,Melhor configuração média,309,0.5625,,leaky_relu,DES,0.2,3,32,1,adam
+heart-switzerland,rec_k1,Recomendação PyMFE (k=1),2128,0.375,,relu,SYM,0.0,5,16,1,rmsprop
+heart-switzerland,rec_k3,Recomendação PyMFE (k=3),2128,0.375,,relu,SYM,0.0,5,16,1,rmsprop
+heart-switzerland,rec_k5,Recomendação PyMFE (k=5),2128,0.375,,relu,SYM,0.0,5,16,1,rmsprop
+heart-switzerland,random_search_T,"Random Search, T=100",1193,0.1875,0.00010079999919980765,relu,ASC,0.0,5,16,1,sgd
+heart-switzerland,smbo_cold_T,"SMBO-Cold, T=100",1193,0.1875,5.110289679979905,relu,ASC,0.0,5,16,1,sgd
+heart-switzerland,smbo_ws_PyMFE_k1_T,"SMBO-Similarity (k=1), T=100",2152,0.3125,11.741797860013321,relu,SYM,0.0,7,16,1,rmsprop
+heart-switzerland,smbo_ws_PyMFE_k3_T,"SMBO-Similarity (k=3), T=100",2152,0.3125,9.56293095999863,relu,SYM,0.0,7,16,1,rmsprop
+heart-switzerland,smbo_ws_PyMFE_k5_T,"SMBO-Similarity (k=5), T=100",1193,0.1875,6.6768896199995655,relu,ASC,0.0,5,16,1,sgd
+heart-switzerland,smbo_ws_avgrank_T,"SMBO-Independent, T=100",3016,0.3125,15.588225880009123,selu,SQU,0.0,5,16,1,rmsprop
+heart-switzerland,oraculo,Oráculo (D2V),1193,0.1875,,relu,ASC,0.0,5,16,1,sgd
+heart-va,padrao,Configuração padrão,1818,0.6875,,relu,SQU,0.0,1,32,0,adam
+heart-va,media,Melhor configuração média,309,0.729200005531311,,leaky_relu,DES,0.2,3,32,1,adam
+heart-va,rec_k1,Recomendação PyMFE (k=1),1193,0.6875,,relu,ASC,0.0,5,16,1,sgd
+heart-va,rec_k3,Recomendação PyMFE (k=3),1193,0.6875,,relu,ASC,0.0,5,16,1,sgd
+heart-va,rec_k5,Recomendação PyMFE (k=5),1193,0.6875,,relu,ASC,0.0,5,16,1,sgd
+heart-va,random_search_T,"Random Search, T=100",3448,0.541700005531311,0.00010134000331163406,selu,SYM,0.5,7,16,1,rmsprop
+heart-va,smbo_cold_T,"SMBO-Cold, T=100",2440,0.520799994468689,10.95377456001006,selu,ASC,0.2,7,16,1,rmsprop
+heart-va,smbo_ws_PyMFE_k1_T,"SMBO-Similarity (k=1), T=100",1384,0.541700005531311,4.390301420004107,relu,DES,0.0,3,16,1,rmsprop
+heart-va,smbo_ws_PyMFE_k3_T,"SMBO-Similarity (k=3), T=100",1696,0.541700005531311,6.647794779995456,relu,ENC,0.2,5,16,1,rmsprop
+heart-va,smbo_ws_PyMFE_k5_T,"SMBO-Similarity (k=5), T=100",2128,0.4375,6.877432220010087,relu,SYM,0.0,5,16,1,rmsprop
+heart-va,smbo_ws_avgrank_T,"SMBO-Independent, T=100",2855,0.47920000553131104,12.850991060002707,selu,ENC,0.2,5,32,1,sgd
+heart-va,oraculo,Oráculo (D2V),2128,0.4375,,relu,SYM,0.0,5,16,1,rmsprop
+hepatitis,padrao,Configuração padrão,1818,0.21880000829696655,,relu,SQU,0.0,1,32,0,adam
+hepatitis,media,Melhor configuração média,309,0.21880000829696655,,leaky_relu,DES,0.2,3,32,1,adam
+hepatitis,rec_k1,Recomendação PyMFE (k=1),2963,0.40619999170303345,,selu,SQU,0.0,1,8,1,sgd
+hepatitis,rec_k3,Recomendação PyMFE (k=3),2963,0.40619999170303345,,selu,SQU,0.0,1,8,1,sgd
+hepatitis,rec_k5,Recomendação PyMFE (k=5),2738,0.34380000829696655,,selu,ENC,0.0,3,4,0,sgd
+hepatitis,random_search_T,"Random Search, T=100",3100,0.125,0.00010118000209331512,selu,SQU,0.2,5,4,1,rmsprop
+hepatitis,smbo_cold_T,"SMBO-Cold, T=100",3297,0.125,9.460536559997127,selu,SYM,0.0,7,8,1,adam
+hepatitis,smbo_ws_PyMFE_k1_T,"SMBO-Similarity (k=1), T=100",1199,0.09380000829696655,13.452768879989161,relu,ASC,0.0,5,32,1,sgd
+hepatitis,smbo_ws_PyMFE_k3_T,"SMBO-Similarity (k=3), T=100",1001,0.15619999170303345,8.839490899979136,leaky_relu,SYM,0.0,7,16,1,sgd
+hepatitis,smbo_ws_PyMFE_k5_T,"SMBO-Similarity (k=5), T=100",1001,0.15619999170303345,7.792379999998957,leaky_relu,SYM,0.0,7,16,1,sgd
+hepatitis,smbo_ws_avgrank_T,"SMBO-Independent, T=100",2583,0.15619999170303345,7.930026639997959,selu,DES,0.0,7,16,1,adam
+hepatitis,oraculo,Oráculo (D2V),1216,0.0625,,relu,ASC,0.0,7,16,1,rmsprop
+hill-valley,padrao,Configuração padrão,1818,0.5,,relu,SQU,0.0,1,32,0,adam
+hill-valley,media,Melhor configuração média,309,0.4843999743461609,,leaky_relu,DES,0.2,3,32,1,adam
+hill-valley,rec_k1,Recomendação PyMFE (k=1),2589,0.3984000086784363,,selu,DES,0.0,7,32,1,adam
+hill-valley,rec_k3,Recomendação PyMFE (k=3),2589,0.3984000086784363,,selu,DES,0.0,7,32,1,adam
+hill-valley,rec_k5,Recomendação PyMFE (k=5),2589,0.3984000086784363,,selu,DES,0.0,7,32,1,adam
+hill-valley,random_search_T,"Random Search, T=100",694,0.3281000256538391,9.909998625516892e-05,leaky_relu,SQU,0.0,3,32,1,rmsprop
+hill-valley,smbo_cold_T,"SMBO-Cold, T=100",261,0.3281000256538391,10.511353500001132,leaky_relu,DES,0.0,5,32,1,adam
+hill-valley,smbo_ws_PyMFE_k1_T,"SMBO-Similarity (k=1), T=100",3046,0.30470001697540283,9.259688719990663,selu,SQU,0.0,7,32,1,rmsprop
+hill-valley,smbo_ws_PyMFE_k3_T,"SMBO-Similarity (k=3), T=100",3046,0.30470001697540283,12.516333039989695,selu,SQU,0.0,7,32,1,rmsprop
+hill-valley,smbo_ws_PyMFE_k5_T,"SMBO-Similarity (k=5), T=100",2591,0.32029998302459717,11.226188899995758,selu,DES,0.0,7,32,1,sgd
+hill-valley,smbo_ws_avgrank_T,"SMBO-Independent, T=100",2368,0.30470001697540283,18.219416459999046,selu,ASC,0.0,7,16,1,rmsprop
+hill-valley,oraculo,Oráculo (D2V),1845,0.25,,relu,SQU,0.0,3,32,1,adam
+horse-colic,padrao,Configuração padrão,1818,0.10939997434616089,,relu,SQU,0.0,1,32,0,adam
+horse-colic,media,Melhor configuração média,309,0.1406000256538391,,leaky_relu,DES,0.2,3,32,1,adam
+horse-colic,rec_k1,Recomendação PyMFE (k=1),2646,0.10939997434616089,,selu,DES,0.2,7,8,0,adam
+horse-colic,rec_k3,Recomendação PyMFE (k=3),3253,0.1406000256538391,,selu,SYM,0.0,3,16,0,rmsprop
+horse-colic,rec_k5,Recomendação PyMFE (k=5),2655,0.09380000829696655,,selu,DES,0.2,7,16,1,adam
+horse-colic,random_search_T,"Random Search, T=100",1465,0.04689997434616089,0.00010027999524027109,relu,DES,0.2,5,4,0,rmsprop
+horse-colic,smbo_cold_T,"SMBO-Cold, T=100",2422,0.04689997434616089,11.904490760015324,selu,ASC,0.2,5,32,1,rmsprop
+horse-colic,smbo_ws_PyMFE_k1_T,"SMBO-Similarity (k=1), T=100",958,0.04689997434616089,9.71337629999034,leaky_relu,SYM,0.0,3,32,1,rmsprop
+horse-colic,smbo_ws_PyMFE_k3_T,"SMBO-Similarity (k=3), T=100",958,0.04689997434616089,10.230264519993217,leaky_relu,SYM,0.0,3,32,1,rmsprop
+horse-colic,smbo_ws_PyMFE_k5_T,"SMBO-Similarity (k=5), T=100",592,0.04689997434616089,11.605007959995419,leaky_relu,ENC,0.5,3,16,1,rmsprop
+horse-colic,smbo_ws_avgrank_T,"SMBO-Independent, T=100",1908,0.0625,8.592770320014097,relu,SQU,0.2,1,16,0,adam
+horse-colic,oraculo,Oráculo (D2V),2751,0.031199991703033447,,selu,ENC,0.0,3,16,1,adam
+ilpd-indian-liver,padrao,Configuração padrão,1818,0.38749998807907104,,relu,SQU,0.0,1,32,0,adam
+ilpd-indian-liver,media,Melhor configuração média,309,0.3125,,leaky_relu,DES,0.2,3,32,1,adam
+ilpd-indian-liver,rec_k1,Recomendação PyMFE (k=1),2249,0.42500001192092896,,relu,SYM,0.5,3,16,1,sgd
+ilpd-indian-liver,rec_k3,Recomendação PyMFE (k=3),2249,0.42500001192092896,,relu,SYM,0.5,3,16,1,sgd
+ilpd-indian-liver,rec_k5,Recomendação PyMFE (k=5),3371,0.375,,selu,SYM,0.2,7,8,1,sgd
+ilpd-indian-liver,random_search_T,"Random Search, T=100",2231,0.25,0.00010015999432653189,relu,SYM,0.2,7,32,1,sgd
+ilpd-indian-liver,smbo_cold_T,"SMBO-Cold, T=100",2632,0.26249998807907104,8.527467620000243,selu,DES,0.2,5,16,1,rmsprop
+ilpd-indian-liver,smbo_ws_PyMFE_k1_T,"SMBO-Similarity (k=1), T=100",1725,0.25,9.979867180017754,relu,ENC,0.2,7,32,1,adam
+ilpd-indian-liver,smbo_ws_PyMFE_k3_T,"SMBO-Similarity (k=3), T=100",279,0.23750001192092896,10.048633400001563,leaky_relu,DES,0.0,7,16,1,adam
+ilpd-indian-liver,smbo_ws_PyMFE_k5_T,"SMBO-Similarity (k=5), T=100",1503,0.2250000238418579,12.165916480007581,relu,DES,0.2,7,16,1,adam
+ilpd-indian-liver,smbo_ws_avgrank_T,"SMBO-Independent, T=100",1462,0.23750001192092896,9.289629260008223,relu,DES,0.2,3,32,1,rmsprop
+ilpd-indian-liver,oraculo,Oráculo (D2V),2553,0.2124999761581421,,selu,DES,0.0,5,8,1,adam
+image-segmentation,padrao,Configuração padrão,1818,0.1875,,relu,SQU,0.0,1,32,0,adam
+image-segmentation,media,Melhor configuração média,309,0.10420000553131104,,leaky_relu,DES,0.2,3,32,1,adam
+image-segmentation,rec_k1,Recomendação PyMFE (k=1),25,0.25,,leaky_relu,ASC,0.0,5,4,0,rmsprop
+image-segmentation,rec_k3,Recomendação PyMFE (k=3),25,0.25,,leaky_relu,ASC,0.0,5,4,0,rmsprop
+image-segmentation,rec_k5,Recomendação PyMFE (k=5),25,0.25,,leaky_relu,ASC,0.0,5,4,0,rmsprop
+image-segmentation,random_search_T,"Random Search, T=100",972,0.0625,0.00010068002156913281,leaky_relu,SYM,0.0,5,16,0,adam
+image-segmentation,smbo_cold_T,"SMBO-Cold, T=100",1005,0.08329999446868896,12.360217060009017,leaky_relu,SYM,0.0,7,32,1,adam
+image-segmentation,smbo_ws_PyMFE_k1_T,"SMBO-Similarity (k=1), T=100",238,0.041700005531311035,10.520164560014383,leaky_relu,DES,0.0,3,32,1,rmsprop
+image-segmentation,smbo_ws_PyMFE_k3_T,"SMBO-Similarity (k=3), T=100",1602,0.08329999446868896,11.145122919999995,relu,ENC,0.0,3,32,0,adam
+image-segmentation,smbo_ws_PyMFE_k5_T,"SMBO-Similarity (k=5), T=100",1866,0.041700005531311035,7.338674300001003,relu,SQU,0.0,5,32,0,adam
+image-segmentation,smbo_ws_avgrank_T,"SMBO-Independent, T=100",438,0.0625,5.934484320017509,leaky_relu,ENC,0.0,3,8,0,adam
+image-segmentation,oraculo,Oráculo (D2V),238,0.041700005531311035,,leaky_relu,DES,0.0,3,32,1,rmsprop
+ionosphere,padrao,Configuração padrão,1818,0.10420000553131104,,relu,SQU,0.0,1,32,0,adam
+ionosphere,media,Melhor configuração média,309,0.08329999446868896,,leaky_relu,DES,0.2,3,32,1,adam
+ionosphere,rec_k1,Recomendação PyMFE (k=1),2752,0.0625,,selu,ENC,0.0,3,16,1,rmsprop
+ionosphere,rec_k3,Recomendação PyMFE (k=3),2752,0.0625,,selu,ENC,0.0,3,16,1,rmsprop
+ionosphere,rec_k5,Recomendação PyMFE (k=5),2751,0.0625,,selu,ENC,0.0,3,16,1,adam
+ionosphere,random_search_T,"Random Search, T=100",2709,0.0625,9.882000740617514e-05,selu,DES,0.5,5,32,1,adam
+ionosphere,smbo_cold_T,"SMBO-Cold, T=100",3045,0.0625,5.471452899998985,selu,SQU,0.0,7,32,1,adam
+ionosphere,smbo_ws_PyMFE_k1_T,"SMBO-Similarity (k=1), T=100",958,0.041700005531311035,1.6054358599940315,leaky_relu,SYM,0.0,3,32,1,rmsprop
+ionosphere,smbo_ws_PyMFE_k3_T,"SMBO-Similarity (k=3), T=100",958,0.041700005531311035,4.310663840011694,leaky_relu,SYM,0.0,3,32,1,rmsprop
+ionosphere,smbo_ws_PyMFE_k5_T,"SMBO-Similarity (k=5), T=100",3253,0.041700005531311035,5.173357379995286,selu,SYM,0.0,3,16,0,rmsprop
+ionosphere,smbo_ws_avgrank_T,"SMBO-Independent, T=100",2178,0.041700005531311035,0.2217602200107649,relu,SYM,0.2,3,32,0,adam
+ionosphere,oraculo,Oráculo (D2V),43,0.041700005531311035,,leaky_relu,ASC,0.0,5,32,0,rmsprop
+iris,padrao,Configuração padrão,1818,0.0625,,relu,SQU,0.0,1,32,0,adam
+iris,media,Melhor configuração média,309,0.031199991703033447,,leaky_relu,DES,0.2,3,32,1,adam
+iris,rec_k1,Recomendação PyMFE (k=1),3067,0.031199991703033447,,selu,SQU,0.2,1,32,0,rmsprop
+iris,rec_k3,Recomendação PyMFE (k=3),1182,0.0,,relu,ASC,0.0,5,8,0,adam
+iris,rec_k5,Recomendação PyMFE (k=5),2771,0.1875,,selu,ENC,0.0,5,8,1,sgd
+iris,random_search_T,"Random Search, T=100",2747,0.0,0.00010108000133186578,selu,ENC,0.0,3,8,1,sgd
+iris,smbo_cold_T,"SMBO-Cold, T=100",3,0.0,0.4233352799899876,leaky_relu,ASC,0.0,3,4,1,adam
+iris,smbo_ws_PyMFE_k1_T,"SMBO-Similarity (k=1), T=100",1182,0.0,0.00022440000902861356,relu,ASC,0.0,5,8,0,adam
+iris,smbo_ws_PyMFE_k3_T,"SMBO-Similarity (k=3), T=100",1182,0.0,0.00019811999518424273,relu,ASC,0.0,5,8,0,adam
+iris,smbo_ws_PyMFE_k5_T,"SMBO-Similarity (k=5), T=100",2356,0.0,0.0001892200205475092,selu,ASC,0.0,7,4,1,rmsprop
+iris,smbo_ws_avgrank_T,"SMBO-Independent, T=100",525,0.0,0.00018766000866889953,leaky_relu,ENC,0.2,3,32,1,adam
+iris,oraculo,Oráculo (D2V),0,0.0,,leaky_relu,ASC,0.0,3,4,0,adam
+led-display,padrao,Configuração padrão,1818,0.3500000238418579,,relu,SQU,0.0,1,32,0,adam
+led-display,media,Melhor configuração média,309,0.3374999761581421,,leaky_relu,DES,0.2,3,32,1,adam
+led-display,rec_k1,Recomendação PyMFE (k=1),2014,0.3374999761581421,,relu,SQU,0.5,1,32,1,rmsprop
+led-display,rec_k3,Recomendação PyMFE (k=3),2013,0.3374999761581421,,relu,SQU,0.5,1,32,1,adam
+led-display,rec_k5,Recomendação PyMFE (k=5),2014,0.3374999761581421,,relu,SQU,0.5,1,32,1,rmsprop
+led-display,random_search_T,"Random Search, T=100",376,0.3125,0.00010132000315934419,leaky_relu,DES,0.5,3,16,1,rmsprop
+led-display,smbo_cold_T,"SMBO-Cold, T=100",376,0.3125,16.729962880001402,leaky_relu,DES,0.5,3,16,1,rmsprop
+led-display,smbo_ws_PyMFE_k1_T,"SMBO-Similarity (k=1), T=100",2636,0.32499998807907104,11.14009509999305,selu,DES,0.2,5,32,0,sgd
+led-display,smbo_ws_PyMFE_k3_T,"SMBO-Similarity (k=3), T=100",1666,0.3125,8.459551199991257,relu,ENC,0.2,3,8,1,rmsprop
+led-display,smbo_ws_PyMFE_k5_T,"SMBO-Similarity (k=5), T=100",160,0.3187999725341797,9.963896680017934,leaky_relu,ASC,0.5,3,16,1,rmsprop
+led-display,smbo_ws_avgrank_T,"SMBO-Independent, T=100",378,0.32499998807907104,8.6787968599936,leaky_relu,DES,0.5,3,32,0,adam
+led-display,oraculo,Oráculo (D2V),804,0.30000001192092896,,leaky_relu,SQU,0.2,5,16,0,adam
+lenses,padrao,Configuração padrão,1818,0.5,,relu,SQU,0.0,1,32,0,adam
+lenses,media,Melhor configuração média,309,0.25,,leaky_relu,DES,0.2,3,32,1,adam
+lenses,rec_k1,Recomendação PyMFE (k=1),678,0.5,,leaky_relu,SQU,0.0,3,8,0,adam
+lenses,rec_k3,Recomendação PyMFE (k=3),489,0.5,,leaky_relu,ENC,0.0,7,8,1,adam
+lenses,rec_k5,Recomendação PyMFE (k=5),1065,0.5,,leaky_relu,SYM,0.2,7,8,1,adam
+lenses,random_search_T,"Random Search, T=100",2412,0.0,9.878000710159541e-05,selu,ASC,0.2,5,16,0,adam
+lenses,smbo_cold_T,"SMBO-Cold, T=100",2877,0.0,0.00021641999483108522,selu,ENC,0.2,7,32,1,adam
+lenses,smbo_ws_PyMFE_k1_T,"SMBO-Similarity (k=1), T=100",447,0.0,0.30955632000695915,leaky_relu,ENC,0.0,3,16,1,adam
+lenses,smbo_ws_PyMFE_k3_T,"SMBO-Similarity (k=3), T=100",3307,0.0,0.00021703999955207108,selu,SYM,0.0,7,32,0,rmsprop
+lenses,smbo_ws_PyMFE_k5_T,"SMBO-Similarity (k=5), T=100",2380,0.0,0.00021712000016123057,selu,ASC,0.2,3,4,1,rmsprop
+lenses,smbo_ws_avgrank_T,"SMBO-Independent, T=100",1458,0.0,0.00018983997870236635,relu,DES,0.2,3,32,0,adam
+lenses,oraculo,Oráculo (D2V),18,0.0,,leaky_relu,ASC,0.0,3,32,0,adam
+letter,padrao,Configuração padrão,1818,0.11159998178482056,,relu,SQU,0.0,1,32,0,adam
+letter,media,Melhor configuração média,309,0.09820002317428589,,leaky_relu,DES,0.2,3,32,1,adam
+letter,rec_k1,Recomendação PyMFE (k=1),2585,0.06019997596740723,,selu,DES,0.0,7,16,1,sgd
+letter,rec_k3,Recomendação PyMFE (k=3),2585,0.06019997596740723,,selu,DES,0.0,7,16,1,sgd
+letter,rec_k5,Recomendação PyMFE (k=5),2585,0.06019997596740723,,selu,DES,0.0,7,16,1,sgd
+letter,random_search_T,"Random Search, T=100",1407,0.03659999370574951,0.00010301999282091856,relu,DES,0.0,5,16,1,adam
+letter,smbo_cold_T,"SMBO-Cold, T=100",1431,0.0307999849319458,10.049807540001348,relu,DES,0.0,7,16,1,adam
+letter,smbo_ws_PyMFE_k1_T,"SMBO-Similarity (k=1), T=100",1438,0.027199983596801758,0.00016445999499410392,relu,DES,0.0,7,32,1,rmsprop
+letter,smbo_ws_PyMFE_k3_T,"SMBO-Similarity (k=3), T=100",1438,0.027199983596801758,1.808469140017405,relu,DES,0.0,7,32,1,rmsprop
+letter,smbo_ws_PyMFE_k5_T,"SMBO-Similarity (k=5), T=100",287,0.033699989318847656,7.353123799990863,leaky_relu,DES,0.0,7,32,1,sgd
+letter,smbo_ws_avgrank_T,"SMBO-Independent, T=100",1506,0.039900004863739014,12.0562236599857,relu,DES,0.2,7,32,0,adam
+letter,oraculo,Oráculo (D2V),1438,0.027199983596801758,,relu,DES,0.0,7,32,1,rmsprop
+libras,padrao,Configuração padrão,1818,0.3125,,relu,SQU,0.0,1,32,0,adam
+libras,media,Melhor configuração média,309,0.33329999446868896,,leaky_relu,DES,0.2,3,32,1,adam
+libras,rec_k1,Recomendação PyMFE (k=1),3043,0.20829999446868896,,selu,SQU,0.0,7,32,0,rmsprop
+libras,rec_k3,Recomendação PyMFE (k=3),1410,0.22920000553131104,,relu,DES,0.0,5,32,0,adam
+libras,rec_k5,Recomendação PyMFE (k=5),3043,0.20829999446868896,,selu,SQU,0.0,7,32,0,rmsprop
+libras,random_search_T,"Random Search, T=100",2527,0.1875,9.878000710159541e-05,selu,DES,0.0,3,8,0,rmsprop
+libras,smbo_cold_T,"SMBO-Cold, T=100",1168,0.20829999446868896,14.804655220010318,relu,ASC,0.0,3,16,1,rmsprop
+libras,smbo_ws_PyMFE_k1_T,"SMBO-Similarity (k=1), T=100",3043,0.20829999446868896,10.445943080005236,selu,SQU,0.0,7,32,0,rmsprop
+libras,smbo_ws_PyMFE_k3_T,"SMBO-Similarity (k=3), T=100",3043,0.20829999446868896,14.798622820014135,selu,SQU,0.0,7,32,0,rmsprop
+libras,smbo_ws_PyMFE_k5_T,"SMBO-Similarity (k=5), T=100",3043,0.20829999446868896,7.937325140018947,selu,SQU,0.0,7,32,0,rmsprop
+libras,smbo_ws_avgrank_T,"SMBO-Independent, T=100",1212,0.14579999446868896,10.156527000013739,relu,ASC,0.0,7,16,0,adam
+libras,oraculo,Oráculo (D2V),37,0.14579999446868896,,leaky_relu,ASC,0.0,5,16,0,rmsprop
+low-res-spect,padrao,Configuração padrão,1818,0.0625,,relu,SQU,0.0,1,32,0,adam
+low-res-spect,media,Melhor configuração média,309,0.11250001192092896,,leaky_relu,DES,0.2,3,32,1,adam
+low-res-spect,rec_k1,Recomendação PyMFE (k=1),268,0.10000002384185791,,leaky_relu,DES,0.0,7,4,1,rmsprop
+low-res-spect,rec_k3,Recomendação PyMFE (k=3),2585,0.125,,selu,DES,0.0,7,16,1,sgd
+low-res-spect,rec_k5,Recomendação PyMFE (k=5),2585,0.125,,selu,DES,0.0,7,16,1,sgd
+low-res-spect,random_search_T,"Random Search, T=100",2746,0.050000011920928955,0.0001033599954098463,selu,ENC,0.0,3,8,1,rmsprop
+low-res-spect,smbo_cold_T,"SMBO-Cold, T=100",1318,0.050000011920928955,9.643213620013558,relu,ASC,0.5,3,32,1,rmsprop
+low-res-spect,smbo_ws_PyMFE_k1_T,"SMBO-Similarity (k=1), T=100",451,0.050000011920928955,12.68883648000192,leaky_relu,ENC,0.0,3,32,0,rmsprop
+low-res-spect,smbo_ws_PyMFE_k3_T,"SMBO-Similarity (k=3), T=100",19,0.0625,10.371093820012174,leaky_relu,ASC,0.0,3,32,0,rmsprop
+low-res-spect,smbo_ws_PyMFE_k5_T,"SMBO-Similarity (k=5), T=100",670,0.050000011920928955,8.317469300003722,leaky_relu,SQU,0.0,1,32,1,rmsprop
+low-res-spect,smbo_ws_avgrank_T,"SMBO-Independent, T=100",2757,0.050000011920928955,5.771670980006457,selu,ENC,0.0,3,32,1,adam
+low-res-spect,oraculo,Oráculo (D2V),453,0.02499997615814209,,leaky_relu,ENC,0.0,3,32,1,adam
+lung-cancer,padrao,Configuração padrão,1818,0.0,,relu,SQU,0.0,1,32,0,adam
+lung-cancer,media,Melhor configuração média,309,0.5,,leaky_relu,DES,0.2,3,32,1,adam
+lung-cancer,rec_k1,Recomendação PyMFE (k=1),2627,1.0,,selu,DES,0.2,5,8,1,sgd
+lung-cancer,rec_k3,Recomendação PyMFE (k=3),2627,1.0,,selu,DES,0.2,5,8,1,sgd
+lung-cancer,rec_k5,Recomendação PyMFE (k=5),0,0.25,,leaky_relu,ASC,0.0,3,4,0,adam
+lung-cancer,random_search_T,"Random Search, T=100",2652,0.0,9.954001288861036e-05,selu,DES,0.2,7,16,0,adam
+lung-cancer,smbo_cold_T,"SMBO-Cold, T=100",3358,0.0,0.00017687999643385411,selu,SYM,0.2,5,32,1,rmsprop
+lung-cancer,smbo_ws_PyMFE_k1_T,"SMBO-Similarity (k=1), T=100",3406,0.0,2.4940487999934704,selu,SYM,0.5,3,32,1,rmsprop
+lung-cancer,smbo_ws_PyMFE_k3_T,"SMBO-Similarity (k=3), T=100",93,0.0,0.00015324000269174577,leaky_relu,ASC,0.2,3,32,1,adam
+lung-cancer,smbo_ws_PyMFE_k5_T,"SMBO-Similarity (k=5), T=100",1053,0.0,0.00018799998797476293,leaky_relu,SYM,0.2,5,32,1,adam
+lung-cancer,smbo_ws_avgrank_T,"SMBO-Independent, T=100",1245,0.0,0.0002359400037676096,relu,ASC,0.2,3,32,1,adam
+lung-cancer,oraculo,Oráculo (D2V),9,0.0,,leaky_relu,ASC,0.0,3,8,1,adam
+lymphography,padrao,Configuração padrão,1818,0.375,,relu,SQU,0.0,1,32,0,adam
+lymphography,media,Melhor configuração média,309,0.1875,,leaky_relu,DES,0.2,3,32,1,adam
+lymphography,rec_k1,Recomendação PyMFE (k=1),648,0.5625,,leaky_relu,SQU,0.0,1,4,0,adam
+lymphography,rec_k3,Recomendação PyMFE (k=3),648,0.5625,,leaky_relu,SQU,0.0,1,4,0,adam
+lymphography,rec_k5,Recomendação PyMFE (k=5),1800,0.5625,,relu,SQU,0.0,1,4,0,adam
+lymphography,random_search_T,"Random Search, T=100",1458,0.125,0.00010075999889522791,relu,DES,0.2,3,32,0,adam
+lymphography,smbo_cold_T,"SMBO-Cold, T=100",243,0.0625,8.729463819996454,leaky_relu,DES,0.0,5,4,1,adam
+lymphography,smbo_ws_PyMFE_k1_T,"SMBO-Similarity (k=1), T=100",496,0.0625,13.233228199998848,leaky_relu,ENC,0.0,7,16,1,rmsprop
+lymphography,smbo_ws_PyMFE_k3_T,"SMBO-Similarity (k=3), T=100",454,0.125,9.133205299987457,leaky_relu,ENC,0.0,3,32,1,rmsprop
+lymphography,smbo_ws_PyMFE_k5_T,"SMBO-Similarity (k=5), T=100",1168,0.0,5.707659760001116,relu,ASC,0.0,3,16,1,rmsprop
+lymphography,smbo_ws_avgrank_T,"SMBO-Independent, T=100",228,0.125,10.645000540022739,leaky_relu,DES,0.0,3,16,0,adam
+lymphography,oraculo,Oráculo (D2V),16,0.0,,leaky_relu,ASC,0.0,3,16,1,rmsprop
+magic,padrao,Configuração padrão,1818,0.13580000400543213,,relu,SQU,0.0,1,32,0,adam
+magic,media,Melhor configuração média,309,0.12360000610351562,,leaky_relu,DES,0.2,3,32,1,adam
+magic,rec_k1,Recomendação PyMFE (k=1),372,0.13859999179840088,,leaky_relu,DES,0.5,3,16,0,adam
+magic,rec_k3,Recomendação PyMFE (k=3),372,0.13859999179840088,,leaky_relu,DES,0.5,3,16,0,adam
+magic,rec_k5,Recomendação PyMFE (k=5),372,0.13859999179840088,,leaky_relu,DES,0.5,3,16,0,adam
+magic,random_search_T,"Random Search, T=100",1510,0.1226000189781189,9.929998777806759e-05,relu,DES,0.2,7,32,1,rmsprop
+magic,smbo_cold_T,"SMBO-Cold, T=100",277,0.11559998989105225,16.328348260000347,leaky_relu,DES,0.0,7,16,0,rmsprop
+magic,smbo_ws_PyMFE_k1_T,"SMBO-Similarity (k=1), T=100",3022,0.12360000610351562,10.733960539987311,selu,SQU,0.0,5,32,1,rmsprop
+magic,smbo_ws_PyMFE_k3_T,"SMBO-Similarity (k=3), T=100",259,0.11769998073577881,20.915023040003142,leaky_relu,DES,0.0,5,32,0,rmsprop
+magic,smbo_ws_PyMFE_k5_T,"SMBO-Similarity (k=5), T=100",238,0.11979997158050537,11.440512520004996,leaky_relu,DES,0.0,3,32,1,rmsprop
+magic,smbo_ws_avgrank_T,"SMBO-Independent, T=100",234,0.11659997701644897,13.687588619999588,leaky_relu,DES,0.0,3,32,0,adam
+magic,oraculo,Oráculo (D2V),277,0.11559998989105225,,leaky_relu,DES,0.0,7,16,0,rmsprop
+mammographic,padrao,Configuração padrão,1818,0.15969997644424438,,relu,SQU,0.0,1,32,0,adam
+mammographic,media,Melhor configuração média,309,0.14579999446868896,,leaky_relu,DES,0.2,3,32,1,adam
+mammographic,rec_k1,Recomendação PyMFE (k=1),451,0.15969997644424438,,leaky_relu,ENC,0.0,3,32,0,rmsprop
+mammographic,rec_k3,Recomendação PyMFE (k=3),1003,0.17360001802444458,,leaky_relu,SYM,0.0,7,32,0,rmsprop
+mammographic,rec_k5,Recomendação PyMFE (k=5),1003,0.17360001802444458,,leaky_relu,SYM,0.0,7,32,0,rmsprop
+mammographic,random_search_T,"Random Search, T=100",2223,0.11809998750686646,0.00010369999799877405,relu,SYM,0.2,7,16,1,adam
+mammographic,smbo_cold_T,"SMBO-Cold, T=100",1815,0.11809998750686646,8.560628339997493,relu,SQU,0.0,1,16,1,adam
+mammographic,smbo_ws_PyMFE_k1_T,"SMBO-Similarity (k=1), T=100",1683,0.10420000553131104,11.124365999992005,relu,ENC,0.2,5,4,1,adam
+mammographic,smbo_ws_PyMFE_k3_T,"SMBO-Similarity (k=3), T=100",2528,0.11809998750686646,10.960353640001268,selu,DES,0.0,3,8,0,sgd
+mammographic,smbo_ws_PyMFE_k5_T,"SMBO-Similarity (k=5), T=100",1537,0.125,7.693166880006902,relu,DES,0.5,5,4,0,rmsprop
+mammographic,smbo_ws_avgrank_T,"SMBO-Independent, T=100",1737,0.11809998750686646,10.032694600010291,relu,ENC,0.5,3,8,1,adam
+mammographic,oraculo,Oráculo (D2V),1683,0.10420000553131104,,relu,ENC,0.2,5,4,1,adam
+miniboone,padrao,Configuração padrão,1818,0.06610000133514404,,relu,SQU,0.0,1,32,0,adam
+miniboone,media,Melhor configuração média,309,0.0756000280380249,,leaky_relu,DES,0.2,3,32,1,adam
+miniboone,rec_k1,Recomendação PyMFE (k=1),277,0.07249999046325684,,leaky_relu,DES,0.0,7,16,0,rmsprop
+miniboone,rec_k3,Recomendação PyMFE (k=3),277,0.07249999046325684,,leaky_relu,DES,0.0,7,16,0,rmsprop
+miniboone,rec_k5,Recomendação PyMFE (k=5),277,0.07249999046325684,,leaky_relu,DES,0.0,7,16,0,rmsprop
+miniboone,random_search_T,"Random Search, T=100",228,0.06190001964569092,9.889998473227024e-05,leaky_relu,DES,0.0,3,16,0,adam
+miniboone,smbo_cold_T,"SMBO-Cold, T=100",2538,0.060800015926361084,13.876749720005318,selu,DES,0.0,3,32,0,adam
+miniboone,smbo_ws_PyMFE_k1_T,"SMBO-Similarity (k=1), T=100",270,0.06069999933242798,12.568920099991374,leaky_relu,DES,0.0,7,8,0,adam
+miniboone,smbo_ws_PyMFE_k3_T,"SMBO-Similarity (k=3), T=100",234,0.060800015926361084,15.699376039998606,leaky_relu,DES,0.0,3,32,0,adam
+miniboone,smbo_ws_PyMFE_k5_T,"SMBO-Similarity (k=5), T=100",234,0.060800015926361084,10.640031199995429,leaky_relu,DES,0.0,3,32,0,adam
+miniboone,smbo_ws_avgrank_T,"SMBO-Independent, T=100",246,0.06069999933242798,16.950076620001347,leaky_relu,DES,0.0,5,8,0,adam
+miniboone,oraculo,Oráculo (D2V),2349,0.06029999256134033,,selu,ASC,0.0,5,32,1,adam
+molec-biol-promoter,padrao,Configuração padrão,1818,0.4375,,relu,SQU,0.0,1,32,0,adam
+molec-biol-promoter,media,Melhor configuração média,309,0.3125,,leaky_relu,DES,0.2,3,32,1,adam
+molec-biol-promoter,rec_k1,Recomendação PyMFE (k=1),13,0.4375,,leaky_relu,ASC,0.0,3,16,0,rmsprop
+molec-biol-promoter,rec_k3,Recomendação PyMFE (k=3),3039,0.5,,selu,SQU,0.0,7,16,1,adam
+molec-biol-promoter,rec_k5,Recomendação PyMFE (k=5),82,0.5,,leaky_relu,ASC,0.2,3,8,1,rmsprop
+molec-biol-promoter,random_search_T,"Random Search, T=100",1813,0.1875,0.00012624000664800404,relu,SQU,0.0,1,16,0,rmsprop
+molec-biol-promoter,smbo_cold_T,"SMBO-Cold, T=100",669,0.1875,9.204394280002452,leaky_relu,SQU,0.0,1,32,1,adam
+molec-biol-promoter,smbo_ws_PyMFE_k1_T,"SMBO-Similarity (k=1), T=100",1821,0.1875,12.591257159993983,relu,SQU,0.0,1,32,1,adam
+molec-biol-promoter,smbo_ws_PyMFE_k3_T,"SMBO-Similarity (k=3), T=100",2698,0.1875,8.462574080005288,selu,DES,0.5,5,8,1,rmsprop
+molec-biol-promoter,smbo_ws_PyMFE_k5_T,"SMBO-Similarity (k=5), T=100",1,0.1875,7.9845824199961495,leaky_relu,ASC,0.0,3,4,0,rmsprop
+molec-biol-promoter,smbo_ws_avgrank_T,"SMBO-Independent, T=100",690,0.1875,7.961287900013849,leaky_relu,SQU,0.0,3,32,0,adam
+molec-biol-promoter,oraculo,Oráculo (D2V),0,0.0625,,leaky_relu,ASC,0.0,3,4,0,adam
+molec-biol-splice,padrao,Configuração padrão,1818,0.14579999446868896,,relu,SQU,0.0,1,32,0,adam
+molec-biol-splice,media,Melhor configuração média,309,0.125,,leaky_relu,DES,0.2,3,32,1,adam
+molec-biol-splice,rec_k1,Recomendação PyMFE (k=1),3283,0.16670000553131104,,selu,SYM,0.0,5,32,0,rmsprop
+molec-biol-splice,rec_k3,Recomendação PyMFE (k=3),3283,0.16670000553131104,,selu,SYM,0.0,5,32,0,rmsprop
+molec-biol-splice,rec_k5,Recomendação PyMFE (k=5),2562,0.125,,selu,DES,0.0,5,32,0,adam
+molec-biol-splice,random_search_T,"Random Search, T=100",283,0.10210001468658447,0.00010327999480068684,leaky_relu,DES,0.0,7,32,0,rmsprop
+molec-biol-splice,smbo_cold_T,"SMBO-Cold, T=100",2611,0.09380000829696655,11.95970260000322,selu,DES,0.2,3,32,0,rmsprop
+molec-biol-splice,smbo_ws_PyMFE_k1_T,"SMBO-Similarity (k=1), T=100",2611,0.09380000829696655,5.817424799990841,selu,DES,0.2,3,32,0,rmsprop
+molec-biol-splice,smbo_ws_PyMFE_k3_T,"SMBO-Similarity (k=3), T=100",2611,0.09380000829696655,11.840965700009837,selu,DES,0.2,3,32,0,rmsprop
+molec-biol-splice,smbo_ws_PyMFE_k5_T,"SMBO-Similarity (k=5), T=100",2826,0.10000002384185791,11.894490379979834,selu,ENC,0.2,3,32,0,adam
+molec-biol-splice,smbo_ws_avgrank_T,"SMBO-Independent, T=100",1026,0.10000002384185791,15.587826419994235,leaky_relu,SYM,0.2,3,32,0,adam
+molec-biol-splice,oraculo,Oráculo (D2V),2611,0.09380000829696655,,selu,DES,0.2,3,32,0,rmsprop
+monks-1,padrao,Configuração padrão,1818,0.4375,,relu,SQU,0.0,1,32,0,adam
+monks-1,media,Melhor configuração média,309,0.28119999170303345,,leaky_relu,DES,0.2,3,32,1,adam
+monks-1,rec_k1,Recomendação PyMFE (k=1),1674,0.375,,relu,ENC,0.2,3,32,0,adam
+monks-1,rec_k3,Recomendação PyMFE (k=3),2754,0.3125,,selu,ENC,0.0,3,32,0,adam
+monks-1,rec_k5,Recomendação PyMFE (k=5),1603,0.3125,,relu,ENC,0.0,3,32,0,rmsprop
+monks-1,random_search_T,"Random Search, T=100",2802,0.031199991703033447,9.995999280363322e-05,selu,ENC,0.0,7,32,0,adam
+monks-1,smbo_cold_T,"SMBO-Cold, T=100",2346,0.0625,6.995985440001823,selu,ASC,0.0,5,32,0,adam
+monks-1,smbo_ws_PyMFE_k1_T,"SMBO-Similarity (k=1), T=100",3307,0.031199991703033447,3.4643295999849215,selu,SYM,0.0,7,32,0,rmsprop
+monks-1,smbo_ws_PyMFE_k3_T,"SMBO-Similarity (k=3), T=100",2575,0.031199991703033447,5.818996859993786,selu,DES,0.0,7,8,0,rmsprop
+monks-1,smbo_ws_PyMFE_k5_T,"SMBO-Similarity (k=5), T=100",259,0.0625,4.523517460003495,leaky_relu,DES,0.0,5,32,0,rmsprop
+monks-1,smbo_ws_avgrank_T,"SMBO-Independent, T=100",2575,0.031199991703033447,9.728184439986943,selu,DES,0.0,7,8,0,rmsprop
+monks-1,oraculo,Oráculo (D2V),355,0.031199991703033447,,leaky_relu,DES,0.2,7,32,0,rmsprop
+monks-2,padrao,Configuração padrão,1818,0.375,,relu,SQU,0.0,1,32,0,adam
+monks-2,media,Melhor configuração média,309,0.1875,,leaky_relu,DES,0.2,3,32,1,adam
+monks-2,rec_k1,Recomendação PyMFE (k=1),2634,0.25,,selu,DES,0.2,5,32,0,adam
+monks-2,rec_k3,Recomendação PyMFE (k=3),2347,0.375,,selu,ASC,0.0,5,32,0,rmsprop
+monks-2,rec_k5,Recomendação PyMFE (k=5),2581,0.25,,selu,DES,0.0,7,16,0,rmsprop
+monks-2,random_search_T,"Random Search, T=100",283,0.031199991703033447,0.00010116000194102526,leaky_relu,DES,0.0,7,32,0,rmsprop
+monks-2,smbo_cold_T,"SMBO-Cold, T=100",42,0.0,3.2737972600152716,leaky_relu,ASC,0.0,5,32,0,adam
+monks-2,smbo_ws_PyMFE_k1_T,"SMBO-Similarity (k=1), T=100",259,0.0,0.41552665999624877,leaky_relu,DES,0.0,5,32,0,rmsprop
+monks-2,smbo_ws_PyMFE_k3_T,"SMBO-Similarity (k=3), T=100",282,0.0,3.7111575599992648,leaky_relu,DES,0.0,7,32,0,adam
+monks-2,smbo_ws_PyMFE_k5_T,"SMBO-Similarity (k=5), T=100",1218,0.0,2.62924949999433,relu,ASC,0.0,7,32,0,adam
+monks-2,smbo_ws_avgrank_T,"SMBO-Independent, T=100",276,0.031199991703033447,7.5321563800098374,leaky_relu,DES,0.0,7,16,0,adam
+monks-2,oraculo,Oráculo (D2V),42,0.0,,leaky_relu,ASC,0.0,5,32,0,adam
+monks-3,padrao,Configuração padrão,1818,0.031199991703033447,,relu,SQU,0.0,1,32,0,adam
+monks-3,media,Melhor configuração média,309,0.25,,leaky_relu,DES,0.2,3,32,1,adam
+monks-3,rec_k1,Recomendação PyMFE (k=1),2347,0.09380000829696655,,selu,ASC,0.0,5,32,0,rmsprop
+monks-3,rec_k3,Recomendação PyMFE (k=3),978,0.0625,,leaky_relu,SYM,0.0,5,32,0,adam
+monks-3,rec_k5,Recomendação PyMFE (k=5),2634,0.15619999170303345,,selu,DES,0.2,5,32,0,adam
+monks-3,random_search_T,"Random Search, T=100",2410,0.031199991703033447,9.908000938594342e-05,selu,ASC,0.2,5,8,1,rmsprop
+monks-3,smbo_cold_T,"SMBO-Cold, T=100",3045,0.031199991703033447,10.183703460008838,selu,SQU,0.0,7,32,1,adam
+monks-3,smbo_ws_PyMFE_k1_T,"SMBO-Similarity (k=1), T=100",2346,0.031199991703033447,4.890430319984444,selu,ASC,0.0,5,32,0,adam
+monks-3,smbo_ws_PyMFE_k3_T,"SMBO-Similarity (k=3), T=100",2775,0.0,6.858402500022203,selu,ENC,0.0,5,16,1,adam
+monks-3,smbo_ws_PyMFE_k5_T,"SMBO-Similarity (k=5), T=100",1488,0.0,7.151947039994411,relu,DES,0.2,7,4,0,adam
+monks-3,smbo_ws_avgrank_T,"SMBO-Independent, T=100",1674,0.0,0.0002004799898713827,relu,ENC,0.2,3,32,0,adam
+monks-3,oraculo,Oráculo (D2V),240,0.0,,leaky_relu,DES,0.0,5,4,0,adam
+mushroom,padrao,Configuração padrão,1818,0.0,,relu,SQU,0.0,1,32,0,adam
+mushroom,media,Melhor configuração média,309,0.0,,leaky_relu,DES,0.2,3,32,1,adam
+mushroom,rec_k1,Recomendação PyMFE (k=1),2738,0.04079997539520264,,selu,ENC,0.0,3,4,0,sgd
+mushroom,rec_k3,Recomendação PyMFE (k=3),2738,0.04079997539520264,,selu,ENC,0.0,3,4,0,sgd
+mushroom,rec_k5,Recomendação PyMFE (k=5),2963,0.06419998407363892,,selu,SQU,0.0,1,8,1,sgd
+mushroom,random_search_T,"Random Search, T=100",2727,0.0,0.00010309999343007802,selu,DES,0.5,7,16,1,adam
+mushroom,smbo_cold_T,"SMBO-Cold, T=100",444,0.0,0.00020125999581068754,leaky_relu,ENC,0.0,3,16,0,adam
+mushroom,smbo_ws_PyMFE_k1_T,"SMBO-Similarity (k=1), T=100",1511,0.0,0.00020583998411893845,relu,DES,0.2,7,32,1,sgd
+mushroom,smbo_ws_PyMFE_k3_T,"SMBO-Similarity (k=3), T=100",2752,0.0,0.00021810000762343407,selu,ENC,0.0,3,16,1,rmsprop
+mushroom,smbo_ws_PyMFE_k5_T,"SMBO-Similarity (k=5), T=100",2991,0.0,0.00017351999413222073,selu,SQU,0.0,3,16,1,adam
+mushroom,smbo_ws_avgrank_T,"SMBO-Independent, T=100",309,0.0,0.00021633999422192572,leaky_relu,DES,0.2,3,32,1,adam
+mushroom,oraculo,Oráculo (D2V),0,0.0,,leaky_relu,ASC,0.0,3,4,0,adam
+musk-1,padrao,Configuração padrão,1818,0.11250001192092896,,relu,SQU,0.0,1,32,0,adam
+musk-1,media,Melhor configuração média,309,0.0625,,leaky_relu,DES,0.2,3,32,1,adam
+musk-1,rec_k1,Recomendação PyMFE (k=1),442,0.10000002384185791,,leaky_relu,ENC,0.0,3,8,1,rmsprop
+musk-1,rec_k3,Recomendação PyMFE (k=3),82,0.11250001192092896,,leaky_relu,ASC,0.2,3,8,1,rmsprop
+musk-1,rec_k5,Recomendação PyMFE (k=5),3039,0.17500001192092896,,selu,SQU,0.0,7,16,1,adam
+musk-1,random_search_T,"Random Search, T=100",1414,0.02499997615814209,9.979999158531428e-05,relu,DES,0.0,5,32,1,rmsprop
+musk-1,smbo_cold_T,"SMBO-Cold, T=100",2563,0.02499997615814209,14.877212599990889,selu,DES,0.0,5,32,0,rmsprop
+musk-1,smbo_ws_PyMFE_k1_T,"SMBO-Similarity (k=1), T=100",1510,0.012499988079071045,8.995787520008161,relu,DES,0.2,7,32,1,rmsprop
+musk-1,smbo_ws_PyMFE_k3_T,"SMBO-Similarity (k=3), T=100",1198,0.050000011920928955,12.666299820016139,relu,ASC,0.0,5,32,1,rmsprop
+musk-1,smbo_ws_PyMFE_k5_T,"SMBO-Similarity (k=5), T=100",1420,0.02499997615814209,7.930722740013152,relu,DES,0.0,7,4,1,rmsprop
+musk-1,smbo_ws_avgrank_T,"SMBO-Independent, T=100",2182,0.02499997615814209,11.356638119998388,relu,SYM,0.2,3,32,1,rmsprop
+musk-1,oraculo,Oráculo (D2V),1510,0.012499988079071045,,relu,DES,0.2,7,32,1,rmsprop
+musk-2,padrao,Configuração padrão,1818,0.007300019264221191,,relu,SQU,0.0,1,32,0,adam
+musk-2,media,Melhor configuração média,309,0.007300019264221191,,leaky_relu,DES,0.2,3,32,1,adam
+musk-2,rec_k1,Recomendação PyMFE (k=1),2388,0.018800020217895508,,selu,ASC,0.2,3,16,0,adam
+musk-2,rec_k3,Recomendação PyMFE (k=3),2388,0.018800020217895508,,selu,ASC,0.2,3,16,0,adam
+musk-2,rec_k5,Recomendação PyMFE (k=5),2388,0.018800020217895508,,selu,ASC,0.2,3,16,0,adam
+musk-2,random_search_T,"Random Search, T=100",256,0.0020999908447265625,0.00010085999965667725,leaky_relu,DES,0.0,5,16,1,rmsprop
+musk-2,smbo_cold_T,"SMBO-Cold, T=100",258,0.0009999871253967285,8.788655020017178,leaky_relu,DES,0.0,5,32,0,adam
+musk-2,smbo_ws_PyMFE_k1_T,"SMBO-Similarity (k=1), T=100",1890,0.0020999908447265625,13.33135492000729,relu,SQU,0.0,7,32,0,adam
+musk-2,smbo_ws_PyMFE_k3_T,"SMBO-Similarity (k=3), T=100",2589,0.0009999871253967285,7.133151339995675,selu,DES,0.0,7,32,1,adam
+musk-2,smbo_ws_PyMFE_k5_T,"SMBO-Similarity (k=5), T=100",1414,0.0020999908447265625,11.403606339986435,relu,DES,0.0,5,32,1,rmsprop
+musk-2,smbo_ws_avgrank_T,"SMBO-Independent, T=100",70,0.0020999908447265625,12.414833400002681,leaky_relu,ASC,0.0,7,32,1,rmsprop
+musk-2,oraculo,Oráculo (D2V),258,0.0009999871253967285,,leaky_relu,DES,0.0,5,32,0,adam
+nursery,padrao,Configuração padrão,1818,0.012499988079071045,,relu,SQU,0.0,1,32,0,adam
+nursery,media,Melhor configuração média,309,0.003600001335144043,,leaky_relu,DES,0.2,3,32,1,adam
+nursery,rec_k1,Recomendação PyMFE (k=1),2556,0.000500023365020752,,selu,DES,0.0,5,16,0,adam
+nursery,rec_k3,Recomendação PyMFE (k=3),2556,0.000500023365020752,,selu,DES,0.0,5,16,0,adam
+nursery,rec_k5,Recomendação PyMFE (k=5),2802,0.000500023365020752,,selu,ENC,0.0,7,32,0,adam
+nursery,random_search_T,"Random Search, T=100",1476,0.0009999871253967285,9.99400159344077e-05,relu,DES,0.2,5,16,0,adam
+nursery,smbo_cold_T,"SMBO-Cold, T=100",1437,0.0,6.0777943799970675,relu,DES,0.0,7,32,1,adam
+nursery,smbo_ws_PyMFE_k1_T,"SMBO-Similarity (k=1), T=100",2556,0.000500023365020752,10.461790359998123,selu,DES,0.0,5,16,0,adam
+nursery,smbo_ws_PyMFE_k3_T,"SMBO-Similarity (k=3), T=100",2556,0.000500023365020752,9.002424079994672,selu,DES,0.0,5,16,0,adam
+nursery,smbo_ws_PyMFE_k5_T,"SMBO-Similarity (k=5), T=100",2802,0.000500023365020752,5.935607800004073,selu,ENC,0.0,7,32,0,adam
+nursery,smbo_ws_avgrank_T,"SMBO-Independent, T=100",1482,0.000500023365020752,14.58254480001051,relu,DES,0.2,5,32,0,adam
+nursery,oraculo,Oráculo (D2V),492,0.0,,leaky_relu,ENC,0.0,7,16,0,adam
+oocytes_merluccius_nucleus_4d,padrao,Configuração padrão,1818,0.1499999761581421,,relu,SQU,0.0,1,32,0,adam
+oocytes_merluccius_nucleus_4d,media,Melhor configuração média,309,0.10619997978210449,,leaky_relu,DES,0.2,3,32,1,adam
+oocytes_merluccius_nucleus_4d,rec_k1,Recomendação PyMFE (k=1),1431,0.13749998807907104,,relu,DES,0.0,7,16,1,adam
+oocytes_merluccius_nucleus_4d,rec_k3,Recomendação PyMFE (k=3),1431,0.13749998807907104,,relu,DES,0.0,7,16,1,adam
+oocytes_merluccius_nucleus_4d,rec_k5,Recomendação PyMFE (k=5),1431,0.13749998807907104,,relu,DES,0.0,7,16,1,adam
+oocytes_merluccius_nucleus_4d,random_search_T,"Random Search, T=100",445,0.125,0.00010708000045269727,leaky_relu,ENC,0.0,3,16,0,rmsprop
+oocytes_merluccius_nucleus_4d,smbo_cold_T,"SMBO-Cold, T=100",502,0.11250001192092896,13.772291920008138,leaky_relu,ENC,0.0,7,32,1,rmsprop
+oocytes_merluccius_nucleus_4d,smbo_ws_PyMFE_k1_T,"SMBO-Similarity (k=1), T=100",286,0.11250001192092896,12.021856960002333,leaky_relu,DES,0.0,7,32,1,rmsprop
+oocytes_merluccius_nucleus_4d,smbo_ws_PyMFE_k3_T,"SMBO-Similarity (k=3), T=100",336,0.10619997978210449,5.848929500021041,leaky_relu,DES,0.2,7,4,0,adam
+oocytes_merluccius_nucleus_4d,smbo_ws_PyMFE_k5_T,"SMBO-Similarity (k=5), T=100",2650,0.10619997978210449,10.018725560000167,selu,DES,0.2,7,8,1,rmsprop
+oocytes_merluccius_nucleus_4d,smbo_ws_avgrank_T,"SMBO-Independent, T=100",309,0.10619997978210449,6.14297241999302,leaky_relu,DES,0.2,3,32,1,adam
+oocytes_merluccius_nucleus_4d,oraculo,Oráculo (D2V),1476,0.10000002384185791,,relu,DES,0.2,5,16,0,adam
+oocytes_merluccius_states_2f,padrao,Configuração padrão,1818,0.08329999446868896,,relu,SQU,0.0,1,32,0,adam
+oocytes_merluccius_states_2f,media,Melhor configuração média,309,0.0625,,leaky_relu,DES,0.2,3,32,1,adam
+oocytes_merluccius_states_2f,rec_k1,Recomendação PyMFE (k=1),21,0.0625,,leaky_relu,ASC,0.0,3,32,1,adam
+oocytes_merluccius_states_2f,rec_k3,Recomendação PyMFE (k=3),21,0.0625,,leaky_relu,ASC,0.0,3,32,1,adam
+oocytes_merluccius_states_2f,rec_k5,Recomendação PyMFE (k=5),21,0.0625,,leaky_relu,ASC,0.0,3,32,1,adam
+oocytes_merluccius_states_2f,random_search_T,"Random Search, T=100",1626,0.055599987506866455,9.939998853951693e-05,relu,ENC,0.0,5,32,0,adam
+oocytes_merluccius_states_2f,smbo_cold_T,"SMBO-Cold, T=100",2585,0.041700005531311035,8.688598020002246,selu,DES,0.0,7,16,1,sgd
+oocytes_merluccius_states_2f,smbo_ws_PyMFE_k1_T,"SMBO-Similarity (k=1), T=100",3282,0.04860001802444458,8.522189819999038,selu,SYM,0.0,5,32,0,adam
+oocytes_merluccius_states_2f,smbo_ws_PyMFE_k3_T,"SMBO-Similarity (k=3), T=100",45,0.04860001802444458,9.119252260006032,leaky_relu,ASC,0.0,5,32,1,adam
+oocytes_merluccius_states_2f,smbo_ws_PyMFE_k5_T,"SMBO-Similarity (k=5), T=100",1476,0.04860001802444458,8.77374271999579,relu,DES,0.2,5,16,0,adam
+oocytes_merluccius_states_2f,smbo_ws_avgrank_T,"SMBO-Independent, T=100",3307,0.041700005531311035,8.621130800014361,selu,SYM,0.0,7,32,0,rmsprop
+oocytes_merluccius_states_2f,oraculo,Oráculo (D2V),19,0.041700005531311035,,leaky_relu,ASC,0.0,3,32,0,rmsprop
+oocytes_trisopterus_nucleus_2f,padrao,Configuração padrão,1818,0.1428999900817871,,relu,SQU,0.0,1,32,0,adam
+oocytes_trisopterus_nucleus_2f,media,Melhor configuração média,309,0.116100013256073,,leaky_relu,DES,0.2,3,32,1,adam
+oocytes_trisopterus_nucleus_2f,rec_k1,Recomendação PyMFE (k=1),1476,0.10710000991821289,,relu,DES,0.2,5,16,0,adam
+oocytes_trisopterus_nucleus_2f,rec_k3,Recomendação PyMFE (k=3),1476,0.10710000991821289,,relu,DES,0.2,5,16,0,adam
+oocytes_trisopterus_nucleus_2f,rec_k5,Recomendação PyMFE (k=5),1476,0.10710000991821289,,relu,DES,0.2,5,16,0,adam
+oocytes_trisopterus_nucleus_2f,random_search_T,"Random Search, T=100",1477,0.08929997682571411,0.00010181998368352652,relu,DES,0.2,5,16,0,rmsprop
+oocytes_trisopterus_nucleus_2f,smbo_cold_T,"SMBO-Cold, T=100",2586,0.071399986743927,13.803303740010596,selu,DES,0.0,7,32,0,adam
+oocytes_trisopterus_nucleus_2f,smbo_ws_PyMFE_k1_T,"SMBO-Similarity (k=1), T=100",1197,0.08039999008178711,10.255296879983508,relu,ASC,0.0,5,32,1,adam
+oocytes_trisopterus_nucleus_2f,smbo_ws_PyMFE_k3_T,"SMBO-Similarity (k=3), T=100",2586,0.071399986743927,14.973939480003901,selu,DES,0.0,7,32,0,adam
+oocytes_trisopterus_nucleus_2f,smbo_ws_PyMFE_k5_T,"SMBO-Similarity (k=5), T=100",18,0.071399986743927,14.646212139981799,leaky_relu,ASC,0.0,3,32,0,adam
+oocytes_trisopterus_nucleus_2f,smbo_ws_avgrank_T,"SMBO-Independent, T=100",450,0.071399986743927,12.611248399992473,leaky_relu,ENC,0.0,3,32,0,adam
+oocytes_trisopterus_nucleus_2f,oraculo,Oráculo (D2V),1431,0.04460000991821289,,relu,DES,0.0,7,16,1,adam
+oocytes_trisopterus_states_5b,padrao,Configuração padrão,1818,0.07810002565383911,,relu,SQU,0.0,1,32,0,adam
+oocytes_trisopterus_states_5b,media,Melhor configuração média,309,0.04689997434616089,,leaky_relu,DES,0.2,3,32,1,adam
+oocytes_trisopterus_states_5b,rec_k1,Recomendação PyMFE (k=1),268,0.03909999132156372,,leaky_relu,DES,0.0,7,4,1,rmsprop
+oocytes_trisopterus_states_5b,rec_k3,Recomendação PyMFE (k=3),268,0.03909999132156372,,leaky_relu,DES,0.0,7,4,1,rmsprop
+oocytes_trisopterus_states_5b,rec_k5,Recomendação PyMFE (k=5),3307,0.0625,,selu,SYM,0.0,7,32,0,rmsprop
+oocytes_trisopterus_states_5b,random_search_T,"Random Search, T=100",3282,0.02340000867843628,0.0001024800119921565,selu,SYM,0.0,5,32,0,adam
+oocytes_trisopterus_states_5b,smbo_cold_T,"SMBO-Cold, T=100",450,0.02340000867843628,13.669267399981617,leaky_relu,ENC,0.0,3,32,0,adam
+oocytes_trisopterus_states_5b,smbo_ws_PyMFE_k1_T,"SMBO-Similarity (k=1), T=100",3016,0.02340000867843628,10.964357939991169,selu,SQU,0.0,5,16,1,rmsprop
+oocytes_trisopterus_states_5b,smbo_ws_PyMFE_k3_T,"SMBO-Similarity (k=3), T=100",3300,0.02340000867843628,13.097423560009338,selu,SYM,0.0,7,16,0,adam
+oocytes_trisopterus_states_5b,smbo_ws_PyMFE_k5_T,"SMBO-Similarity (k=5), T=100",3300,0.02340000867843628,8.100950319995173,selu,SYM,0.0,7,16,0,adam
+oocytes_trisopterus_states_5b,smbo_ws_avgrank_T,"SMBO-Independent, T=100",234,0.02340000867843628,10.815501339989714,leaky_relu,DES,0.0,3,32,0,adam
+oocytes_trisopterus_states_5b,oraculo,Oráculo (D2V),21,0.015600025653839111,,leaky_relu,ASC,0.0,3,32,1,adam
+optical,padrao,Configuração padrão,1818,0.021300017833709717,,relu,SQU,0.0,1,32,0,adam
+optical,media,Melhor configuração média,309,0.015999972820281982,,leaky_relu,DES,0.2,3,32,1,adam
+optical,rec_k1,Recomendação PyMFE (k=1),2791,0.019900023937225342,,selu,ENC,0.0,7,8,0,rmsprop
+optical,rec_k3,Recomendação PyMFE (k=3),2791,0.019900023937225342,,selu,ENC,0.0,7,8,0,rmsprop
+optical,rec_k5,Recomendação PyMFE (k=5),2791,0.019900023937225342,,selu,ENC,0.0,7,8,0,rmsprop
+optical,random_search_T,"Random Search, T=100",334,0.012000024318695068,0.00010118000209331512,leaky_relu,DES,0.2,5,32,1,rmsprop
+optical,smbo_cold_T,"SMBO-Cold, T=100",1653,0.008000016212463379,15.499216440017335,relu,ENC,0.0,7,32,1,adam
+optical,smbo_ws_PyMFE_k1_T,"SMBO-Similarity (k=1), T=100",2661,0.010599970817565918,11.985087259998545,selu,DES,0.2,7,32,1,adam
+optical,smbo_ws_PyMFE_k3_T,"SMBO-Similarity (k=3), T=100",2806,0.006600022315979004,9.229968619998544,selu,ENC,0.0,7,32,1,rmsprop
+optical,smbo_ws_PyMFE_k5_T,"SMBO-Similarity (k=5), T=100",2806,0.006600022315979004,7.699545900011435,selu,ENC,0.0,7,32,1,rmsprop
+optical,smbo_ws_avgrank_T,"SMBO-Independent, T=100",981,0.010599970817565918,6.495442400011234,leaky_relu,SYM,0.0,5,32,1,adam
+optical,oraculo,Oráculo (D2V),2566,0.005299985408782959,,selu,DES,0.0,5,32,1,rmsprop
+ozone,padrao,Configuração padrão,1818,0.03530001640319824,,relu,SQU,0.0,1,32,0,adam
+ozone,media,Melhor configuração média,309,0.024500012397766113,,leaky_relu,DES,0.2,3,32,1,adam
+ozone,rec_k1,Recomendação PyMFE (k=1),1428,0.03799998760223389,,relu,DES,0.0,7,16,0,adam
+ozone,rec_k3,Recomendação PyMFE (k=3),1197,0.03530001640319824,,relu,ASC,0.0,5,32,1,adam
+ozone,rec_k5,Recomendação PyMFE (k=5),2589,0.07340002059936523,,selu,DES,0.0,7,32,1,adam
+ozone,random_search_T,"Random Search, T=100",2483,0.018999993801116943,0.00010078002233058215,selu,ASC,0.5,5,8,1,sgd
+ozone,smbo_cold_T,"SMBO-Cold, T=100",808,0.018999993801116943,12.035761600011028,leaky_relu,SQU,0.2,5,16,1,rmsprop
+ozone,smbo_ws_PyMFE_k1_T,"SMBO-Similarity (k=1), T=100",1780,0.018999993801116943,16.00793595998548,relu,ENC,0.5,7,4,1,rmsprop
+ozone,smbo_ws_PyMFE_k3_T,"SMBO-Similarity (k=3), T=100",543,0.018999993801116943,13.925339639978484,leaky_relu,ENC,0.2,5,16,1,adam
+ozone,smbo_ws_PyMFE_k5_T,"SMBO-Similarity (k=5), T=100",543,0.018999993801116943,11.512049400014803,leaky_relu,ENC,0.2,5,16,1,adam
+ozone,smbo_ws_avgrank_T,"SMBO-Independent, T=100",1797,0.018999993801116943,11.422766000009142,relu,ENC,0.5,7,32,1,adam
+ozone,oraculo,Oráculo (D2V),251,0.0163000226020813,,leaky_relu,DES,0.0,5,8,1,sgd
+page-blocks,padrao,Configuração padrão,1818,0.017499983310699463,,relu,SQU,0.0,1,32,0,adam
+page-blocks,media,Melhor configuração média,309,0.02120000123977661,,leaky_relu,DES,0.2,3,32,1,adam
+page-blocks,rec_k1,Recomendação PyMFE (k=1),2604,0.02120000123977661,,selu,DES,0.2,3,16,0,adam
+page-blocks,rec_k3,Recomendação PyMFE (k=3),2604,0.02120000123977661,,selu,DES,0.2,3,16,0,adam
+page-blocks,rec_k5,Recomendação PyMFE (k=5),2604,0.02120000123977661,,selu,DES,0.2,3,16,0,adam
+page-blocks,random_search_T,"Random Search, T=100",1890,0.01380002498626709,9.87200066447258e-05,relu,SQU,0.0,7,32,0,adam
+page-blocks,smbo_cold_T,"SMBO-Cold, T=100",1171,0.014999985694885254,11.342138179996983,relu,ASC,0.0,3,32,0,rmsprop
+page-blocks,smbo_ws_PyMFE_k1_T,"SMBO-Similarity (k=1), T=100",516,0.016200006008148193,13.531091180001386,leaky_relu,ENC,0.2,3,16,0,adam
+page-blocks,smbo_ws_PyMFE_k3_T,"SMBO-Similarity (k=3), T=100",715,0.016200006008148193,10.53567176000215,leaky_relu,SQU,0.0,5,32,0,rmsprop
+page-blocks,smbo_ws_PyMFE_k5_T,"SMBO-Similarity (k=5), T=100",1674,0.016200006008148193,9.6499524399871,relu,ENC,0.2,3,32,0,adam
+page-blocks,smbo_ws_avgrank_T,"SMBO-Independent, T=100",1026,0.016200006008148193,11.85968421997968,leaky_relu,SYM,0.2,3,32,0,adam
+page-blocks,oraculo,Oráculo (D2V),1422,0.012499988079071045,,relu,DES,0.0,7,8,0,adam
+parkinsons,padrao,Configuração padrão,1818,0.15619999170303345,,relu,SQU,0.0,1,32,0,adam
+parkinsons,media,Melhor configuração média,309,0.15619999170303345,,leaky_relu,DES,0.2,3,32,1,adam
+parkinsons,rec_k1,Recomendação PyMFE (k=1),2603,0.28119999170303345,,selu,DES,0.2,3,8,1,sgd
+parkinsons,rec_k3,Recomendação PyMFE (k=3),3062,0.15619999170303345,,selu,SQU,0.2,1,16,0,sgd
+parkinsons,rec_k5,Recomendação PyMFE (k=5),731,0.28119999170303345,,leaky_relu,SQU,0.0,7,8,1,sgd
+parkinsons,random_search_T,"Random Search, T=100",324,0.09380000829696655,0.00010134000331163406,leaky_relu,DES,0.2,5,16,0,adam
+parkinsons,smbo_cold_T,"SMBO-Cold, T=100",2621,0.09380000829696655,4.425544860004448,selu,DES,0.2,5,4,1,sgd
+parkinsons,smbo_ws_PyMFE_k1_T,"SMBO-Similarity (k=1), T=100",2791,0.09380000829696655,8.797534920019098,selu,ENC,0.0,7,8,0,rmsprop
+parkinsons,smbo_ws_PyMFE_k3_T,"SMBO-Similarity (k=3), T=100",273,0.09380000829696655,8.226912280009127,leaky_relu,DES,0.0,7,8,1,adam
+parkinsons,smbo_ws_PyMFE_k5_T,"SMBO-Similarity (k=5), T=100",2799,0.0625,6.969331899983809,selu,ENC,0.0,7,16,1,adam
+parkinsons,smbo_ws_avgrank_T,"SMBO-Independent, T=100",228,0.09380000829696655,9.342131779994816,leaky_relu,DES,0.0,3,16,0,adam
+parkinsons,oraculo,Oráculo (D2V),285,0.0625,,leaky_relu,DES,0.0,7,32,1,adam
+pendigits,padrao,Configuração padrão,1818,0.006600022315979004,,relu,SQU,0.0,1,32,0,adam
+pendigits,media,Melhor configuração média,309,0.005299985408782959,,leaky_relu,DES,0.2,3,32,1,adam
+pendigits,rec_k1,Recomendação PyMFE (k=1),1423,0.005299985408782959,,relu,DES,0.0,7,8,0,rmsprop
+pendigits,rec_k3,Recomendação PyMFE (k=3),1423,0.005299985408782959,,relu,DES,0.0,7,8,0,rmsprop
+pendigits,rec_k5,Recomendação PyMFE (k=5),1423,0.005299985408782959,,relu,DES,0.0,7,8,0,rmsprop
+pendigits,random_search_T,"Random Search, T=100",2591,0.003300011157989502,0.00010106000117957593,selu,DES,0.0,7,32,1,sgd
+pendigits,smbo_cold_T,"SMBO-Cold, T=100",1425,0.0026999711990356445,14.510880120005458,relu,DES,0.0,7,8,1,adam
+pendigits,smbo_ws_PyMFE_k1_T,"SMBO-Similarity (k=1), T=100",287,0.0026999711990356445,9.974340459983797,leaky_relu,DES,0.0,7,32,1,sgd
+pendigits,smbo_ws_PyMFE_k3_T,"SMBO-Similarity (k=3), T=100",1438,0.0026999711990356445,9.791387200006284,relu,DES,0.0,7,32,1,rmsprop
+pendigits,smbo_ws_PyMFE_k5_T,"SMBO-Similarity (k=5), T=100",1438,0.0026999711990356445,7.612724619987421,relu,DES,0.0,7,32,1,rmsprop
+pendigits,smbo_ws_avgrank_T,"SMBO-Independent, T=100",2542,0.0026999711990356445,8.312859039986506,selu,DES,0.0,3,32,1,rmsprop
+pendigits,oraculo,Oráculo (D2V),2585,0.001999974250793457,,selu,DES,0.0,7,16,1,sgd
+pima,padrao,Configuração padrão,1818,0.1875,,relu,SQU,0.0,1,32,0,adam
+pima,media,Melhor configuração média,309,0.21090000867843628,,leaky_relu,DES,0.2,3,32,1,adam
+pima,rec_k1,Recomendação PyMFE (k=1),2553,0.25779998302459717,,selu,DES,0.0,5,8,1,adam
+pima,rec_k3,Recomendação PyMFE (k=3),2553,0.25779998302459717,,selu,DES,0.0,5,8,1,adam
+pima,rec_k5,Recomendação PyMFE (k=5),2553,0.25779998302459717,,selu,DES,0.0,5,8,1,adam
+pima,random_search_T,"Random Search, T=100",552,0.1718999743461609,0.00010049999691545964,leaky_relu,ENC,0.2,7,4,0,adam
+pima,smbo_cold_T,"SMBO-Cold, T=100",3155,0.16409999132156372,10.277882679994217,selu,SQU,0.5,1,8,1,sgd
+pima,smbo_ws_PyMFE_k1_T,"SMBO-Similarity (k=1), T=100",1738,0.14840000867843628,14.721296939998865,relu,ENC,0.5,3,8,1,rmsprop
+pima,smbo_ws_PyMFE_k3_T,"SMBO-Similarity (k=3), T=100",524,0.17970001697540283,12.105809239996598,leaky_relu,ENC,0.2,3,32,0,sgd
+pima,smbo_ws_PyMFE_k5_T,"SMBO-Similarity (k=5), T=100",159,0.1718999743461609,9.522324919980019,leaky_relu,ASC,0.5,3,16,1,adam
+pima,smbo_ws_avgrank_T,"SMBO-Independent, T=100",3054,0.16409999132156372,11.937005320005118,selu,SQU,0.2,1,8,0,adam
+pima,oraculo,Oráculo (D2V),1097,0.1406000256538391,,leaky_relu,SYM,0.5,3,16,1,sgd
+pittsburg-bridges-MATERIAL,padrao,Configuração padrão,1818,0.3125,,relu,SQU,0.0,1,32,0,adam
+pittsburg-bridges-MATERIAL,media,Melhor configuração média,309,0.1875,,leaky_relu,DES,0.2,3,32,1,adam
+pittsburg-bridges-MATERIAL,rec_k1,Recomendação PyMFE (k=1),717,0.3125,,leaky_relu,SQU,0.0,5,32,1,adam
+pittsburg-bridges-MATERIAL,rec_k3,Recomendação PyMFE (k=3),717,0.3125,,leaky_relu,SQU,0.0,5,32,1,adam
+pittsburg-bridges-MATERIAL,rec_k5,Recomendação PyMFE (k=5),490,0.1875,,leaky_relu,ENC,0.0,7,8,1,rmsprop
+pittsburg-bridges-MATERIAL,random_search_T,"Random Search, T=100",3267,0.125,9.883998427540064e-05,selu,SYM,0.0,5,4,1,adam
+pittsburg-bridges-MATERIAL,smbo_cold_T,"SMBO-Cold, T=100",463,0.1875,5.646057700016536,leaky_relu,ENC,0.0,5,8,0,rmsprop
+pittsburg-bridges-MATERIAL,smbo_ws_PyMFE_k1_T,"SMBO-Similarity (k=1), T=100",69,0.125,4.907882559997961,leaky_relu,ASC,0.0,7,32,1,adam
+pittsburg-bridges-MATERIAL,smbo_ws_PyMFE_k3_T,"SMBO-Similarity (k=3), T=100",3388,0.125,5.590412640012801,selu,SYM,0.5,3,4,1,rmsprop
+pittsburg-bridges-MATERIAL,smbo_ws_PyMFE_k5_T,"SMBO-Similarity (k=5), T=100",448,0.125,2.8305205000098796,leaky_relu,ENC,0.0,3,16,1,rmsprop
+pittsburg-bridges-MATERIAL,smbo_ws_avgrank_T,"SMBO-Independent, T=100",309,0.1875,4.257704359991476,leaky_relu,DES,0.2,3,32,1,adam
+pittsburg-bridges-MATERIAL,oraculo,Oráculo (D2V),0,0.125,,leaky_relu,ASC,0.0,3,4,0,adam
+pittsburg-bridges-REL-L,padrao,Configuração padrão,1818,0.5385000109672546,,relu,SQU,0.0,1,32,0,adam
+pittsburg-bridges-REL-L,media,Melhor configuração média,309,0.5385000109672546,,leaky_relu,DES,0.2,3,32,1,adam
+pittsburg-bridges-REL-L,rec_k1,Recomendação PyMFE (k=1),1846,0.15380001068115234,,relu,SQU,0.0,3,32,1,rmsprop
+pittsburg-bridges-REL-L,rec_k3,Recomendação PyMFE (k=3),1162,0.46149998903274536,,relu,ASC,0.0,3,8,1,rmsprop
+pittsburg-bridges-REL-L,rec_k5,Recomendação PyMFE (k=5),1162,0.46149998903274536,,relu,ASC,0.0,3,8,1,rmsprop
+pittsburg-bridges-REL-L,random_search_T,"Random Search, T=100",2396,0.23079997301101685,0.00010079999919980765,selu,ASC,0.2,3,32,0,sgd
+pittsburg-bridges-REL-L,smbo_cold_T,"SMBO-Cold, T=100",3356,0.23079997301101685,10.207477000006474,selu,SYM,0.2,5,32,0,sgd
+pittsburg-bridges-REL-L,smbo_ws_PyMFE_k1_T,"SMBO-Similarity (k=1), T=100",1846,0.15380001068115234,0.0005049400031566619,relu,SQU,0.0,3,32,1,rmsprop
+pittsburg-bridges-REL-L,smbo_ws_PyMFE_k3_T,"SMBO-Similarity (k=3), T=100",3307,0.15380001068115234,3.0410917999921367,selu,SYM,0.0,7,32,0,rmsprop
+pittsburg-bridges-REL-L,smbo_ws_PyMFE_k5_T,"SMBO-Similarity (k=5), T=100",2541,0.23079997301101685,5.336358239990659,selu,DES,0.0,3,32,1,adam
+pittsburg-bridges-REL-L,smbo_ws_avgrank_T,"SMBO-Independent, T=100",2541,0.23079997301101685,8.052077920013108,selu,DES,0.0,3,32,1,adam
+pittsburg-bridges-REL-L,oraculo,Oráculo (D2V),490,0.15380001068115234,,leaky_relu,ENC,0.0,7,8,1,rmsprop
+pittsburg-bridges-SPAN,padrao,Configuração padrão,1818,0.1428999900817871,,relu,SQU,0.0,1,32,0,adam
+pittsburg-bridges-SPAN,media,Melhor configuração média,309,0.1428999900817871,,leaky_relu,DES,0.2,3,32,1,adam
+pittsburg-bridges-SPAN,rec_k1,Recomendação PyMFE (k=1),2784,0.3571000099182129,,selu,ENC,0.0,7,4,0,adam
+pittsburg-bridges-SPAN,rec_k3,Recomendação PyMFE (k=3),490,0.1428999900817871,,leaky_relu,ENC,0.0,7,8,1,rmsprop
+pittsburg-bridges-SPAN,rec_k5,Recomendação PyMFE (k=5),2781,0.071399986743927,,selu,ENC,0.0,5,32,1,adam
+pittsburg-bridges-SPAN,random_search_T,"Random Search, T=100",34,0.0,0.00010087999980896711,leaky_relu,ASC,0.0,5,8,1,rmsprop
+pittsburg-bridges-SPAN,smbo_cold_T,"SMBO-Cold, T=100",1696,0.071399986743927,10.090461380011401,relu,ENC,0.2,5,16,1,rmsprop
+pittsburg-bridges-SPAN,smbo_ws_PyMFE_k1_T,"SMBO-Similarity (k=1), T=100",1846,0.0,0.00024226000532507898,relu,SQU,0.0,3,32,1,rmsprop
+pittsburg-bridges-SPAN,smbo_ws_PyMFE_k3_T,"SMBO-Similarity (k=3), T=100",1846,0.0,0.0001665599877014756,relu,SQU,0.0,3,32,1,rmsprop
+pittsburg-bridges-SPAN,smbo_ws_PyMFE_k5_T,"SMBO-Similarity (k=5), T=100",1846,0.0,0.542949020001106,relu,SQU,0.0,3,32,1,rmsprop
+pittsburg-bridges-SPAN,smbo_ws_avgrank_T,"SMBO-Independent, T=100",93,0.0,0.00021323999390006066,leaky_relu,ASC,0.2,3,32,1,adam
+pittsburg-bridges-SPAN,oraculo,Oráculo (D2V),15,0.0,,leaky_relu,ASC,0.0,3,16,1,adam
+pittsburg-bridges-T-OR-D,padrao,Configuração padrão,1818,0.125,,relu,SQU,0.0,1,32,0,adam
+pittsburg-bridges-T-OR-D,media,Melhor configuração média,309,0.125,,leaky_relu,DES,0.2,3,32,1,adam
+pittsburg-bridges-T-OR-D,rec_k1,Recomendação PyMFE (k=1),1216,0.125,,relu,ASC,0.0,7,16,1,rmsprop
+pittsburg-bridges-T-OR-D,rec_k3,Recomendação PyMFE (k=3),1216,0.125,,relu,ASC,0.0,7,16,1,rmsprop
+pittsburg-bridges-T-OR-D,rec_k5,Recomendação PyMFE (k=5),1216,0.125,,relu,ASC,0.0,7,16,1,rmsprop
+pittsburg-bridges-T-OR-D,random_search_T,"Random Search, T=100",2865,0.0,0.0001020600087940693,selu,ENC,0.2,7,8,1,adam
+pittsburg-bridges-T-OR-D,smbo_cold_T,"SMBO-Cold, T=100",2394,0.0,2.3945601399987937,selu,ASC,0.2,3,32,0,adam
+pittsburg-bridges-T-OR-D,smbo_ws_PyMFE_k1_T,"SMBO-Similarity (k=1), T=100",2698,0.0,2.1131731800036504,selu,DES,0.5,5,8,1,rmsprop
+pittsburg-bridges-T-OR-D,smbo_ws_PyMFE_k3_T,"SMBO-Similarity (k=3), T=100",1854,0.0,2.513596520014107,relu,SQU,0.0,5,8,0,adam
+pittsburg-bridges-T-OR-D,smbo_ws_PyMFE_k5_T,"SMBO-Similarity (k=5), T=100",2653,0.0,0.6414978199871257,selu,DES,0.2,7,16,0,rmsprop
+pittsburg-bridges-T-OR-D,smbo_ws_avgrank_T,"SMBO-Independent, T=100",2901,0.0,4.275831960001961,selu,ENC,0.5,3,32,1,adam
+pittsburg-bridges-T-OR-D,oraculo,Oráculo (D2V),232,0.0,,leaky_relu,DES,0.0,3,16,1,rmsprop
+pittsburg-bridges-TYPE,padrao,Configuração padrão,1818,0.375,,relu,SQU,0.0,1,32,0,adam
+pittsburg-bridges-TYPE,media,Melhor configuração média,309,0.375,,leaky_relu,DES,0.2,3,32,1,adam
+pittsburg-bridges-TYPE,rec_k1,Recomendação PyMFE (k=1),2145,0.5,,relu,SYM,0.0,7,8,1,adam
+pittsburg-bridges-TYPE,rec_k3,Recomendação PyMFE (k=3),1162,0.375,,relu,ASC,0.0,3,8,1,rmsprop
+pittsburg-bridges-TYPE,rec_k5,Recomendação PyMFE (k=5),256,0.375,,leaky_relu,DES,0.0,5,16,1,rmsprop
+pittsburg-bridges-TYPE,random_search_T,"Random Search, T=100",2634,0.25,9.914000984281301e-05,selu,DES,0.2,5,32,0,adam
+pittsburg-bridges-TYPE,smbo_cold_T,"SMBO-Cold, T=100",2446,0.1875,6.1962800600100305,selu,ASC,0.2,7,32,1,rmsprop
+pittsburg-bridges-TYPE,smbo_ws_PyMFE_k1_T,"SMBO-Similarity (k=1), T=100",1527,0.1875,9.356897859997115,relu,DES,0.5,3,16,1,adam
+pittsburg-bridges-TYPE,smbo_ws_PyMFE_k3_T,"SMBO-Similarity (k=3), T=100",763,0.1875,9.344279739982449,leaky_relu,SQU,0.2,1,32,0,rmsprop
+pittsburg-bridges-TYPE,smbo_ws_PyMFE_k5_T,"SMBO-Similarity (k=5), T=100",942,0.1875,7.00624655999709,leaky_relu,SYM,0.0,3,8,0,adam
+pittsburg-bridges-TYPE,smbo_ws_avgrank_T,"SMBO-Independent, T=100",1534,0.25,7.642307780007831,relu,DES,0.5,3,32,1,rmsprop
+pittsburg-bridges-TYPE,oraculo,Oráculo (D2V),7,0.1875,,leaky_relu,ASC,0.0,3,8,0,rmsprop
+planning,padrao,Configuração padrão,1818,0.25,,relu,SQU,0.0,1,32,0,adam
+planning,media,Melhor configuração média,309,0.3125,,leaky_relu,DES,0.2,3,32,1,adam
+planning,rec_k1,Recomendação PyMFE (k=1),568,0.3125,,leaky_relu,ENC,0.2,7,16,1,rmsprop
+planning,rec_k3,Recomendação PyMFE (k=3),543,0.25,,leaky_relu,ENC,0.2,5,16,1,adam
+planning,rec_k5,Recomendação PyMFE (k=5),2848,0.25,,selu,ENC,0.2,5,16,1,rmsprop
+planning,random_search_T,"Random Search, T=100",2364,0.125,0.00010034001898020505,selu,ASC,0.0,7,16,0,adam
+planning,smbo_cold_T,"SMBO-Cold, T=100",3034,0.1875,7.97820025999099,selu,SQU,0.0,7,8,1,rmsprop
+planning,smbo_ws_PyMFE_k1_T,"SMBO-Similarity (k=1), T=100",2315,0.125,13.436899739992805,selu,ASC,0.0,3,8,1,sgd
+planning,smbo_ws_PyMFE_k3_T,"SMBO-Similarity (k=3), T=100",3293,0.1875,9.590545760001987,selu,SYM,0.0,7,4,1,sgd
+planning,smbo_ws_PyMFE_k5_T,"SMBO-Similarity (k=5), T=100",290,0.1875,7.781355619989336,leaky_relu,DES,0.2,3,4,0,sgd
+planning,smbo_ws_avgrank_T,"SMBO-Independent, T=100",3252,0.125,12.136703420011326,selu,SYM,0.0,3,16,0,adam
+planning,oraculo,Oráculo (D2V),461,0.0625,,leaky_relu,ENC,0.0,5,4,1,sgd
+plant-margin,padrao,Configuração padrão,1818,0.23329997062683105,,relu,SQU,0.0,1,32,0,adam
+plant-margin,media,Melhor configuração média,309,0.19999998807907104,,leaky_relu,DES,0.2,3,32,1,adam
+plant-margin,rec_k1,Recomendação PyMFE (k=1),2589,0.26670002937316895,,selu,DES,0.0,7,32,1,adam
+plant-margin,rec_k3,Recomendação PyMFE (k=3),2589,0.26670002937316895,,selu,DES,0.0,7,32,1,adam
+plant-margin,rec_k5,Recomendação PyMFE (k=5),2589,0.26670002937316895,,selu,DES,0.0,7,32,1,adam
+plant-margin,random_search_T,"Random Search, T=100",3066,0.20829999446868896,0.00010164000559598207,selu,SQU,0.2,1,32,0,adam
+plant-margin,smbo_cold_T,"SMBO-Cold, T=100",2829,0.1875,14.342730999994092,selu,ENC,0.2,3,32,1,adam
+plant-margin,smbo_ws_PyMFE_k1_T,"SMBO-Similarity (k=1), T=100",93,0.17919999361038208,0.0001695999875664711,leaky_relu,ASC,0.2,3,32,1,adam
+plant-margin,smbo_ws_PyMFE_k3_T,"SMBO-Similarity (k=3), T=100",93,0.17919999361038208,0.00031370001379400493,leaky_relu,ASC,0.2,3,32,1,adam
+plant-margin,smbo_ws_PyMFE_k5_T,"SMBO-Similarity (k=5), T=100",2829,0.1875,8.760854919999838,selu,ENC,0.2,3,32,1,adam
+plant-margin,smbo_ws_avgrank_T,"SMBO-Independent, T=100",93,0.17919999361038208,0.00018430000636726618,leaky_relu,ASC,0.2,3,32,1,adam
+plant-margin,oraculo,Oráculo (D2V),93,0.17919999361038208,,leaky_relu,ASC,0.2,3,32,1,adam
+plant-shape,padrao,Configuração padrão,1818,0.495199978351593,,relu,SQU,0.0,1,32,0,adam
+plant-shape,media,Melhor configuração média,309,0.442300021648407,,leaky_relu,DES,0.2,3,32,1,adam
+plant-shape,rec_k1,Recomendação PyMFE (k=1),93,0.4279000163078308,,leaky_relu,ASC,0.2,3,32,1,adam
+plant-shape,rec_k3,Recomendação PyMFE (k=3),93,0.4279000163078308,,leaky_relu,ASC,0.2,3,32,1,adam
+plant-shape,rec_k5,Recomendação PyMFE (k=5),93,0.4279000163078308,,leaky_relu,ASC,0.2,3,32,1,adam
+plant-shape,random_search_T,"Random Search, T=100",2541,0.375,0.00010089999996125698,selu,DES,0.0,3,32,1,adam
+plant-shape,smbo_cold_T,"SMBO-Cold, T=100",502,0.379800021648407,11.472500820015558,leaky_relu,ENC,0.0,7,32,1,rmsprop
+plant-shape,smbo_ws_PyMFE_k1_T,"SMBO-Similarity (k=1), T=100",2778,0.370199978351593,14.417473060009069,selu,ENC,0.0,5,32,0,adam
+plant-shape,smbo_ws_PyMFE_k3_T,"SMBO-Similarity (k=3), T=100",1389,0.370199978351593,12.090151160000824,relu,DES,0.0,3,32,1,adam
+plant-shape,smbo_ws_PyMFE_k5_T,"SMBO-Similarity (k=5), T=100",2325,0.34130001068115234,12.972615420003422,selu,ASC,0.0,3,32,1,adam
+plant-shape,smbo_ws_avgrank_T,"SMBO-Independent, T=100",2562,0.33649998903274536,17.428053140011617,selu,DES,0.0,5,32,0,adam
+plant-shape,oraculo,Oráculo (D2V),2562,0.33649998903274536,,selu,DES,0.0,5,32,0,adam
+plant-texture,padrao,Configuração padrão,1818,0.23750001192092896,,relu,SQU,0.0,1,32,0,adam
+plant-texture,media,Melhor configuração média,309,0.23329997062683105,,leaky_relu,DES,0.2,3,32,1,adam
+plant-texture,rec_k1,Recomendação PyMFE (k=1),93,0.2124999761581421,,leaky_relu,ASC,0.2,3,32,1,adam
+plant-texture,rec_k3,Recomendação PyMFE (k=3),93,0.2124999761581421,,leaky_relu,ASC,0.2,3,32,1,adam
+plant-texture,rec_k5,Recomendação PyMFE (k=5),93,0.2124999761581421,,leaky_relu,ASC,0.2,3,32,1,adam
+plant-texture,random_search_T,"Random Search, T=100",2326,0.21670001745224,9.910000953823328e-05,selu,ASC,0.0,3,32,1,rmsprop
+plant-texture,smbo_cold_T,"SMBO-Cold, T=100",861,0.23750001192092896,12.062019600020722,leaky_relu,SQU,0.5,1,32,1,adam
+plant-texture,smbo_ws_PyMFE_k1_T,"SMBO-Similarity (k=1), T=100",1819,0.20829999446868896,11.433811339992099,relu,SQU,0.0,1,32,0,rmsprop
+plant-texture,smbo_ws_PyMFE_k3_T,"SMBO-Similarity (k=3), T=100",93,0.2124999761581421,10.42907326000277,leaky_relu,ASC,0.2,3,32,1,adam
+plant-texture,smbo_ws_PyMFE_k5_T,"SMBO-Similarity (k=5), T=100",93,0.2124999761581421,11.937384100002237,leaky_relu,ASC,0.2,3,32,1,adam
+plant-texture,smbo_ws_avgrank_T,"SMBO-Independent, T=100",93,0.2124999761581421,12.349574499996379,leaky_relu,ASC,0.2,3,32,1,adam
+plant-texture,oraculo,Oráculo (D2V),2589,0.19169998168945312,,selu,DES,0.0,7,32,1,adam
+post-operative,padrao,Configuração padrão,1818,0.307699978351593,,relu,SQU,0.0,1,32,0,adam
+post-operative,media,Melhor configuração média,309,0.46149998903274536,,leaky_relu,DES,0.2,3,32,1,adam
+post-operative,rec_k1,Recomendação PyMFE (k=1),2339,0.5385000109672546,,selu,ASC,0.0,5,8,1,sgd
+post-operative,rec_k3,Recomendação PyMFE (k=3),2981,0.6922999918460846,,selu,SQU,0.0,3,4,1,sgd
+post-operative,rec_k5,Recomendação PyMFE (k=5),2602,0.46149998903274536,,selu,DES,0.2,3,8,1,rmsprop
+post-operative,random_search_T,"Random Search, T=100",53,0.23079997301101685,0.00010146000422537327,leaky_relu,ASC,0.0,7,4,1,sgd
+post-operative,smbo_cold_T,"SMBO-Cold, T=100",1082,0.23079997301101685,3.366161959990859,leaky_relu,SYM,0.5,3,4,0,sgd
+post-operative,smbo_ws_PyMFE_k1_T,"SMBO-Similarity (k=1), T=100",994,0.307699978351593,13.72067762000952,leaky_relu,SYM,0.0,7,8,1,rmsprop
+post-operative,smbo_ws_PyMFE_k3_T,"SMBO-Similarity (k=3), T=100",956,0.23079997301101685,7.8491002600174395,leaky_relu,SYM,0.0,3,32,0,sgd
+post-operative,smbo_ws_PyMFE_k5_T,"SMBO-Similarity (k=5), T=100",1082,0.23079997301101685,3.373305239994079,leaky_relu,SYM,0.5,3,4,0,sgd
+post-operative,smbo_ws_avgrank_T,"SMBO-Independent, T=100",1245,0.307699978351593,11.04629081999883,relu,ASC,0.2,3,32,1,adam
+post-operative,oraculo,Oráculo (D2V),53,0.23079997301101685,,leaky_relu,ASC,0.0,7,4,1,sgd
+primary-tumor,padrao,Configuração padrão,1818,0.541700005531311,,relu,SQU,0.0,1,32,0,adam
+primary-tumor,media,Melhor configuração média,309,0.604200005531311,,leaky_relu,DES,0.2,3,32,1,adam
+primary-tumor,rec_k1,Recomendação PyMFE (k=1),1193,0.666700005531311,,relu,ASC,0.0,5,16,1,sgd
+primary-tumor,rec_k3,Recomendação PyMFE (k=3),1193,0.666700005531311,,relu,ASC,0.0,5,16,1,sgd
+primary-tumor,rec_k5,Recomendação PyMFE (k=5),1193,0.666700005531311,,relu,ASC,0.0,5,16,1,sgd
+primary-tumor,random_search_T,"Random Search, T=100",858,0.541700005531311,0.00010106000117957593,leaky_relu,SQU,0.5,1,32,0,adam
+primary-tumor,smbo_cold_T,"SMBO-Cold, T=100",861,0.4375,5.983873219997622,leaky_relu,SQU,0.5,1,32,1,adam
+primary-tumor,smbo_ws_PyMFE_k1_T,"SMBO-Similarity (k=1), T=100",3040,0.520799994468689,10.64474926001858,selu,SQU,0.0,7,16,1,rmsprop
+primary-tumor,smbo_ws_PyMFE_k3_T,"SMBO-Similarity (k=3), T=100",765,0.45829999446868896,8.640927079995162,leaky_relu,SQU,0.2,1,32,1,adam
+primary-tumor,smbo_ws_PyMFE_k5_T,"SMBO-Similarity (k=5), T=100",2014,0.4375,4.252240639994852,relu,SQU,0.5,1,32,1,rmsprop
+primary-tumor,smbo_ws_avgrank_T,"SMBO-Independent, T=100",2014,0.4375,2.9662449599942193,relu,SQU,0.5,1,32,1,rmsprop
+primary-tumor,oraculo,Oráculo (D2V),861,0.4375,,leaky_relu,SQU,0.5,1,32,1,adam
+ringnorm,padrao,Configuração padrão,1818,0.02460002899169922,,relu,SQU,0.0,1,32,0,adam
+ringnorm,media,Melhor configuração média,309,0.02460002899169922,,leaky_relu,DES,0.2,3,32,1,adam
+ringnorm,rec_k1,Recomendação PyMFE (k=1),1152,0.12150001525878906,,relu,ASC,0.0,3,4,0,adam
+ringnorm,rec_k3,Recomendação PyMFE (k=3),1152,0.12150001525878906,,relu,ASC,0.0,3,4,0,adam
+ringnorm,rec_k5,Recomendação PyMFE (k=5),1152,0.12150001525878906,,relu,ASC,0.0,3,4,0,adam
+ringnorm,random_search_T,"Random Search, T=100",1650,0.016700029373168945,9.876000694930553e-05,relu,ENC,0.0,7,32,0,adam
+ringnorm,smbo_cold_T,"SMBO-Cold, T=100",2782,0.014999985694885254,11.508641780004837,selu,ENC,0.0,5,32,1,rmsprop
+ringnorm,smbo_ws_PyMFE_k1_T,"SMBO-Similarity (k=1), T=100",274,0.011399984359741211,21.49404851999134,leaky_relu,DES,0.0,7,8,1,rmsprop
+ringnorm,smbo_ws_PyMFE_k3_T,"SMBO-Similarity (k=3), T=100",278,0.016700029373168945,14.647200160007923,leaky_relu,DES,0.0,7,16,0,sgd
+ringnorm,smbo_ws_PyMFE_k5_T,"SMBO-Similarity (k=5), T=100",1005,0.013199985027313232,14.075112640019507,leaky_relu,SYM,0.0,7,32,1,adam
+ringnorm,smbo_ws_avgrank_T,"SMBO-Independent, T=100",1458,0.015799999237060547,14.738671039999463,relu,DES,0.2,3,32,0,adam
+ringnorm,oraculo,Oráculo (D2V),489,0.010599970817565918,,leaky_relu,ENC,0.0,7,8,1,adam
+seeds,padrao,Configuração padrão,1818,0.031199991703033447,,relu,SQU,0.0,1,32,0,adam
+seeds,media,Melhor configuração média,309,0.031199991703033447,,leaky_relu,DES,0.2,3,32,1,adam
+seeds,rec_k1,Recomendação PyMFE (k=1),1449,0.031199991703033447,,relu,DES,0.2,3,8,1,adam
+seeds,rec_k3,Recomendação PyMFE (k=3),2848,0.031199991703033447,,selu,ENC,0.2,5,16,1,rmsprop
+seeds,rec_k5,Recomendação PyMFE (k=5),174,0.0625,,leaky_relu,ASC,0.5,5,8,0,adam
+seeds,random_search_T,"Random Search, T=100",217,0.0,0.00011364000383764505,leaky_relu,DES,0.0,3,4,0,rmsprop
+seeds,smbo_cold_T,"SMBO-Cold, T=100",1381,0.0,0.00018950002267956734,relu,DES,0.0,3,16,0,rmsprop
+seeds,smbo_ws_PyMFE_k1_T,"SMBO-Similarity (k=1), T=100",3342,0.0,0.00017393999733030796,selu,SYM,0.2,5,8,0,adam
+seeds,smbo_ws_PyMFE_k3_T,"SMBO-Similarity (k=3), T=100",2804,0.0,0.8345774999819696,selu,ENC,0.0,7,32,0,sgd
+seeds,smbo_ws_PyMFE_k5_T,"SMBO-Similarity (k=5), T=100",1480,0.0,0.03765133998822421,relu,DES,0.2,5,16,1,rmsprop
+seeds,smbo_ws_avgrank_T,"SMBO-Independent, T=100",228,0.0,0.00020665999036282301,leaky_relu,DES,0.0,3,16,0,adam
+seeds,oraculo,Oráculo (D2V),6,0.0,,leaky_relu,ASC,0.0,3,8,0,adam
+semeion,padrao,Configuração padrão,1818,0.08980000019073486,,relu,SQU,0.0,1,32,0,adam
+semeion,media,Melhor configuração média,309,0.07029998302459717,,leaky_relu,DES,0.2,3,32,1,adam
+semeion,rec_k1,Recomendação PyMFE (k=1),1317,0.08980000019073486,,relu,ASC,0.5,3,32,1,adam
+semeion,rec_k3,Recomendação PyMFE (k=3),1317,0.08980000019073486,,relu,ASC,0.5,3,32,1,adam
+semeion,rec_k5,Recomendação PyMFE (k=5),1317,0.08980000019073486,,relu,ASC,0.5,3,32,1,adam
+semeion,random_search_T,"Random Search, T=100",1582,0.07029998302459717,0.00010932001750916243,relu,DES,0.5,7,32,1,rmsprop
+semeion,smbo_cold_T,"SMBO-Cold, T=100",1504,0.07810002565383911,12.852507859980687,relu,DES,0.2,7,16,1,rmsprop
+semeion,smbo_ws_PyMFE_k1_T,"SMBO-Similarity (k=1), T=100",1503,0.07029998302459717,12.39507176000625,relu,DES,0.2,7,16,1,adam
+semeion,smbo_ws_PyMFE_k3_T,"SMBO-Similarity (k=3), T=100",1480,0.04689997434616089,1.930454540019855,relu,DES,0.2,5,16,1,rmsprop
+semeion,smbo_ws_PyMFE_k5_T,"SMBO-Similarity (k=5), T=100",1414,0.07419997453689575,3.943929499993101,relu,DES,0.0,5,32,1,rmsprop
+semeion,smbo_ws_avgrank_T,"SMBO-Independent, T=100",309,0.07029998302459717,9.572568040015176,leaky_relu,DES,0.2,3,32,1,adam
+semeion,oraculo,Oráculo (D2V),1480,0.04689997434616089,,relu,DES,0.2,5,16,1,rmsprop
+soybean,padrao,Configuração padrão,1818,0.10420000553131104,,relu,SQU,0.0,1,32,0,adam
+soybean,media,Melhor configuração média,309,0.10420000553131104,,leaky_relu,DES,0.2,3,32,1,adam
+soybean,rec_k1,Recomendação PyMFE (k=1),2337,0.08329999446868896,,selu,ASC,0.0,5,8,1,adam
+soybean,rec_k3,Recomendação PyMFE (k=3),322,0.27079999446868896,,leaky_relu,DES,0.2,5,8,1,rmsprop
+soybean,rec_k5,Recomendação PyMFE (k=5),2587,0.16670000553131104,,selu,DES,0.0,7,32,0,rmsprop
+soybean,random_search_T,"Random Search, T=100",1384,0.0625,0.00014076000079512596,relu,DES,0.0,3,16,1,rmsprop
+soybean,smbo_cold_T,"SMBO-Cold, T=100",231,0.041700005531311035,11.831734959990717,leaky_relu,DES,0.0,3,16,1,adam
+soybean,smbo_ws_PyMFE_k1_T,"SMBO-Similarity (k=1), T=100",2325,0.0625,15.033804879989475,selu,ASC,0.0,3,32,1,adam
+soybean,smbo_ws_PyMFE_k3_T,"SMBO-Similarity (k=3), T=100",978,0.020799994468688965,9.407183499983512,leaky_relu,SYM,0.0,5,32,0,adam
+soybean,smbo_ws_PyMFE_k5_T,"SMBO-Similarity (k=5), T=100",445,0.0625,11.478826000005938,leaky_relu,ENC,0.0,3,16,0,rmsprop
+soybean,smbo_ws_avgrank_T,"SMBO-Independent, T=100",231,0.041700005531311035,14.12014172000345,leaky_relu,DES,0.0,3,16,1,adam
+soybean,oraculo,Oráculo (D2V),978,0.020799994468688965,,leaky_relu,SYM,0.0,5,32,0,adam
+spambase,padrao,Configuração padrão,1818,0.0746999979019165,,relu,SQU,0.0,1,32,0,adam
+spambase,media,Melhor configuração média,309,0.08289998769760132,,leaky_relu,DES,0.2,3,32,1,adam
+spambase,rec_k1,Recomendação PyMFE (k=1),3039,0.07609999179840088,,selu,SQU,0.0,7,16,1,adam
+spambase,rec_k3,Recomendação PyMFE (k=3),3039,0.07609999179840088,,selu,SQU,0.0,7,16,1,adam
+spambase,rec_k5,Recomendação PyMFE (k=5),3039,0.07609999179840088,,selu,SQU,0.0,7,16,1,adam
+spambase,random_search_T,"Random Search, T=100",1405,0.057099997997283936,0.00011092000640928745,relu,DES,0.0,5,16,0,rmsprop
+spambase,smbo_cold_T,"SMBO-Cold, T=100",1722,0.061100006103515625,11.064867460005917,relu,ENC,0.2,7,32,0,adam
+spambase,smbo_ws_PyMFE_k1_T,"SMBO-Similarity (k=1), T=100",270,0.059800028800964355,12.072672060015611,leaky_relu,DES,0.0,7,8,0,adam
+spambase,smbo_ws_PyMFE_k3_T,"SMBO-Similarity (k=3), T=100",1458,0.059800028800964355,12.747982860007323,relu,DES,0.2,3,32,0,adam
+spambase,smbo_ws_PyMFE_k5_T,"SMBO-Similarity (k=5), T=100",268,0.05570000410079956,9.091133520007133,leaky_relu,DES,0.0,7,4,1,rmsprop
+spambase,smbo_ws_avgrank_T,"SMBO-Independent, T=100",1458,0.059800028800964355,12.19158074001316,relu,DES,0.2,3,32,0,adam
+spambase,oraculo,Oráculo (D2V),268,0.05570000410079956,,leaky_relu,DES,0.0,7,4,1,rmsprop
+spect,padrao,Configuração padrão,1818,0.19999998807907104,,relu,SQU,0.0,1,32,0,adam
+spect,media,Melhor configuração média,309,0.19999998807907104,,leaky_relu,DES,0.2,3,32,1,adam
+spect,rec_k1,Recomendação PyMFE (k=1),2751,0.19999998807907104,,selu,ENC,0.0,3,16,1,adam
+spect,rec_k3,Recomendação PyMFE (k=3),2991,0.30000001192092896,,selu,SQU,0.0,3,16,1,adam
+spect,rec_k5,Recomendação PyMFE (k=5),2991,0.30000001192092896,,selu,SQU,0.0,3,16,1,adam
+spect,random_search_T,"Random Search, T=100",2789,0.10000002384185791,0.0001095399959012866,selu,ENC,0.0,7,4,1,sgd
+spect,smbo_cold_T,"SMBO-Cold, T=100",2357,0.19999998807907104,5.936082400009036,selu,ASC,0.0,7,4,1,sgd
+spect,smbo_ws_PyMFE_k1_T,"SMBO-Similarity (k=1), T=100",2752,0.10000002384185791,10.23178335998673,selu,ENC,0.0,3,16,1,rmsprop
+spect,smbo_ws_PyMFE_k3_T,"SMBO-Similarity (k=3), T=100",23,0.0,6.897730799997225,leaky_relu,ASC,0.0,3,32,1,sgd
+spect,smbo_ws_PyMFE_k5_T,"SMBO-Similarity (k=5), T=100",2752,0.10000002384185791,6.7781373800011355,selu,ENC,0.0,3,16,1,rmsprop
+spect,smbo_ws_avgrank_T,"SMBO-Independent, T=100",275,0.10000002384185791,6.9191169400000945,leaky_relu,DES,0.0,7,8,1,sgd
+spect,oraculo,Oráculo (D2V),23,0.0,,leaky_relu,ASC,0.0,3,32,1,sgd
+spectf,padrao,Configuração padrão,1818,0.375,,relu,SQU,0.0,1,32,0,adam
+spectf,media,Melhor configuração média,309,0.3125,,leaky_relu,DES,0.2,3,32,1,adam
+spectf,rec_k1,Recomendação PyMFE (k=1),1164,0.28119999170303345,,relu,ASC,0.0,3,16,0,adam
+spectf,rec_k3,Recomendação PyMFE (k=3),82,0.5625,,leaky_relu,ASC,0.2,3,8,1,rmsprop
+spectf,rec_k5,Recomendação PyMFE (k=5),513,0.5625,,leaky_relu,ENC,0.2,3,8,1,adam
+spectf,random_search_T,"Random Search, T=100",1002,0.15619999170303345,0.00012422001454979182,leaky_relu,SYM,0.0,7,32,0,adam
+spectf,smbo_cold_T,"SMBO-Cold, T=100",3163,0.15619999170303345,8.643299500015564,selu,SQU,0.5,1,32,0,rmsprop
+spectf,smbo_ws_PyMFE_k1_T,"SMBO-Similarity (k=1), T=100",2420,0.15619999170303345,13.625858440017328,selu,ASC,0.2,5,32,0,sgd
+spectf,smbo_ws_PyMFE_k3_T,"SMBO-Similarity (k=3), T=100",2544,0.1875,9.64770537998993,selu,DES,0.0,5,4,0,adam
+spectf,smbo_ws_PyMFE_k5_T,"SMBO-Similarity (k=5), T=100",978,0.15619999170303345,8.309203139995224,leaky_relu,SYM,0.0,5,32,0,adam
+spectf,smbo_ws_avgrank_T,"SMBO-Independent, T=100",1626,0.1875,10.718347940011881,relu,ENC,0.0,5,32,0,adam
+spectf,oraculo,Oráculo (D2V),2255,0.031199991703033447,,relu,SYM,0.5,3,32,1,sgd
+statlog-australian-credit,padrao,Configuração padrão,1818,0.3571000099182129,,relu,SQU,0.0,1,32,0,adam
+statlog-australian-credit,media,Melhor configuração média,309,0.2946000099182129,,leaky_relu,DES,0.2,3,32,1,adam
+statlog-australian-credit,rec_k1,Recomendação PyMFE (k=1),2552,0.3125,,selu,DES,0.0,5,8,0,sgd
+statlog-australian-credit,rec_k3,Recomendação PyMFE (k=3),2552,0.3125,,selu,DES,0.0,5,8,0,sgd
+statlog-australian-credit,rec_k5,Recomendação PyMFE (k=5),2552,0.3125,,selu,DES,0.0,5,8,0,sgd
+statlog-australian-credit,random_search_T,"Random Search, T=100",1913,0.2857000231742859,0.00010742000304162503,relu,SQU,0.2,1,16,1,sgd
+statlog-australian-credit,smbo_cold_T,"SMBO-Cold, T=100",103,0.2857000231742859,8.52897943998687,leaky_relu,ASC,0.2,5,8,0,rmsprop
+statlog-australian-credit,smbo_ws_PyMFE_k1_T,"SMBO-Similarity (k=1), T=100",23,0.2857000231742859,12.32760161999613,leaky_relu,ASC,0.0,3,32,1,sgd
+statlog-australian-credit,smbo_ws_PyMFE_k3_T,"SMBO-Similarity (k=3), T=100",2739,0.2767999768257141,14.567307260003872,selu,ENC,0.0,3,4,1,adam
+statlog-australian-credit,smbo_ws_PyMFE_k5_T,"SMBO-Similarity (k=5), T=100",2624,0.2946000099182129,8.493222820013761,selu,DES,0.2,5,8,0,sgd
+statlog-australian-credit,smbo_ws_avgrank_T,"SMBO-Independent, T=100",971,0.2767999768257141,11.770120440004394,leaky_relu,SYM,0.0,5,8,1,sgd
+statlog-australian-credit,oraculo,Oráculo (D2V),483,0.2321000099182129,,leaky_relu,ENC,0.0,7,4,1,adam
+statlog-german-credit,padrao,Configuração padrão,1818,0.29170000553131104,,relu,SQU,0.0,1,32,0,adam
+statlog-german-credit,media,Melhor configuração média,309,0.29170000553131104,,leaky_relu,DES,0.2,3,32,1,adam
+statlog-german-credit,rec_k1,Recomendação PyMFE (k=1),483,0.31940001249313354,,leaky_relu,ENC,0.0,7,4,1,adam
+statlog-german-credit,rec_k3,Recomendação PyMFE (k=3),483,0.31940001249313354,,leaky_relu,ENC,0.0,7,4,1,adam
+statlog-german-credit,rec_k5,Recomendação PyMFE (k=5),483,0.31940001249313354,,leaky_relu,ENC,0.0,7,4,1,adam
+statlog-german-credit,random_search_T,"Random Search, T=100",756,0.24309998750686646,0.00010019999463111162,leaky_relu,SQU,0.2,1,16,0,adam
+statlog-german-credit,smbo_cold_T,"SMBO-Cold, T=100",1584,0.23610001802444458,8.352966600004583,relu,ENC,0.0,3,4,0,adam
+statlog-german-credit,smbo_ws_PyMFE_k1_T,"SMBO-Similarity (k=1), T=100",2005,0.22920000553131104,13.098743199999443,relu,SQU,0.5,1,16,0,rmsprop
+statlog-german-credit,smbo_ws_PyMFE_k3_T,"SMBO-Similarity (k=3), T=100",3150,0.23610001802444458,13.924932519998402,selu,SQU,0.5,1,8,0,adam
+statlog-german-credit,smbo_ws_PyMFE_k5_T,"SMBO-Similarity (k=5), T=100",1576,0.22920000553131104,9.578416400006972,relu,DES,0.5,7,16,1,rmsprop
+statlog-german-credit,smbo_ws_avgrank_T,"SMBO-Independent, T=100",2109,0.22920000553131104,13.455960639985278,relu,SYM,0.0,3,32,1,adam
+statlog-german-credit,oraculo,Oráculo (D2V),2552,0.20139998197555542,,selu,DES,0.0,5,8,0,sgd
+statlog-heart,padrao,Configuração padrão,1818,0.21880000829696655,,relu,SQU,0.0,1,32,0,adam
+statlog-heart,media,Melhor configuração média,309,0.34380000829696655,,leaky_relu,DES,0.2,3,32,1,adam
+statlog-heart,rec_k1,Recomendação PyMFE (k=1),2738,0.28119999170303345,,selu,ENC,0.0,3,4,0,sgd
+statlog-heart,rec_k3,Recomendação PyMFE (k=3),2738,0.28119999170303345,,selu,ENC,0.0,3,4,0,sgd
+statlog-heart,rec_k5,Recomendação PyMFE (k=5),2738,0.28119999170303345,,selu,ENC,0.0,3,4,0,sgd
+statlog-heart,random_search_T,"Random Search, T=100",822,0.1875,0.00010432000271975994,leaky_relu,SQU,0.2,7,8,0,adam
+statlog-heart,smbo_cold_T,"SMBO-Cold, T=100",1363,0.1875,8.75233753998764,relu,ASC,0.5,7,32,0,rmsprop
+statlog-heart,smbo_ws_PyMFE_k1_T,"SMBO-Similarity (k=1), T=100",1487,0.1875,13.370568239991552,relu,DES,0.2,5,32,1,sgd
+statlog-heart,smbo_ws_PyMFE_k3_T,"SMBO-Similarity (k=3), T=100",2396,0.1875,10.230675959982909,selu,ASC,0.2,3,32,0,sgd
+statlog-heart,smbo_ws_PyMFE_k5_T,"SMBO-Similarity (k=5), T=100",1584,0.1875,8.16585833998397,relu,ENC,0.0,3,4,0,adam
+statlog-heart,smbo_ws_avgrank_T,"SMBO-Independent, T=100",2179,0.1875,12.969071059999987,relu,SYM,0.2,3,32,0,rmsprop
+statlog-heart,oraculo,Oráculo (D2V),116,0.125,,leaky_relu,ASC,0.2,5,32,0,sgd
+statlog-image,padrao,Configuração padrão,1818,0.03530001640319824,,relu,SQU,0.0,1,32,0,adam
+statlog-image,media,Melhor configuração média,309,0.04350000619888306,,leaky_relu,DES,0.2,3,32,1,adam
+statlog-image,rec_k1,Recomendação PyMFE (k=1),238,0.03799998760223389,,leaky_relu,DES,0.0,3,32,1,rmsprop
+statlog-image,rec_k3,Recomendação PyMFE (k=3),1866,0.06519997119903564,,relu,SQU,0.0,5,32,0,adam
+statlog-image,rec_k5,Recomendação PyMFE (k=5),1726,0.04350000619888306,,relu,ENC,0.2,7,32,1,rmsprop
+statlog-image,random_search_T,"Random Search, T=100",2545,0.021700024604797363,9.97799914330244e-05,selu,DES,0.0,5,4,0,rmsprop
+statlog-image,smbo_cold_T,"SMBO-Cold, T=100",1629,0.024500012397766113,14.004315460007637,relu,ENC,0.0,5,32,1,adam
+statlog-image,smbo_ws_PyMFE_k1_T,"SMBO-Similarity (k=1), T=100",438,0.024500012397766113,16.027662520017476,leaky_relu,ENC,0.0,3,8,0,adam
+statlog-image,smbo_ws_PyMFE_k3_T,"SMBO-Similarity (k=3), T=100",1458,0.021700024604797363,11.167250539991073,relu,DES,0.2,3,32,0,adam
+statlog-image,smbo_ws_PyMFE_k5_T,"SMBO-Similarity (k=5), T=100",1389,0.021700024604797363,8.392324939998797,relu,DES,0.0,3,32,1,adam
+statlog-image,smbo_ws_avgrank_T,"SMBO-Independent, T=100",1458,0.021700024604797363,10.077118260017595,relu,DES,0.2,3,32,0,adam
+statlog-image,oraculo,Oráculo (D2V),25,0.018999993801116943,,leaky_relu,ASC,0.0,5,4,0,rmsprop
+statlog-landsat,padrao,Configuração padrão,1818,0.09259998798370361,,relu,SQU,0.0,1,32,0,adam
+statlog-landsat,media,Melhor configuração média,309,0.09820002317428589,,leaky_relu,DES,0.2,3,32,1,adam
+statlog-landsat,rec_k1,Recomendação PyMFE (k=1),372,0.12949997186660767,,leaky_relu,DES,0.5,3,16,0,adam
+statlog-landsat,rec_k3,Recomendação PyMFE (k=3),372,0.12949997186660767,,leaky_relu,DES,0.5,3,16,0,adam
+statlog-landsat,rec_k5,Recomendação PyMFE (k=5),372,0.12949997186660767,,leaky_relu,DES,0.5,3,16,0,adam
+statlog-landsat,random_search_T,"Random Search, T=100",252,0.07029998302459717,9.938001167029143e-05,leaky_relu,DES,0.0,5,16,0,adam
+statlog-landsat,smbo_cold_T,"SMBO-Cold, T=100",282,0.06919997930526733,11.835492699989118,leaky_relu,DES,0.0,7,32,0,adam
+statlog-landsat,smbo_ws_PyMFE_k1_T,"SMBO-Similarity (k=1), T=100",252,0.07029998302459717,10.720759740006178,leaky_relu,DES,0.0,5,16,0,adam
+statlog-landsat,smbo_ws_PyMFE_k3_T,"SMBO-Similarity (k=3), T=100",1423,0.0680999755859375,11.840944900014438,relu,DES,0.0,7,8,0,rmsprop
+statlog-landsat,smbo_ws_PyMFE_k5_T,"SMBO-Similarity (k=5), T=100",2557,0.07700002193450928,10.534680800000206,selu,DES,0.0,5,16,0,rmsprop
+statlog-landsat,smbo_ws_avgrank_T,"SMBO-Independent, T=100",252,0.07029998302459717,10.543643339979463,leaky_relu,DES,0.0,5,16,0,adam
+statlog-landsat,oraculo,Oráculo (D2V),1423,0.0680999755859375,,relu,DES,0.0,7,8,0,rmsprop
+statlog-shuttle,padrao,Configuração padrão,1818,0.0009999871253967285,,relu,SQU,0.0,1,32,0,adam
+statlog-shuttle,media,Melhor configuração média,309,0.0034999847412109375,,leaky_relu,DES,0.2,3,32,1,adam
+statlog-shuttle,rec_k1,Recomendação PyMFE (k=1),2604,0.001100003719329834,,selu,DES,0.2,3,16,0,adam
+statlog-shuttle,rec_k3,Recomendação PyMFE (k=3),2604,0.001100003719329834,,selu,DES,0.2,3,16,0,adam
+statlog-shuttle,rec_k5,Recomendação PyMFE (k=5),2604,0.001100003719329834,,selu,DES,0.2,3,16,0,adam
+statlog-shuttle,random_search_T,"Random Search, T=100",2989,0.0006999969482421875,9.927998762577772e-05,selu,SQU,0.0,3,16,0,rmsprop
+statlog-shuttle,smbo_cold_T,"SMBO-Cold, T=100",1626,0.001100003719329834,9.299300360004418,relu,ENC,0.0,5,32,0,adam
+statlog-shuttle,smbo_ws_PyMFE_k1_T,"SMBO-Similarity (k=1), T=100",1602,0.0006999969482421875,12.519507320015691,relu,ENC,0.0,3,32,0,adam
+statlog-shuttle,smbo_ws_PyMFE_k3_T,"SMBO-Similarity (k=3), T=100",12,0.000500023365020752,7.720011439989321,leaky_relu,ASC,0.0,3,16,0,adam
+statlog-shuttle,smbo_ws_PyMFE_k5_T,"SMBO-Similarity (k=5), T=100",1836,0.000599980354309082,8.403059399989434,relu,SQU,0.0,3,16,0,adam
+statlog-shuttle,smbo_ws_avgrank_T,"SMBO-Independent, T=100",690,0.000500023365020752,9.181397000001743,leaky_relu,SQU,0.0,3,32,0,adam
+statlog-shuttle,oraculo,Oráculo (D2V),12,0.000500023365020752,,leaky_relu,ASC,0.0,3,16,0,adam
+statlog-vehicle,padrao,Configuração padrão,1818,0.25,,relu,SQU,0.0,1,32,0,adam
+statlog-vehicle,media,Melhor configuração média,309,0.1607000231742859,,leaky_relu,DES,0.2,3,32,1,adam
+statlog-vehicle,rec_k1,Recomendação PyMFE (k=1),499,0.258899986743927,,leaky_relu,ENC,0.0,7,32,0,rmsprop
+statlog-vehicle,rec_k3,Recomendação PyMFE (k=3),499,0.258899986743927,,leaky_relu,ENC,0.0,7,32,0,rmsprop
+statlog-vehicle,rec_k5,Recomendação PyMFE (k=5),499,0.258899986743927,,leaky_relu,ENC,0.0,7,32,0,rmsprop
+statlog-vehicle,random_search_T,"Random Search, T=100",2794,0.1875,0.00010130000300705433,selu,ENC,0.0,7,8,1,rmsprop
+statlog-vehicle,smbo_cold_T,"SMBO-Cold, T=100",2637,0.133899986743927,10.520512280007825,selu,DES,0.2,5,32,1,adam
+statlog-vehicle,smbo_ws_PyMFE_k1_T,"SMBO-Similarity (k=1), T=100",2559,0.1696000099182129,13.715137719991617,selu,DES,0.0,5,16,1,adam
+statlog-vehicle,smbo_ws_PyMFE_k3_T,"SMBO-Similarity (k=3), T=100",2559,0.1696000099182129,9.505850860010833,selu,DES,0.0,5,16,1,adam
+statlog-vehicle,smbo_ws_PyMFE_k5_T,"SMBO-Similarity (k=5), T=100",2613,0.1607000231742859,10.498952459986322,selu,DES,0.2,3,32,1,adam
+statlog-vehicle,smbo_ws_avgrank_T,"SMBO-Independent, T=100",309,0.1607000231742859,12.30584539999254,leaky_relu,DES,0.2,3,32,1,adam
+statlog-vehicle,oraculo,Oráculo (D2V),2637,0.133899986743927,,selu,DES,0.2,5,32,1,adam
+steel-plates,padrao,Configuração padrão,1818,0.29280000925064087,,relu,SQU,0.0,1,32,0,adam
+steel-plates,media,Melhor configuração média,309,0.28949999809265137,,leaky_relu,DES,0.2,3,32,1,adam
+steel-plates,rec_k1,Recomendação PyMFE (k=1),2791,0.27300000190734863,,selu,ENC,0.0,7,8,0,rmsprop
+steel-plates,rec_k3,Recomendação PyMFE (k=3),2791,0.27300000190734863,,selu,ENC,0.0,7,8,0,rmsprop
+steel-plates,rec_k5,Recomendação PyMFE (k=5),2791,0.27300000190734863,,selu,ENC,0.0,7,8,0,rmsprop
+steel-plates,random_search_T,"Random Search, T=100",277,0.26639997959136963,9.928001090884209e-05,leaky_relu,DES,0.0,7,16,0,rmsprop
+steel-plates,smbo_cold_T,"SMBO-Cold, T=100",235,0.2533000111579895,12.449874260020442,leaky_relu,DES,0.0,3,32,0,rmsprop
+steel-plates,smbo_ws_PyMFE_k1_T,"SMBO-Similarity (k=1), T=100",331,0.23680001497268677,10.072669699997642,leaky_relu,DES,0.2,5,32,0,rmsprop
+steel-plates,smbo_ws_PyMFE_k3_T,"SMBO-Similarity (k=3), T=100",331,0.23680001497268677,11.939643379999325,leaky_relu,DES,0.2,5,32,0,rmsprop
+steel-plates,smbo_ws_PyMFE_k5_T,"SMBO-Similarity (k=5), T=100",352,0.2466999888420105,11.013931760005653,leaky_relu,DES,0.2,7,16,1,rmsprop
+steel-plates,smbo_ws_avgrank_T,"SMBO-Independent, T=100",1380,0.23680001497268677,10.086963099986315,relu,DES,0.0,3,16,0,adam
+steel-plates,oraculo,Oráculo (D2V),2806,0.23360002040863037,,selu,ENC,0.0,7,32,1,rmsprop
+synthetic-control,padrao,Configuração padrão,1818,0.02499997615814209,,relu,SQU,0.0,1,32,0,adam
+synthetic-control,media,Melhor configuração média,309,0.02499997615814209,,leaky_relu,DES,0.2,3,32,1,adam
+synthetic-control,rec_k1,Recomendação PyMFE (k=1),2637,0.02499997615814209,,selu,DES,0.2,5,32,1,adam
+synthetic-control,rec_k3,Recomendação PyMFE (k=3),2637,0.02499997615814209,,selu,DES,0.2,5,32,1,adam
+synthetic-control,rec_k5,Recomendação PyMFE (k=5),2637,0.02499997615814209,,selu,DES,0.2,5,32,1,adam
+synthetic-control,random_search_T,"Random Search, T=100",1962,0.0,9.8840007558465e-05,relu,SQU,0.2,5,32,0,adam
+synthetic-control,smbo_cold_T,"SMBO-Cold, T=100",1078,0.0,3.1873969599837437,leaky_relu,SYM,0.2,7,32,1,rmsprop
+synthetic-control,smbo_ws_PyMFE_k1_T,"SMBO-Similarity (k=1), T=100",693,0.012499988079071045,7.211532439989969,leaky_relu,SQU,0.0,3,32,1,adam
+synthetic-control,smbo_ws_PyMFE_k3_T,"SMBO-Similarity (k=3), T=100",2365,0.0,0.00021705999970436096,selu,ASC,0.0,7,16,0,rmsprop
+synthetic-control,smbo_ws_PyMFE_k5_T,"SMBO-Similarity (k=5), T=100",2588,0.0,3.024273380008526,selu,DES,0.0,7,32,0,sgd
+synthetic-control,smbo_ws_avgrank_T,"SMBO-Independent, T=100",1156,0.0,5.986266379989684,relu,ASC,0.0,3,4,1,rmsprop
+synthetic-control,oraculo,Oráculo (D2V),1,0.0,,leaky_relu,ASC,0.0,3,4,0,rmsprop
+teaching,padrao,Configuração padrão,1818,0.625,,relu,SQU,0.0,1,32,0,adam
+teaching,media,Melhor configuração média,309,0.625,,leaky_relu,DES,0.2,3,32,1,adam
+teaching,rec_k1,Recomendação PyMFE (k=1),1193,0.4375,,relu,ASC,0.0,5,16,1,sgd
+teaching,rec_k3,Recomendação PyMFE (k=3),1193,0.4375,,relu,ASC,0.0,5,16,1,sgd
+teaching,rec_k5,Recomendação PyMFE (k=5),1193,0.4375,,relu,ASC,0.0,5,16,1,sgd
+teaching,random_search_T,"Random Search, T=100",1192,0.25,9.904000908136367e-05,relu,ASC,0.0,5,16,1,rmsprop
+teaching,smbo_cold_T,"SMBO-Cold, T=100",3311,0.3125,4.97883421999868,selu,SYM,0.0,7,32,1,sgd
+teaching,smbo_ws_PyMFE_k1_T,"SMBO-Similarity (k=1), T=100",3301,0.25,9.188602599990555,selu,SYM,0.0,7,16,0,rmsprop
+teaching,smbo_ws_PyMFE_k3_T,"SMBO-Similarity (k=3), T=100",2797,0.25,0.79633486000821,selu,ENC,0.0,7,16,0,rmsprop
+teaching,smbo_ws_PyMFE_k5_T,"SMBO-Similarity (k=5), T=100",283,0.25,5.182824079995044,leaky_relu,DES,0.0,7,32,0,rmsprop
+teaching,smbo_ws_avgrank_T,"SMBO-Independent, T=100",3307,0.25,14.252697720006108,selu,SYM,0.0,7,32,0,rmsprop
+teaching,oraculo,Oráculo (D2V),64,0.25,,leaky_relu,ASC,0.0,7,16,1,rmsprop
+thyroid,padrao,Configuração padrão,1818,0.019500017166137695,,relu,SQU,0.0,1,32,0,adam
+thyroid,media,Melhor configuração média,309,0.027300000190734863,,leaky_relu,DES,0.2,3,32,1,adam
+thyroid,rec_k1,Recomendação PyMFE (k=1),2623,0.02340000867843628,,selu,DES,0.2,5,8,0,rmsprop
+thyroid,rec_k3,Recomendação PyMFE (k=3),2623,0.02340000867843628,,selu,DES,0.2,5,8,0,rmsprop
+thyroid,rec_k5,Recomendação PyMFE (k=5),2623,0.02340000867843628,,selu,DES,0.2,5,8,0,rmsprop
+thyroid,random_search_T,"Random Search, T=100",2319,0.014299988746643066,0.00010053999722003937,selu,ASC,0.0,3,16,1,adam
+thyroid,smbo_cold_T,"SMBO-Cold, T=100",2319,0.014299988746643066,14.430576379993,selu,ASC,0.0,3,16,1,adam
+thyroid,smbo_ws_PyMFE_k1_T,"SMBO-Similarity (k=1), T=100",2628,0.01690000295639038,14.32727453999687,selu,DES,0.2,5,16,0,adam
+thyroid,smbo_ws_PyMFE_k3_T,"SMBO-Similarity (k=3), T=100",2736,0.010399997234344482,13.944850739999675,selu,ENC,0.0,3,4,0,adam
+thyroid,smbo_ws_PyMFE_k5_T,"SMBO-Similarity (k=5), T=100",2736,0.010399997234344482,10.947911780001595,selu,ENC,0.0,3,4,0,adam
+thyroid,smbo_ws_avgrank_T,"SMBO-Independent, T=100",1026,0.015600025653839111,14.775834319996648,leaky_relu,SYM,0.2,3,32,0,adam
+thyroid,oraculo,Oráculo (D2V),2604,0.007799983024597168,,selu,DES,0.2,3,16,0,adam
+tic-tac-toe,padrao,Configuração padrão,1818,0.020799994468688965,,relu,SQU,0.0,1,32,0,adam
+tic-tac-toe,media,Melhor configuração média,309,0.020799994468688965,,leaky_relu,DES,0.2,3,32,1,adam
+tic-tac-toe,rec_k1,Recomendação PyMFE (k=1),2230,0.020799994468688965,,relu,SYM,0.2,7,32,1,rmsprop
+tic-tac-toe,rec_k3,Recomendação PyMFE (k=3),216,0.020799994468688965,,leaky_relu,DES,0.0,3,4,0,adam
+tic-tac-toe,rec_k5,Recomendação PyMFE (k=5),2230,0.020799994468688965,,relu,SYM,0.2,7,32,1,rmsprop
+tic-tac-toe,random_search_T,"Random Search, T=100",1771,0.020799994468688965,0.00010400000028312206,relu,ENC,0.5,5,32,0,rmsprop
+tic-tac-toe,smbo_cold_T,"SMBO-Cold, T=100",2938,0.020799994468688965,8.895675180014223,selu,ENC,0.5,7,8,1,rmsprop
+tic-tac-toe,smbo_ws_PyMFE_k1_T,"SMBO-Similarity (k=1), T=100",2337,0.006900012493133545,9.294788460014388,selu,ASC,0.0,5,8,1,adam
+tic-tac-toe,smbo_ws_PyMFE_k3_T,"SMBO-Similarity (k=3), T=100",3037,0.006900012493133545,9.119031139998697,selu,SQU,0.0,7,16,0,rmsprop
+tic-tac-toe,smbo_ws_PyMFE_k5_T,"SMBO-Similarity (k=5), T=100",2361,0.006900012493133545,8.664488040003926,selu,ASC,0.0,7,8,1,adam
+tic-tac-toe,smbo_ws_avgrank_T,"SMBO-Independent, T=100",1839,0.01389998197555542,8.524472419987433,relu,SQU,0.0,3,16,1,adam
+tic-tac-toe,oraculo,Oráculo (D2V),2100,0.0,,relu,SYM,0.0,3,16,0,adam
+titanic,padrao,Configuração padrão,1818,0.20740002393722534,,relu,SQU,0.0,1,32,0,adam
+titanic,media,Melhor configuração média,309,0.2102000117301941,,leaky_relu,DES,0.2,3,32,1,adam
+titanic,rec_k1,Recomendação PyMFE (k=1),2623,0.2102000117301941,,selu,DES,0.2,5,8,0,rmsprop
+titanic,rec_k3,Recomendação PyMFE (k=3),2604,0.2215999960899353,,selu,DES,0.2,3,16,0,adam
+titanic,rec_k5,Recomendação PyMFE (k=5),3430,0.2386000156402588,,selu,SYM,0.5,5,32,1,rmsprop
+titanic,random_search_T,"Random Search, T=100",2169,0.20740002393722534,9.925998747348786e-05,relu,SYM,0.2,3,8,1,adam
+titanic,smbo_cold_T,"SMBO-Cold, T=100",678,0.2102000117301941,2.478801400004886,leaky_relu,SQU,0.0,3,8,0,adam
+titanic,smbo_ws_PyMFE_k1_T,"SMBO-Similarity (k=1), T=100",136,0.20740002393722534,3.581632520002313,leaky_relu,ASC,0.2,7,16,1,rmsprop
+titanic,smbo_ws_PyMFE_k3_T,"SMBO-Similarity (k=3), T=100",15,0.20740002393722534,0.00016151999589055776,leaky_relu,ASC,0.0,3,16,1,adam
+titanic,smbo_ws_PyMFE_k5_T,"SMBO-Similarity (k=5), T=100",1372,0.20740002393722534,0.4230835600057617,relu,DES,0.0,3,4,1,rmsprop
+titanic,smbo_ws_avgrank_T,"SMBO-Independent, T=100",544,0.20740002393722534,0.00048217999283224345,leaky_relu,ENC,0.2,5,16,1,rmsprop
+titanic,oraculo,Oráculo (D2V),15,0.20740002393722534,,leaky_relu,ASC,0.0,3,16,1,adam
+twonorm,padrao,Configuração padrão,1818,0.031199991703033447,,relu,SQU,0.0,1,32,0,adam
+twonorm,media,Melhor configuração média,309,0.024800002574920654,,leaky_relu,DES,0.2,3,32,1,adam
+twonorm,rec_k1,Recomendação PyMFE (k=1),2956,0.02670001983642578,,selu,SQU,0.0,1,4,1,rmsprop
+twonorm,rec_k3,Recomendação PyMFE (k=3),2956,0.02670001983642578,,selu,SQU,0.0,1,4,1,rmsprop
+twonorm,rec_k5,Recomendação PyMFE (k=5),2956,0.02670001983642578,,selu,SQU,0.0,1,4,1,rmsprop
+twonorm,random_search_T,"Random Search, T=100",1948,0.022099971771240234,0.00011143998708575963,relu,SQU,0.2,5,4,1,rmsprop
+twonorm,smbo_cold_T,"SMBO-Cold, T=100",2834,0.022099971771240234,12.325695379986428,selu,ENC,0.2,5,4,0,sgd
+twonorm,smbo_ws_PyMFE_k1_T,"SMBO-Similarity (k=1), T=100",1882,0.021099984645843506,8.905003160005435,relu,SQU,0.0,7,8,1,rmsprop
+twonorm,smbo_ws_PyMFE_k3_T,"SMBO-Similarity (k=3), T=100",2218,0.021099984645843506,9.48333854000084,relu,SYM,0.2,7,8,1,rmsprop
+twonorm,smbo_ws_PyMFE_k5_T,"SMBO-Similarity (k=5), T=100",425,0.021099984645843506,8.42933046000544,leaky_relu,DES,0.5,7,16,1,sgd
+twonorm,smbo_ws_avgrank_T,"SMBO-Independent, T=100",1150,0.021099984645843506,10.940101319993847,leaky_relu,SYM,0.5,7,32,1,rmsprop
+twonorm,oraculo,Oráculo (D2V),1152,0.019299983978271484,,relu,ASC,0.0,3,4,0,adam
+vertebral-column-2clases,padrao,Configuração padrão,1818,0.125,,relu,SQU,0.0,1,32,0,adam
+vertebral-column-2clases,media,Melhor configuração média,309,0.125,,leaky_relu,DES,0.2,3,32,1,adam
+vertebral-column-2clases,rec_k1,Recomendação PyMFE (k=1),594,0.10420000553131104,,leaky_relu,ENC,0.5,3,32,0,adam
+vertebral-column-2clases,rec_k3,Recomendação PyMFE (k=3),543,0.10420000553131104,,leaky_relu,ENC,0.2,5,16,1,adam
+vertebral-column-2clases,rec_k5,Recomendação PyMFE (k=5),3239,0.22920000553131104,,selu,SQU,0.5,7,32,1,sgd
+vertebral-column-2clases,random_search_T,"Random Search, T=100",159,0.041700005531311035,0.00010191998444497585,leaky_relu,ASC,0.5,3,16,1,adam
+vertebral-column-2clases,smbo_cold_T,"SMBO-Cold, T=100",3025,0.0625,12.464434919995256,selu,SQU,0.0,7,4,0,rmsprop
+vertebral-column-2clases,smbo_ws_PyMFE_k1_T,"SMBO-Similarity (k=1), T=100",2849,0.0625,10.350225279992447,selu,ENC,0.2,5,16,1,sgd
+vertebral-column-2clases,smbo_ws_PyMFE_k3_T,"SMBO-Similarity (k=3), T=100",2082,0.0625,7.544357980019413,relu,SQU,0.5,7,32,0,adam
+vertebral-column-2clases,smbo_ws_PyMFE_k5_T,"SMBO-Similarity (k=5), T=100",1913,0.041700005531311035,9.995000539999456,relu,SQU,0.2,1,16,1,sgd
+vertebral-column-2clases,smbo_ws_avgrank_T,"SMBO-Independent, T=100",3075,0.0625,5.759119940013624,selu,SQU,0.2,3,4,1,adam
+vertebral-column-2clases,oraculo,Oráculo (D2V),3014,0.020799994468688965,,selu,SQU,0.0,5,16,0,sgd
+vertebral-column-3clases,padrao,Configuração padrão,1818,0.14579999446868896,,relu,SQU,0.0,1,32,0,adam
+vertebral-column-3clases,media,Melhor configuração média,309,0.125,,leaky_relu,DES,0.2,3,32,1,adam
+vertebral-column-3clases,rec_k1,Recomendação PyMFE (k=1),268,0.125,,leaky_relu,DES,0.0,7,4,1,rmsprop
+vertebral-column-3clases,rec_k3,Recomendação PyMFE (k=3),3307,0.08329999446868896,,selu,SYM,0.0,7,32,0,rmsprop
+vertebral-column-3clases,rec_k5,Recomendação PyMFE (k=5),2569,0.16670000553131104,,selu,DES,0.0,7,4,0,rmsprop
+vertebral-column-3clases,random_search_T,"Random Search, T=100",1031,0.08329999446868896,9.860000573098659e-05,leaky_relu,SYM,0.2,3,32,1,sgd
+vertebral-column-3clases,smbo_cold_T,"SMBO-Cold, T=100",2594,0.08329999446868896,12.536741319997237,selu,DES,0.2,3,4,0,sgd
+vertebral-column-3clases,smbo_ws_PyMFE_k1_T,"SMBO-Similarity (k=1), T=100",3307,0.08329999446868896,9.96328887999989,selu,SYM,0.0,7,32,0,rmsprop
+vertebral-column-3clases,smbo_ws_PyMFE_k3_T,"SMBO-Similarity (k=3), T=100",2874,0.0625,7.590170100005343,selu,ENC,0.2,7,32,0,adam
+vertebral-column-3clases,smbo_ws_PyMFE_k5_T,"SMBO-Similarity (k=5), T=100",3081,0.10420000553131104,8.365940040000714,selu,SQU,0.2,3,8,1,adam
+vertebral-column-3clases,smbo_ws_avgrank_T,"SMBO-Independent, T=100",1278,0.10420000553131104,8.682337039988488,relu,ASC,0.2,7,8,0,adam
+vertebral-column-3clases,oraculo,Oráculo (D2V),1371,0.041700005531311035,,relu,DES,0.0,3,4,1,adam
+wall-following,padrao,Configuração padrão,1818,0.11150002479553223,,relu,SQU,0.0,1,32,0,adam
+wall-following,media,Melhor configuração média,309,0.08090001344680786,,leaky_relu,DES,0.2,3,32,1,adam
+wall-following,rec_k1,Recomendação PyMFE (k=1),499,0.08819997310638428,,leaky_relu,ENC,0.0,7,32,0,rmsprop
+wall-following,rec_k3,Recomendação PyMFE (k=3),499,0.08819997310638428,,leaky_relu,ENC,0.0,7,32,0,rmsprop
+wall-following,rec_k5,Recomendação PyMFE (k=5),499,0.08819997310638428,,leaky_relu,ENC,0.0,7,32,0,rmsprop
+wall-following,random_search_T,"Random Search, T=100",273,0.07109999656677246,0.00010182000696659088,leaky_relu,DES,0.0,7,8,1,adam
+wall-following,smbo_cold_T,"SMBO-Cold, T=100",357,0.06739997863769531,12.878912579989992,leaky_relu,DES,0.2,7,32,1,adam
+wall-following,smbo_ws_PyMFE_k1_T,"SMBO-Similarity (k=1), T=100",346,0.06859999895095825,11.979218539991416,leaky_relu,DES,0.2,7,8,1,rmsprop
+wall-following,smbo_ws_PyMFE_k3_T,"SMBO-Similarity (k=3), T=100",1653,0.0625,12.634600279992446,relu,ENC,0.0,7,32,1,adam
+wall-following,smbo_ws_PyMFE_k5_T,"SMBO-Similarity (k=5), T=100",1386,0.0723000168800354,13.093263340019622,relu,DES,0.0,3,32,0,adam
+wall-following,smbo_ws_avgrank_T,"SMBO-Independent, T=100",1462,0.07109999656677246,9.151102020009422,relu,DES,0.2,3,32,1,rmsprop
+wall-following,oraculo,Oráculo (D2V),1426,0.05760002136230469,,relu,DES,0.0,7,8,1,rmsprop
+waveform,padrao,Configuração padrão,1818,0.13029998540878296,,relu,SQU,0.0,1,32,0,adam
+waveform,media,Melhor configuração média,309,0.12099999189376831,,leaky_relu,DES,0.2,3,32,1,adam
+waveform,rec_k1,Recomendação PyMFE (k=1),2956,0.10900002717971802,,selu,SQU,0.0,1,4,1,rmsprop
+waveform,rec_k3,Recomendação PyMFE (k=3),2956,0.10900002717971802,,selu,SQU,0.0,1,4,1,rmsprop
+waveform,rec_k5,Recomendação PyMFE (k=5),2956,0.10900002717971802,,selu,SQU,0.0,1,4,1,rmsprop
+waveform,random_search_T,"Random Search, T=100",1196,0.11040002107620239,9.859998244792223e-05,relu,ASC,0.0,5,32,0,sgd
+waveform,smbo_cold_T,"SMBO-Cold, T=100",2194,0.1064000129699707,9.920898939995094,relu,SYM,0.2,5,8,1,rmsprop
+waveform,smbo_ws_PyMFE_k1_T,"SMBO-Similarity (k=1), T=100",2194,0.1064000129699707,10.752994619985111,relu,SYM,0.2,5,8,1,rmsprop
+waveform,smbo_ws_PyMFE_k3_T,"SMBO-Similarity (k=3), T=100",312,0.10769999027252197,10.097694740002044,leaky_relu,DES,0.2,5,4,0,adam
+waveform,smbo_ws_PyMFE_k5_T,"SMBO-Similarity (k=5), T=100",2955,0.10769999027252197,10.602646580012514,selu,SQU,0.0,1,4,1,adam
+waveform,smbo_ws_avgrank_T,"SMBO-Independent, T=100",3325,0.10900002717971802,12.094031700002962,selu,SYM,0.2,3,16,0,rmsprop
+waveform,oraculo,Oráculo (D2V),372,0.10240000486373901,,leaky_relu,DES,0.5,3,16,0,adam
+waveform-noise,padrao,Configuração padrão,1818,0.15890002250671387,,relu,SQU,0.0,1,32,0,adam
+waveform-noise,media,Melhor configuração média,309,0.15619999170303345,,leaky_relu,DES,0.2,3,32,1,adam
+waveform-noise,rec_k1,Recomendação PyMFE (k=1),372,0.13669997453689575,,leaky_relu,DES,0.5,3,16,0,adam
+waveform-noise,rec_k3,Recomendação PyMFE (k=3),372,0.13669997453689575,,leaky_relu,DES,0.5,3,16,0,adam
+waveform-noise,rec_k5,Recomendação PyMFE (k=5),372,0.13669997453689575,,leaky_relu,DES,0.5,3,16,0,adam
+waveform-noise,random_search_T,"Random Search, T=100",730,0.12370002269744873,0.00010140000376850367,leaky_relu,SQU,0.0,7,8,1,rmsprop
+waveform-noise,smbo_cold_T,"SMBO-Cold, T=100",2691,0.12110000848770142,8.20276109999977,selu,DES,0.5,5,4,1,adam
+waveform-noise,smbo_ws_PyMFE_k1_T,"SMBO-Similarity (k=1), T=100",2956,0.11720001697540283,7.759596140007488,selu,SQU,0.0,1,4,1,rmsprop
+waveform-noise,smbo_ws_PyMFE_k3_T,"SMBO-Similarity (k=3), T=100",2956,0.11720001697540283,9.13436998000834,selu,SQU,0.0,1,4,1,rmsprop
+waveform-noise,smbo_ws_PyMFE_k5_T,"SMBO-Similarity (k=5), T=100",1900,0.125,9.863065820001065,relu,SQU,0.2,1,4,1,rmsprop
+waveform-noise,smbo_ws_avgrank_T,"SMBO-Independent, T=100",3064,0.12239998579025269,11.28725250000134,selu,SQU,0.2,1,16,1,rmsprop
+waveform-noise,oraculo,Oráculo (D2V),2956,0.11720001697540283,,selu,SQU,0.0,1,4,1,rmsprop
+wine,padrao,Configuração padrão,1818,0.031199991703033447,,relu,SQU,0.0,1,32,0,adam
+wine,media,Melhor configuração média,309,0.0,,leaky_relu,DES,0.2,3,32,1,adam
+wine,rec_k1,Recomendação PyMFE (k=1),2356,0.0,,selu,ASC,0.0,7,4,1,rmsprop
+wine,rec_k3,Recomendação PyMFE (k=3),2356,0.0,,selu,ASC,0.0,7,4,1,rmsprop
+wine,rec_k5,Recomendação PyMFE (k=5),2356,0.0,,selu,ASC,0.0,7,4,1,rmsprop
+wine,random_search_T,"Random Search, T=100",517,0.0,9.8840007558465e-05,leaky_relu,ENC,0.2,3,16,0,rmsprop
+wine,smbo_cold_T,"SMBO-Cold, T=100",325,0.0,0.00022948000114411115,leaky_relu,DES,0.2,5,16,0,rmsprop
+wine,smbo_ws_PyMFE_k1_T,"SMBO-Similarity (k=1), T=100",2356,0.0,0.00020186000037938356,selu,ASC,0.0,7,4,1,rmsprop
+wine,smbo_ws_PyMFE_k3_T,"SMBO-Similarity (k=3), T=100",2356,0.0,0.00018414000514894725,selu,ASC,0.0,7,4,1,rmsprop
+wine,smbo_ws_PyMFE_k5_T,"SMBO-Similarity (k=5), T=100",2356,0.0,0.00019932000432163477,selu,ASC,0.0,7,4,1,rmsprop
+wine,smbo_ws_avgrank_T,"SMBO-Independent, T=100",309,0.0,0.00018142000772058964,leaky_relu,DES,0.2,3,32,1,adam
+wine,oraculo,Oráculo (D2V),3,0.0,,leaky_relu,ASC,0.0,3,4,1,adam
+wine-quality-red,padrao,Configuração padrão,1818,0.4416999816894531,,relu,SQU,0.0,1,32,0,adam
+wine-quality-red,media,Melhor configuração média,309,0.44999998807907104,,leaky_relu,DES,0.2,3,32,1,adam
+wine-quality-red,rec_k1,Recomendação PyMFE (k=1),1428,0.3791999816894531,,relu,DES,0.0,7,16,0,adam
+wine-quality-red,rec_k3,Recomendação PyMFE (k=3),1428,0.3791999816894531,,relu,DES,0.0,7,16,0,adam
+wine-quality-red,rec_k5,Recomendação PyMFE (k=5),1428,0.3791999816894531,,relu,DES,0.0,7,16,0,adam
+wine-quality-red,random_search_T,"Random Search, T=100",2158,0.3833000063896179,0.00010282001458108425,relu,SYM,0.0,7,32,1,rmsprop
+wine-quality-red,smbo_cold_T,"SMBO-Cold, T=100",264,0.3833000063896179,8.294891979987733,leaky_relu,DES,0.0,7,4,0,adam
+wine-quality-red,smbo_ws_PyMFE_k1_T,"SMBO-Similarity (k=1), T=100",1411,0.3374999761581421,10.349514520005323,relu,DES,0.0,5,32,0,rmsprop
+wine-quality-red,smbo_ws_PyMFE_k3_T,"SMBO-Similarity (k=3), T=100",1423,0.34170001745224,8.53132666000165,relu,DES,0.0,7,8,0,rmsprop
+wine-quality-red,smbo_ws_PyMFE_k5_T,"SMBO-Similarity (k=5), T=100",1423,0.34170001745224,9.60165537998546,relu,DES,0.0,7,8,0,rmsprop
+wine-quality-red,smbo_ws_avgrank_T,"SMBO-Independent, T=100",287,0.36250001192092896,8.648182560014538,leaky_relu,DES,0.0,7,32,1,sgd
+wine-quality-red,oraculo,Oráculo (D2V),499,0.3166999816894531,,leaky_relu,ENC,0.0,7,32,0,rmsprop
+wine-quality-white,padrao,Configuração padrão,1818,0.4538000226020813,,relu,SQU,0.0,1,32,0,adam
+wine-quality-white,media,Melhor configuração média,309,0.45920002460479736,,leaky_relu,DES,0.2,3,32,1,adam
+wine-quality-white,rec_k1,Recomendação PyMFE (k=1),499,0.4524000287055969,,leaky_relu,ENC,0.0,7,32,0,rmsprop
+wine-quality-white,rec_k3,Recomendação PyMFE (k=3),499,0.4524000287055969,,leaky_relu,ENC,0.0,7,32,0,rmsprop
+wine-quality-white,rec_k5,Recomendação PyMFE (k=5),499,0.4524000287055969,,leaky_relu,ENC,0.0,7,32,0,rmsprop
+wine-quality-white,random_search_T,"Random Search, T=100",1423,0.3995000123977661,9.902000892907381e-05,relu,DES,0.0,7,8,0,rmsprop
+wine-quality-white,smbo_cold_T,"SMBO-Cold, T=100",1219,0.4239000082015991,6.152771000005305,relu,ASC,0.0,7,32,0,rmsprop
+wine-quality-white,smbo_ws_PyMFE_k1_T,"SMBO-Similarity (k=1), T=100",1651,0.39670002460479736,6.923457020008937,relu,ENC,0.0,7,32,0,rmsprop
+wine-quality-white,smbo_ws_PyMFE_k3_T,"SMBO-Similarity (k=3), T=100",1651,0.39670002460479736,7.914484299998731,relu,ENC,0.0,7,32,0,rmsprop
+wine-quality-white,smbo_ws_PyMFE_k5_T,"SMBO-Similarity (k=5), T=100",1651,0.39670002460479736,9.990302680013702,relu,ENC,0.0,7,32,0,rmsprop
+wine-quality-white,smbo_ws_avgrank_T,"SMBO-Independent, T=100",1506,0.4197999835014343,8.493538599996828,relu,DES,0.2,7,32,0,adam
+wine-quality-white,oraculo,Oráculo (D2V),1428,0.38040000200271606,,relu,DES,0.0,7,16,0,adam
+yeast,padrao,Configuração padrão,1818,0.41350001096725464,,relu,SQU,0.0,1,32,0,adam
+yeast,media,Melhor configuração média,309,0.40869998931884766,,leaky_relu,DES,0.2,3,32,1,adam
+yeast,rec_k1,Recomendação PyMFE (k=1),2791,0.41829997301101685,,selu,ENC,0.0,7,8,0,rmsprop
+yeast,rec_k3,Recomendação PyMFE (k=3),2791,0.41829997301101685,,selu,ENC,0.0,7,8,0,rmsprop
+yeast,rec_k5,Recomendação PyMFE (k=5),2791,0.41829997301101685,,selu,ENC,0.0,7,8,0,rmsprop
+yeast,random_search_T,"Random Search, T=100",2346,0.40380001068115234,0.00011051998008042574,selu,ASC,0.0,5,32,0,adam
+yeast,smbo_cold_T,"SMBO-Cold, T=100",517,0.39420002698898315,8.027053040009923,leaky_relu,ENC,0.2,3,16,0,rmsprop
+yeast,smbo_ws_PyMFE_k1_T,"SMBO-Similarity (k=1), T=100",2372,0.379800021648407,8.673481799988076,selu,ASC,0.0,7,32,0,sgd
+yeast,smbo_ws_PyMFE_k3_T,"SMBO-Similarity (k=3), T=100",2351,0.39420002698898315,5.811218339996413,selu,ASC,0.0,5,32,1,sgd
+yeast,smbo_ws_PyMFE_k5_T,"SMBO-Similarity (k=5), T=100",2343,0.38940000534057617,7.969276040000841,selu,ASC,0.0,5,16,1,adam
+yeast,smbo_ws_avgrank_T,"SMBO-Independent, T=100",1942,0.379800021648407,6.526710620010272,relu,SQU,0.2,3,32,1,rmsprop
+yeast,oraculo,Oráculo (D2V),952,0.379800021648407,,leaky_relu,SYM,0.0,3,16,1,rmsprop
+zoo,padrao,Configuração padrão,1818,0.0,,relu,SQU,0.0,1,32,0,adam
+zoo,media,Melhor configuração média,309,0.0,,leaky_relu,DES,0.2,3,32,1,adam
+zoo,rec_k1,Recomendação PyMFE (k=1),2710,0.0,,selu,DES,0.5,5,32,1,rmsprop
+zoo,rec_k3,Recomendação PyMFE (k=3),3280,0.0,,selu,SYM,0.0,5,16,1,rmsprop
+zoo,rec_k5,Recomendação PyMFE (k=5),2229,0.0,,relu,SYM,0.2,7,32,1,adam
+zoo,random_search_T,"Random Search, T=100",2572,0.0,0.00012439999263733626,selu,DES,0.0,7,4,1,rmsprop
+zoo,smbo_cold_T,"SMBO-Cold, T=100",1870,0.0,0.000206359988078475,relu,SQU,0.0,5,32,1,rmsprop
+zoo,smbo_ws_PyMFE_k1_T,"SMBO-Similarity (k=1), T=100",2710,0.0,0.00023712001275271176,selu,DES,0.5,5,32,1,rmsprop
+zoo,smbo_ws_PyMFE_k3_T,"SMBO-Similarity (k=3), T=100",3280,0.0,0.00018721998203545808,selu,SYM,0.0,5,16,1,rmsprop
+zoo,smbo_ws_PyMFE_k5_T,"SMBO-Similarity (k=5), T=100",2229,0.0,0.00020347998943179846,relu,SYM,0.2,7,32,1,adam
+zoo,smbo_ws_avgrank_T,"SMBO-Independent, T=100",309,0.0,0.0002981000114232302,leaky_relu,DES,0.2,3,32,1,adam
+zoo,oraculo,Oráculo (D2V),9,0.0,,leaky_relu,ASC,0.0,3,8,1,adam

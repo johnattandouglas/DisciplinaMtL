@@ -1,0 +1,5 @@
+{"chave": "autogluon|iris|30", "acc_teste": 0.8888888888888888, "seg_ajuste": 38.65700059999995, "melhor": "WeightedEnsemble_L2", "erro": null}
+{"chave": "autogluon|pima|30", "acc_teste": 0.7447916666666666, "seg_ajuste": 8.326800699999922, "melhor": "WeightedEnsemble_L2", "erro": null}
+{"chave": "autogluon|abalone|30", "acc_teste": 0.6421052631578947, "seg_ajuste": 20.56870150000009, "melhor": "WeightedEnsemble_L2", "erro": null}
+{"chave": "autogluon|wine-quality-white|30", "acc_teste": 0.6579591836734694, "seg_ajuste": 30.457631199999923, "melhor": "WeightedEnsemble_L2", "erro": null}
+{"chave": "autogluon|letter|30", "acc_teste": 0.9770091963214714, "seg_ajuste": 33.67820239999992, "melhor": "WeightedEnsemble_L2", "erro": null}

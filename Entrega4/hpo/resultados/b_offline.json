@@ -1,0 +1,5 @@
+{
+ "offline_matriz_gpu_h_estimada": 86.99674749817633,
+ "seg_mlp_medio_por_dataset": 30.207203992422336,
+ "obs": "matriz K x n re-treinada na nossa GPU, extrapolada do tempo medido das configs selecionadas"
+}

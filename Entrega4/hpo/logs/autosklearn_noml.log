@@ -1,0 +1,93 @@
+/home/jviana/autosklearn-env/lib/python3.9/site-packages/autosklearn/__init__.py:5: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  import pkg_resources
+/home/jviana/autosklearn-env/lib/python3.9/site-packages/autosklearn/__init__.py:5: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  import pkg_resources
+/home/jviana/autosklearn-env/lib/python3.9/site-packages/distributed/node.py:182: UserWarning: Port 8787 is already in use.
+Perhaps you already have a cluster running?
+Hosting the HTTP server on port 45539 instead
+  warnings.warn(
+Traceback (most recent call last):
+  File "/mnt/d/Projetos/DisciplinaMtL/Entrega4/hpo/rodar_automl_hpo.py", line 129, in main
+    m, desc = ajustar(a.sistema, Xtr, ytr, orc, a.nucleos, pasta)
+  File "/mnt/d/Projetos/DisciplinaMtL/Entrega4/hpo/rodar_automl_hpo.py", line 38, in ajustar
+    m.fit(Xtr, ytr)
+  File "/home/jviana/autosklearn-env/lib/python3.9/site-packages/autosklearn/estimators.py", line 1448, in fit
+    super().fit(
+  File "/home/jviana/autosklearn-env/lib/python3.9/site-packages/autosklearn/estimators.py", line 540, in fit
+    self.automl_.fit(load_models=self.load_models, **kwargs)
+  File "/home/jviana/autosklearn-env/lib/python3.9/site-packages/autosklearn/automl.py", line 2304, in fit
+    return super().fit(
+  File "/home/jviana/autosklearn-env/lib/python3.9/site-packages/autosklearn/automl.py", line 962, in fit
+    raise e
+  File "/home/jviana/autosklearn-env/lib/python3.9/site-packages/autosklearn/automl.py", line 932, in fit
+    if result:
+UnboundLocalError: local variable 'result' referenced before assignment
+{"chave": "autosklearn_noml|abalone|30", "acc_teste": 0.3464114832535885, "seg_ajuste": 22.093936585999998, "melhor": null, "erro": "UnboundLocalError(\"local variable 'result' referenced before assignment\")"}
+Traceback (most recent call last):
+  File "/mnt/d/Projetos/DisciplinaMtL/Entrega4/hpo/rodar_automl_hpo.py", line 129, in main
+    m, desc = ajustar(a.sistema, Xtr, ytr, orc, a.nucleos, pasta)
+  File "/mnt/d/Projetos/DisciplinaMtL/Entrega4/hpo/rodar_automl_hpo.py", line 38, in ajustar
+    m.fit(Xtr, ytr)
+  File "/home/jviana/autosklearn-env/lib/python3.9/site-packages/autosklearn/estimators.py", line 1448, in fit
+    super().fit(
+  File "/home/jviana/autosklearn-env/lib/python3.9/site-packages/autosklearn/estimators.py", line 540, in fit
+    self.automl_.fit(load_models=self.load_models, **kwargs)
+  File "/home/jviana/autosklearn-env/lib/python3.9/site-packages/autosklearn/automl.py", line 2304, in fit
+    return super().fit(
+  File "/home/jviana/autosklearn-env/lib/python3.9/site-packages/autosklearn/automl.py", line 962, in fit
+    raise e
+  File "/home/jviana/autosklearn-env/lib/python3.9/site-packages/autosklearn/automl.py", line 932, in fit
+    if result:
+UnboundLocalError: local variable 'result' referenced before assignment
+{"chave": "autosklearn_noml|acute-inflammation|30", "acc_teste": 0.5, "seg_ajuste": 21.319396910999984, "melhor": null, "erro": "UnboundLocalError(\"local variable 'result' referenced before assignment\")"}
+Traceback (most recent call last):
+  File "/mnt/d/Projetos/DisciplinaMtL/Entrega4/hpo/rodar_automl_hpo.py", line 129, in main
+    m, desc = ajustar(a.sistema, Xtr, ytr, orc, a.nucleos, pasta)
+  File "/mnt/d/Projetos/DisciplinaMtL/Entrega4/hpo/rodar_automl_hpo.py", line 38, in ajustar
+    m.fit(Xtr, ytr)
+  File "/home/jviana/autosklearn-env/lib/python3.9/site-packages/autosklearn/estimators.py", line 1448, in fit
+    super().fit(
+  File "/home/jviana/autosklearn-env/lib/python3.9/site-packages/autosklearn/estimators.py", line 540, in fit
+    self.automl_.fit(load_models=self.load_models, **kwargs)
+  File "/home/jviana/autosklearn-env/lib/python3.9/site-packages/autosklearn/automl.py", line 2304, in fit
+    return super().fit(
+  File "/home/jviana/autosklearn-env/lib/python3.9/site-packages/autosklearn/automl.py", line 962, in fit
+    raise e
+  File "/home/jviana/autosklearn-env/lib/python3.9/site-packages/autosklearn/automl.py", line 932, in fit
+    if result:
+UnboundLocalError: local variable 'result' referenced before assignment
+{"chave": "autosklearn_noml|acute-nephritis|30", "acc_teste": 0.6, "seg_ajuste": 26.521593158, "melhor": null, "erro": "UnboundLocalError(\"local variable 'result' referenced before assignment\")"}
+Traceback (most recent call last):
+  File "/mnt/d/Projetos/DisciplinaMtL/Entrega4/hpo/rodar_automl_hpo.py", line 129, in main
+    m, desc = ajustar(a.sistema, Xtr, ytr, orc, a.nucleos, pasta)
+  File "/mnt/d/Projetos/DisciplinaMtL/Entrega4/hpo/rodar_automl_hpo.py", line 38, in ajustar
+    m.fit(Xtr, ytr)
+  File "/home/jviana/autosklearn-env/lib/python3.9/site-packages/autosklearn/estimators.py", line 1448, in fit
+    super().fit(
+  File "/home/jviana/autosklearn-env/lib/python3.9/site-packages/autosklearn/estimators.py", line 540, in fit
+    self.automl_.fit(load_models=self.load_models, **kwargs)
+  File "/home/jviana/autosklearn-env/lib/python3.9/site-packages/autosklearn/automl.py", line 2304, in fit
+    return super().fit(
+  File "/home/jviana/autosklearn-env/lib/python3.9/site-packages/autosklearn/automl.py", line 962, in fit
+    raise e
+  File "/home/jviana/autosklearn-env/lib/python3.9/site-packages/autosklearn/automl.py", line 932, in fit
+    if result:
+UnboundLocalError: local variable 'result' referenced before assignment
+{"chave": "autosklearn_noml|adult|30", "acc_teste": 0.7607075587584964, "seg_ajuste": 25.885793532999998, "melhor": null, "erro": "UnboundLocalError(\"local variable 'result' referenced before assignment\")"}
+Traceback (most recent call last):
+  File "/mnt/d/Projetos/DisciplinaMtL/Entrega4/hpo/rodar_automl_hpo.py", line 129, in main
+    m, desc = ajustar(a.sistema, Xtr, ytr, orc, a.nucleos, pasta)
+  File "/mnt/d/Projetos/DisciplinaMtL/Entrega4/hpo/rodar_automl_hpo.py", line 38, in ajustar
+    m.fit(Xtr, ytr)
+  File "/home/jviana/autosklearn-env/lib/python3.9/site-packages/autosklearn/estimators.py", line 1448, in fit
+    super().fit(
+  File "/home/jviana/autosklearn-env/lib/python3.9/site-packages/autosklearn/estimators.py", line 540, in fit
+    self.automl_.fit(load_models=self.load_models, **kwargs)
+  File "/home/jviana/autosklearn-env/lib/python3.9/site-packages/autosklearn/automl.py", line 2304, in fit
+    return super().fit(
+  File "/home/jviana/autosklearn-env/lib/python3.9/site-packages/autosklearn/automl.py", line 962, in fit
+    raise e
+  File "/home/jviana/autosklearn-env/lib/python3.9/site-packages/autosklearn/automl.py", line 932, in fit
+    if result:
+UnboundLocalError: local variable 'result' referenced before assignment
+{"chave": "autosklearn_noml|annealing|30", "acc_teste": 0.76, "seg_ajuste": 30.726352064999986, "melhor": null, "erro": "UnboundLocalError(\"local variable 'result' referenced before assignment\")"}
