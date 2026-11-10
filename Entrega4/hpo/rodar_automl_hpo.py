@@ -139,8 +139,10 @@ def main():
             except Exception as e:  # noqa: BLE001
                 reg["seg_ajuste"] = time.perf_counter() - t0
                 reg["erro"] = repr(e)[:500]
-                # como no AMLB: falha vira o preditor da classe majoritária do treino
-                reg["acc_teste"] = float((yte == np.bincount(ytr).argmax()).mean())
+                # autor, 09/11: sem modelo dentro do orçamento, o resultado é "~" (não rodou), não a classe majoritária;
+                # o relatório explica o "~" em nota de rodapé. A classe majoritária fica só como referência.
+                reg["acc_teste"] = "~"
+                reg["acc_majoritaria"] = float((yte == np.bincount(ytr).argmax()).mean())
                 reg["falha"] = True
                 traceback.print_exc()
             comum.gravar(arq, reg)
