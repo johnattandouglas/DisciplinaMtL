@@ -1,0 +1,118 @@
+\documentclass[10pt]{article}
+\usepackage{sbc-template, color, graphicx, url, xcolor, fancyhdr}
+\usepackage{listings}
+\usepackage[utf8]{inputenc}
+% \usepackage[T1]{fontenc}
+\usepackage[brazilian]{babel}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{textcomp}
+\usepackage{booktabs}
+\usepackage{geometry}
+\geometry{margin=2.5cm}
+\usepackage{longtable,multirow}
+\usepackage{array}
+\usepackage{pdflscape}
+\usepackage{parskip}
+\usepackage{csquotes}
+\lstset{basicstyle=\ttfamily\small,breaklines=true,columns=fullflexible}
+% \usepackage{caption} % NÃO usar com sbc-template: ele já carrega caption2 e causa erro
+\usepackage[colorlinks=true,linkcolor=blue,citecolor=blue,urlcolor=blue]{hyperref}
+\renewcommand{\arraystretch}{1.15}
+\definecolor{mygreen}{RGB}{0,128,0}
+\definecolor{myred}{RGB}{200,0,0}
+
+\newcommand{\ninit}{n_{\mathrm{init}}}
+\newcommand{\pholm}{p_{\mathrm{Holm}}}
+% Pendências editoriais: ficam no fonte, ocultas no PDF.
+\newcommand{\pend}[1]{}
+% Cinza: edições do Instinct (convenção do projeto).
+\newcommand{\editinst}[1]{\textcolor{gray}{#1}}
+
+\pagestyle{fancy}
+\fancyhf{} % limpa cabeçalho e rodapé
+
+\sloppy
+
+\fancyhead[L]{\includegraphics[height=1.0cm,     trim=0 1.5cm 0 0.5cm, clip]{images/report1/logo.png}}
+\fancyhead[R]{\footnotesize Tópicos Avançados em Agentes Inteligentes 2\\ATIVIDADE PRÁTICA 4}
+\fancyfoot[L]{\footnotesize 2026.2}
+\fancyfoot[C]{\footnotesize IN1097}
+\fancyfoot[R]{\footnotesize Johnattan D. F. Viana}
+
+
+\begin{document}
+
+\begin{center}
+    {\large\textbf{AutoML versus Meta-aprendizagem}}\\[0.5em]
+    Johnattan D. F. Viana (\texttt{jdfv@cin.ufpe.br})\\
+    Repositório: \url{https://github.com/johnattandouglas/DisciplinaMtL}
+\end{center}
+
+
+\section{Introdução}
+
+\editinst{Este relatório estende a Atividade 3, cuja meta-tarefa é a otimização de hiperparâmetros (HPO) de uma MLP em problemas de classificação, sob o mesmo protocolo. Neste documento, as abordagens de meta-aprendizagem daquela atividade são comparadas com o Auto-sklearn \cite{feurerautosklearn}, considerando o desempenho e o custo para alcançá-lo.}
+
+\section{O sistema de AutoML}\label{sec:sistema}
+
+\editinst{\textbf{Sistema de AutoML.} Escolhemos o Auto-sklearn 0.15.0 \cite{feurerautosklearn}, presente no AutoML Benchmark \cite{gijsbers2024amlb}. \pend{[Citações no Google Scholar e data da consulta, de Entrega4/hpo/JUSTIFICATIVA\_AUTOML.md.]} O Auto-sklearn é a escolha natural para esta comparação porque é o único entre os sistemas de AutoML tabular consolidados que usa meta-aprendizagem por similaridade entre datasets, o que permite compará-lo diretamente com as abordagens de MtL.}
+
+\begin{table}[!htb]
+\color{gray}\centering\small
+\caption{Caracterização do Auto-sklearn 0.15.0 (Etapa 1).}
+\label{tab:sistemas}
+\begin{tabular}{p{2.6cm}p{10.5cm}}
+\toprule
+Espaço de busca & 15 classificadores, 14 pré-processadores de atributos e 4 de dados do scikit-learn (110 hiperparâmetros) \\
+Estratégia & otimização bayesiana (SMAC) \\
+Meta-conhecimento & \textit{warm-start} com as 25 melhores configurações dos datasets mais próximos em 38 meta-características, de 208 datasets do OpenML; pode ser desligado \\
+Modelo final & \textit{ensemble selection} de Caruana \cite{caruana2004ensemble} sobre as previsões de validação \\
+Orçamento & tempo total, tempo por execução e memória por processo \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\textbf{Relação com as atividades anteriores.} O ranking de algoritmos da Atividade 1 corresponde, no Auto-sklearn, à escolha das configurações iniciais pelos vizinhos; as meta-características da Atividade 2, às 38 meta-características que definem esses vizinhos; e o \textit{warm-start} da Atividade 3, à otimização bayesiana iniciada nessas configurações. O que o Auto-sklearn faz e a nossa solução não faz: busca também entre algoritmos e pré-processamentos, não só nos hiperparâmetros da MLP, e combina as configurações avaliadas em um \textit{ensemble}.
+
+\textbf{Sobreposição com o meta-conhecimento.} Os 120 datasets do problema vêm do UCI, e parte deles também está no OpenML. \pend{[Resultado do cruzamento entre os 120 datasets e os 208 da base do Auto-sklearn.]} Rodamos o Auto-sklearn também com a meta-aprendizagem desligada; a diferença entre as duas versões mede quanto o meta-conhecimento contribui dentro do próprio sistema.
+
+\section{Protocolo}\label{sec:protocolo}
+
+Usamos o problema da Atividade 3: 120 datasets de classificação do UCI e a superfície de resposta de uma MLP em 3.456 configurações \cite{Jomaa2021}, com a perda $L = 1-$ acurácia no \textit{hold-out} de validação fixo de cada dataset. Para cada dataset, todos os métodos usam a mesma partição de treino e o mesmo \textit{hold-out} \editinst{(divisão 75\%/25\%, semente 0)}, e o AutoML só vê o treino. Comparamos:
+(1) a configuração de melhor rank médio nos demais datasets;
+(2) a recomendação de cada abordagem de meta-aprendizagem da Atividade 3, em \textit{leave-one-dataset-out};
+(3) as buscas com \textit{warm-start} da Atividade 3, com o mesmo orçamento $T$;
+(4) o Auto-sklearn, com e sem meta-aprendizagem, \editinst{em um único orçamento de tempo por dataset: 30~s, o mínimo aceito pelo Auto-sklearn 0.15.0, que recusa orçamentos totais menores;}
+(5) o oráculo, a melhor das 3.456 configurações.
+
+\textbf{Mesmo protocolo de fato.} A matriz de perdas foi calculada pelos autores do meta-dataset com a implementação deles. Por isso, reexecutamos com a nossa implementação (PyTorch, na GPU) as configurações escolhidas nos itens 1, 2 e 5, na mesma partição usada pelo AutoML. \pend{[Correlação entre a perda reexecutada e a da matriz.]}
+
+\editinst{\textbf{Ambiente.} Os experimentos de AutoML rodaram em um PC pessoal (12 CPUs lógicas, 8{,}22~GB de RAM), com \texttt{n\_jobs}=1, limite de memória de 4096~MB por pipeline avaliado (\texttt{memory\_limit} do Auto-sklearn) e semente fixa 0; as reexecuções de MLP usam a GPU NVIDIA RTX 2050 do mesmo PC.} \pend{[Modelo exato da CPU.]}
+
+\textbf{Testes.} \editinst{Com duas condições em um único orçamento, relatamos o teste de Wilcoxon pareado bicaudal \cite{demsar2006statistical}.}
+
+\section{Resultados}\label{sec:resultados}
+
+\subsection{Desempenho}
+\editinst{Das 120 tentativas de cada condição, o Auto-sklearn com meta-aprendizagem concluiu 113 e falhou em 7 datasets (planning, miniboone, adult, post-operative, magic, congressional-voting e connect-4); sem meta-aprendizagem, concluiu 111 e falhou em 9 (os mesmos 7, mais breast-cancer-wisc-prog e fertility). A hipótese é de que o orçamento apertado de 30~s tenha contribuído para essas falhas, mas a causa não foi verificada nos registros de erro, que ficaram retidos no PC. Não houve falha de execução, duplicata ou repetição de tentativa.}
+
+\editinst{Nos 111 datasets em que as duas condições concluíram, a acurácia média foi 0{,}8412 com meta-aprendizagem e 0{,}8376 sem. Por dataset: 53 vitórias da condição com meta-aprendizagem, 38 da condição sem e 20 empates. O teste de Wilcoxon pareado (91 pares não empatados) não encontrou evidência de diferença de acurácia entre as condições ($W = 1740{,}5$, $p = 0{,}163$) -- o que não comprova equivalência. No orçamento mínimo de 30~s, o \textit{warm-start} por similaridade não mostrou vantagem detectável neste teste sobre a busca sem meta-conhecimento.}
+\pend{[Incluir os braços de meta-aprendizagem da Atividade 3 quando os artefatos corrigidos estiverem disponíveis.]}
+
+\subsection{Desempenho e custo}
+\editinst{O tempo de ajuste somou 3223{,}7~s com meta-aprendizagem e 3251{,}3~s sem, sobre as 120 tentativas de cada condição, incluindo as falhas (médias de 26{,}9~s e 27{,}1~s por tentativa), próximos do orçamento de 30~s por dataset; o restante do tempo de unidade é importação, carga dos dados e saída. A predição no \textit{hold-out} somou 16{,}0~s em 113 medições com meta-aprendizagem e 11{,}0~s em 111 medições sem.}
+
+\editinst{A condição sem meta-aprendizagem teve telemetria suplementar por unidade: tempo de parede completo de 3312{,}8~s, CPU parcial do processo filho e pico de memória amostral aproximado de até 3{,}9~GB (soma amostrada da sessão, que pode contar páginas compartilhadas em dobro). As 120 unidades com meta-aprendizagem são anteriores a essa telemetria: têm apenas tempos de ajuste e predição, com CPU e memória desconhecidos -- declarado, não zero.}
+\pend{[Custo online da meta-aprendizagem da Atividade 3 (meta-características do alvo, consulta e busca) separado do custo offline, após a correção dos artefatos.]}
+
+\pend{\subsection{O que o AutoML escolheu} [Algoritmos, \textit{ensemble} e pré-processamento do modelo final de cada dataset; se há MLP entre eles; concordância com a recomendação da meta-aprendizagem; relação dos maiores ganhos do AutoML com as meta-características, a distância ao vizinho mais próximo (Atividade 3) e a perda do meta-modelo. O ganho vem de escolher melhor entre as mesmas MLPs ou de buscar num espaço maior?]}
+
+\section{Interpretação}\label{sec:interp}
+\editinst{No orçamento mínimo de 30~s, o teste pareado não encontrou evidência de diferença de desempenho entre o Auto-sklearn com e sem \textit{warm-start} ($p = 0{,}163$), sem que isso comprove equivalência. A condição com meta-aprendizagem teve leve vantagem média (+0{,}004 de acurácia média) e mais duas tentativas concluídas (113 contra 111), e as falhas concentram-se nos mesmos datasets nas duas condições. Uma hipótese é que, com o custo por dataset dominado pelo próprio orçamento, haja pouco espaço para o meta-conhecimento compensar a sua consulta inicial; esse custo de consulta não foi medido separadamente. As limitações deste resultado são: uma única semente, um único orçamento (o mínimo aceito pela biblioteca), causas de falha ainda não comprovadas e composição dos \textit{ensembles} ainda não exportada.}
+\pend{[Interpretação final com os braços de MtL corrigidos e a análise de composição dos ensembles.]}
+
+\bibliographystyle{sbc}
+\bibliography{sbc-template}
+
+\end{document}
