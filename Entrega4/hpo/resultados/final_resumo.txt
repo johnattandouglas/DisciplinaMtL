@@ -1,0 +1,29 @@
+Correlação perda da matriz D2V x perda reexecutada: Spearman 0.762 (1440 pares método-dataset)
+
+[30 s] só 36 datasets; pulado
+
+[60 s] n=120 Friedman chi2=60.9 p=1.91e-12 CD=0.56
+  Média     acc=0.8304 perda=0.0378 rank=2.95
+  Rec. k=1  acc=0.7961 perda=0.0721 rank=3.80
+  SMBO-Sim  acc=0.8189 perda=0.0492 rank=3.19
+  ASKL+     acc=0.8321 perda=0.0361 rank=2.41
+  ASKL-     acc=0.8294 perda=0.0387 rank=2.65
+  Oráculo   acc=0.8558 perda=0.0123
+  ASKL+ - Média    dif=+0.0017 vit=67 der=39 p=0.035 pHolm=0.035
+  ASKL+ - Rec. k=1 dif=+0.0360 vit=84 der=22 p=6e-09 pHolm=1.8e-08
+  ASKL+ - SMBO-Sim dif=+0.0131 vit=69 der=32 p=0.00015 pHolm=0.0003
+  ASKL+ - ASKL- na base: n=33 dif=+0.0239 vit=22 der=7 p=0.011
+  ASKL+ - ASKL- fora: n=87 dif=-0.0054 vit=34 der=34 p=0.66
+
+[120 s] só 3 datasets; pulado
+
+Custo online (mediana por dataset, s) e acurácia média:
+  ASKL+ 60s    custo=   56.1 s  total= 2.13 h  acc=0.8321
+  ASKL- 60s    custo=   55.3 s  total= 1.94 h  acc=0.8294
+  Média        custo=    1.8 s  total= 0.38 h  acc=0.8304
+  Rec. k=1     custo=    1.8 s  total= 0.38 h  acc=0.7961
+  SMBO-Sim     custo=   13.3 s  total= 0.72 h  acc=0.8189
+Custo offline estimado da matriz (3.456 configs x 120 datasets na nossa GPU): 87.0 h
+
+Membro de maior peso do ASKL+ por orçamento: {30: {'random_forest': 13, 'dummy': 10, 'passive_aggressive': 3, 'mlp': 3}, 60: {'random_forest': 43, 'passive_aggressive': 12, 'mlp': 11, 'gradient_boosting': 11}, 120: {'dummy': 2}}
+Fração em que o membro de maior peso é MLP (a família recomendada pela MtL): {30: 0.091, 60: 0.092, 120: 0.0}

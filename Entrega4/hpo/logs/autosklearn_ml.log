@@ -1018,3 +1018,351 @@ Hosting the HTTP server on port 46647 instead
 [WARNING] [2026-11-18 13:28:15,517:Client-EnsembleBuilder] No runs were available to build an ensemble from
 {"chave": "autosklearn_ml|miniboone|60", "acc_teste": 0.28063107393283304, "seg_ajuste": 50.21451151899964, "melhor": "dummy", "erro": null}
 {"chave": "autosklearn_ml|molec-biol-promoter|60", "acc_teste": 0.8461538461538461, "seg_ajuste": 53.41604183199979, "melhor": "libsvm_svc+feature_agglomeration", "erro": null}
+/home/jviana/autosklearn-env/lib/python3.9/site-packages/autosklearn/__init__.py:5: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  import pkg_resources
+{"chave": "autosklearn_ml|molec-biol-splice|30", "acc_teste": 0.9486215538847118, "seg_ajuste": 29.0694728, "melhor": "random_forest+no_preprocessing", "erro": null}
+{"chave": "autosklearn_ml|abalone|30", "acc_teste": 0.6593301435406699, "seg_ajuste": 29.0524409, "melhor": "passive_aggressive+select_rates_classification", "erro": null}
+{"chave": "autosklearn_ml|monks-1|30", "acc_teste": 0.9642857142857143, "seg_ajuste": 25.630451800000003, "melhor": "passive_aggressive+kitchen_sinks", "erro": null}
+{"chave": "autosklearn_ml|acute-inflammation|30", "acc_teste": 1.0, "seg_ajuste": 26.045538725, "melhor": "libsvm_svc+feature_agglomeration", "erro": null}
+{"chave": "autosklearn_ml|monks-2|30", "acc_teste": 0.8675496688741722, "seg_ajuste": 24.091906887999997, "melhor": "mlp+feature_agglomeration", "erro": null}
+{"chave": "autosklearn_ml|acute-nephritis|30", "acc_teste": 1.0, "seg_ajuste": 24.032944561000008, "melhor": "random_forest+no_preprocessing", "erro": null}
+{"chave": "autosklearn_ml|monks-3|30", "acc_teste": 0.9420289855072463, "seg_ajuste": 23.453715799999998, "melhor": "gradient_boosting+no_preprocessing", "erro": null}
+{"chave": "autosklearn_ml|annealing|30", "acc_teste": 0.9466666666666667, "seg_ajuste": 26.097579325000012, "melhor": "random_forest+no_preprocessing", "erro": null}
+{"chave": "autosklearn_ml|mushroom|30", "acc_teste": 1.0, "seg_ajuste": 23.708648622, "melhor": "random_forest+no_preprocessing", "erro": null}
+{"chave": "autosklearn_ml|arrhythmia|30", "acc_teste": 0.7142857142857143, "seg_ajuste": 22.540290405999997, "melhor": "random_forest+no_preprocessing", "erro": null}
+{"chave": "autosklearn_ml|audiology-std|30", "acc_teste": 0.8888888888888888, "seg_ajuste": 25.340235104000016, "melhor": "random_forest+feature_agglomeration", "erro": null}
+{"chave": "autosklearn_ml|musk-1|30", "acc_teste": 0.865546218487395, "seg_ajuste": 23.956980887000014, "melhor": "random_forest+no_preprocessing", "erro": null}
+[WARNING] [2026-11-18 14:10:58,628:Client-EnsembleBuilder] No runs were available to build an ensemble from
+[WARNING] [2026-11-18 14:11:00,942:Client-EnsembleBuilder] No runs were available to build an ensemble from
+[WARNING] [2026-11-18 14:11:05,147:Client-EnsembleBuilder] No runs were available to build an ensemble from
+{"chave": "autosklearn_ml|balance-scale|30", "acc_teste": 1.0, "seg_ajuste": 22.492445704999994, "melhor": "liblinear_svc+polynomial", "erro": null}
+{"chave": "autosklearn_ml|musk-2|30", "acc_teste": 0.8459672528805336, "seg_ajuste": 23.172073021999978, "melhor": "dummy", "erro": null}
+{"chave": "autosklearn_ml|nursery|30", "acc_teste": 0.9913553565915406, "seg_ajuste": 25.51882924099999, "melhor": "random_forest+no_preprocessing", "erro": null}
+{"chave": "autosklearn_ml|balloons|30", "acc_teste": 0.5, "seg_ajuste": 24.71875048299998, "melhor": "mlp+fast_ica", "erro": null}
+{"chave": "autosklearn_ml|oocytes_merluccius_nucleus_4d|30", "acc_teste": 0.8784313725490196, "seg_ajuste": 24.50997393, "melhor": "random_forest+select_percentile_classification", "erro": null}
+{"chave": "autosklearn_ml|bank|30", "acc_teste": 0.8973451327433628, "seg_ajuste": 25.836467217999996, "melhor": "random_forest+no_preprocessing", "erro": null}
+[WARNING] [2026-11-18 14:12:12,543:Client-EnsembleBuilder] No models better than random - using Dummy losses!
+	Models besides current dummy model: 0
+	Dummy models: 1
+[WARNING] [2026-11-18 14:12:13,699:Client-EnsembleBuilder] No models better than random - using Dummy losses!
+	Models besides current dummy model: 0
+	Dummy models: 1
+[WARNING] [2026-11-18 14:12:15,602:Client-EnsembleBuilder] No models better than random - using Dummy losses!
+	Models besides current dummy model: 0
+	Dummy models: 1
+[WARNING] [2026-11-18 14:12:17,841:Client-EnsembleBuilder] No models better than random - using Dummy losses!
+	Models besides current dummy model: 0
+	Dummy models: 1
+[WARNING] [2026-11-18 14:12:19,501:Client-EnsembleBuilder] No models better than random - using Dummy losses!
+	Models besides current dummy model: 0
+	Dummy models: 1
+[WARNING] [2026-11-18 14:12:21,234:Client-EnsembleBuilder] No models better than random - using Dummy losses!
+	Models besides current dummy model: 0
+	Dummy models: 1
+[WARNING] [2026-11-18 14:12:26,360:Client-EnsembleBuilder] No models better than random - using Dummy losses!
+	Models besides current dummy model: 0
+	Dummy models: 1
+{"chave": "autosklearn_ml|oocytes_merluccius_states_2f|30", "acc_teste": 0.890625, "seg_ajuste": 23.43959264299997, "melhor": "random_forest+no_preprocessing", "erro": null}
+{"chave": "autosklearn_ml|blood|30", "acc_teste": 0.7634408602150538, "seg_ajuste": 23.59954355100001, "melhor": "dummy", "erro": null}
+{"chave": "autosklearn_ml|breast-cancer-wisc-diag|30", "acc_teste": 0.9788732394366197, "seg_ajuste": 23.91150612199999, "melhor": "mlp+feature_agglomeration", "erro": null}
+[WARNING] [2026-11-18 14:13:06,006:Client-EnsembleBuilder] No models better than random - using Dummy losses!
+	Models besides current dummy model: 0
+	Dummy models: 1
+{"chave": "autosklearn_ml|oocytes_trisopterus_nucleus_2f|30", "acc_teste": 0.8157894736842105, "seg_ajuste": 22.790718504999973, "melhor": "random_forest+no_preprocessing", "erro": null}
+[WARNING] [2026-11-18 14:13:08,460:Client-EnsembleBuilder] No models better than random - using Dummy losses!
+	Models besides current dummy model: 0
+	Dummy models: 1
+[WARNING] [2026-11-18 14:13:09,936:Client-EnsembleBuilder] No models better than random - using Dummy losses!
+	Models besides current dummy model: 0
+	Dummy models: 1
+[WARNING] [2026-11-18 14:13:11,872:Client-EnsembleBuilder] No models better than random - using Dummy losses!
+	Models besides current dummy model: 0
+	Dummy models: 1
+[WARNING] [2026-11-18 14:13:13,188:Client-EnsembleBuilder] No models better than random - using Dummy losses!
+	Models besides current dummy model: 0
+	Dummy models: 1
+[WARNING] [2026-11-18 14:13:15,326:Client-EnsembleBuilder] No models better than random - using Dummy losses!
+	Models besides current dummy model: 0
+	Dummy models: 1
+[WARNING] [2026-11-18 14:13:17,432:Client-EnsembleBuilder] No models better than random - using Dummy losses!
+	Models besides current dummy model: 0
+	Dummy models: 1
+{"chave": "autosklearn_ml|breast-cancer-wisc-prog|30", "acc_teste": 0.76, "seg_ajuste": 24.199459031000004, "melhor": "dummy", "erro": null}
+{"chave": "autosklearn_ml|oocytes_trisopterus_states_5b|30", "acc_teste": 0.8947368421052632, "seg_ajuste": 20.545806049999953, "melhor": "lda+polynomial", "erro": null}
+{"chave": "autosklearn_ml|breast-cancer-wisc|30", "acc_teste": 0.9655172413793104, "seg_ajuste": 26.672996960999967, "melhor": "passive_aggressive+no_preprocessing", "erro": null}
+{"chave": "autosklearn_ml|optical|30", "acc_teste": 0.9871886120996441, "seg_ajuste": 25.197096368000018, "melhor": "random_forest+no_preprocessing", "erro": null}
+[WARNING] [2026-11-18 14:14:06,022:Client-EnsembleBuilder] No models better than random - using Dummy losses!
+	Models besides current dummy model: 0
+	Dummy models: 1
+[WARNING] [2026-11-18 14:14:17,164:Client-EnsembleBuilder] No runs were available to build an ensemble from
+{"chave": "autosklearn_ml|ozone|30", "acc_teste": 0.9716088328075709, "seg_ajuste": 23.975955383999974, "melhor": "dummy", "erro": null}
+{"chave": "autosklearn_ml|breast-cancer|30", "acc_teste": 0.704225352112676, "seg_ajuste": 25.10304385300003, "melhor": "extra_trees+polynomial", "erro": null}
+{"chave": "autosklearn_ml|page-blocks|30", "acc_teste": 0.9751461988304093, "seg_ajuste": 22.799384977999978, "melhor": "random_forest+no_preprocessing", "erro": null}
+{"chave": "autosklearn_ml|breast-tissue|30", "acc_teste": 0.7407407407407407, "seg_ajuste": 23.55900861500004, "melhor": "random_forest+no_preprocessing", "erro": null}
+{"chave": "autosklearn_ml|parkinsons|30", "acc_teste": 0.9183673469387755, "seg_ajuste": 22.888831563999986, "melhor": "random_forest+no_preprocessing", "erro": null}
+{"chave": "autosklearn_ml|car|30", "acc_teste": 0.9721577726218097, "seg_ajuste": 22.09519422300002, "melhor": "adaboost+select_rates_classification", "erro": null}
+{"chave": "autosklearn_ml|pendigits|30", "acc_teste": 0.990909090909091, "seg_ajuste": 25.48006384599995, "melhor": "random_forest+no_preprocessing", "erro": null}
+{"chave": "autosklearn_ml|cardiotocography-10clases|30", "acc_teste": 0.8945386064030132, "seg_ajuste": 25.814732203999995, "melhor": "random_forest+feature_agglomeration", "erro": null}
+{"chave": "autosklearn_ml|pima|30", "acc_teste": 0.7864583333333334, "seg_ajuste": 24.556405858999995, "melhor": "extra_trees+polynomial", "erro": null}
+{"chave": "autosklearn_ml|cardiotocography-3clases|30", "acc_teste": 0.9323308270676691, "seg_ajuste": 25.704842738000025, "melhor": "random_forest+no_preprocessing", "erro": null}
+{"chave": "autosklearn_ml|pittsburg-bridges-MATERIAL|30", "acc_teste": 0.8148148148148148, "seg_ajuste": 22.626077742000007, "melhor": "lda+select_rates_classification", "erro": null}
+[WARNING] [2026-11-18 14:16:31,971:Client-EnsembleBuilder] No runs were available to build an ensemble from
+[WARNING] [2026-11-18 14:16:38,094:Client-EnsembleBuilder] No runs were available to build an ensemble from
+{"chave": "autosklearn_ml|chess-krvk|30", "acc_teste": 0.09962941847206386, "seg_ajuste": 25.417067472000042, "melhor": "dummy", "erro": null}
+{"chave": "autosklearn_ml|pittsburg-bridges-REL-L|30", "acc_teste": 0.6538461538461539, "seg_ajuste": 23.21505464400002, "melhor": "random_forest+liblinear_svc_preprocessor", "erro": null}
+{"chave": "autosklearn_ml|chess-krvkp|30", "acc_teste": 0.981226533166458, "seg_ajuste": 23.506591875000026, "melhor": "random_forest+no_preprocessing", "erro": null}
+{"chave": "autosklearn_ml|pittsburg-bridges-SPAN|30", "acc_teste": 0.7916666666666666, "seg_ajuste": 25.574488697999982, "melhor": "lda+polynomial", "erro": null}
+{"chave": "autosklearn_ml|conn-bench-sonar-mines-rocks|30", "acc_teste": 0.6923076923076923, "seg_ajuste": 23.891305444999944, "melhor": "k_nearest_neighbors+fast_ica", "erro": null}
+{"chave": "autosklearn_ml|pittsburg-bridges-T-OR-D|30", "acc_teste": 0.8461538461538461, "seg_ajuste": 23.752008331999946, "melhor": "random_forest+polynomial", "erro": null}
+{"chave": "autosklearn_ml|conn-bench-vowel-deterding|30", "acc_teste": 1.0, "seg_ajuste": 23.321829389999948, "melhor": "libsvm_svc+no_preprocessing", "erro": null}
+{"chave": "autosklearn_ml|pittsburg-bridges-TYPE|30", "acc_teste": 0.6153846153846154, "seg_ajuste": 23.56666325099991, "melhor": "random_forest+fast_ica", "erro": null}
+{"chave": "autosklearn_ml|contrac|30", "acc_teste": 0.5271739130434783, "seg_ajuste": 25.794754176000083, "melhor": "random_forest+select_percentile_classification", "erro": null}
+{"chave": "autosklearn_ml|plant-margin|30", "acc_teste": 0.8575, "seg_ajuste": 24.299916811999992, "melhor": "sgd+no_preprocessing", "erro": null}
+[WARNING] [2026-11-18 14:18:55,768:Client-EnsembleBuilder] No runs were available to build an ensemble from
+[WARNING] [2026-11-18 14:19:01,001:Client-EnsembleBuilder] No runs were available to build an ensemble from
+{"chave": "autosklearn_ml|plant-shape|30", "acc_teste": 0.01, "seg_ajuste": 25.40416302799997, "melhor": "dummy", "erro": null}
+{"chave": "autosklearn_ml|credit-approval|30", "acc_teste": 0.8901734104046243, "seg_ajuste": 24.775455721999947, "melhor": "gradient_boosting+feature_agglomeration", "erro": null}
+[WARNING] [2026-11-18 14:19:23,786:Client-EnsembleBuilder] No runs were available to build an ensemble from
+[WARNING] [2026-11-18 14:19:26,987:Client-EnsembleBuilder] No runs were available to build an ensemble from
+{"chave": "autosklearn_ml|plant-texture|30", "acc_teste": 0.01, "seg_ajuste": 23.663783204000083, "melhor": "dummy", "erro": null}
+{"chave": "autosklearn_ml|cylinder-bands|30", "acc_teste": 0.7265625, "seg_ajuste": 24.026289920999943, "melhor": "random_forest+no_preprocessing", "erro": null}
+{"chave": "autosklearn_ml|primary-tumor|30", "acc_teste": 0.40476190476190477, "seg_ajuste": 23.690467612999896, "melhor": "random_forest+feature_agglomeration", "erro": null}
+{"chave": "autosklearn_ml|dermatology|30", "acc_teste": 0.978021978021978, "seg_ajuste": 25.161875813999927, "melhor": "random_forest+polynomial", "erro": null}
+[WARNING] [2026-11-18 14:20:13,685:Client-EnsembleBuilder] No runs were available to build an ensemble from
+{"chave": "autosklearn_ml|ringnorm|30", "acc_teste": 0.9827027027027027, "seg_ajuste": 21.371625558999995, "melhor": "gaussian_nb+no_preprocessing", "erro": null}
+{"chave": "autosklearn_ml|echocardiogram|30", "acc_teste": 0.8787878787878788, "seg_ajuste": 23.305152615999987, "melhor": "extra_trees+polynomial", "erro": null}
+{"chave": "autosklearn_ml|ecoli|30", "acc_teste": 0.8674698795180723, "seg_ajuste": 23.418925696999963, "melhor": "random_forest+feature_agglomeration", "erro": null}
+{"chave": "autosklearn_ml|seeds|30", "acc_teste": 0.8703703703703703, "seg_ajuste": 24.873053418999916, "melhor": "random_forest+no_preprocessing", "erro": null}
+{"chave": "autosklearn_ml|energy-y1|30", "acc_teste": 0.9583333333333334, "seg_ajuste": 23.52300463200004, "melhor": "random_forest+no_preprocessing", "erro": null}
+{"chave": "autosklearn_ml|semeion|30", "acc_teste": 0.9523809523809523, "seg_ajuste": 24.458617968, "melhor": "random_forest+no_preprocessing", "erro": null}
+{"chave": "autosklearn_ml|energy-y2|30", "acc_teste": 0.90625, "seg_ajuste": 25.72092084799999, "melhor": "random_forest+no_preprocessing", "erro": null}
+[WARNING] [2026-11-18 14:21:58,025:Client-EnsembleBuilder] No models better than random - using Dummy losses!
+	Models besides current dummy model: 0
+	Dummy models: 1
+{"chave": "autosklearn_ml|soybean|30", "acc_teste": 0.9534883720930233, "seg_ajuste": 25.740520276000098, "melhor": "random_forest+no_preprocessing", "erro": null}
+[WARNING] [2026-11-18 14:21:59,581:Client-EnsembleBuilder] No models better than random - using Dummy losses!
+	Models besides current dummy model: 0
+	Dummy models: 1
+[WARNING] [2026-11-18 14:22:02,198:Client-EnsembleBuilder] No models better than random - using Dummy losses!
+	Models besides current dummy model: 0
+	Dummy models: 1
+[WARNING] [2026-11-18 14:22:03,741:Client-EnsembleBuilder] No models better than random - using Dummy losses!
+	Models besides current dummy model: 0
+	Dummy models: 1
+[WARNING] [2026-11-18 14:22:05,192:Client-EnsembleBuilder] No models better than random - using Dummy losses!
+	Models besides current dummy model: 0
+	Dummy models: 1
+[WARNING] [2026-11-18 14:22:07,148:Client-EnsembleBuilder] No models better than random - using Dummy losses!
+	Models besides current dummy model: 0
+	Dummy models: 1
+[WARNING] [2026-11-18 14:22:08,655:Client-EnsembleBuilder] No models better than random - using Dummy losses!
+	Models besides current dummy model: 0
+	Dummy models: 1
+[WARNING] [2026-11-18 14:22:10,950:Client-EnsembleBuilder] No models better than random - using Dummy losses!
+	Models besides current dummy model: 0
+	Dummy models: 1
+[WARNING] [2026-11-18 14:22:13,273:Client-EnsembleBuilder] No models better than random - using Dummy losses!
+	Models besides current dummy model: 0
+	Dummy models: 1
+{"chave": "autosklearn_ml|fertility|30", "acc_teste": 0.88, "seg_ajuste": 24.67022741100004, "melhor": "dummy", "erro": null}
+{"chave": "autosklearn_ml|spambase|30", "acc_teste": 0.957391304347826, "seg_ajuste": 24.144176421999987, "melhor": "random_forest+no_preprocessing", "erro": null}
+{"chave": "autosklearn_ml|flags|30", "acc_teste": 0.5714285714285714, "seg_ajuste": 23.32941283399998, "melhor": "lda+polynomial", "erro": null}
+{"chave": "autosklearn_ml|spect|30", "acc_teste": 0.6865671641791045, "seg_ajuste": 23.074589409000055, "melhor": "random_forest+no_preprocessing", "erro": null}
+{"chave": "autosklearn_ml|glass|30", "acc_teste": 0.7735849056603774, "seg_ajuste": 23.57374172699997, "melhor": "random_forest+no_preprocessing", "erro": null}
+{"chave": "autosklearn_ml|spectf|30", "acc_teste": 0.8805970149253731, "seg_ajuste": 22.8425684849999, "melhor": "gradient_boosting+extra_trees_preproc_for_classification", "erro": null}
+[WARNING] [2026-11-18 14:23:16,698:Client-EnsembleBuilder] No models better than random - using Dummy losses!
+	Models besides current dummy model: 0
+	Dummy models: 1
+[WARNING] [2026-11-18 14:23:18,160:Client-EnsembleBuilder] No models better than random - using Dummy losses!
+	Models besides current dummy model: 0
+	Dummy models: 1
+[WARNING] [2026-11-18 14:23:24,929:Client-EnsembleBuilder] No models better than random - using Dummy losses!
+	Models besides current dummy model: 0
+	Dummy models: 1
+[WARNING] [2026-11-18 14:23:27,486:Client-EnsembleBuilder] No models better than random - using Dummy losses!
+	Models besides current dummy model: 0
+	Dummy models: 1
+[WARNING] [2026-11-18 14:23:29,231:Client-EnsembleBuilder] No models better than random - using Dummy losses!
+	Models besides current dummy model: 0
+	Dummy models: 1
+[WARNING] [2026-11-18 14:23:31,368:Client-EnsembleBuilder] No models better than random - using Dummy losses!
+	Models besides current dummy model: 0
+	Dummy models: 1
+{"chave": "autosklearn_ml|haberman-survival|30", "acc_teste": 0.7368421052631579, "seg_ajuste": 25.618066818000102, "melhor": "dummy", "erro": null}
+{"chave": "autosklearn_ml|statlog-australian-credit|30", "acc_teste": 0.6936416184971098, "seg_ajuste": 26.412203042999977, "melhor": "random_forest+no_preprocessing", "erro": null}
+{"chave": "autosklearn_ml|hayes-roth|30", "acc_teste": 0.9, "seg_ajuste": 24.562737225999967, "melhor": "random_forest+no_preprocessing", "erro": null}
+{"chave": "autosklearn_ml|statlog-german-credit|30", "acc_teste": 0.76, "seg_ajuste": 24.827703029000077, "melhor": "random_forest+no_preprocessing", "erro": null}
+{"chave": "autosklearn_ml|heart-cleveland|30", "acc_teste": 0.5921052631578947, "seg_ajuste": 23.174400263999928, "melhor": "lda+polynomial", "erro": null}
+{"chave": "autosklearn_ml|heart-hungarian|30", "acc_teste": 0.8356164383561644, "seg_ajuste": 24.093282361999968, "melhor": "random_forest+no_preprocessing", "erro": null}
+{"chave": "autosklearn_ml|statlog-heart|30", "acc_teste": 0.7941176470588235, "seg_ajuste": 25.260743488999992, "melhor": "random_forest+no_preprocessing", "erro": null}
+{"chave": "autosklearn_ml|heart-switzerland|30", "acc_teste": 0.45161290322580644, "seg_ajuste": 22.49843048799994, "melhor": "random_forest+polynomial", "erro": null}
+{"chave": "autosklearn_ml|statlog-image|30", "acc_teste": 0.975609756097561, "seg_ajuste": 22.379203857999983, "melhor": "random_forest+no_preprocessing", "erro": null}
+{"chave": "autosklearn_ml|heart-va|30", "acc_teste": 0.3673469387755102, "seg_ajuste": 23.52998333200003, "melhor": "random_forest+polynomial", "erro": null}
+{"chave": "autosklearn_ml|statlog-landsat|30", "acc_teste": 0.9042883778744562, "seg_ajuste": 25.585313552000116, "melhor": "random_forest+no_preprocessing", "erro": null}
+{"chave": "autosklearn_ml|hepatitis|30", "acc_teste": 0.8461538461538461, "seg_ajuste": 21.561657033000074, "melhor": "random_forest+no_preprocessing", "erro": null}
+[WARNING] [2026-11-18 14:26:22,598:Client-EnsembleBuilder] No runs were available to build an ensemble from
+[WARNING] [2026-11-18 14:26:26,757:Client-EnsembleBuilder] No runs were available to build an ensemble from
+{"chave": "autosklearn_ml|statlog-shuttle|30", "acc_teste": 0.7859852403614043, "seg_ajuste": 24.83615084600001, "melhor": "dummy", "erro": null}
+{"chave": "autosklearn_ml|hill-valley|30", "acc_teste": 0.9539473684210527, "seg_ajuste": 25.422751855999877, "melhor": "k_nearest_neighbors+fast_ica", "erro": null}
+{"chave": "autosklearn_ml|statlog-vehicle|30", "acc_teste": 0.7677725118483413, "seg_ajuste": 24.902492195999912, "melhor": "random_forest+no_preprocessing", "erro": null}
+{"chave": "autosklearn_ml|horse-colic|30", "acc_teste": 0.8478260869565217, "seg_ajuste": 24.95052330999988, "melhor": "random_forest+no_preprocessing", "erro": null}
+{"chave": "autosklearn_ml|steel-plates|30", "acc_teste": 0.7654320987654321, "seg_ajuste": 21.776892419999967, "melhor": "random_forest+no_preprocessing", "erro": null}
+{"chave": "autosklearn_ml|ilpd-indian-liver|30", "acc_teste": 0.6986301369863014, "seg_ajuste": 25.362118132999967, "melhor": "random_forest+no_preprocessing", "erro": null}
+{"chave": "autosklearn_ml|synthetic-control|30", "acc_teste": 0.9866666666666667, "seg_ajuste": 23.08932761699998, "melhor": "mlp+feature_agglomeration", "erro": null}
+{"chave": "autosklearn_ml|image-segmentation|30", "acc_teste": 0.9564459930313589, "seg_ajuste": 23.32251390800002, "melhor": "random_forest+no_preprocessing", "erro": null}
+{"chave": "autosklearn_ml|teaching|30", "acc_teste": 0.7027027027027027, "seg_ajuste": 25.712532985000053, "melhor": "random_forest+no_preprocessing", "erro": null}
+{"chave": "autosklearn_ml|ionosphere|30", "acc_teste": 0.9318181818181818, "seg_ajuste": 21.278300043999934, "melhor": "random_forest+no_preprocessing", "erro": null}
+{"chave": "autosklearn_ml|thyroid|30", "acc_teste": 0.9955555555555555, "seg_ajuste": 25.87140356200007, "melhor": "adaboost+feature_agglomeration", "erro": null}
+{"chave": "autosklearn_ml|iris|30", "acc_teste": 0.9166666666666666, "seg_ajuste": 23.055875198999956, "melhor": "random_forest+no_preprocessing", "erro": null}
+{"chave": "autosklearn_ml|tic-tac-toe|30", "acc_teste": 0.9790794979079498, "seg_ajuste": 20.909972124999967, "melhor": "random_forest+no_preprocessing", "erro": null}
+{"chave": "autosklearn_ml|titanic|30", "acc_teste": 0.7781818181818182, "seg_ajuste": 22.68749786400008, "melhor": "mlp+feature_agglomeration", "erro": null}
+{"chave": "autosklearn_ml|led-display|30", "acc_teste": 0.684, "seg_ajuste": 25.128309550999802, "melhor": "random_forest+no_preprocessing", "erro": null}
+[WARNING] [2026-11-18 14:30:02,354:Client-EnsembleBuilder] No runs were available to build an ensemble from
+{"chave": "autosklearn_ml|twonorm|30", "acc_teste": 0.5005405405405405, "seg_ajuste": 21.013477198999908, "melhor": "dummy", "erro": null}
+{"chave": "autosklearn_ml|lenses|30", "acc_teste": 0.8333333333333334, "seg_ajuste": 22.740661908999982, "melhor": "lda+polynomial", "erro": null}
+[WARNING] [2026-11-18 14:30:31,773:Client-EnsembleBuilder] No runs were available to build an ensemble from
+{"chave": "autosklearn_ml|vertebral-column-2clases|30", "acc_teste": 0.8441558441558441, "seg_ajuste": 24.470639557999903, "melhor": "passive_aggressive+no_preprocessing", "erro": null}
+[WARNING] [2026-11-18 14:30:38,590:Client-EnsembleBuilder] No runs were available to build an ensemble from
+{"chave": "autosklearn_ml|letter|30", "acc_teste": 0.03938424630147941, "seg_ajuste": 24.752205263000178, "melhor": "dummy", "erro": null}
+{"chave": "autosklearn_ml|vertebral-column-3clases|30", "acc_teste": 0.7948717948717948, "seg_ajuste": 18.123296873000072, "melhor": "random_forest+no_preprocessing", "erro": null}
+{"chave": "autosklearn_ml|libras|30", "acc_teste": 0.8111111111111111, "seg_ajuste": 25.26744777199997, "melhor": "random_forest+no_preprocessing", "erro": null}
+{"chave": "autosklearn_ml|wall-following|30", "acc_teste": 0.9904622157006603, "seg_ajuste": 25.119541376999905, "melhor": "gradient_boosting+no_preprocessing", "erro": null}
+{"chave": "autosklearn_ml|low-res-spect|30", "acc_teste": 0.9172932330827067, "seg_ajuste": 25.84671828499995, "melhor": "random_forest+no_preprocessing", "erro": null}
+[WARNING] [2026-11-18 14:31:38,813:Client-EnsembleBuilder] No runs were available to build an ensemble from
+{"chave": "autosklearn_ml|waveform-noise|30", "acc_teste": 0.8856, "seg_ajuste": 23.97813290299996, "melhor": "passive_aggressive+select_rates_classification", "erro": null}
+{"chave": "autosklearn_ml|lung-cancer|30", "acc_teste": 0.8571428571428571, "seg_ajuste": 22.417758396999943, "melhor": "random_forest+no_preprocessing", "erro": null}
+{"chave": "autosklearn_ml|waveform|30", "acc_teste": 0.8552, "seg_ajuste": 24.9182404820001, "melhor": "passive_aggressive+select_rates_classification", "erro": null}
+{"chave": "autosklearn_ml|lymphography|30", "acc_teste": 0.8055555555555556, "seg_ajuste": 21.355054052000014, "melhor": "lda+polynomial", "erro": null}
+{"chave": "autosklearn_ml|wine-quality-red|30", "acc_teste": 0.6791979949874687, "seg_ajuste": 22.582409258000098, "melhor": "random_forest+no_preprocessing", "erro": null}
+{"chave": "autosklearn_ml|mammographic|30", "acc_teste": 0.8333333333333334, "seg_ajuste": 24.344064004999836, "melhor": "adaboost+extra_trees_preproc_for_classification", "erro": null}
+{"chave": "autosklearn_ml|wine-quality-white|30", "acc_teste": 0.6391836734693878, "seg_ajuste": 21.438711387000012, "melhor": "random_forest+no_preprocessing", "erro": null}
+{"chave": "autosklearn_ml|molec-biol-promoter|30", "acc_teste": 0.8846153846153846, "seg_ajuste": 24.573336215999916, "melhor": "random_forest+no_preprocessing", "erro": null}
+{"chave": "autosklearn_ml|wine|30", "acc_teste": 1.0, "seg_ajuste": 24.207962398000063, "melhor": "lda+polynomial", "erro": null}
+{"chave": "autosklearn_ml|yeast|30", "acc_teste": 0.5913978494623656, "seg_ajuste": 23.64734239099994, "melhor": "random_forest+no_preprocessing", "erro": null}
+{"chave": "autosklearn_ml|zoo|30", "acc_teste": 0.9583333333333334, "seg_ajuste": 21.047040308000078, "melhor": "mlp+feature_agglomeration", "erro": null}
+{"chave": "autosklearn_ml|abalone|120", "acc_teste": 0.6516746411483254, "seg_ajuste": 108.80836458099998, "melhor": "mlp+feature_agglomeration", "erro": null}
+{"chave": "autosklearn_ml|molec-biol-splice|120", "acc_teste": 0.9548872180451128, "seg_ajuste": 106.13350495700001, "melhor": "random_forest+no_preprocessing", "erro": null}
+[WARNING] [2026-11-18 14:37:05,182:smac.runhistory.runhistory2epm.RunHistory2EPM4LogCost] Got cost of smaller/equal to 0. Replace by 0.000010 since we use log cost.
+[WARNING] [2026-11-18 14:37:14,926:smac.runhistory.runhistory2epm.RunHistory2EPM4LogCost] Got cost of smaller/equal to 0. Replace by 0.000010 since we use log cost.
+[WARNING] [2026-11-18 14:37:24,781:smac.runhistory.runhistory2epm.RunHistory2EPM4LogCost] Got cost of smaller/equal to 0. Replace by 0.000010 since we use log cost.
+[WARNING] [2026-11-18 14:37:28,561:smac.runhistory.runhistory2epm.RunHistory2EPM4LogCost] Got cost of smaller/equal to 0. Replace by 0.000010 since we use log cost.
+[WARNING] [2026-11-18 14:37:31,607:smac.runhistory.runhistory2epm.RunHistory2EPM4LogCost] Got cost of smaller/equal to 0. Replace by 0.000010 since we use log cost.
+[WARNING] [2026-11-18 14:37:37,640:smac.runhistory.runhistory2epm.RunHistory2EPM4LogCost] Got cost of smaller/equal to 0. Replace by 0.000010 since we use log cost.
+[WARNING] [2026-11-18 14:37:54,633:smac.runhistory.runhistory2epm.RunHistory2EPM4LogCost] Got cost of smaller/equal to 0. Replace by 0.000010 since we use log cost.
+[WARNING] [2026-11-18 14:38:12,058:smac.runhistory.runhistory2epm.RunHistory2EPM4LogCost] Got cost of smaller/equal to 0. Replace by 0.000010 since we use log cost.
+{"chave": "autosklearn_ml|acute-inflammation|120", "acc_teste": 1.0, "seg_ajuste": 108.73530441099979, "melhor": "random_forest+no_preprocessing", "erro": null}
+{"chave": "autosklearn_ml|monks-1|120", "acc_teste": 0.9857142857142858, "seg_ajuste": 120.49691989400003, "melhor": "random_forest+no_preprocessing", "erro": null}
+[WARNING] [2026-11-18 14:39:43,065:smac.runhistory.runhistory2epm.RunHistory2EPM4LogCost] Got cost of smaller/equal to 0. Replace by 0.000010 since we use log cost.
+[WARNING] [2026-11-18 14:39:54,641:smac.runhistory.runhistory2epm.RunHistory2EPM4LogCost] Got cost of smaller/equal to 0. Replace by 0.000010 since we use log cost.
+[WARNING] [2026-11-18 14:39:58,054:smac.runhistory.runhistory2epm.RunHistory2EPM4LogCost] Got cost of smaller/equal to 0. Replace by 0.000010 since we use log cost.
+[WARNING] [2026-11-18 14:40:01,239:smac.runhistory.runhistory2epm.RunHistory2EPM4LogCost] Got cost of smaller/equal to 0. Replace by 0.000010 since we use log cost.
+[WARNING] [2026-11-18 14:40:04,097:smac.runhistory.runhistory2epm.RunHistory2EPM4LogCost] Got cost of smaller/equal to 0. Replace by 0.000010 since we use log cost.
+[WARNING] [2026-11-18 14:40:07,095:smac.runhistory.runhistory2epm.RunHistory2EPM4LogCost] Got cost of smaller/equal to 0. Replace by 0.000010 since we use log cost.
+[WARNING] [2026-11-18 14:40:09,080:smac.runhistory.runhistory2epm.RunHistory2EPM4LogCost] Got cost of smaller/equal to 0. Replace by 0.000010 since we use log cost.
+{"chave": "autosklearn_ml|monks-2|120", "acc_teste": 0.8807947019867549, "seg_ajuste": 111.02314655400005, "melhor": "mlp+feature_agglomeration", "erro": null}
+{"chave": "autosklearn_ml|acute-nephritis|120", "acc_teste": 1.0, "seg_ajuste": 114.61596931099984, "melhor": "gradient_boosting+feature_agglomeration", "erro": null}
+{"chave": "autosklearn_ml|monks-3|120", "acc_teste": 0.9855072463768116, "seg_ajuste": 105.6750980060001, "melhor": "adaboost+feature_agglomeration", "erro": null}
+{"chave": "autosklearn_ml|adult|120", "acc_teste": 0.8611907296699697, "seg_ajuste": 114.08126076300005, "melhor": "random_forest+no_preprocessing", "erro": null}
+{"chave": "autosklearn_ml|mushroom|120", "acc_teste": 1.0, "seg_ajuste": 108.87294909599973, "melhor": "extra_trees+fast_ica", "erro": null}
+{"chave": "autosklearn_ml|annealing|120", "acc_teste": 0.9644444444444444, "seg_ajuste": 110.372482364, "melhor": "adaboost+feature_agglomeration", "erro": null}
+{"chave": "autosklearn_ml|musk-1|120", "acc_teste": 0.8739495798319328, "seg_ajuste": 110.53969623400008, "melhor": "random_forest+no_preprocessing", "erro": null}
+{"chave": "autosklearn_ml|arrhythmia|120", "acc_teste": 0.6875, "seg_ajuste": 107.62299549599993, "melhor": "random_forest+no_preprocessing", "erro": null}
+{"chave": "autosklearn_ml|musk-2|120", "acc_teste": 0.9660400242571255, "seg_ajuste": 107.22334374899992, "melhor": "random_forest+no_preprocessing", "erro": null}
+{"chave": "autosklearn_ml|audiology-std|120", "acc_teste": 0.8666666666666667, "seg_ajuste": 109.19681683999988, "melhor": "random_forest+feature_agglomeration", "erro": null}
+[WARNING] [2026-11-18 14:50:40,881:smac.runhistory.runhistory2epm.RunHistory2EPM4LogCost] Got cost of smaller/equal to 0. Replace by 0.000010 since we use log cost.
+[WARNING] [2026-11-18 14:50:47,295:smac.runhistory.runhistory2epm.RunHistory2EPM4LogCost] Got cost of smaller/equal to 0. Replace by 0.000010 since we use log cost.
+[WARNING] [2026-11-18 14:50:50,959:smac.runhistory.runhistory2epm.RunHistory2EPM4LogCost] Got cost of smaller/equal to 0. Replace by 0.000010 since we use log cost.
+[WARNING] [2026-11-18 14:51:01,635:smac.runhistory.runhistory2epm.RunHistory2EPM4LogCost] Got cost of smaller/equal to 0. Replace by 0.000010 since we use log cost.
+[WARNING] [2026-11-18 14:51:08,392:smac.runhistory.runhistory2epm.RunHistory2EPM4LogCost] Got cost of smaller/equal to 0. Replace by 0.000010 since we use log cost.
+{"chave": "autosklearn_ml|balance-scale|120", "acc_teste": 0.9935897435897436, "seg_ajuste": 107.46624371500002, "melhor": "adaboost+select_rates_classification", "erro": null}
+{"chave": "autosklearn_ml|nursery|120", "acc_teste": 1.0, "seg_ajuste": 106.70281933200022, "melhor": "random_forest+fast_ica", "erro": null}
+[WARNING] [2026-11-18 14:53:19,884:smac.runhistory.runhistory2epm.RunHistory2EPM4LogCost] Got cost of smaller/equal to 0. Replace by 0.000010 since we use log cost.
+[WARNING] [2026-11-18 14:53:27,447:smac.runhistory.runhistory2epm.RunHistory2EPM4LogCost] Got cost of smaller/equal to 0. Replace by 0.000010 since we use log cost.
+[WARNING] [2026-11-18 14:53:29,779:smac.runhistory.runhistory2epm.RunHistory2EPM4LogCost] Got cost of smaller/equal to 0. Replace by 0.000010 since we use log cost.
+[WARNING] [2026-11-18 14:53:31,784:smac.runhistory.runhistory2epm.RunHistory2EPM4LogCost] Got cost of smaller/equal to 0. Replace by 0.000010 since we use log cost.
+[WARNING] [2026-11-18 14:53:40,193:smac.runhistory.runhistory2epm.RunHistory2EPM4LogCost] Got cost of smaller/equal to 0. Replace by 0.000010 since we use log cost.
+{"chave": "autosklearn_ml|balloons|120", "acc_teste": 0.25, "seg_ajuste": 105.19429148200015, "melhor": "random_forest+random_trees_embedding", "erro": null}
+{"chave": "autosklearn_ml|oocytes_merluccius_nucleus_4d|120", "acc_teste": 0.8745098039215686, "seg_ajuste": 108.12727109199977, "melhor": "extra_trees+polynomial", "erro": null}
+{"chave": "autosklearn_ml|bank|120", "acc_teste": 0.8973451327433628, "seg_ajuste": 106.08354041599978, "melhor": "random_forest+no_preprocessing", "erro": null}
+[WARNING] [2026-11-18 14:55:53,211:Client-EnsembleBuilder] No models better than random - using Dummy losses!
+	Models besides current dummy model: 0
+	Dummy models: 1
+[WARNING] [2026-11-18 14:55:54,620:Client-EnsembleBuilder] No models better than random - using Dummy losses!
+	Models besides current dummy model: 0
+	Dummy models: 1
+[WARNING] [2026-11-18 14:55:56,199:Client-EnsembleBuilder] No models better than random - using Dummy losses!
+	Models besides current dummy model: 0
+	Dummy models: 1
+[WARNING] [2026-11-18 14:55:58,586:Client-EnsembleBuilder] No models better than random - using Dummy losses!
+	Models besides current dummy model: 0
+	Dummy models: 1
+[WARNING] [2026-11-18 14:56:00,308:Client-EnsembleBuilder] No models better than random - using Dummy losses!
+	Models besides current dummy model: 0
+	Dummy models: 1
+[WARNING] [2026-11-18 14:56:02,644:Client-EnsembleBuilder] No models better than random - using Dummy losses!
+	Models besides current dummy model: 0
+	Dummy models: 1
+[WARNING] [2026-11-18 14:56:21,432:Client-EnsembleBuilder] No models better than random - using Dummy losses!
+	Models besides current dummy model: 0
+	Dummy models: 1
+[WARNING] [2026-11-18 14:56:24,038:Client-EnsembleBuilder] No models better than random - using Dummy losses!
+	Models besides current dummy model: 0
+	Dummy models: 1
+[WARNING] [2026-11-18 14:56:26,422:Client-EnsembleBuilder] No models better than random - using Dummy losses!
+	Models besides current dummy model: 0
+	Dummy models: 1
+[WARNING] [2026-11-18 14:56:30,471:Client-EnsembleBuilder] No models better than random - using Dummy losses!
+	Models besides current dummy model: 0
+	Dummy models: 1
+[WARNING] [2026-11-18 14:56:31,902:Client-EnsembleBuilder] No models better than random - using Dummy losses!
+	Models besides current dummy model: 0
+	Dummy models: 1
+[WARNING] [2026-11-18 14:56:33,424:Client-EnsembleBuilder] No models better than random - using Dummy losses!
+	Models besides current dummy model: 0
+	Dummy models: 1
+{"chave": "autosklearn_ml|oocytes_merluccius_states_2f|120", "acc_teste": 0.90625, "seg_ajuste": 107.27713817499989, "melhor": "random_forest+feature_agglomeration", "erro": null}
+{"chave": "autosklearn_ml|blood|120", "acc_teste": 0.8118279569892473, "seg_ajuste": 107.47259447399983, "melhor": "lda+fast_ica", "erro": null}
+{"chave": "autosklearn_ml|oocytes_trisopterus_nucleus_2f|120", "acc_teste": 0.8333333333333334, "seg_ajuste": 104.56484600500016, "melhor": "mlp+feature_agglomeration", "erro": null}
+{"chave": "autosklearn_ml|breast-cancer-wisc-diag|120", "acc_teste": 0.971830985915493, "seg_ajuste": 110.58156689600037, "melhor": "lda+feature_agglomeration", "erro": null}
+[WARNING] [2026-11-18 14:59:56,195:Client-EnsembleBuilder] No models better than random - using Dummy losses!
+	Models besides current dummy model: 0
+	Dummy models: 1
+[WARNING] [2026-11-18 14:59:57,757:Client-EnsembleBuilder] No models better than random - using Dummy losses!
+	Models besides current dummy model: 0
+	Dummy models: 1
+[WARNING] [2026-11-18 14:59:59,546:Client-EnsembleBuilder] No models better than random - using Dummy losses!
+	Models besides current dummy model: 0
+	Dummy models: 1
+[WARNING] [2026-11-18 15:00:01,921:Client-EnsembleBuilder] No models better than random - using Dummy losses!
+	Models besides current dummy model: 0
+	Dummy models: 1
+[WARNING] [2026-11-18 15:00:03,570:Client-EnsembleBuilder] No models better than random - using Dummy losses!
+	Models besides current dummy model: 0
+	Dummy models: 1
+[WARNING] [2026-11-18 15:00:06,613:Client-EnsembleBuilder] No models better than random - using Dummy losses!
+	Models besides current dummy model: 0
+	Dummy models: 1
+[WARNING] [2026-11-18 15:00:12,936:Client-EnsembleBuilder] No models better than random - using Dummy losses!
+	Models besides current dummy model: 0
+	Dummy models: 1
+[WARNING] [2026-11-18 15:00:15,205:Client-EnsembleBuilder] No models better than random - using Dummy losses!
+	Models besides current dummy model: 0
+	Dummy models: 1
+[WARNING] [2026-11-18 15:00:16,885:Client-EnsembleBuilder] No models better than random - using Dummy losses!
+	Models besides current dummy model: 0
+	Dummy models: 1
+[WARNING] [2026-11-18 15:00:20,808:Client-EnsembleBuilder] No models better than random - using Dummy losses!
+	Models besides current dummy model: 0
+	Dummy models: 1
+[WARNING] [2026-11-18 15:00:24,908:Client-EnsembleBuilder] No models better than random - using Dummy losses!
+	Models besides current dummy model: 0
+	Dummy models: 1
+{"chave": "autosklearn_ml|oocytes_trisopterus_states_5b|120", "acc_teste": 0.9254385964912281, "seg_ajuste": 108.66229281899996, "melhor": "lda+polynomial", "erro": null}
+{"chave": "autosklearn_ml|breast-cancer-wisc-prog|120", "acc_teste": 0.74, "seg_ajuste": 109.76523474299984, "melhor": "passive_aggressive+no_preprocessing", "erro": null}
+{"chave": "autosklearn_ml|optical|120", "acc_teste": 0.9886120996441281, "seg_ajuste": 110.68384658299965, "melhor": "passive_aggressive+polynomial", "erro": null}
+[WARNING] [2026-11-18 15:03:48,227:Client-EnsembleBuilder] No models better than random - using Dummy losses!
+	Models besides current dummy model: 0
+	Dummy models: 1
+{"chave": "autosklearn_ml|breast-cancer-wisc|120", "acc_teste": 0.9712643678160919, "seg_ajuste": 111.72407598699965, "melhor": "extra_trees+select_rates_classification", "erro": null}
+{"chave": "autosklearn_ml|ozone|120", "acc_teste": 0.9684542586750788, "seg_ajuste": 106.92951974900006, "melhor": "adaboost+extra_trees_preproc_for_classification", "erro": null}
+{"chave": "autosklearn_ml|breast-cancer|120", "acc_teste": 0.6619718309859155, "seg_ajuste": 107.73636370799977, "melhor": "random_forest+pca", "erro": null}
