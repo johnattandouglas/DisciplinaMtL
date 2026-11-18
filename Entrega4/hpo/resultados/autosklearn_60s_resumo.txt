@@ -1,0 +1,15 @@
+[com] n=120 sem_result=0 dummy=5 (adult, congressional-voting, planning, post-operative, miniboone) acc_media=0.8321 seg_ajuste_soma=6348.6 media=52.9 pred_soma=1304.1 aval_media=14.9 ens_media=8.7
+   random_forest: presente 108/120, peso medio 0.40, maior peso em 43
+   mlp: presente 74/120, peso medio 0.11, maior peso em 11
+   melhores mais comuns: {'random_forest': 43, 'passive_aggressive': 12, 'mlp': 11, 'gradient_boosting': 11, 'lda': 9}
+   preproc mais comuns: {'no_preprocessing': 36, 'polynomial': 24, 'feature_agglomeration': 19, 'extra_trees_preproc_for_classification': 8, 'select_rates_classification': 7}
+[sem] n=120 sem_result=0 dummy=7 (congressional-voting, planning, connect-4, post-operative, fertility, magic, miniboone) acc_media=0.8294 seg_ajuste_soma=6440.8 media=53.7 pred_soma=544.6 aval_media=10.6 ens_media=5.8
+   random_forest: presente 102/120, peso medio 0.25, maior peso em 33
+   mlp: presente 70/120, peso medio 0.09, maior peso em 10
+   melhores mais comuns: {'random_forest': 33, 'sgd': 20, 'extra_trees': 20, 'gradient_boosting': 10, 'mlp': 10}
+   preproc mais comuns: {'no_preprocessing': 32, 'kernel_pca': 19, 'select_rates_classification': 18, 'polynomial': 18, 'fast_ica': 14}
+pares=120 vit_com=56 vit_sem=41 empates=23 W=2173.5 p=0.465 mediana_dif=+0.0000 media_dif=+0.0026 rank_biserial=0.09
+  na base OpenML: n=33 media_dif=+0.0239 vit_com=22 vit_sem=7 p=0.011
+  fora da base: n=87 media_dif=-0.0054 vit_com=34 vit_sem=34 p=0.660
+maiores ganhos com MtL: {'blood': 0.097, 'monks-2': 0.099, 'connect-4': 0.126, 'magic': 0.228, 'hill-valley': 0.405}
+maiores ganhos sem MtL: {'balloons': -0.25, 'lung-cancer': -0.143, 'fertility': -0.12, 'spect': -0.104, 'adult': -0.1}

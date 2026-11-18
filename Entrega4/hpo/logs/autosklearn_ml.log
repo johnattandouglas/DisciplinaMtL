@@ -140,3 +140,881 @@ Traceback (most recent call last):
     if result:
 UnboundLocalError: local variable 'result' referenced before assignment
 {"chave": "autosklearn_ml|adult|30", "acc_teste": 0.7607075587584964, "seg_ajuste": 33.45231236999999, "melhor": null, "erro": "UnboundLocalError(\"local variable 'result' referenced before assignment\")"}
+/home/jviana/autosklearn-env/lib/python3.9/site-packages/autosklearn/__init__.py:5: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  import pkg_resources
+/home/jviana/autosklearn-env/lib/python3.9/site-packages/autosklearn/__init__.py:5: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  import pkg_resources
+/home/jviana/autosklearn-env/lib/python3.9/site-packages/distributed/node.py:182: UserWarning: Port 8787 is already in use.
+Perhaps you already have a cluster running?
+Hosting the HTTP server on port 45851 instead
+  warnings.warn(
+{"chave": "autosklearn_ml|abalone|30", "acc_teste": 0.6555023923444976, "seg_ajuste": 30.0377001, "melhor": "extra_trees+fast_ica", "erro": null}
+/home/jviana/autosklearn-env/lib/python3.9/site-packages/distributed/node.py:182: UserWarning: Port 8787 is already in use.
+Perhaps you already have a cluster running?
+Hosting the HTTP server on port 45859 instead
+  warnings.warn(
+{"chave": "autosklearn_ml|acute-inflammation|30", "acc_teste": 1.0, "seg_ajuste": 25.410865975, "melhor": "passive_aggressive+kitchen_sinks", "erro": null}
+{"chave": "autosklearn_ml|acute-nephritis|30", "acc_teste": 1.0, "seg_ajuste": 26.365711167, "melhor": "gradient_boosting+feature_agglomeration", "erro": null}
+[WARNING] [2026-11-18 11:46:00,205:Client-EnsembleBuilder] No runs were available to build an ensemble from
+[WARNING] [2026-11-18 11:46:00,510:Client-EnsembleBuilder] No runs were available to build an ensemble from
+[WARNING] [2026-11-18 11:46:08,710:Client-EnsembleBuilder] No runs were available to build an ensemble from
+{"chave": "autosklearn_ml|adult|30", "acc_teste": 0.7607075587584964, "seg_ajuste": 25.010259135000013, "melhor": "dummy", "erro": null}
+{"chave": "autosklearn_ml|annealing|30", "acc_teste": 0.9511111111111111, "seg_ajuste": 24.99420785000001, "melhor": "random_forest+no_preprocessing", "erro": null}
+/home/jviana/autosklearn-env/lib/python3.9/site-packages/distributed/node.py:182: UserWarning: Port 8787 is already in use.
+Perhaps you already have a cluster running?
+Hosting the HTTP server on port 44935 instead
+  warnings.warn(
+{"chave": "autosklearn_ml|arrhythmia|30", "acc_teste": 0.6875, "seg_ajuste": 25.517179535000025, "melhor": "random_forest+no_preprocessing", "erro": null}
+/home/jviana/autosklearn-env/lib/python3.9/site-packages/distributed/node.py:182: UserWarning: Port 8787 is already in use.
+Perhaps you already have a cluster running?
+Hosting the HTTP server on port 46617 instead
+  warnings.warn(
+{"chave": "autosklearn_ml|audiology-std|30", "acc_teste": 0.8888888888888888, "seg_ajuste": 21.305495928, "melhor": "random_forest+feature_agglomeration", "erro": null}
+/home/jviana/autosklearn-env/lib/python3.9/site-packages/distributed/node.py:182: UserWarning: Port 8787 is already in use.
+Perhaps you already have a cluster running?
+Hosting the HTTP server on port 45393 instead
+  warnings.warn(
+{"chave": "autosklearn_ml|balance-scale|30", "acc_teste": 1.0, "seg_ajuste": 23.872886259999973, "melhor": "liblinear_svc+polynomial", "erro": null}
+/home/jviana/autosklearn-env/lib/python3.9/site-packages/distributed/node.py:182: UserWarning: Port 8787 is already in use.
+Perhaps you already have a cluster running?
+Hosting the HTTP server on port 44857 instead
+  warnings.warn(
+{"chave": "autosklearn_ml|balloons|30", "acc_teste": 0.25, "seg_ajuste": 25.73692126100002, "melhor": "random_forest+random_trees_embedding", "erro": null}
+{"chave": "autosklearn_ml|bank|30", "acc_teste": 0.8973451327433628, "seg_ajuste": 26.130948038999975, "melhor": "random_forest+no_preprocessing", "erro": null}
+[WARNING] [2026-11-18 11:49:00,178:Client-EnsembleBuilder] No models better than random - using Dummy losses!
+	Models besides current dummy model: 0
+	Dummy models: 1
+[WARNING] [2026-11-18 11:49:00,656:Client-EnsembleBuilder] No models better than random - using Dummy losses!
+	Models besides current dummy model: 0
+	Dummy models: 1
+[WARNING] [2026-11-18 11:49:01,775:Client-EnsembleBuilder] No models better than random - using Dummy losses!
+	Models besides current dummy model: 0
+	Dummy models: 1
+[WARNING] [2026-11-18 11:49:02,470:Client-EnsembleBuilder] No models better than random - using Dummy losses!
+	Models besides current dummy model: 0
+	Dummy models: 1
+[WARNING] [2026-11-18 11:49:03,213:Client-EnsembleBuilder] No models better than random - using Dummy losses!
+	Models besides current dummy model: 0
+	Dummy models: 1
+[WARNING] [2026-11-18 11:49:04,335:Client-EnsembleBuilder] No models better than random - using Dummy losses!
+	Models besides current dummy model: 0
+	Dummy models: 1
+[WARNING] [2026-11-18 11:49:05,850:Client-EnsembleBuilder] No models better than random - using Dummy losses!
+	Models besides current dummy model: 0
+	Dummy models: 1
+[WARNING] [2026-11-18 11:49:07,509:Client-EnsembleBuilder] No models better than random - using Dummy losses!
+	Models besides current dummy model: 0
+	Dummy models: 1
+[WARNING] [2026-11-18 11:49:09,124:Client-EnsembleBuilder] No models better than random - using Dummy losses!
+	Models besides current dummy model: 0
+	Dummy models: 1
+[WARNING] [2026-11-18 11:49:10,791:Client-EnsembleBuilder] No models better than random - using Dummy losses!
+	Models besides current dummy model: 0
+	Dummy models: 1
+[WARNING] [2026-11-18 11:49:11,085:Client-EnsembleBuilder] No models better than random - using Dummy losses!
+	Models besides current dummy model: 0
+	Dummy models: 1
+[WARNING] [2026-11-18 11:49:13,080:Client-EnsembleBuilder] No models better than random - using Dummy losses!
+	Models besides current dummy model: 0
+	Dummy models: 1
+{"chave": "autosklearn_ml|blood|30", "acc_teste": 0.7688172043010753, "seg_ajuste": 25.01202857000004, "melhor": "extra_trees+polynomial", "erro": null}
+[WARNING] [2026-11-18 11:49:26,501:Client-EnsembleBuilder] No models better than random - using Dummy losses!
+	Models besides current dummy model: 0
+	Dummy models: 1
+[WARNING] [2026-11-18 11:49:26,963:Client-EnsembleBuilder] No models better than random - using Dummy losses!
+	Models besides current dummy model: 0
+	Dummy models: 1
+{"chave": "autosklearn_ml|breast-cancer|30", "acc_teste": 0.676056338028169, "seg_ajuste": 23.681807683999978, "melhor": "extra_trees+polynomial", "erro": null}
+{"chave": "autosklearn_ml|breast-cancer-wisc|30", "acc_teste": 0.9655172413793104, "seg_ajuste": 23.72092768799996, "melhor": "passive_aggressive+no_preprocessing", "erro": null}
+{"chave": "autosklearn_ml|breast-cancer-wisc-diag|30", "acc_teste": 0.9647887323943662, "seg_ajuste": 25.928297810999993, "melhor": "mlp+feature_agglomeration", "erro": null}
+[WARNING] [2026-11-18 11:50:45,985:Client-EnsembleBuilder] No models better than random - using Dummy losses!
+	Models besides current dummy model: 0
+	Dummy models: 1
+[WARNING] [2026-11-18 11:50:46,995:Client-EnsembleBuilder] No models better than random - using Dummy losses!
+	Models besides current dummy model: 0
+	Dummy models: 1
+[WARNING] [2026-11-18 11:50:47,650:Client-EnsembleBuilder] No models better than random - using Dummy losses!
+	Models besides current dummy model: 0
+	Dummy models: 1
+[WARNING] [2026-11-18 11:50:48,388:Client-EnsembleBuilder] No models better than random - using Dummy losses!
+	Models besides current dummy model: 0
+	Dummy models: 1
+[WARNING] [2026-11-18 11:50:49,575:Client-EnsembleBuilder] No models better than random - using Dummy losses!
+	Models besides current dummy model: 0
+	Dummy models: 1
+[WARNING] [2026-11-18 11:50:50,433:Client-EnsembleBuilder] No models better than random - using Dummy losses!
+	Models besides current dummy model: 0
+	Dummy models: 1
+[WARNING] [2026-11-18 11:50:50,881:Client-EnsembleBuilder] No models better than random - using Dummy losses!
+	Models besides current dummy model: 0
+	Dummy models: 1
+{"chave": "autosklearn_ml|breast-cancer-wisc-prog|30", "acc_teste": 0.74, "seg_ajuste": 25.757233504999988, "melhor": "passive_aggressive+no_preprocessing", "erro": null}
+{"chave": "autosklearn_ml|breast-tissue|30", "acc_teste": 0.6666666666666666, "seg_ajuste": 23.156010023999954, "melhor": "random_forest+no_preprocessing", "erro": null}
+/home/jviana/autosklearn-env/lib/python3.9/site-packages/distributed/node.py:182: UserWarning: Port 8787 is already in use.
+Perhaps you already have a cluster running?
+Hosting the HTTP server on port 46611 instead
+  warnings.warn(
+{"chave": "autosklearn_ml|car|30", "acc_teste": 0.9721577726218097, "seg_ajuste": 23.90294537599999, "melhor": "adaboost+select_rates_classification", "erro": null}
+/home/jviana/autosklearn-env/lib/python3.9/site-packages/distributed/node.py:182: UserWarning: Port 8787 is already in use.
+Perhaps you already have a cluster running?
+Hosting the HTTP server on port 45841 instead
+  warnings.warn(
+{"chave": "autosklearn_ml|cardiotocography-10clases|30", "acc_teste": 0.8757062146892656, "seg_ajuste": 25.309956502999967, "melhor": "random_forest+no_preprocessing", "erro": null}
+/home/jviana/autosklearn-env/lib/python3.9/site-packages/distributed/node.py:182: UserWarning: Port 8787 is already in use.
+Perhaps you already have a cluster running?
+Hosting the HTTP server on port 45297 instead
+  warnings.warn(
+{"chave": "autosklearn_ml|cardiotocography-3clases|30", "acc_teste": 0.9398496240601504, "seg_ajuste": 25.364326813999924, "melhor": "random_forest+no_preprocessing", "erro": null}
+/home/jviana/autosklearn-env/lib/python3.9/site-packages/distributed/node.py:182: UserWarning: Port 8787 is already in use.
+Perhaps you already have a cluster running?
+Hosting the HTTP server on port 45269 instead
+  warnings.warn(
+[WARNING] [2026-11-18 11:53:16,690:Client-EnsembleBuilder] No runs were available to build an ensemble from
+[WARNING] [2026-11-18 11:53:22,007:Client-EnsembleBuilder] No runs were available to build an ensemble from
+{"chave": "autosklearn_ml|chess-krvk|30", "acc_teste": 0.09962941847206386, "seg_ajuste": 25.13532794799994, "melhor": "dummy", "erro": null}
+/home/jviana/autosklearn-env/lib/python3.9/site-packages/distributed/node.py:182: UserWarning: Port 8787 is already in use.
+Perhaps you already have a cluster running?
+Hosting the HTTP server on port 46267 instead
+  warnings.warn(
+{"chave": "autosklearn_ml|chess-krvkp|30", "acc_teste": 0.981226533166458, "seg_ajuste": 26.188993804000006, "melhor": "random_forest+no_preprocessing", "erro": null}
+/home/jviana/autosklearn-env/lib/python3.9/site-packages/distributed/node.py:182: UserWarning: Port 8787 is already in use.
+Perhaps you already have a cluster running?
+Hosting the HTTP server on port 44679 instead
+  warnings.warn(
+[WARNING] [2026-11-18 11:54:00,470:Client-EnsembleBuilder] No models better than random - using Dummy losses!
+	Models besides current dummy model: 0
+	Dummy models: 1
+[WARNING] [2026-11-18 11:54:01,447:Client-EnsembleBuilder] No models better than random - using Dummy losses!
+	Models besides current dummy model: 0
+	Dummy models: 1
+[WARNING] [2026-11-18 11:54:04,428:Client-EnsembleBuilder] No models better than random - using Dummy losses!
+	Models besides current dummy model: 0
+	Dummy models: 1
+[WARNING] [2026-11-18 11:54:06,031:Client-EnsembleBuilder] No models better than random - using Dummy losses!
+	Models besides current dummy model: 0
+	Dummy models: 1
+[WARNING] [2026-11-18 11:54:06,571:Client-EnsembleBuilder] No models better than random - using Dummy losses!
+	Models besides current dummy model: 0
+	Dummy models: 1
+[WARNING] [2026-11-18 11:54:07,757:Client-EnsembleBuilder] No models better than random - using Dummy losses!
+	Models besides current dummy model: 0
+	Dummy models: 1
+[WARNING] [2026-11-18 11:54:08,874:Client-EnsembleBuilder] No models better than random - using Dummy losses!
+	Models besides current dummy model: 0
+	Dummy models: 1
+[WARNING] [2026-11-18 11:54:10,229:Client-EnsembleBuilder] No models better than random - using Dummy losses!
+	Models besides current dummy model: 0
+	Dummy models: 1
+[WARNING] [2026-11-18 11:54:11,931:Client-EnsembleBuilder] No models better than random - using Dummy losses!
+	Models besides current dummy model: 0
+	Dummy models: 1
+[WARNING] [2026-11-18 11:54:12,728:Client-EnsembleBuilder] No models better than random - using Dummy losses!
+	Models besides current dummy model: 0
+	Dummy models: 1
+[WARNING] [2026-11-18 11:54:14,040:Client-EnsembleBuilder] No models better than random - using Dummy losses!
+	Models besides current dummy model: 0
+	Dummy models: 1
+[WARNING] [2026-11-18 11:54:14,897:Client-EnsembleBuilder] No models better than random - using Dummy losses!
+	Models besides current dummy model: 0
+	Dummy models: 1
+{"chave": "autosklearn_ml|congressional-voting|30", "acc_teste": 0.6146788990825688, "seg_ajuste": 23.726060896000035, "melhor": "dummy", "erro": null}
+{"chave": "autosklearn_ml|conn-bench-sonar-mines-rocks|30", "acc_teste": 0.6923076923076923, "seg_ajuste": 23.72140974499996, "melhor": "k_nearest_neighbors+fast_ica", "erro": null}
+{"chave": "autosklearn_ml|conn-bench-vowel-deterding|30", "acc_teste": 1.0, "seg_ajuste": 26.183916332999956, "melhor": "libsvm_svc+no_preprocessing", "erro": null}
+[WARNING] [2026-11-18 11:55:23,230:Client-EnsembleBuilder] No runs were available to build an ensemble from
+[WARNING] [2026-11-18 11:55:31,744:Client-EnsembleBuilder] No runs were available to build an ensemble from
+[WARNING] [2026-11-18 11:55:34,552:Client-EnsembleBuilder] No runs were available to build an ensemble from
+[WARNING] [2026-11-18 11:55:36,839:Client-EnsembleBuilder] No runs were available to build an ensemble from
+[WARNING] [2026-11-18 11:55:37,118:Client-EnsembleBuilder] No runs were available to build an ensemble from
+{"chave": "autosklearn_ml|connect-4|30", "acc_teste": 0.753745041151045, "seg_ajuste": 25.517036235999967, "melhor": "dummy", "erro": null}
+/home/jviana/autosklearn-env/lib/python3.9/site-packages/distributed/node.py:182: UserWarning: Port 8787 is already in use.
+Perhaps you already have a cluster running?
+Hosting the HTTP server on port 45617 instead
+  warnings.warn(
+{"chave": "autosklearn_ml|contrac|30", "acc_teste": 0.5244565217391305, "seg_ajuste": 22.481322268999975, "melhor": "random_forest+select_percentile_classification", "erro": null}
+{"chave": "autosklearn_ml|credit-approval|30", "acc_teste": 0.9017341040462428, "seg_ajuste": 24.67653644799998, "melhor": "adaboost+extra_trees_preproc_for_classification", "erro": null}
+{"chave": "autosklearn_ml|cylinder-bands|30", "acc_teste": 0.6875, "seg_ajuste": 23.96633905500005, "melhor": "random_forest+extra_trees_preproc_for_classification", "erro": null}
+{"chave": "autosklearn_ml|dermatology|30", "acc_teste": 0.967032967032967, "seg_ajuste": 26.447078070999964, "melhor": "random_forest+feature_agglomeration", "erro": null}
+{"chave": "autosklearn_ml|echocardiogram|30", "acc_teste": 0.7575757575757576, "seg_ajuste": 26.21345169899996, "melhor": "random_forest+extra_trees_preproc_for_classification", "erro": null}
+/home/jviana/autosklearn-env/lib/python3.9/site-packages/distributed/node.py:182: UserWarning: Port 8787 is already in use.
+Perhaps you already have a cluster running?
+Hosting the HTTP server on port 46311 instead
+  warnings.warn(
+[WARNING] [2026-11-18 11:58:12,966:Client-EnsembleBuilder] No runs were available to build an ensemble from
+{"chave": "autosklearn_ml|ecoli|30", "acc_teste": 0.8795180722891566, "seg_ajuste": 26.169554228000038, "melhor": "random_forest+feature_agglomeration", "erro": null}
+{"chave": "autosklearn_ml|energy-y1|30", "acc_teste": 0.9635416666666666, "seg_ajuste": 25.97798027099998, "melhor": "random_forest+no_preprocessing", "erro": null}
+{"chave": "autosklearn_ml|energy-y2|30", "acc_teste": 0.9010416666666666, "seg_ajuste": 24.21276947299998, "melhor": "adaboost+extra_trees_preproc_for_classification", "erro": null}
+/home/jviana/autosklearn-env/lib/python3.9/site-packages/distributed/node.py:182: UserWarning: Port 8787 is already in use.
+Perhaps you already have a cluster running?
+Hosting the HTTP server on port 45287 instead
+  warnings.warn(
+[WARNING] [2026-11-18 11:59:38,129:Client-EnsembleBuilder] No models better than random - using Dummy losses!
+	Models besides current dummy model: 0
+	Dummy models: 1
+[WARNING] [2026-11-18 11:59:38,499:Client-EnsembleBuilder] No models better than random - using Dummy losses!
+	Models besides current dummy model: 0
+	Dummy models: 1
+[WARNING] [2026-11-18 11:59:39,589:Client-EnsembleBuilder] No models better than random - using Dummy losses!
+	Models besides current dummy model: 0
+	Dummy models: 1
+[WARNING] [2026-11-18 11:59:39,852:Client-EnsembleBuilder] No models better than random - using Dummy losses!
+	Models besides current dummy model: 0
+	Dummy models: 1
+[WARNING] [2026-11-18 11:59:40,997:Client-EnsembleBuilder] No models better than random - using Dummy losses!
+	Models besides current dummy model: 0
+	Dummy models: 1
+[WARNING] [2026-11-18 11:59:41,614:Client-EnsembleBuilder] No models better than random - using Dummy losses!
+	Models besides current dummy model: 0
+	Dummy models: 1
+[WARNING] [2026-11-18 11:59:44,570:Client-EnsembleBuilder] No models better than random - using Dummy losses!
+	Models besides current dummy model: 0
+	Dummy models: 1
+[WARNING] [2026-11-18 11:59:45,416:Client-EnsembleBuilder] No models better than random - using Dummy losses!
+	Models besides current dummy model: 0
+	Dummy models: 1
+[WARNING] [2026-11-18 11:59:46,625:Client-EnsembleBuilder] No models better than random - using Dummy losses!
+	Models besides current dummy model: 0
+	Dummy models: 1
+[WARNING] [2026-11-18 11:59:47,013:Client-EnsembleBuilder] No models better than random - using Dummy losses!
+	Models besides current dummy model: 0
+	Dummy models: 1
+[WARNING] [2026-11-18 11:59:48,507:Client-EnsembleBuilder] No models better than random - using Dummy losses!
+	Models besides current dummy model: 0
+	Dummy models: 1
+{"chave": "autosklearn_ml|fertility|30", "acc_teste": 0.76, "seg_ajuste": 24.202671923000025, "melhor": "adaboost+extra_trees_preproc_for_classification", "erro": null}
+/home/jviana/autosklearn-env/lib/python3.9/site-packages/distributed/node.py:182: UserWarning: Port 8787 is already in use.
+Perhaps you already have a cluster running?
+Hosting the HTTP server on port 46553 instead
+  warnings.warn(
+{"chave": "autosklearn_ml|flags|30", "acc_teste": 0.5714285714285714, "seg_ajuste": 25.68928031200005, "melhor": "random_forest+feature_agglomeration", "erro": null}
+{"chave": "autosklearn_ml|glass|30", "acc_teste": 0.7735849056603774, "seg_ajuste": 26.060088328000006, "melhor": "random_forest+no_preprocessing", "erro": null}
+[WARNING] [2026-11-18 12:01:20,568:Client-EnsembleBuilder] No models better than random - using Dummy losses!
+	Models besides current dummy model: 0
+	Dummy models: 1
+[WARNING] [2026-11-18 12:01:21,444:Client-EnsembleBuilder] No models better than random - using Dummy losses!
+	Models besides current dummy model: 0
+	Dummy models: 1
+[WARNING] [2026-11-18 12:01:22,255:Client-EnsembleBuilder] No models better than random - using Dummy losses!
+	Models besides current dummy model: 0
+	Dummy models: 1
+[WARNING] [2026-11-18 12:01:23,445:Client-EnsembleBuilder] No models better than random - using Dummy losses!
+	Models besides current dummy model: 0
+	Dummy models: 1
+[WARNING] [2026-11-18 12:01:26,629:Client-EnsembleBuilder] No models better than random - using Dummy losses!
+	Models besides current dummy model: 0
+	Dummy models: 1
+[WARNING] [2026-11-18 12:01:27,347:Client-EnsembleBuilder] No models better than random - using Dummy losses!
+	Models besides current dummy model: 0
+	Dummy models: 1
+{"chave": "autosklearn_ml|haberman-survival|30", "acc_teste": 0.75, "seg_ajuste": 22.275419768000006, "melhor": "sgd+no_preprocessing", "erro": null}
+/home/jviana/autosklearn-env/lib/python3.9/site-packages/distributed/node.py:182: UserWarning: Port 8787 is already in use.
+Perhaps you already have a cluster running?
+Hosting the HTTP server on port 44809 instead
+  warnings.warn(
+{"chave": "autosklearn_ml|hayes-roth|30", "acc_teste": 0.9, "seg_ajuste": 24.832051086000092, "melhor": "random_forest+no_preprocessing", "erro": null}
+/home/jviana/autosklearn-env/lib/python3.9/site-packages/distributed/node.py:182: UserWarning: Port 8787 is already in use.
+Perhaps you already have a cluster running?
+Hosting the HTTP server on port 44637 instead
+  warnings.warn(
+{"chave": "autosklearn_ml|heart-cleveland|30", "acc_teste": 0.5526315789473685, "seg_ajuste": 23.508556249000094, "melhor": "random_forest+no_preprocessing", "erro": null}
+/home/jviana/autosklearn-env/lib/python3.9/site-packages/distributed/node.py:182: UserWarning: Port 8787 is already in use.
+Perhaps you already have a cluster running?
+Hosting the HTTP server on port 45003 instead
+  warnings.warn(
+{"chave": "autosklearn_ml|heart-hungarian|30", "acc_teste": 0.821917808219178, "seg_ajuste": 25.51601482000001, "melhor": "random_forest+extra_trees_preproc_for_classification", "erro": null}
+/home/jviana/autosklearn-env/lib/python3.9/site-packages/distributed/node.py:182: UserWarning: Port 8787 is already in use.
+Perhaps you already have a cluster running?
+Hosting the HTTP server on port 45261 instead
+  warnings.warn(
+{"chave": "autosklearn_ml|heart-switzerland|30", "acc_teste": 0.3548387096774194, "seg_ajuste": 25.985634254999923, "melhor": "sgd+polynomial", "erro": null}
+{"chave": "autosklearn_ml|heart-va|30", "acc_teste": 0.40816326530612246, "seg_ajuste": 27.445617958999946, "melhor": "random_forest+polynomial", "erro": null}
+{"chave": "autosklearn_ml|hepatitis|30", "acc_teste": 0.8205128205128205, "seg_ajuste": 26.59588728599988, "melhor": "passive_aggressive+no_preprocessing", "erro": null}
+{"chave": "autosklearn_ml|hill-valley|30", "acc_teste": 0.9605263157894737, "seg_ajuste": 25.35707060200002, "melhor": "k_nearest_neighbors+fast_ica", "erro": null}
+{"chave": "autosklearn_ml|horse-colic|30", "acc_teste": 0.8586956521739131, "seg_ajuste": 23.50581903500006, "melhor": "random_forest+no_preprocessing", "erro": null}
+{"chave": "autosklearn_ml|ilpd-indian-liver|30", "acc_teste": 0.7328767123287672, "seg_ajuste": 22.62061876300004, "melhor": "passive_aggressive+no_preprocessing", "erro": null}
+{"chave": "autosklearn_ml|image-segmentation|30", "acc_teste": 0.9616724738675958, "seg_ajuste": 25.05816460599999, "melhor": "random_forest+no_preprocessing", "erro": null}
+/home/jviana/autosklearn-env/lib/python3.9/site-packages/distributed/node.py:182: UserWarning: Port 8787 is already in use.
+Perhaps you already have a cluster running?
+Hosting the HTTP server on port 44785 instead
+  warnings.warn(
+{"chave": "autosklearn_ml|ionosphere|30", "acc_teste": 0.9318181818181818, "seg_ajuste": 22.99809578999998, "melhor": "gradient_boosting+extra_trees_preproc_for_classification", "erro": null}
+/home/jviana/autosklearn-env/lib/python3.9/site-packages/distributed/node.py:182: UserWarning: Port 8787 is already in use.
+Perhaps you already have a cluster running?
+Hosting the HTTP server on port 46543 instead
+  warnings.warn(
+{"chave": "autosklearn_ml|iris|30", "acc_teste": 0.9444444444444444, "seg_ajuste": 24.39361462099987, "melhor": "passive_aggressive+kitchen_sinks", "erro": null}
+/home/jviana/autosklearn-env/lib/python3.9/site-packages/distributed/node.py:182: UserWarning: Port 8787 is already in use.
+Perhaps you already have a cluster running?
+Hosting the HTTP server on port 44915 instead
+  warnings.warn(
+{"chave": "autosklearn_ml|led-display|30", "acc_teste": 0.7, "seg_ajuste": 25.575781044999985, "melhor": "lda+kitchen_sinks", "erro": null}
+/home/jviana/autosklearn-env/lib/python3.9/site-packages/distributed/node.py:182: UserWarning: Port 8787 is already in use.
+Perhaps you already have a cluster running?
+Hosting the HTTP server on port 45997 instead
+  warnings.warn(
+{"chave": "autosklearn_ml|lenses|30", "acc_teste": 1.0, "seg_ajuste": 32.813291645999925, "melhor": "extra_trees+extra_trees_preproc_for_classification", "erro": null}
+/home/jviana/autosklearn-env/lib/python3.9/site-packages/distributed/node.py:182: UserWarning: Port 8787 is already in use.
+Perhaps you already have a cluster running?
+Hosting the HTTP server on port 45807 instead
+  warnings.warn(
+{"chave": "autosklearn_ml|libras|30", "acc_teste": 0.8222222222222222, "seg_ajuste": 24.876339817999906, "melhor": "random_forest+feature_agglomeration", "erro": null}
+{"chave": "autosklearn_ml|low-res-spect|30", "acc_teste": 0.9323308270676691, "seg_ajuste": 27.033622038999965, "melhor": "random_forest+no_preprocessing", "erro": null}
+/home/jviana/autosklearn-env/lib/python3.9/site-packages/distributed/node.py:182: UserWarning: Port 8787 is already in use.
+Perhaps you already have a cluster running?
+Hosting the HTTP server on port 44807 instead
+  warnings.warn(
+{"chave": "autosklearn_ml|lung-cancer|30", "acc_teste": 0.8571428571428571, "seg_ajuste": 25.10436576799998, "melhor": "random_forest+no_preprocessing", "erro": null}
+{"chave": "autosklearn_ml|lymphography|30", "acc_teste": 0.8055555555555556, "seg_ajuste": 23.847732066999924, "melhor": "lda+polynomial", "erro": null}
+[WARNING] [2026-11-18 12:11:18,243:Client-EnsembleBuilder] No runs were available to build an ensemble from
+{"chave": "autosklearn_ml|magic|30", "acc_teste": 0.7905362776025237, "seg_ajuste": 23.567048104999913, "melhor": "sgd+select_percentile_classification", "erro": null}
+/home/jviana/autosklearn-env/lib/python3.9/site-packages/distributed/node.py:182: UserWarning: Port 8787 is already in use.
+Perhaps you already have a cluster running?
+Hosting the HTTP server on port 45881 instead
+  warnings.warn(
+{"chave": "autosklearn_ml|mammographic|30", "acc_teste": 0.8166666666666667, "seg_ajuste": 24.773029020999957, "melhor": "adaboost+extra_trees_preproc_for_classification", "erro": null}
+/home/jviana/autosklearn-env/lib/python3.9/site-packages/distributed/node.py:182: UserWarning: Port 8787 is already in use.
+Perhaps you already have a cluster running?
+Hosting the HTTP server on port 44701 instead
+  warnings.warn(
+[WARNING] [2026-11-18 12:12:12,242:Client-EnsembleBuilder] No runs were available to build an ensemble from
+[WARNING] [2026-11-18 12:12:14,518:Client-EnsembleBuilder] No runs were available to build an ensemble from
+{"chave": "autosklearn_ml|miniboone|30", "acc_teste": 0.28063107393283304, "seg_ajuste": 24.492809353999974, "melhor": "dummy", "erro": null}
+{"chave": "autosklearn_ml|molec-biol-promoter|30", "acc_teste": 0.8846153846153846, "seg_ajuste": 25.96539563200008, "melhor": "libsvm_svc+feature_agglomeration", "erro": null}
+/home/jviana/autosklearn-env/lib/python3.9/site-packages/distributed/node.py:182: UserWarning: Port 8787 is already in use.
+Perhaps you already have a cluster running?
+Hosting the HTTP server on port 44633 instead
+  warnings.warn(
+{"chave": "autosklearn_ml|molec-biol-splice|30", "acc_teste": 0.9523809523809523, "seg_ajuste": 25.521513293999988, "melhor": "random_forest+no_preprocessing", "erro": null}
+/home/jviana/autosklearn-env/lib/python3.9/site-packages/distributed/node.py:182: UserWarning: Port 8787 is already in use.
+Perhaps you already have a cluster running?
+Hosting the HTTP server on port 46499 instead
+  warnings.warn(
+{"chave": "autosklearn_ml|monks-1|30", "acc_teste": 0.9928571428571429, "seg_ajuste": 25.347178430999975, "melhor": "gradient_boosting+feature_agglomeration", "erro": null}
+{"chave": "autosklearn_ml|monks-2|30", "acc_teste": 0.7880794701986755, "seg_ajuste": 25.237281823000103, "melhor": "extra_trees+polynomial", "erro": null}
+{"chave": "autosklearn_ml|monks-3|30", "acc_teste": 0.9637681159420289, "seg_ajuste": 22.82736101599994, "melhor": "adaboost+extra_trees_preproc_for_classification", "erro": null}
+{"chave": "autosklearn_ml|mushroom|30", "acc_teste": 1.0, "seg_ajuste": 23.043547627999942, "melhor": "random_forest+no_preprocessing", "erro": null}
+{"chave": "autosklearn_ml|musk-1|30", "acc_teste": 0.8823529411764706, "seg_ajuste": 22.700397604000045, "melhor": "extra_trees+extra_trees_preproc_for_classification", "erro": null}
+[WARNING] [2026-11-18 12:16:06,484:Client-EnsembleBuilder] No runs were available to build an ensemble from
+[WARNING] [2026-11-18 12:16:06,797:Client-EnsembleBuilder] No runs were available to build an ensemble from
+[WARNING] [2026-11-18 12:16:14,906:Client-EnsembleBuilder] No runs were available to build an ensemble from
+[WARNING] [2026-11-18 12:16:17,828:Client-EnsembleBuilder] No runs were available to build an ensemble from
+{"chave": "autosklearn_ml|musk-2|30", "acc_teste": 0.8459672528805336, "seg_ajuste": 25.204174491999993, "melhor": "dummy", "erro": null}
+{"chave": "autosklearn_ml|nursery|30", "acc_teste": 0.9913553565915406, "seg_ajuste": 25.736332621999964, "melhor": "random_forest+no_preprocessing", "erro": null}
+/home/jviana/autosklearn-env/lib/python3.9/site-packages/distributed/node.py:182: UserWarning: Port 8787 is already in use.
+Perhaps you already have a cluster running?
+Hosting the HTTP server on port 45467 instead
+  warnings.warn(
+[WARNING] [2026-11-18 12:17:01,790:Client-EnsembleBuilder] No runs were available to build an ensemble from
+{"chave": "autosklearn_ml|oocytes_merluccius_nucleus_4d|30", "acc_teste": 0.8627450980392157, "seg_ajuste": 22.11654218800004, "melhor": "mlp+feature_agglomeration", "erro": null}
+/home/jviana/autosklearn-env/lib/python3.9/site-packages/distributed/node.py:182: UserWarning: Port 8787 is already in use.
+Perhaps you already have a cluster running?
+Hosting the HTTP server on port 46647 instead
+  warnings.warn(
+{"chave": "autosklearn_ml|oocytes_merluccius_states_2f|30", "acc_teste": 0.90234375, "seg_ajuste": 24.928790095000068, "melhor": "lda+polynomial", "erro": null}
+{"chave": "autosklearn_ml|oocytes_trisopterus_nucleus_2f|30", "acc_teste": 0.8114035087719298, "seg_ajuste": 24.792120022000063, "melhor": "random_forest+no_preprocessing", "erro": null}
+{"chave": "autosklearn_ml|oocytes_trisopterus_states_5b|30", "acc_teste": 0.8947368421052632, "seg_ajuste": 25.49936121299993, "melhor": "lda+polynomial", "erro": null}
+/home/jviana/autosklearn-env/lib/python3.9/site-packages/autosklearn/__init__.py:5: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  import pkg_resources
+/home/jviana/autosklearn-env/lib/python3.9/site-packages/autosklearn/__init__.py:5: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  import pkg_resources
+{"chave": "autosklearn_ml|molec-biol-splice|60", "acc_teste": 0.9548872180451128, "seg_ajuste": 55.069710246999875, "melhor": "random_forest+no_preprocessing", "erro": null}
+{"chave": "autosklearn_ml|abalone|60", "acc_teste": 0.6574162679425838, "seg_ajuste": 55.73632726300002, "melhor": "passive_aggressive+select_rates_classification", "erro": null}
+[WARNING] [2026-11-18 12:21:29,665:smac.runhistory.runhistory2epm.RunHistory2EPM4LogCost] Got cost of smaller/equal to 0. Replace by 0.000010 since we use log cost.
+{"chave": "autosklearn_ml|monks-1|60", "acc_teste": 0.9857142857142858, "seg_ajuste": 51.18794924299982, "melhor": "passive_aggressive+kitchen_sinks", "erro": null}
+{"chave": "autosklearn_ml|acute-inflammation|60", "acc_teste": 1.0, "seg_ajuste": 54.95801693000021, "melhor": "passive_aggressive+kitchen_sinks", "erro": null}
+[WARNING] [2026-11-18 12:22:40,698:smac.runhistory.runhistory2epm.RunHistory2EPM4LogCost] Got cost of smaller/equal to 0. Replace by 0.000010 since we use log cost.
+{"chave": "autosklearn_ml|monks-2|60", "acc_teste": 0.8675496688741722, "seg_ajuste": 53.30871857400007, "melhor": "mlp+feature_agglomeration", "erro": null}
+[WARNING] [2026-11-18 12:22:45,809:smac.runhistory.runhistory2epm.RunHistory2EPM4LogCost] Got cost of smaller/equal to 0. Replace by 0.000010 since we use log cost.
+[WARNING] [2026-11-18 12:22:47,312:smac.runhistory.runhistory2epm.RunHistory2EPM4LogCost] Got cost of smaller/equal to 0. Replace by 0.000010 since we use log cost.
+[WARNING] [2026-11-18 12:22:48,709:smac.runhistory.runhistory2epm.RunHistory2EPM4LogCost] Got cost of smaller/equal to 0. Replace by 0.000010 since we use log cost.
+{"chave": "autosklearn_ml|acute-nephritis|60", "acc_teste": 1.0, "seg_ajuste": 52.20740503099978, "melhor": "qda+fast_ica", "erro": null}
+{"chave": "autosklearn_ml|monks-3|60", "acc_teste": 0.9492753623188406, "seg_ajuste": 51.1645101590002, "melhor": "gradient_boosting+polynomial", "erro": null}
+[WARNING] [2026-11-18 12:23:43,550:Client-EnsembleBuilder] No runs were available to build an ensemble from
+[WARNING] [2026-11-18 12:24:06,894:Client-EnsembleBuilder] No runs were available to build an ensemble from
+{"chave": "autosklearn_ml|adult|60", "acc_teste": 0.7607075587584964, "seg_ajuste": 50.02646592200017, "melhor": "dummy", "erro": null}
+{"chave": "autosklearn_ml|mushroom|60", "acc_teste": 1.0, "seg_ajuste": 52.431636545999936, "melhor": "extra_trees+fast_ica", "erro": null}
+{"chave": "autosklearn_ml|annealing|60", "acc_teste": 0.9644444444444444, "seg_ajuste": 53.06753365800023, "melhor": "extra_trees+no_preprocessing", "erro": null}
+{"chave": "autosklearn_ml|musk-1|60", "acc_teste": 0.8739495798319328, "seg_ajuste": 54.069405003000156, "melhor": "random_forest+no_preprocessing", "erro": null}
+{"chave": "autosklearn_ml|arrhythmia|60", "acc_teste": 0.6875, "seg_ajuste": 53.40797317800025, "melhor": "random_forest+no_preprocessing", "erro": null}
+{"chave": "autosklearn_ml|musk-2|60", "acc_teste": 0.9660400242571255, "seg_ajuste": 52.95967461300006, "melhor": "random_forest+no_preprocessing", "erro": null}
+{"chave": "autosklearn_ml|audiology-std|60", "acc_teste": 0.9111111111111111, "seg_ajuste": 53.67128575700008, "melhor": "random_forest+feature_agglomeration", "erro": null}
+[WARNING] [2026-11-18 12:28:04,119:smac.runhistory.runhistory2epm.RunHistory2EPM4LogCost] Got cost of smaller/equal to 0. Replace by 0.000010 since we use log cost.
+{"chave": "autosklearn_ml|nursery|60", "acc_teste": 0.9993825254708243, "seg_ajuste": 54.37393096100004, "melhor": "gradient_boosting+polynomial", "erro": null}
+{"chave": "autosklearn_ml|balance-scale|60", "acc_teste": 1.0, "seg_ajuste": 57.033742690000054, "melhor": "liblinear_svc+polynomial", "erro": null}
+{"chave": "autosklearn_ml|oocytes_merluccius_nucleus_4d|60", "acc_teste": 0.8705882352941177, "seg_ajuste": 52.94283107299998, "melhor": "mlp+feature_agglomeration", "erro": null}
+[WARNING] [2026-11-18 12:29:06,576:smac.runhistory.runhistory2epm.RunHistory2EPM4LogCost] Got cost of smaller/equal to 0. Replace by 0.000010 since we use log cost.
+[WARNING] [2026-11-18 12:29:14,287:smac.runhistory.runhistory2epm.RunHistory2EPM4LogCost] Got cost of smaller/equal to 0. Replace by 0.000010 since we use log cost.
+[WARNING] [2026-11-18 12:29:15,588:smac.runhistory.runhistory2epm.RunHistory2EPM4LogCost] Got cost of smaller/equal to 0. Replace by 0.000010 since we use log cost.
+[WARNING] [2026-11-18 12:29:17,748:smac.runhistory.runhistory2epm.RunHistory2EPM4LogCost] Got cost of smaller/equal to 0. Replace by 0.000010 since we use log cost.
+{"chave": "autosklearn_ml|balloons|60", "acc_teste": 0.25, "seg_ajuste": 54.083204385000045, "melhor": "random_forest+random_trees_embedding", "erro": null}
+{"chave": "autosklearn_ml|oocytes_merluccius_states_2f|60", "acc_teste": 0.9140625, "seg_ajuste": 49.091671065000355, "melhor": "lda+polynomial", "erro": null}
+{"chave": "autosklearn_ml|bank|60", "acc_teste": 0.8973451327433628, "seg_ajuste": 55.82544659799987, "melhor": "random_forest+no_preprocessing", "erro": null}
+[WARNING] [2026-11-18 12:30:31,225:Client-EnsembleBuilder] No models better than random - using Dummy losses!
+	Models besides current dummy model: 0
+	Dummy models: 1
+[WARNING] [2026-11-18 12:30:32,127:Client-EnsembleBuilder] No models better than random - using Dummy losses!
+	Models besides current dummy model: 0
+	Dummy models: 1
+[WARNING] [2026-11-18 12:30:33,044:Client-EnsembleBuilder] No models better than random - using Dummy losses!
+	Models besides current dummy model: 0
+	Dummy models: 1
+[WARNING] [2026-11-18 12:30:34,747:Client-EnsembleBuilder] No models better than random - using Dummy losses!
+	Models besides current dummy model: 0
+	Dummy models: 1
+[WARNING] [2026-11-18 12:30:35,686:Client-EnsembleBuilder] No models better than random - using Dummy losses!
+	Models besides current dummy model: 0
+	Dummy models: 1
+[WARNING] [2026-11-18 12:30:36,944:Client-EnsembleBuilder] No models better than random - using Dummy losses!
+	Models besides current dummy model: 0
+	Dummy models: 1
+[WARNING] [2026-11-18 12:30:46,277:Client-EnsembleBuilder] No models better than random - using Dummy losses!
+	Models besides current dummy model: 0
+	Dummy models: 1
+[WARNING] [2026-11-18 12:30:47,703:Client-EnsembleBuilder] No models better than random - using Dummy losses!
+	Models besides current dummy model: 0
+	Dummy models: 1
+[WARNING] [2026-11-18 12:30:49,192:Client-EnsembleBuilder] No models better than random - using Dummy losses!
+	Models besides current dummy model: 0
+	Dummy models: 1
+[WARNING] [2026-11-18 12:30:51,469:Client-EnsembleBuilder] No models better than random - using Dummy losses!
+	Models besides current dummy model: 0
+	Dummy models: 1
+[WARNING] [2026-11-18 12:30:52,152:Client-EnsembleBuilder] No models better than random - using Dummy losses!
+	Models besides current dummy model: 0
+	Dummy models: 1
+[WARNING] [2026-11-18 12:30:53,077:Client-EnsembleBuilder] No models better than random - using Dummy losses!
+	Models besides current dummy model: 0
+	Dummy models: 1
+{"chave": "autosklearn_ml|oocytes_trisopterus_nucleus_2f|60", "acc_teste": 0.8289473684210527, "seg_ajuste": 53.401471066999875, "melhor": "mlp+feature_agglomeration", "erro": null}
+{"chave": "autosklearn_ml|blood|60", "acc_teste": 0.8225806451612904, "seg_ajuste": 55.46587661700005, "melhor": "mlp+fast_ica", "erro": null}
+{"chave": "autosklearn_ml|oocytes_trisopterus_states_5b|60", "acc_teste": 0.9078947368421053, "seg_ajuste": 53.167388458000005, "melhor": "lda+polynomial", "erro": null}
+{"chave": "autosklearn_ml|breast-cancer-wisc-diag|60", "acc_teste": 0.9647887323943662, "seg_ajuste": 49.73396334900008, "melhor": "mlp+feature_agglomeration", "erro": null}
+[WARNING] [2026-11-18 12:32:38,488:Client-EnsembleBuilder] No models better than random - using Dummy losses!
+	Models besides current dummy model: 0
+	Dummy models: 1
+[WARNING] [2026-11-18 12:32:42,064:Client-EnsembleBuilder] No models better than random - using Dummy losses!
+	Models besides current dummy model: 0
+	Dummy models: 1
+[WARNING] [2026-11-18 12:32:43,120:Client-EnsembleBuilder] No models better than random - using Dummy losses!
+	Models besides current dummy model: 0
+	Dummy models: 1
+[WARNING] [2026-11-18 12:32:44,661:Client-EnsembleBuilder] No models better than random - using Dummy losses!
+	Models besides current dummy model: 0
+	Dummy models: 1
+[WARNING] [2026-11-18 12:32:45,669:Client-EnsembleBuilder] No models better than random - using Dummy losses!
+	Models besides current dummy model: 0
+	Dummy models: 1
+[WARNING] [2026-11-18 12:32:47,086:Client-EnsembleBuilder] No models better than random - using Dummy losses!
+	Models besides current dummy model: 0
+	Dummy models: 1
+[WARNING] [2026-11-18 12:32:48,938:Client-EnsembleBuilder] No models better than random - using Dummy losses!
+	Models besides current dummy model: 0
+	Dummy models: 1
+[WARNING] [2026-11-18 12:32:50,108:Client-EnsembleBuilder] No models better than random - using Dummy losses!
+	Models besides current dummy model: 0
+	Dummy models: 1
+[WARNING] [2026-11-18 12:32:50,900:Client-EnsembleBuilder] No models better than random - using Dummy losses!
+	Models besides current dummy model: 0
+	Dummy models: 1
+[WARNING] [2026-11-18 12:32:52,530:Client-EnsembleBuilder] No models better than random - using Dummy losses!
+	Models besides current dummy model: 0
+	Dummy models: 1
+[WARNING] [2026-11-18 12:32:54,334:Client-EnsembleBuilder] No models better than random - using Dummy losses!
+	Models besides current dummy model: 0
+	Dummy models: 1
+{"chave": "autosklearn_ml|optical|60", "acc_teste": 0.9879003558718861, "seg_ajuste": 55.82763296400026, "melhor": "random_forest+no_preprocessing", "erro": null}
+[WARNING] [2026-11-18 12:33:21,229:Client-EnsembleBuilder] No models better than random - using Dummy losses!
+	Models besides current dummy model: 0
+	Dummy models: 1
+{"chave": "autosklearn_ml|breast-cancer-wisc-prog|60", "acc_teste": 0.74, "seg_ajuste": 51.297556390999944, "melhor": "passive_aggressive+no_preprocessing", "erro": null}
+{"chave": "autosklearn_ml|ozone|60", "acc_teste": 0.9684542586750788, "seg_ajuste": 54.674775297, "melhor": "adaboost+extra_trees_preproc_for_classification", "erro": null}
+{"chave": "autosklearn_ml|breast-cancer-wisc|60", "acc_teste": 0.9712643678160919, "seg_ajuste": 52.44345979300033, "melhor": "extra_trees+select_rates_classification", "erro": null}
+{"chave": "autosklearn_ml|page-blocks|60", "acc_teste": 0.9766081871345029, "seg_ajuste": 50.88853887000005, "melhor": "random_forest+feature_agglomeration", "erro": null}
+{"chave": "autosklearn_ml|breast-cancer|60", "acc_teste": 0.676056338028169, "seg_ajuste": 54.571161140000186, "melhor": "random_forest+pca", "erro": null}
+{"chave": "autosklearn_ml|parkinsons|60", "acc_teste": 0.9183673469387755, "seg_ajuste": 55.86516462999998, "melhor": "random_forest+no_preprocessing", "erro": null}
+{"chave": "autosklearn_ml|breast-tissue|60", "acc_teste": 0.7407407407407407, "seg_ajuste": 58.41060371100002, "melhor": "random_forest+select_percentile_classification", "erro": null}
+{"chave": "autosklearn_ml|pendigits|60", "acc_teste": 0.9952727272727273, "seg_ajuste": 55.37266372000022, "melhor": "lda+kitchen_sinks", "erro": null}
+{"chave": "autosklearn_ml|car|60", "acc_teste": 0.9651972157772621, "seg_ajuste": 51.619244355999854, "melhor": "gradient_boosting+polynomial", "erro": null}
+{"chave": "autosklearn_ml|pima|60", "acc_teste": 0.765625, "seg_ajuste": 53.56937432599989, "melhor": "random_forest+no_preprocessing", "erro": null}
+{"chave": "autosklearn_ml|pittsburg-bridges-MATERIAL|60", "acc_teste": 0.8888888888888888, "seg_ajuste": 56.935651878000044, "melhor": "lda+polynomial", "erro": null}
+{"chave": "autosklearn_ml|cardiotocography-10clases|60", "acc_teste": 0.8907721280602636, "seg_ajuste": 51.7300508469998, "melhor": "random_forest+no_preprocessing", "erro": null}
+{"chave": "autosklearn_ml|pittsburg-bridges-REL-L|60", "acc_teste": 0.7307692307692307, "seg_ajuste": 51.35880799200004, "melhor": "gradient_boosting+no_preprocessing", "erro": null}
+{"chave": "autosklearn_ml|cardiotocography-3clases|60", "acc_teste": 0.9323308270676691, "seg_ajuste": 52.86456988400005, "melhor": "random_forest+no_preprocessing", "erro": null}
+{"chave": "autosklearn_ml|pittsburg-bridges-SPAN|60", "acc_teste": 0.7083333333333334, "seg_ajuste": 56.89652873800014, "melhor": "mlp+feature_agglomeration", "erro": null}
+{"chave": "autosklearn_ml|chess-krvk|60", "acc_teste": 0.7775085518814139, "seg_ajuste": 55.039607316, "melhor": "random_forest+no_preprocessing", "erro": null}
+{"chave": "autosklearn_ml|pittsburg-bridges-T-OR-D|60", "acc_teste": 0.8461538461538461, "seg_ajuste": 54.059776177, "melhor": "random_forest+polynomial", "erro": null}
+{"chave": "autosklearn_ml|chess-krvkp|60", "acc_teste": 0.981226533166458, "seg_ajuste": 53.55624525800022, "melhor": "random_forest+no_preprocessing", "erro": null}
+[WARNING] [2026-11-18 12:42:58,572:Client-EnsembleBuilder] No models better than random - using Dummy losses!
+	Models besides current dummy model: 0
+	Dummy models: 1
+[WARNING] [2026-11-18 12:42:59,826:Client-EnsembleBuilder] No models better than random - using Dummy losses!
+	Models besides current dummy model: 0
+	Dummy models: 1
+[WARNING] [2026-11-18 12:43:03,652:Client-EnsembleBuilder] No models better than random - using Dummy losses!
+	Models besides current dummy model: 0
+	Dummy models: 1
+[WARNING] [2026-11-18 12:43:04,911:Client-EnsembleBuilder] No models better than random - using Dummy losses!
+	Models besides current dummy model: 0
+	Dummy models: 1
+[WARNING] [2026-11-18 12:43:06,638:Client-EnsembleBuilder] No models better than random - using Dummy losses!
+	Models besides current dummy model: 0
+	Dummy models: 1
+[WARNING] [2026-11-18 12:43:08,954:Client-EnsembleBuilder] No models better than random - using Dummy losses!
+	Models besides current dummy model: 0
+	Dummy models: 1
+[WARNING] [2026-11-18 12:43:10,952:Client-EnsembleBuilder] No models better than random - using Dummy losses!
+	Models besides current dummy model: 0
+	Dummy models: 1
+[WARNING] [2026-11-18 12:43:12,700:Client-EnsembleBuilder] No models better than random - using Dummy losses!
+	Models besides current dummy model: 0
+	Dummy models: 1
+[WARNING] [2026-11-18 12:43:14,402:Client-EnsembleBuilder] No models better than random - using Dummy losses!
+	Models besides current dummy model: 0
+	Dummy models: 1
+[WARNING] [2026-11-18 12:43:16,074:Client-EnsembleBuilder] No models better than random - using Dummy losses!
+	Models besides current dummy model: 0
+	Dummy models: 1
+[WARNING] [2026-11-18 12:43:18,145:Client-EnsembleBuilder] No models better than random - using Dummy losses!
+	Models besides current dummy model: 0
+	Dummy models: 1
+[WARNING] [2026-11-18 12:43:20,338:Client-EnsembleBuilder] No models better than random - using Dummy losses!
+	Models besides current dummy model: 0
+	Dummy models: 1
+[WARNING] [2026-11-18 12:43:22,174:Client-EnsembleBuilder] No models better than random - using Dummy losses!
+	Models besides current dummy model: 0
+	Dummy models: 1
+[WARNING] [2026-11-18 12:43:24,081:Client-EnsembleBuilder] No models better than random - using Dummy losses!
+	Models besides current dummy model: 0
+	Dummy models: 1
+[WARNING] [2026-11-18 12:43:26,185:Client-EnsembleBuilder] No models better than random - using Dummy losses!
+	Models besides current dummy model: 0
+	Dummy models: 1
+[WARNING] [2026-11-18 12:43:28,900:Client-EnsembleBuilder] No models better than random - using Dummy losses!
+	Models besides current dummy model: 0
+	Dummy models: 1
+[WARNING] [2026-11-18 12:43:30,020:Client-EnsembleBuilder] No models better than random - using Dummy losses!
+	Models besides current dummy model: 0
+	Dummy models: 1
+[WARNING] [2026-11-18 12:43:31,528:Client-EnsembleBuilder] No models better than random - using Dummy losses!
+	Models besides current dummy model: 0
+	Dummy models: 1
+[WARNING] [2026-11-18 12:43:32,638:Client-EnsembleBuilder] No models better than random - using Dummy losses!
+	Models besides current dummy model: 0
+	Dummy models: 1
+[WARNING] [2026-11-18 12:43:34,532:Client-EnsembleBuilder] No models better than random - using Dummy losses!
+	Models besides current dummy model: 0
+	Dummy models: 1
+[WARNING] [2026-11-18 12:43:38,593:Client-EnsembleBuilder] No models better than random - using Dummy losses!
+	Models besides current dummy model: 0
+	Dummy models: 1
+[WARNING] [2026-11-18 12:43:39,627:Client-EnsembleBuilder] No models better than random - using Dummy losses!
+	Models besides current dummy model: 0
+	Dummy models: 1
+[WARNING] [2026-11-18 12:43:41,267:Client-EnsembleBuilder] No models better than random - using Dummy losses!
+	Models besides current dummy model: 0
+	Dummy models: 1
+[WARNING] [2026-11-18 12:43:42,412:Client-EnsembleBuilder] No models better than random - using Dummy losses!
+	Models besides current dummy model: 0
+	Dummy models: 1
+[WARNING] [2026-11-18 12:43:44,500:Client-EnsembleBuilder] No models better than random - using Dummy losses!
+	Models besides current dummy model: 0
+	Dummy models: 1
+{"chave": "autosklearn_ml|congressional-voting|60", "acc_teste": 0.6146788990825688, "seg_ajuste": 54.417198884999834, "melhor": "dummy", "erro": null}
+{"chave": "autosklearn_ml|pittsburg-bridges-TYPE|60", "acc_teste": 0.6538461538461539, "seg_ajuste": 51.61074216999987, "melhor": "random_forest+no_preprocessing", "erro": null}
+[WARNING] [2026-11-18 12:44:21,992:Client-EnsembleBuilder] No models better than random - using Dummy losses!
+	Models besides current dummy model: 0
+	Dummy models: 1
+[WARNING] [2026-11-18 12:44:23,167:Client-EnsembleBuilder] No models better than random - using Dummy losses!
+	Models besides current dummy model: 0
+	Dummy models: 1
+[WARNING] [2026-11-18 12:44:24,081:Client-EnsembleBuilder] No models better than random - using Dummy losses!
+	Models besides current dummy model: 0
+	Dummy models: 1
+[WARNING] [2026-11-18 12:44:27,922:Client-EnsembleBuilder] No models better than random - using Dummy losses!
+	Models besides current dummy model: 0
+	Dummy models: 1
+[WARNING] [2026-11-18 12:44:28,812:Client-EnsembleBuilder] No models better than random - using Dummy losses!
+	Models besides current dummy model: 0
+	Dummy models: 1
+[WARNING] [2026-11-18 12:44:30,343:Client-EnsembleBuilder] No models better than random - using Dummy losses!
+	Models besides current dummy model: 0
+	Dummy models: 1
+[WARNING] [2026-11-18 12:44:31,262:Client-EnsembleBuilder] No models better than random - using Dummy losses!
+	Models besides current dummy model: 0
+	Dummy models: 1
+[WARNING] [2026-11-18 12:44:32,694:Client-EnsembleBuilder] No models better than random - using Dummy losses!
+	Models besides current dummy model: 0
+	Dummy models: 1
+[WARNING] [2026-11-18 12:44:33,977:Client-EnsembleBuilder] No models better than random - using Dummy losses!
+	Models besides current dummy model: 0
+	Dummy models: 1
+[WARNING] [2026-11-18 12:44:34,957:Client-EnsembleBuilder] No models better than random - using Dummy losses!
+	Models besides current dummy model: 0
+	Dummy models: 1
+[WARNING] [2026-11-18 12:44:36,280:Client-EnsembleBuilder] No models better than random - using Dummy losses!
+	Models besides current dummy model: 0
+	Dummy models: 1
+[WARNING] [2026-11-18 12:44:38,136:Client-EnsembleBuilder] No models better than random - using Dummy losses!
+	Models besides current dummy model: 0
+	Dummy models: 1
+[WARNING] [2026-11-18 12:44:39,232:Client-EnsembleBuilder] No models better than random - using Dummy losses!
+	Models besides current dummy model: 0
+	Dummy models: 1
+[WARNING] [2026-11-18 12:44:40,991:Client-EnsembleBuilder] No models better than random - using Dummy losses!
+	Models besides current dummy model: 0
+	Dummy models: 1
+[WARNING] [2026-11-18 12:44:42,374:Client-EnsembleBuilder] No models better than random - using Dummy losses!
+	Models besides current dummy model: 0
+	Dummy models: 1
+[WARNING] [2026-11-18 12:44:43,853:Client-EnsembleBuilder] No models better than random - using Dummy losses!
+	Models besides current dummy model: 0
+	Dummy models: 1
+[WARNING] [2026-11-18 12:44:48,433:Client-EnsembleBuilder] No models better than random - using Dummy losses!
+	Models besides current dummy model: 0
+	Dummy models: 1
+[WARNING] [2026-11-18 12:44:50,511:Client-EnsembleBuilder] No models better than random - using Dummy losses!
+	Models besides current dummy model: 0
+	Dummy models: 1
+[WARNING] [2026-11-18 12:44:51,657:Client-EnsembleBuilder] No models better than random - using Dummy losses!
+	Models besides current dummy model: 0
+	Dummy models: 1
+[WARNING] [2026-11-18 12:44:54,654:Client-EnsembleBuilder] No models better than random - using Dummy losses!
+	Models besides current dummy model: 0
+	Dummy models: 1
+[WARNING] [2026-11-18 12:44:57,389:Client-EnsembleBuilder] No models better than random - using Dummy losses!
+	Models besides current dummy model: 0
+	Dummy models: 1
+[WARNING] [2026-11-18 12:44:59,414:Client-EnsembleBuilder] No models better than random - using Dummy losses!
+	Models besides current dummy model: 0
+	Dummy models: 1
+{"chave": "autosklearn_ml|conn-bench-sonar-mines-rocks|60", "acc_teste": 0.7115384615384616, "seg_ajuste": 53.648538637, "melhor": "libsvm_svc+feature_agglomeration", "erro": null}
+[WARNING] [2026-11-18 12:45:01,369:Client-EnsembleBuilder] No models better than random - using Dummy losses!
+	Models besides current dummy model: 0
+	Dummy models: 1
+[WARNING] [2026-11-18 12:45:03,119:Client-EnsembleBuilder] No models better than random - using Dummy losses!
+	Models besides current dummy model: 0
+	Dummy models: 1
+{"chave": "autosklearn_ml|planning|60", "acc_teste": 0.7111111111111111, "seg_ajuste": 53.15706314099998, "melhor": "dummy", "erro": null}
+{"chave": "autosklearn_ml|plant-margin|60", "acc_teste": 0.8525, "seg_ajuste": 52.468767154000034, "melhor": "sgd+no_preprocessing", "erro": null}
+{"chave": "autosklearn_ml|conn-bench-vowel-deterding|60", "acc_teste": 1.0, "seg_ajuste": 52.774494734999735, "melhor": "sgd+polynomial", "erro": null}
+[WARNING] [2026-11-18 12:46:44,746:Client-EnsembleBuilder] No runs were available to build an ensemble from
+[WARNING] [2026-11-18 12:46:49,575:Client-EnsembleBuilder] No runs were available to build an ensemble from
+{"chave": "autosklearn_ml|plant-shape|60", "acc_teste": 0.665, "seg_ajuste": 52.34663734200012, "melhor": "libsvm_svc+no_preprocessing", "erro": null}
+{"chave": "autosklearn_ml|connect-4|60", "acc_teste": 0.879862632482681, "seg_ajuste": 50.02387860500039, "melhor": "gradient_boosting+select_rates_classification", "erro": null}
+{"chave": "autosklearn_ml|plant-texture|60", "acc_teste": 0.8075, "seg_ajuste": 55.97645699399982, "melhor": "sgd+no_preprocessing", "erro": null}
+[WARNING] [2026-11-18 12:48:15,313:Client-EnsembleBuilder] No models better than random - using Dummy losses!
+	Models besides current dummy model: 0
+	Dummy models: 1
+{"chave": "autosklearn_ml|contrac|60", "acc_teste": 0.5217391304347826, "seg_ajuste": 52.72149178499967, "melhor": "random_forest+select_percentile_classification", "erro": null}
+[WARNING] [2026-11-18 12:48:16,474:Client-EnsembleBuilder] No models better than random - using Dummy losses!
+	Models besides current dummy model: 0
+	Dummy models: 1
+[WARNING] [2026-11-18 12:48:18,189:Client-EnsembleBuilder] No models better than random - using Dummy losses!
+	Models besides current dummy model: 0
+	Dummy models: 1
+[WARNING] [2026-11-18 12:48:19,307:Client-EnsembleBuilder] No models better than random - using Dummy losses!
+	Models besides current dummy model: 0
+	Dummy models: 1
+[WARNING] [2026-11-18 12:48:20,510:Client-EnsembleBuilder] No models better than random - using Dummy losses!
+	Models besides current dummy model: 0
+	Dummy models: 1
+[WARNING] [2026-11-18 12:48:21,677:Client-EnsembleBuilder] No models better than random - using Dummy losses!
+	Models besides current dummy model: 0
+	Dummy models: 1
+[WARNING] [2026-11-18 12:48:22,892:Client-EnsembleBuilder] No models better than random - using Dummy losses!
+	Models besides current dummy model: 0
+	Dummy models: 1
+[WARNING] [2026-11-18 12:48:24,503:Client-EnsembleBuilder] No models better than random - using Dummy losses!
+	Models besides current dummy model: 0
+	Dummy models: 1
+[WARNING] [2026-11-18 12:48:25,321:Client-EnsembleBuilder] No models better than random - using Dummy losses!
+	Models besides current dummy model: 0
+	Dummy models: 1
+[WARNING] [2026-11-18 12:48:26,634:Client-EnsembleBuilder] No models better than random - using Dummy losses!
+	Models besides current dummy model: 0
+	Dummy models: 1
+[WARNING] [2026-11-18 12:48:28,235:Client-EnsembleBuilder] No models better than random - using Dummy losses!
+	Models besides current dummy model: 0
+	Dummy models: 1
+[WARNING] [2026-11-18 12:48:29,871:Client-EnsembleBuilder] No models better than random - using Dummy losses!
+	Models besides current dummy model: 0
+	Dummy models: 1
+[WARNING] [2026-11-18 12:48:30,759:Client-EnsembleBuilder] No models better than random - using Dummy losses!
+	Models besides current dummy model: 0
+	Dummy models: 1
+[WARNING] [2026-11-18 12:48:32,020:Client-EnsembleBuilder] No models better than random - using Dummy losses!
+	Models besides current dummy model: 0
+	Dummy models: 1
+[WARNING] [2026-11-18 12:48:33,541:Client-EnsembleBuilder] No models better than random - using Dummy losses!
+	Models besides current dummy model: 0
+	Dummy models: 1
+[WARNING] [2026-11-18 12:48:35,749:Client-EnsembleBuilder] No models better than random - using Dummy losses!
+	Models besides current dummy model: 0
+	Dummy models: 1
+[WARNING] [2026-11-18 12:48:37,330:Client-EnsembleBuilder] No models better than random - using Dummy losses!
+	Models besides current dummy model: 0
+	Dummy models: 1
+[WARNING] [2026-11-18 12:48:38,774:Client-EnsembleBuilder] No models better than random - using Dummy losses!
+	Models besides current dummy model: 0
+	Dummy models: 1
+[WARNING] [2026-11-18 12:48:39,888:Client-EnsembleBuilder] No models better than random - using Dummy losses!
+	Models besides current dummy model: 0
+	Dummy models: 1
+[WARNING] [2026-11-18 12:48:40,687:Client-EnsembleBuilder] No models better than random - using Dummy losses!
+	Models besides current dummy model: 0
+	Dummy models: 1
+[WARNING] [2026-11-18 12:48:42,125:Client-EnsembleBuilder] No models better than random - using Dummy losses!
+	Models besides current dummy model: 0
+	Dummy models: 1
+[WARNING] [2026-11-18 12:48:43,632:Client-EnsembleBuilder] No models better than random - using Dummy losses!
+	Models besides current dummy model: 0
+	Dummy models: 1
+[WARNING] [2026-11-18 12:48:44,637:Client-EnsembleBuilder] No models better than random - using Dummy losses!
+	Models besides current dummy model: 0
+	Dummy models: 1
+[WARNING] [2026-11-18 12:48:45,777:Client-EnsembleBuilder] No models better than random - using Dummy losses!
+	Models besides current dummy model: 0
+	Dummy models: 1
+[WARNING] [2026-11-18 12:48:46,657:Client-EnsembleBuilder] No models better than random - using Dummy losses!
+	Models besides current dummy model: 0
+	Dummy models: 1
+[WARNING] [2026-11-18 12:48:49,966:Client-EnsembleBuilder] No models better than random - using Dummy losses!
+	Models besides current dummy model: 0
+	Dummy models: 1
+[WARNING] [2026-11-18 12:48:53,980:Client-EnsembleBuilder] No models better than random - using Dummy losses!
+	Models besides current dummy model: 0
+	Dummy models: 1
+[WARNING] [2026-11-18 12:48:55,324:Client-EnsembleBuilder] No models better than random - using Dummy losses!
+	Models besides current dummy model: 0
+	Dummy models: 1
+{"chave": "autosklearn_ml|post-operative|60", "acc_teste": 0.7272727272727273, "seg_ajuste": 50.17768184500028, "melhor": "dummy", "erro": null}
+{"chave": "autosklearn_ml|credit-approval|60", "acc_teste": 0.8959537572254336, "seg_ajuste": 54.364816725999844, "melhor": "adaboost+extra_trees_preproc_for_classification", "erro": null}
+{"chave": "autosklearn_ml|primary-tumor|60", "acc_teste": 0.5, "seg_ajuste": 50.998441963999994, "melhor": "random_forest+feature_agglomeration", "erro": null}
+{"chave": "autosklearn_ml|cylinder-bands|60", "acc_teste": 0.7578125, "seg_ajuste": 52.89618302200006, "melhor": "random_forest+extra_trees_preproc_for_classification", "erro": null}
+{"chave": "autosklearn_ml|ringnorm|60", "acc_teste": 0.9837837837837838, "seg_ajuste": 52.92259418399999, "melhor": "gaussian_nb+no_preprocessing", "erro": null}
+{"chave": "autosklearn_ml|seeds|60", "acc_teste": 0.8703703703703703, "seg_ajuste": 54.91807802700032, "melhor": "random_forest+liblinear_svc_preprocessor", "erro": null}
+{"chave": "autosklearn_ml|dermatology|60", "acc_teste": 0.978021978021978, "seg_ajuste": 53.07067897499974, "melhor": "random_forest+polynomial", "erro": null}
+{"chave": "autosklearn_ml|semeion|60", "acc_teste": 0.9624060150375939, "seg_ajuste": 51.94121291600004, "melhor": "passive_aggressive+polynomial", "erro": null}
+{"chave": "autosklearn_ml|echocardiogram|60", "acc_teste": 0.8181818181818182, "seg_ajuste": 52.92571939599975, "melhor": "gradient_boosting+liblinear_svc_preprocessor", "erro": null}
+{"chave": "autosklearn_ml|ecoli|60", "acc_teste": 0.891566265060241, "seg_ajuste": 50.503454186, "melhor": "sgd+polynomial", "erro": null}
+{"chave": "autosklearn_ml|soybean|60", "acc_teste": 0.9476744186046512, "seg_ajuste": 53.253201801999694, "melhor": "passive_aggressive+polynomial", "erro": null}
+{"chave": "autosklearn_ml|energy-y1|60", "acc_teste": 0.9635416666666666, "seg_ajuste": 52.25899804799974, "melhor": "random_forest+no_preprocessing", "erro": null}
+{"chave": "autosklearn_ml|spambase|60", "acc_teste": 0.9504347826086956, "seg_ajuste": 54.340125542999886, "melhor": "random_forest+no_preprocessing", "erro": null}
+{"chave": "autosklearn_ml|energy-y2|60", "acc_teste": 0.90625, "seg_ajuste": 52.062096833000396, "melhor": "adaboost+extra_trees_preproc_for_classification", "erro": null}
+[WARNING] [2026-11-18 12:58:15,752:Client-EnsembleBuilder] No models better than random - using Dummy losses!
+	Models besides current dummy model: 0
+	Dummy models: 1
+[WARNING] [2026-11-18 12:58:19,092:Client-EnsembleBuilder] No models better than random - using Dummy losses!
+	Models besides current dummy model: 0
+	Dummy models: 1
+[WARNING] [2026-11-18 12:58:21,568:Client-EnsembleBuilder] No models better than random - using Dummy losses!
+	Models besides current dummy model: 0
+	Dummy models: 1
+[WARNING] [2026-11-18 12:58:22,868:Client-EnsembleBuilder] No models better than random - using Dummy losses!
+	Models besides current dummy model: 0
+	Dummy models: 1
+[WARNING] [2026-11-18 12:58:24,452:Client-EnsembleBuilder] No models better than random - using Dummy losses!
+	Models besides current dummy model: 0
+	Dummy models: 1
+[WARNING] [2026-11-18 12:58:27,524:Client-EnsembleBuilder] No models better than random - using Dummy losses!
+	Models besides current dummy model: 0
+	Dummy models: 1
+[WARNING] [2026-11-18 12:58:30,442:Client-EnsembleBuilder] No models better than random - using Dummy losses!
+	Models besides current dummy model: 0
+	Dummy models: 1
+{"chave": "autosklearn_ml|spect|60", "acc_teste": 0.6567164179104478, "seg_ajuste": 52.31486522400064, "melhor": "random_forest+no_preprocessing", "erro": null}
+[WARNING] [2026-11-18 12:58:33,053:Client-EnsembleBuilder] No models better than random - using Dummy losses!
+	Models besides current dummy model: 0
+	Dummy models: 1
+[WARNING] [2026-11-18 12:58:35,877:Client-EnsembleBuilder] No models better than random - using Dummy losses!
+	Models besides current dummy model: 0
+	Dummy models: 1
+[WARNING] [2026-11-18 12:58:40,915:Client-EnsembleBuilder] No models better than random - using Dummy losses!
+	Models besides current dummy model: 0
+	Dummy models: 1
+[WARNING] [2026-11-18 12:58:42,945:Client-EnsembleBuilder] No models better than random - using Dummy losses!
+	Models besides current dummy model: 0
+	Dummy models: 1
+[WARNING] [2026-11-18 12:58:44,450:Client-EnsembleBuilder] No models better than random - using Dummy losses!
+	Models besides current dummy model: 0
+	Dummy models: 1
+[WARNING] [2026-11-18 12:58:46,133:Client-EnsembleBuilder] No models better than random - using Dummy losses!
+	Models besides current dummy model: 0
+	Dummy models: 1
+[WARNING] [2026-11-18 12:58:48,594:Client-EnsembleBuilder] No models better than random - using Dummy losses!
+	Models besides current dummy model: 0
+	Dummy models: 1
+{"chave": "autosklearn_ml|fertility|60", "acc_teste": 0.76, "seg_ajuste": 52.558904696000354, "melhor": "adaboost+extra_trees_preproc_for_classification", "erro": null}
+{"chave": "autosklearn_ml|spectf|60", "acc_teste": 0.8955223880597015, "seg_ajuste": 52.03289671999937, "melhor": "extra_trees+select_rates_classification", "erro": null}
+{"chave": "autosklearn_ml|flags|60", "acc_teste": 0.5510204081632653, "seg_ajuste": 50.743269315999896, "melhor": "random_forest+no_preprocessing", "erro": null}
+{"chave": "autosklearn_ml|statlog-australian-credit|60", "acc_teste": 0.6589595375722543, "seg_ajuste": 51.97151592699993, "melhor": "mlp+feature_agglomeration", "erro": null}
+{"chave": "autosklearn_ml|statlog-german-credit|60", "acc_teste": 0.736, "seg_ajuste": 53.46337595499972, "melhor": "gradient_boosting+extra_trees_preproc_for_classification", "erro": null}
+{"chave": "autosklearn_ml|glass|60", "acc_teste": 0.7735849056603774, "seg_ajuste": 54.2868931210005, "melhor": "mlp+liblinear_svc_preprocessor", "erro": null}
+[WARNING] [2026-11-18 13:02:15,172:Client-EnsembleBuilder] No models better than random - using Dummy losses!
+	Models besides current dummy model: 0
+	Dummy models: 1
+[WARNING] [2026-11-18 13:02:16,845:Client-EnsembleBuilder] No models better than random - using Dummy losses!
+	Models besides current dummy model: 0
+	Dummy models: 1
+[WARNING] [2026-11-18 13:02:28,845:Client-EnsembleBuilder] No models better than random - using Dummy losses!
+	Models besides current dummy model: 0
+	Dummy models: 1
+{"chave": "autosklearn_ml|statlog-heart|60", "acc_teste": 0.8382352941176471, "seg_ajuste": 49.369510372999684, "melhor": "random_forest+no_preprocessing", "erro": null}
+[WARNING] [2026-11-18 13:02:31,261:Client-EnsembleBuilder] No models better than random - using Dummy losses!
+	Models besides current dummy model: 0
+	Dummy models: 1
+[WARNING] [2026-11-18 13:02:32,710:Client-EnsembleBuilder] No models better than random - using Dummy losses!
+	Models besides current dummy model: 0
+	Dummy models: 1
+[WARNING] [2026-11-18 13:02:34,804:Client-EnsembleBuilder] No models better than random - using Dummy losses!
+	Models besides current dummy model: 0
+	Dummy models: 1
+[WARNING] [2026-11-18 13:02:39,495:Client-EnsembleBuilder] No models better than random - using Dummy losses!
+	Models besides current dummy model: 0
+	Dummy models: 1
+{"chave": "autosklearn_ml|haberman-survival|60", "acc_teste": 0.75, "seg_ajuste": 52.753681117999804, "melhor": "sgd+no_preprocessing", "erro": null}
+{"chave": "autosklearn_ml|hayes-roth|60", "acc_teste": 0.875, "seg_ajuste": 50.6706757259999, "melhor": "extra_trees+polynomial", "erro": null}
+{"chave": "autosklearn_ml|statlog-image|60", "acc_teste": 0.9843205574912892, "seg_ajuste": 54.182911873000194, "melhor": "libsvm_svc+no_preprocessing", "erro": null}
+{"chave": "autosklearn_ml|heart-cleveland|60", "acc_teste": 0.5526315789473685, "seg_ajuste": 53.22637288399983, "melhor": "random_forest+no_preprocessing", "erro": null}
+{"chave": "autosklearn_ml|statlog-landsat|60", "acc_teste": 0.9042883778744562, "seg_ajuste": 53.14877742200042, "melhor": "random_forest+no_preprocessing", "erro": null}
+{"chave": "autosklearn_ml|heart-hungarian|60", "acc_teste": 0.821917808219178, "seg_ajuste": 53.95989945100064, "melhor": "mlp+fast_ica", "erro": null}
+{"chave": "autosklearn_ml|statlog-shuttle|60", "acc_teste": 0.999793089178564, "seg_ajuste": 53.09621004300061, "melhor": "random_forest+feature_agglomeration", "erro": null}
+{"chave": "autosklearn_ml|statlog-vehicle|60", "acc_teste": 0.8009478672985783, "seg_ajuste": 54.8998027509997, "melhor": "lda+polynomial", "erro": null}
+{"chave": "autosklearn_ml|heart-switzerland|60", "acc_teste": 0.3870967741935484, "seg_ajuste": 52.39925391900033, "melhor": "sgd+polynomial", "erro": null}
+{"chave": "autosklearn_ml|steel-plates|60", "acc_teste": 0.7716049382716049, "seg_ajuste": 52.19937258799928, "melhor": "random_forest+feature_agglomeration", "erro": null}
+{"chave": "autosklearn_ml|heart-va|60", "acc_teste": 0.3673469387755102, "seg_ajuste": 51.759961273000044, "melhor": "random_forest+feature_agglomeration", "erro": null}
+{"chave": "autosklearn_ml|synthetic-control|60", "acc_teste": 0.9866666666666667, "seg_ajuste": 50.72549482600061, "melhor": "mlp+feature_agglomeration", "erro": null}
+{"chave": "autosklearn_ml|hepatitis|60", "acc_teste": 0.8205128205128205, "seg_ajuste": 50.807038379000005, "melhor": "passive_aggressive+no_preprocessing", "erro": null}
+{"chave": "autosklearn_ml|hill-valley|60", "acc_teste": 0.9605263157894737, "seg_ajuste": 52.67589265700008, "melhor": "k_nearest_neighbors+fast_ica", "erro": null}
+{"chave": "autosklearn_ml|teaching|60", "acc_teste": 0.6756756756756757, "seg_ajuste": 53.19246301200019, "melhor": "random_forest+no_preprocessing", "erro": null}
+{"chave": "autosklearn_ml|horse-colic|60", "acc_teste": 0.8586956521739131, "seg_ajuste": 52.31097042100009, "melhor": "random_forest+no_preprocessing", "erro": null}
+{"chave": "autosklearn_ml|thyroid|60", "acc_teste": 0.9955555555555555, "seg_ajuste": 51.737712072999784, "melhor": "adaboost+feature_agglomeration", "erro": null}
+{"chave": "autosklearn_ml|ilpd-indian-liver|60", "acc_teste": 0.7397260273972602, "seg_ajuste": 52.44576580800003, "melhor": "passive_aggressive+no_preprocessing", "erro": null}
+{"chave": "autosklearn_ml|tic-tac-toe|60", "acc_teste": 0.9916317991631799, "seg_ajuste": 52.1592298759997, "melhor": "adaboost+extra_trees_preproc_for_classification", "erro": null}
+{"chave": "autosklearn_ml|titanic|60", "acc_teste": 0.7781818181818182, "seg_ajuste": 54.5781536049999, "melhor": "random_forest+pca", "erro": null}
+{"chave": "autosklearn_ml|image-segmentation|60", "acc_teste": 0.9686411149825784, "seg_ajuste": 52.88582878499983, "melhor": "gradient_boosting+polynomial", "erro": null}
+{"chave": "autosklearn_ml|twonorm|60", "acc_teste": 0.9778378378378378, "seg_ajuste": 51.6110909049994, "melhor": "gaussian_nb+no_preprocessing", "erro": null}
+{"chave": "autosklearn_ml|ionosphere|60", "acc_teste": 0.9431818181818182, "seg_ajuste": 53.861451226999634, "melhor": "extra_trees+extra_trees_preproc_for_classification", "erro": null}
+{"chave": "autosklearn_ml|vertebral-column-2clases|60", "acc_teste": 0.8441558441558441, "seg_ajuste": 51.45941965200018, "melhor": "extra_trees+polynomial", "erro": null}
+{"chave": "autosklearn_ml|iris|60", "acc_teste": 0.9444444444444444, "seg_ajuste": 50.488707553000495, "melhor": "passive_aggressive+kitchen_sinks", "erro": null}
+{"chave": "autosklearn_ml|vertebral-column-3clases|60", "acc_teste": 0.8076923076923077, "seg_ajuste": 53.068731596999896, "melhor": "gradient_boosting+polynomial", "erro": null}
+{"chave": "autosklearn_ml|led-display|60", "acc_teste": 0.692, "seg_ajuste": 51.81691538799987, "melhor": "lda+kitchen_sinks", "erro": null}
+{"chave": "autosklearn_ml|wall-following|60", "acc_teste": 0.9904622157006603, "seg_ajuste": 52.8473494509999, "melhor": "gradient_boosting+no_preprocessing", "erro": null}
+{"chave": "autosklearn_ml|lenses|60", "acc_teste": 1.0, "seg_ajuste": 54.91126344800068, "melhor": "random_forest+liblinear_svc_preprocessor", "erro": null}
+{"chave": "autosklearn_ml|waveform-noise|60", "acc_teste": 0.8752, "seg_ajuste": 50.73989833900032, "melhor": "passive_aggressive+select_rates_classification", "erro": null}
+{"chave": "autosklearn_ml|letter|60", "acc_teste": 0.9668132746901239, "seg_ajuste": 53.392339263000395, "melhor": "lda+kitchen_sinks", "erro": null}
+{"chave": "autosklearn_ml|waveform|60", "acc_teste": 0.8552, "seg_ajuste": 51.13877346599929, "melhor": "passive_aggressive+select_rates_classification", "erro": null}
+{"chave": "autosklearn_ml|libras|60", "acc_teste": 0.8111111111111111, "seg_ajuste": 50.420482763999644, "melhor": "mlp+feature_agglomeration", "erro": null}
+{"chave": "autosklearn_ml|wine-quality-red|60", "acc_teste": 0.6917293233082706, "seg_ajuste": 53.377889718000006, "melhor": "random_forest+feature_agglomeration", "erro": null}
+{"chave": "autosklearn_ml|low-res-spect|60", "acc_teste": 0.9323308270676691, "seg_ajuste": 51.29561505399943, "melhor": "random_forest+polynomial", "erro": null}
+{"chave": "autosklearn_ml|wine-quality-white|60", "acc_teste": 0.6416326530612245, "seg_ajuste": 53.32010360999993, "melhor": "random_forest+feature_agglomeration", "erro": null}
+{"chave": "autosklearn_ml|lung-cancer|60", "acc_teste": 0.7142857142857143, "seg_ajuste": 51.96071638800004, "melhor": "random_forest+no_preprocessing", "erro": null}
+{"chave": "autosklearn_ml|wine|60", "acc_teste": 1.0, "seg_ajuste": 49.77453087699996, "melhor": "lda+polynomial", "erro": null}
+{"chave": "autosklearn_ml|lymphography|60", "acc_teste": 0.8333333333333334, "seg_ajuste": 51.05177345500033, "melhor": "lda+select_rates_classification", "erro": null}
+{"chave": "autosklearn_ml|yeast|60", "acc_teste": 0.6102150537634409, "seg_ajuste": 53.78101464100018, "melhor": "random_forest+polynomial", "erro": null}
+{"chave": "autosklearn_ml|magic|60", "acc_teste": 0.8767613038906414, "seg_ajuste": 53.77535882600023, "melhor": "gradient_boosting+polynomial", "erro": null}
+{"chave": "autosklearn_ml|zoo|60", "acc_teste": 0.9583333333333334, "seg_ajuste": 56.053273319000255, "melhor": "sgd+polynomial", "erro": null}
+{"chave": "autosklearn_ml|mammographic|60", "acc_teste": 0.825, "seg_ajuste": 51.14721866200034, "melhor": "passive_aggressive+kitchen_sinks", "erro": null}
+[WARNING] [2026-11-18 13:27:51,550:Client-EnsembleBuilder] No runs were available to build an ensemble from
+[WARNING] [2026-11-18 13:28:15,517:Client-EnsembleBuilder] No runs were available to build an ensemble from
+{"chave": "autosklearn_ml|miniboone|60", "acc_teste": 0.28063107393283304, "seg_ajuste": 50.21451151899964, "melhor": "dummy", "erro": null}
+{"chave": "autosklearn_ml|molec-biol-promoter|60", "acc_teste": 0.8461538461538461, "seg_ajuste": 53.41604183199979, "melhor": "libsvm_svc+feature_agglomeration", "erro": null}

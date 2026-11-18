@@ -14,6 +14,7 @@ Uso:  python rodar_automl_hpo.py SISTEMA --orcamentos 30,120 [--datasets a,b] [-
 """
 import argparse
 import json
+import os
 import platform
 import shutil
 import sys
@@ -30,7 +31,10 @@ def ajustar(sistema, Xtr, ytr, orc, nucleos, pasta):
     if sistema.startswith("autosklearn"):
         import autosklearn.classification as asc
         from autosklearn.metrics import accuracy
-        shutil.rmtree(pasta, ignore_errors=True)
+        # pasta no disco nativo do WSL: em /mnt/d o datamanager.pkl demora a aparecer e o dummy falha (datasets grandes)
+        from pathlib import Path
+        pasta = Path("/tmp") / f"ask_{sistema}_{os.getpid()}"
+        shutil.rmtree(pasta, ignore_errors=True)  # o loop de main() não limpa /tmp; limpa aqui
         kw = {} if sistema == "autosklearn_ml" else {"initial_configurations_via_metalearning": 0}
         m = asc.AutoSklearnClassifier(time_left_for_this_task=orc, per_run_time_limit=max(orc // 3, 10),
                                       n_jobs=nucleos, seed=comum.SEMENTE, metric=accuracy, memory_limit=4096,
@@ -45,6 +49,10 @@ def ajustar(sistema, Xtr, ytr, orc, nucleos, pasta):
     if sistema == "autogluon":
         import pandas as pd
         from autogluon.tabular import TabularPredictor
+        from autogluon.common.utils.resource_utils import ResourceManager
+        # o AutoGluon conta GPUs pelo nvutil/torch e, no Windows com torch de CPU, acha 0 (FIXME no próprio código dele);
+        # XGBoost e CatBoost usam o CUDA deles, então informamos a GPU que existe (GTX 1660 Ti)
+        ResourceManager.get_gpu_count = staticmethod(lambda: 1)
         shutil.rmtree(pasta, ignore_errors=True)
         df = pd.DataFrame(Xtr, columns=[f"x{j}" for j in range(Xtr.shape[1])])
         df["y"] = ytr
@@ -81,6 +89,8 @@ def ajustar(sistema, Xtr, ytr, orc, nucleos, pasta):
 
 def _ask_desc(p):
     c = getattr(p, "config", None)
+    if c is not None and not hasattr(c, "get"):
+        return "dummy"   # só o modelo dummy do Auto-sklearn entrou no ensemble (config é um int)
     if c is not None:
         return f"{c.get('classifier:__choice__')}+{c.get('feature_preprocessor:__choice__')}"
     try:
