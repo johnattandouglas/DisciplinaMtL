@@ -1,0 +1,24 @@
+[com MtL 30s] topo: {'Random forest': 64, 'Dummy': 19, 'Linear': 16, 'Boosting': 7, 'MLP': 6, 'Extra trees': 3, 'SVM': 2, 'k-NN': 2, 'Naive Bayes': 1}
+   MLP presente em 40/120; peso médio 0.061 (quando presente 0.183)
+   ASKL - melhor MLP: média -0.0584; ASKL vence em 27, empata 21, perde em 72
+   acc média quando o topo é MLP: 0.8449 (n=6); quando é random forest: 0.8264
+[com MtL 60s] topo: {'Random forest': 43, 'Linear': 30, 'Boosting': 17, 'MLP': 11, 'Extra trees': 7, 'Dummy': 5, 'SVM': 4, 'Naive Bayes': 2, 'k-NN': 1}
+   MLP presente em 74/120; peso médio 0.109 (quando presente 0.177)
+   ASKL - melhor MLP: média -0.0238; ASKL vence em 32, empata 17, perde em 71
+   acc média quando o topo é MLP: 0.8286 (n=11); quando é random forest: 0.7854
+[com MtL 120s] topo: {'Random forest': 39, 'Linear': 25, 'Boosting': 20, 'MLP': 11, 'Extra trees': 11, 'SVM': 6, 'Dummy': 4, 'Naive Bayes': 2, 'k-NN': 1, 'Árvore': 1}
+   MLP presente em 78/120; peso médio 0.096 (quando presente 0.147)
+   ASKL - melhor MLP: média -0.0203; ASKL vence em 37, empata 19, perde em 64
+   acc média quando o topo é MLP: 0.8219 (n=11); quando é random forest: 0.8133
+[sem MtL 30s] topo: {'Random forest': 66, 'Dummy': 18, 'Extra trees': 13, 'Boosting': 13, 'MLP': 10}
+   MLP presente em 59/120; peso médio 0.118 (quando presente 0.240)
+   ASKL - melhor MLP: média -0.0589; ASKL vence em 24, empata 17, perde em 79
+   acc média quando o topo é MLP: 0.8024 (n=10); quando é random forest: 0.8472
+[sem MtL 60s] topo: {'Random forest': 33, 'Linear': 32, 'Extra trees': 20, 'Boosting': 15, 'MLP': 10, 'Dummy': 7, 'Árvore': 2, 'k-NN': 1}
+   MLP presente em 70/120; peso médio 0.089 (quando presente 0.153)
+   ASKL - melhor MLP: média -0.0264; ASKL vence em 29, empata 19, perde em 72
+   acc média quando o topo é MLP: 0.8048 (n=10); quando é random forest: 0.8608
+[sem MtL 120s] topo: {'Linear': 42, 'Random forest': 27, 'Extra trees': 18, 'Boosting': 17, 'MLP': 6, 'Dummy': 5, 'k-NN': 3, 'Naive Bayes': 1, 'Árvore': 1}
+   MLP presente em 70/120; peso médio 0.064 (quando presente 0.109)
+   ASKL - melhor MLP: média -0.0221; ASKL vence em 33, empata 12, perde em 75
+   acc média quando o topo é MLP: 0.8312 (n=6); quando é random forest: 0.8406
