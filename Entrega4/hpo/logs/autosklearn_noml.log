@@ -1140,3 +1140,187 @@ Hosting the HTTP server on port 45993 instead
 {"chave": "autosklearn_noml|breast-cancer|120", "acc_teste": 0.6619718309859155, "seg_ajuste": 112.30362775000003, "melhor": "k_nearest_neighbors+extra_trees_preproc_for_classification", "erro": null}
 {"chave": "autosklearn_noml|ozone|120", "acc_teste": 0.973186119873817, "seg_ajuste": 107.27097196799969, "melhor": "gradient_boosting+select_rates_classification", "erro": null}
 {"chave": "autosklearn_noml|breast-tissue|120", "acc_teste": 0.8518518518518519, "seg_ajuste": 109.20897178900032, "melhor": "extra_trees+polynomial", "erro": null}
+{"chave": "autosklearn_noml|page-blocks|120", "acc_teste": 0.9788011695906432, "seg_ajuste": 106.68199265900012, "melhor": "extra_trees+polynomial", "erro": null}
+{"chave": "autosklearn_noml|parkinsons|120", "acc_teste": 0.9183673469387755, "seg_ajuste": 113.02741568200008, "melhor": "k_nearest_neighbors+no_preprocessing", "erro": null}
+{"chave": "autosklearn_noml|car|120", "acc_teste": 0.9698375870069605, "seg_ajuste": 106.52214172899994, "melhor": "gradient_boosting+select_rates_classification", "erro": null}
+{"chave": "autosklearn_noml|cardiotocography-10clases|120", "acc_teste": 0.8775894538606404, "seg_ajuste": 114.5582338549998, "melhor": "random_forest+no_preprocessing", "erro": null}
+{"chave": "autosklearn_noml|pendigits|120", "acc_teste": 0.9941818181818182, "seg_ajuste": 109.5141601209998, "melhor": "mlp+polynomial", "erro": null}
+{"chave": "autosklearn_noml|pima|120", "acc_teste": 0.765625, "seg_ajuste": 111.80112912799996, "melhor": "extra_trees+polynomial", "erro": null}
+{"chave": "autosklearn_noml|cardiotocography-3clases|120", "acc_teste": 0.9473684210526315, "seg_ajuste": 115.1007675740002, "melhor": "gradient_boosting+select_rates_classification", "erro": null}
+{"chave": "autosklearn_noml|pittsburg-bridges-MATERIAL|120", "acc_teste": 0.8888888888888888, "seg_ajuste": 116.53426298400018, "melhor": "adaboost+random_trees_embedding", "erro": null}
+{"chave": "autosklearn_noml|chess-krvk|120", "acc_teste": 0.7772234891676169, "seg_ajuste": 121.30639784300001, "melhor": "random_forest+no_preprocessing", "erro": null}
+{"chave": "autosklearn_noml|pittsburg-bridges-REL-L|120", "acc_teste": 0.7307692307692307, "seg_ajuste": 108.09462289000021, "melhor": "mlp+polynomial", "erro": null}
+{"chave": "autosklearn_noml|chess-krvkp|120", "acc_teste": 0.9799749687108886, "seg_ajuste": 111.7159084230002, "melhor": "bernoulli_nb+select_rates_classification", "erro": null}
+[WARNING] [2026-11-18 15:17:46,243:Client-EnsembleBuilder] No models better than random - using Dummy losses!
+	Models besides current dummy model: 0
+	Dummy models: 1
+[WARNING] [2026-11-18 15:17:52,877:Client-EnsembleBuilder] No models better than random - using Dummy losses!
+	Models besides current dummy model: 0
+	Dummy models: 1
+[WARNING] [2026-11-18 15:17:58,552:Client-EnsembleBuilder] No models better than random - using Dummy losses!
+	Models besides current dummy model: 0
+	Dummy models: 1
+[WARNING] [2026-11-18 15:18:01,854:Client-EnsembleBuilder] No models better than random - using Dummy losses!
+	Models besides current dummy model: 0
+	Dummy models: 1
+[WARNING] [2026-11-18 15:18:11,341:Client-EnsembleBuilder] No models better than random - using Dummy losses!
+	Models besides current dummy model: 0
+	Dummy models: 1
+[WARNING] [2026-11-18 15:18:15,354:Client-EnsembleBuilder] No models better than random - using Dummy losses!
+	Models besides current dummy model: 0
+	Dummy models: 1
+[WARNING] [2026-11-18 15:18:18,026:Client-EnsembleBuilder] No models better than random - using Dummy losses!
+	Models besides current dummy model: 0
+	Dummy models: 1
+[WARNING] [2026-11-18 15:18:19,634:Client-EnsembleBuilder] No models better than random - using Dummy losses!
+	Models besides current dummy model: 0
+	Dummy models: 1
+[WARNING] [2026-11-18 15:18:29,291:Client-EnsembleBuilder] No models better than random - using Dummy losses!
+	Models besides current dummy model: 0
+	Dummy models: 1
+[WARNING] [2026-11-18 15:18:37,893:Client-EnsembleBuilder] No models better than random - using Dummy losses!
+	Models besides current dummy model: 0
+	Dummy models: 1
+[WARNING] [2026-11-18 15:18:50,155:Client-EnsembleBuilder] No models better than random - using Dummy losses!
+	Models besides current dummy model: 0
+	Dummy models: 1
+[WARNING] [2026-11-18 15:18:52,368:Client-EnsembleBuilder] No models better than random - using Dummy losses!
+	Models besides current dummy model: 0
+	Dummy models: 1
+[WARNING] [2026-11-18 15:19:09,327:Client-EnsembleBuilder] No models better than random - using Dummy losses!
+	Models besides current dummy model: 0
+	Dummy models: 1
+[WARNING] [2026-11-18 15:19:24,996:Client-EnsembleBuilder] No models better than random - using Dummy losses!
+	Models besides current dummy model: 0
+	Dummy models: 1
+{"chave": "autosklearn_noml|pittsburg-bridges-SPAN|120", "acc_teste": 0.6666666666666666, "seg_ajuste": 108.48594298299986, "melhor": "adaboost+random_trees_embedding", "erro": null}
+[WARNING] [2026-11-18 15:19:27,755:Client-EnsembleBuilder] No models better than random - using Dummy losses!
+	Models besides current dummy model: 0
+	Dummy models: 1
+[WARNING] [2026-11-18 15:19:30,061:Client-EnsembleBuilder] No models better than random - using Dummy losses!
+	Models besides current dummy model: 0
+	Dummy models: 1
+{"chave": "autosklearn_noml|congressional-voting|120", "acc_teste": 0.6146788990825688, "seg_ajuste": 115.96810836299983, "melhor": "dummy", "erro": null}
+{"chave": "autosklearn_noml|pittsburg-bridges-T-OR-D|120", "acc_teste": 0.8076923076923077, "seg_ajuste": 111.37571525500016, "melhor": "sgd+fast_ica", "erro": null}
+{"chave": "autosklearn_noml|conn-bench-sonar-mines-rocks|120", "acc_teste": 0.7692307692307693, "seg_ajuste": 115.59662525600015, "melhor": "sgd+kernel_pca", "erro": null}
+{"chave": "autosklearn_noml|pittsburg-bridges-TYPE|120", "acc_teste": 0.6538461538461539, "seg_ajuste": 107.33657306100031, "melhor": "random_forest+no_preprocessing", "erro": null}
+{"chave": "autosklearn_noml|conn-bench-vowel-deterding|120", "acc_teste": 0.9958677685950413, "seg_ajuste": 111.17765821699959, "melhor": "qda+select_percentile_classification", "erro": null}
+[WARNING] [2026-11-18 15:25:17,528:Client-EnsembleBuilder] No runs were available to build an ensemble from
+[WARNING] [2026-11-18 15:26:07,545:Client-EnsembleBuilder] No runs were available to build an ensemble from
+[WARNING] [2026-11-18 15:26:20,267:Client-EnsembleBuilder] No runs were available to build an ensemble from
+{"chave": "autosklearn_noml|plant-margin|120", "acc_teste": 0.855, "seg_ajuste": 107.63067941099962, "melhor": "random_forest+no_preprocessing", "erro": null}
+{"chave": "autosklearn_noml|connect-4|120", "acc_teste": 0.753745041151045, "seg_ajuste": 107.35036866700011, "melhor": "dummy", "erro": null}
+{"chave": "autosklearn_noml|plant-shape|120", "acc_teste": 0.6075, "seg_ajuste": 111.09835439699964, "melhor": "random_forest+no_preprocessing", "erro": null}
+{"chave": "autosklearn_noml|contrac|120", "acc_teste": 0.5244565217391305, "seg_ajuste": 111.34701458400014, "melhor": "lda+fast_ica", "erro": null}
+{"chave": "autosklearn_noml|credit-approval|120", "acc_teste": 0.8901734104046243, "seg_ajuste": 110.98799908399997, "melhor": "sgd+kernel_pca", "erro": null}
+{"chave": "autosklearn_noml|plant-texture|120", "acc_teste": 0.7825, "seg_ajuste": 112.26513781700032, "melhor": "random_forest+no_preprocessing", "erro": null}
+{"chave": "autosklearn_noml|cylinder-bands|120", "acc_teste": 0.78125, "seg_ajuste": 109.089635112, "melhor": "sgd+kernel_pca", "erro": null}
+[WARNING] [2026-11-18 15:34:14,181:smac.runhistory.runhistory2epm.RunHistory2EPM4LogCost] Got cost of smaller/equal to 0. Replace by 0.000010 since we use log cost.
+[WARNING] [2026-11-18 15:34:20,417:smac.runhistory.runhistory2epm.RunHistory2EPM4LogCost] Got cost of smaller/equal to 0. Replace by 0.000010 since we use log cost.
+[WARNING] [2026-11-18 15:34:25,717:smac.runhistory.runhistory2epm.RunHistory2EPM4LogCost] Got cost of smaller/equal to 0. Replace by 0.000010 since we use log cost.
+[WARNING] [2026-11-18 15:34:30,707:smac.runhistory.runhistory2epm.RunHistory2EPM4LogCost] Got cost of smaller/equal to 0. Replace by 0.000010 since we use log cost.
+[WARNING] [2026-11-18 15:34:37,401:smac.runhistory.runhistory2epm.RunHistory2EPM4LogCost] Got cost of smaller/equal to 0. Replace by 0.000010 since we use log cost.
+[WARNING] [2026-11-18 15:34:45,431:smac.runhistory.runhistory2epm.RunHistory2EPM4LogCost] Got cost of smaller/equal to 0. Replace by 0.000010 since we use log cost.
+[WARNING] [2026-11-18 15:34:47,108:smac.runhistory.runhistory2epm.RunHistory2EPM4LogCost] Got cost of smaller/equal to 0. Replace by 0.000010 since we use log cost.
+[WARNING] [2026-11-18 15:34:53,128:smac.runhistory.runhistory2epm.RunHistory2EPM4LogCost] Got cost of smaller/equal to 0. Replace by 0.000010 since we use log cost.
+[WARNING] [2026-11-18 15:34:55,312:smac.runhistory.runhistory2epm.RunHistory2EPM4LogCost] Got cost of smaller/equal to 0. Replace by 0.000010 since we use log cost.
+[WARNING] [2026-11-18 15:35:00,454:smac.runhistory.runhistory2epm.RunHistory2EPM4LogCost] Got cost of smaller/equal to 0. Replace by 0.000010 since we use log cost.
+[WARNING] [2026-11-18 15:35:07,576:smac.runhistory.runhistory2epm.RunHistory2EPM4LogCost] Got cost of smaller/equal to 0. Replace by 0.000010 since we use log cost.
+{"chave": "autosklearn_noml|primary-tumor|120", "acc_teste": 0.47619047619047616, "seg_ajuste": 107.65113708999979, "melhor": "adaboost+select_rates_classification", "erro": null}
+{"chave": "autosklearn_noml|dermatology|120", "acc_teste": 0.978021978021978, "seg_ajuste": 106.94481244899998, "melhor": "gradient_boosting+select_rates_classification", "erro": null}
+{"chave": "autosklearn_noml|echocardiogram|120", "acc_teste": 0.8484848484848485, "seg_ajuste": 113.50531337600023, "melhor": "random_forest+select_rates_classification", "erro": null}
+{"chave": "autosklearn_noml|ringnorm|120", "acc_teste": 0.9827027027027027, "seg_ajuste": 112.44172691200038, "melhor": "extra_trees+polynomial", "erro": null}
+{"chave": "autosklearn_noml|ecoli|120", "acc_teste": 0.9156626506024096, "seg_ajuste": 110.04491227900053, "melhor": "extra_trees+pca", "erro": null}
+{"chave": "autosklearn_noml|seeds|120", "acc_teste": 0.8888888888888888, "seg_ajuste": 109.67556619300012, "melhor": "mlp+fast_ica", "erro": null}
+{"chave": "autosklearn_noml|energy-y1|120", "acc_teste": 0.9635416666666666, "seg_ajuste": 108.33464146799997, "melhor": "sgd+kernel_pca", "erro": null}
+{"chave": "autosklearn_noml|semeion|120", "acc_teste": 0.9298245614035088, "seg_ajuste": 115.29909333600062, "melhor": "sgd+kernel_pca", "erro": null}
+{"chave": "autosklearn_noml|energy-y2|120", "acc_teste": 0.90625, "seg_ajuste": 112.37414071000057, "melhor": "random_forest+fast_ica", "erro": null}
+{"chave": "autosklearn_noml|soybean|120", "acc_teste": 0.9534883720930233, "seg_ajuste": 116.29590629700033, "melhor": "passive_aggressive+nystroem_sampler", "erro": null}
+{"chave": "autosklearn_noml|flags|120", "acc_teste": 0.5714285714285714, "seg_ajuste": 105.96236348799994, "melhor": "sgd+kitchen_sinks", "erro": null}
+{"chave": "autosklearn_noml|spambase|120", "acc_teste": 0.9521739130434783, "seg_ajuste": 107.74597319500026, "melhor": "sgd+kernel_pca", "erro": null}
+{"chave": "autosklearn_noml|glass|120", "acc_teste": 0.7735849056603774, "seg_ajuste": 109.36072563400012, "melhor": "sgd+extra_trees_preproc_for_classification", "erro": null}
+[WARNING] [2026-11-18 15:47:35,224:Client-EnsembleBuilder] No models better than random - using Dummy losses!
+	Models besides current dummy model: 0
+	Dummy models: 1
+{"chave": "autosklearn_noml|spect|120", "acc_teste": 0.7611940298507462, "seg_ajuste": 109.70361710500038, "melhor": "passive_aggressive+polynomial", "erro": null}
+[WARNING] [2026-11-18 15:47:42,443:Client-EnsembleBuilder] No models better than random - using Dummy losses!
+	Models besides current dummy model: 0
+	Dummy models: 1
+[WARNING] [2026-11-18 15:47:47,406:Client-EnsembleBuilder] No models better than random - using Dummy losses!
+	Models besides current dummy model: 0
+	Dummy models: 1
+[WARNING] [2026-11-18 15:47:53,216:Client-EnsembleBuilder] No models better than random - using Dummy losses!
+	Models besides current dummy model: 0
+	Dummy models: 1
+[WARNING] [2026-11-18 15:47:58,362:Client-EnsembleBuilder] No models better than random - using Dummy losses!
+	Models besides current dummy model: 0
+	Dummy models: 1
+[WARNING] [2026-11-18 15:48:01,204:Client-EnsembleBuilder] No models better than random - using Dummy losses!
+	Models besides current dummy model: 0
+	Dummy models: 1
+{"chave": "autosklearn_noml|haberman-survival|120", "acc_teste": 0.7105263157894737, "seg_ajuste": 105.06355964899922, "melhor": "random_forest+fast_ica", "erro": null}
+{"chave": "autosklearn_noml|spectf|120", "acc_teste": 0.8656716417910447, "seg_ajuste": 112.2896702019998, "melhor": "adaboost+random_trees_embedding", "erro": null}
+{"chave": "autosklearn_noml|hayes-roth|120", "acc_teste": 0.725, "seg_ajuste": 110.52162851100002, "melhor": "gradient_boosting+select_rates_classification", "erro": null}
+{"chave": "autosklearn_noml|statlog-australian-credit|120", "acc_teste": 0.6763005780346821, "seg_ajuste": 105.01886598300007, "melhor": "sgd+kernel_pca", "erro": null}
+{"chave": "autosklearn_noml|statlog-german-credit|120", "acc_teste": 0.76, "seg_ajuste": 106.73234351700012, "melhor": "extra_trees+no_preprocessing", "erro": null}
+{"chave": "autosklearn_noml|heart-cleveland|120", "acc_teste": 0.6052631578947368, "seg_ajuste": 110.14413993899961, "melhor": "extra_trees+polynomial", "erro": null}
+{"chave": "autosklearn_noml|heart-hungarian|120", "acc_teste": 0.8082191780821918, "seg_ajuste": 107.67191400200045, "melhor": "random_forest+fast_ica", "erro": null}
+{"chave": "autosklearn_noml|statlog-heart|120", "acc_teste": 0.8382352941176471, "seg_ajuste": 110.69913816900043, "melhor": "sgd+fast_ica", "erro": null}
+{"chave": "autosklearn_noml|heart-switzerland|120", "acc_teste": 0.5161290322580645, "seg_ajuste": 110.3940053590004, "melhor": "sgd+extra_trees_preproc_for_classification", "erro": null}
+{"chave": "autosklearn_noml|statlog-image|120", "acc_teste": 0.9738675958188153, "seg_ajuste": 108.23030256499987, "melhor": "passive_aggressive+nystroem_sampler", "erro": null}
+{"chave": "autosklearn_noml|heart-va|120", "acc_teste": 0.42857142857142855, "seg_ajuste": 109.47210027599976, "melhor": "extra_trees+polynomial", "erro": null}
+{"chave": "autosklearn_noml|statlog-landsat|120", "acc_teste": 0.9005593536357986, "seg_ajuste": 103.70502152800054, "melhor": "random_forest+no_preprocessing", "erro": null}
+{"chave": "autosklearn_noml|hepatitis|120", "acc_teste": 0.7948717948717948, "seg_ajuste": 105.81256746599956, "melhor": "k_nearest_neighbors+select_percentile_classification", "erro": null}
+{"chave": "autosklearn_noml|statlog-shuttle|120", "acc_teste": 0.999862059452376, "seg_ajuste": 108.88939829899937, "melhor": "extra_trees+polynomial", "erro": null}
+{"chave": "autosklearn_noml|hill-valley|120", "acc_teste": 0.5098684210526315, "seg_ajuste": 107.3085951410003, "melhor": "random_forest+feature_agglomeration", "erro": null}
+{"chave": "autosklearn_noml|statlog-vehicle|120", "acc_teste": 0.7819905213270142, "seg_ajuste": 107.54402896400006, "melhor": "mlp+polynomial", "erro": null}
+{"chave": "autosklearn_noml|horse-colic|120", "acc_teste": 0.8369565217391305, "seg_ajuste": 112.46840333699947, "melhor": "random_forest+no_preprocessing", "erro": null}
+{"chave": "autosklearn_noml|steel-plates|120", "acc_teste": 0.757201646090535, "seg_ajuste": 114.03349455500029, "melhor": "random_forest+no_preprocessing", "erro": null}
+{"chave": "autosklearn_noml|ilpd-indian-liver|120", "acc_teste": 0.7191780821917808, "seg_ajuste": 113.69242422000025, "melhor": "extra_trees+select_rates_classification", "erro": null}
+{"chave": "autosklearn_noml|synthetic-control|120", "acc_teste": 0.9933333333333333, "seg_ajuste": 113.99973609300014, "melhor": "lda+pca", "erro": null}
+{"chave": "autosklearn_noml|image-segmentation|120", "acc_teste": 0.9686411149825784, "seg_ajuste": 108.79038824799954, "melhor": "decision_tree+no_preprocessing", "erro": null}
+{"chave": "autosklearn_noml|teaching|120", "acc_teste": 0.7027027027027027, "seg_ajuste": 108.72367615999974, "melhor": "sgd+kernel_pca", "erro": null}
+{"chave": "autosklearn_noml|ionosphere|120", "acc_teste": 0.9204545454545454, "seg_ajuste": 108.95024110299983, "melhor": "random_forest+no_preprocessing", "erro": null}
+{"chave": "autosklearn_noml|thyroid|120", "acc_teste": 0.9944444444444445, "seg_ajuste": 107.46393696599989, "melhor": "random_forest+no_preprocessing", "erro": null}
+{"chave": "autosklearn_noml|iris|120", "acc_teste": 0.8888888888888888, "seg_ajuste": 111.95078366400048, "melhor": "qda+select_percentile_classification", "erro": null}
+{"chave": "autosklearn_noml|tic-tac-toe|120", "acc_teste": 0.9790794979079498, "seg_ajuste": 110.45320826800071, "melhor": "random_forest+no_preprocessing", "erro": null}
+{"chave": "autosklearn_noml|led-display|120", "acc_teste": 0.68, "seg_ajuste": 104.13754861500001, "melhor": "passive_aggressive+fast_ica", "erro": null}
+{"chave": "autosklearn_noml|titanic|120", "acc_teste": 0.7709090909090909, "seg_ajuste": 107.95202225399953, "melhor": "mlp+random_trees_embedding", "erro": null}
+{"chave": "autosklearn_noml|lenses|120", "acc_teste": 0.8333333333333334, "seg_ajuste": 114.99735998300002, "melhor": "random_forest+no_preprocessing", "erro": null}
+{"chave": "autosklearn_noml|twonorm|120", "acc_teste": 0.9756756756756757, "seg_ajuste": 109.643773754, "melhor": "sgd+kernel_pca", "erro": null}
+{"chave": "autosklearn_noml|letter|120", "acc_teste": 0.955217912834866, "seg_ajuste": 112.03795653799989, "melhor": "random_forest+no_preprocessing", "erro": null}
+{"chave": "autosklearn_noml|vertebral-column-2clases|120", "acc_teste": 0.8311688311688312, "seg_ajuste": 112.02743806499984, "melhor": "random_forest+no_preprocessing", "erro": null}
+{"chave": "autosklearn_noml|libras|120", "acc_teste": 0.7777777777777778, "seg_ajuste": 106.99250049800048, "melhor": "random_forest+no_preprocessing", "erro": null}
+{"chave": "autosklearn_noml|vertebral-column-3clases|120", "acc_teste": 0.8461538461538461, "seg_ajuste": 109.40992078900035, "melhor": "sgd+kernel_pca", "erro": null}
+{"chave": "autosklearn_noml|low-res-spect|120", "acc_teste": 0.8947368421052632, "seg_ajuste": 116.28161536700009, "melhor": "adaboost+select_rates_classification", "erro": null}
+{"chave": "autosklearn_noml|wall-following|120", "acc_teste": 0.9941305942773294, "seg_ajuste": 112.45428426499984, "melhor": "qda+liblinear_svc_preprocessor", "erro": null}
+{"chave": "autosklearn_noml|lung-cancer|120", "acc_teste": 0.7142857142857143, "seg_ajuste": 111.49018975700073, "melhor": "random_forest+no_preprocessing", "erro": null}
+{"chave": "autosklearn_noml|waveform-noise|120", "acc_teste": 0.8648, "seg_ajuste": 109.59806511699935, "melhor": "extra_trees+polynomial", "erro": null}
+{"chave": "autosklearn_noml|lymphography|120", "acc_teste": 0.8333333333333334, "seg_ajuste": 112.63258432099974, "melhor": "lda+pca", "erro": null}
+{"chave": "autosklearn_noml|waveform|120", "acc_teste": 0.8544, "seg_ajuste": 116.84779359599997, "melhor": "extra_trees+select_rates_classification", "erro": null}
+{"chave": "autosklearn_noml|magic|120", "acc_teste": 0.8763406940063091, "seg_ajuste": 109.58822911200059, "melhor": "extra_trees+polynomial", "erro": null}
+{"chave": "autosklearn_noml|wine-quality-red|120", "acc_teste": 0.6892230576441103, "seg_ajuste": 116.86807129499994, "melhor": "sgd+kernel_pca", "erro": null}
+{"chave": "autosklearn_noml|mammographic|120", "acc_teste": 0.8291666666666667, "seg_ajuste": 113.41625052800009, "melhor": "qda+select_percentile_classification", "erro": null}
+{"chave": "autosklearn_noml|wine-quality-white|120", "acc_teste": 0.6351020408163265, "seg_ajuste": 109.28975510700002, "melhor": "sgd+kernel_pca", "erro": null}
+[WARNING] [2026-11-18 16:32:55,819:Client-EnsembleBuilder] No runs were available to build an ensemble from
+[WARNING] [2026-11-18 16:33:08,256:Client-EnsembleBuilder] No runs were available to build an ensemble from
+{"chave": "autosklearn_noml|miniboone|120", "acc_teste": 0.9336634272358224, "seg_ajuste": 111.33919451800011, "melhor": "gradient_boosting+select_rates_classification", "erro": null}
+{"chave": "autosklearn_noml|wine|120", "acc_teste": 1.0, "seg_ajuste": 108.3779964360001, "melhor": "lda+fast_ica", "erro": null}
+{"chave": "autosklearn_noml|molec-biol-promoter|120", "acc_teste": 0.9230769230769231, "seg_ajuste": 108.65420348899897, "melhor": "extra_trees+polynomial", "erro": null}
+{"chave": "autosklearn_noml|yeast|120", "acc_teste": 0.5698924731182796, "seg_ajuste": 112.87314395999965, "melhor": "lda+no_preprocessing", "erro": null}
+[WARNING] [2026-11-18 16:37:45,996:smac.runhistory.runhistory2epm.RunHistory2EPM4LogCost] Got cost of smaller/equal to 0. Replace by 0.000010 since we use log cost.
+[WARNING] [2026-11-18 16:37:58,863:smac.runhistory.runhistory2epm.RunHistory2EPM4LogCost] Got cost of smaller/equal to 0. Replace by 0.000010 since we use log cost.
+[WARNING] [2026-11-18 16:38:01,455:smac.runhistory.runhistory2epm.RunHistory2EPM4LogCost] Got cost of smaller/equal to 0. Replace by 0.000010 since we use log cost.
+[WARNING] [2026-11-18 16:38:04,057:smac.runhistory.runhistory2epm.RunHistory2EPM4LogCost] Got cost of smaller/equal to 0. Replace by 0.000010 since we use log cost.
+[WARNING] [2026-11-18 16:38:13,145:smac.runhistory.runhistory2epm.RunHistory2EPM4LogCost] Got cost of smaller/equal to 0. Replace by 0.000010 since we use log cost.
+[WARNING] [2026-11-18 16:38:16,445:smac.runhistory.runhistory2epm.RunHistory2EPM4LogCost] Got cost of smaller/equal to 0. Replace by 0.000010 since we use log cost.
+[WARNING] [2026-11-18 16:38:22,835:smac.runhistory.runhistory2epm.RunHistory2EPM4LogCost] Got cost of smaller/equal to 0. Replace by 0.000010 since we use log cost.
+[WARNING] [2026-11-18 16:38:29,455:smac.runhistory.runhistory2epm.RunHistory2EPM4LogCost] Got cost of smaller/equal to 0. Replace by 0.000010 since we use log cost.
+[WARNING] [2026-11-18 16:38:38,006:smac.runhistory.runhistory2epm.RunHistory2EPM4LogCost] Got cost of smaller/equal to 0. Replace by 0.000010 since we use log cost.
+[WARNING] [2026-11-18 16:38:40,184:smac.runhistory.runhistory2epm.RunHistory2EPM4LogCost] Got cost of smaller/equal to 0. Replace by 0.000010 since we use log cost.
+[WARNING] [2026-11-18 16:38:41,567:smac.runhistory.runhistory2epm.RunHistory2EPM4LogCost] Got cost of smaller/equal to 0. Replace by 0.000010 since we use log cost.
+[WARNING] [2026-11-18 16:38:43,190:smac.runhistory.runhistory2epm.RunHistory2EPM4LogCost] Got cost of smaller/equal to 0. Replace by 0.000010 since we use log cost.
+[WARNING] [2026-11-18 16:38:49,367:smac.runhistory.runhistory2epm.RunHistory2EPM4LogCost] Got cost of smaller/equal to 0. Replace by 0.000010 since we use log cost.
+[WARNING] [2026-11-18 16:38:55,946:smac.runhistory.runhistory2epm.RunHistory2EPM4LogCost] Got cost of smaller/equal to 0. Replace by 0.000010 since we use log cost.
+[WARNING] [2026-11-18 16:39:02,187:smac.runhistory.runhistory2epm.RunHistory2EPM4LogCost] Got cost of smaller/equal to 0. Replace by 0.000010 since we use log cost.
+{"chave": "autosklearn_noml|zoo|120", "acc_teste": 1.0, "seg_ajuste": 108.88136115500129, "melhor": "adaboost+liblinear_svc_preprocessor", "erro": null}

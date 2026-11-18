@@ -1,6 +1,17 @@
 Correlação perda da matriz D2V x perda reexecutada: Spearman 0.762 (1440 pares método-dataset)
 
-[30 s] só 36 datasets; pulado
+[30 s] n=120 Friedman chi2=28.5 p=9.65e-06 CD=0.56
+  Média     acc=0.8304 perda=0.0363 rank=2.80
+  Rec. k=1  acc=0.7961 perda=0.0706 rank=3.63
+  SMBO-Sim  acc=0.8189 perda=0.0477 rank=2.98
+  ASKL+     acc=0.7975 perda=0.0692 rank=2.72
+  ASKL-     acc=0.7969 perda=0.0697 rank=2.87
+  Oráculo   acc=0.8558 perda=0.0108
+  ASKL+ - Média    dif=-0.0329 vit=54 der=48 p=0.72 pHolm=0.72
+  ASKL+ - Rec. k=1 dif=+0.0014 vit=77 der=31 p=0.0015 pHolm=0.0044
+  ASKL+ - SMBO-Sim dif=-0.0215 vit=56 der=45 p=0.33 pHolm=0.67
+  ASKL+ - ASKL- na base: n=33 dif=+0.0140 vit=10 der=9 p=0.29
+  ASKL+ - ASKL- fora: n=87 dif=-0.0046 vit=31 der=28 p=0.65
 
 [60 s] n=120 Friedman chi2=60.9 p=1.91e-12 CD=0.56
   Média     acc=0.8304 perda=0.0378 rank=2.95
@@ -15,15 +26,30 @@ Correlação perda da matriz D2V x perda reexecutada: Spearman 0.762 (1440 pares
   ASKL+ - ASKL- na base: n=33 dif=+0.0239 vit=22 der=7 p=0.011
   ASKL+ - ASKL- fora: n=87 dif=-0.0054 vit=34 der=34 p=0.66
 
-[120 s] só 3 datasets; pulado
+[120 s] n=120 Friedman chi2=69.7 p=2.67e-14 CD=0.56
+  Média     acc=0.8304 perda=0.0388 rank=3.00
+  Rec. k=1  acc=0.7961 perda=0.0731 rank=3.83
+  SMBO-Sim  acc=0.8189 perda=0.0502 rank=3.20
+  ASKL+     acc=0.8355 perda=0.0336 rank=2.29
+  ASKL-     acc=0.8338 perda=0.0354 rank=2.69
+  Oráculo   acc=0.8558 perda=0.0133
+  ASKL+ - Média    dif=+0.0052 vit=70 der=35 p=0.0031 pHolm=0.0031
+  ASKL+ - Rec. k=1 dif=+0.0394 vit=91 der=18 p=9.7e-10 pHolm=2.9e-09
+  ASKL+ - SMBO-Sim dif=+0.0166 vit=75 der=32 p=6.8e-06 pHolm=1.4e-05
+  ASKL+ - ASKL- na base: n=33 dif=+0.0181 vit=20 der=9 p=0.046
+  ASKL+ - ASKL- fora: n=87 dif=-0.0044 vit=40 der=31 p=0.42
 
 Custo online (mediana por dataset, s) e acurácia média:
+  ASKL+ 30s    custo=   24.7 s  total= 0.87 h  acc=0.7975
+  ASKL- 30s    custo=   26.4 s  total= 0.89 h  acc=0.7969
   ASKL+ 60s    custo=   56.1 s  total= 2.13 h  acc=0.8321
   ASKL- 60s    custo=   55.3 s  total= 1.94 h  acc=0.8294
+  ASKL+ 120s   custo=  116.3 s  total= 4.27 h  acc=0.8355
+  ASKL- 120s   custo=  112.8 s  total= 3.91 h  acc=0.8338
   Média        custo=    1.8 s  total= 0.38 h  acc=0.8304
   Rec. k=1     custo=    1.8 s  total= 0.38 h  acc=0.7961
   SMBO-Sim     custo=   13.3 s  total= 0.72 h  acc=0.8189
 Custo offline estimado da matriz (3.456 configs x 120 datasets na nossa GPU): 87.0 h
 
-Membro de maior peso do ASKL+ por orçamento: {30: {'random_forest': 13, 'dummy': 10, 'passive_aggressive': 3, 'mlp': 3}, 60: {'random_forest': 43, 'passive_aggressive': 12, 'mlp': 11, 'gradient_boosting': 11}, 120: {'dummy': 2}}
-Fração em que o membro de maior peso é MLP (a família recomendada pela MtL): {30: 0.091, 60: 0.092, 120: 0.0}
+Membro de maior peso do ASKL+ por orçamento: {30: {'random_forest': 64, 'dummy': 19, 'lda': 8, 'passive_aggressive': 6}, 60: {'random_forest': 43, 'passive_aggressive': 12, 'mlp': 11, 'gradient_boosting': 11}, 120: {'random_forest': 39, 'adaboost': 14, 'mlp': 11, 'extra_trees': 11}}
+Fração em que o membro de maior peso é MLP (a família recomendada pela MtL): {30: 0.05, 60: 0.092, 120: 0.092}
