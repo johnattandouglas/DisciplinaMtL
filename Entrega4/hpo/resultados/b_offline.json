@@ -1,5 +1,7 @@
 {
- "offline_matriz_gpu_h_estimada": 86.99674749817633,
- "seg_mlp_medio_por_dataset": 30.207203992422336,
- "obs": "matriz K x n re-treinada na nossa GPU, extrapolada do tempo medido das configs selecionadas"
+ "offline_matriz_gpu_h_estimada": 1207.758938847583,
+ "seg_mlp_medio_por_dataset": 10.484018566385268,
+ "n_datasets": 120,
+ "n_fits": 1161,
+ "obs": "matriz K x n re-treinada na nossa GPU, extrapolada do tempo medido das configs selecionadas (campanha final, mlp.jsonl de 120 datasets); o valor do piloto de 3 datasets fica em b_offline_piloto_3datasets.json"
 }

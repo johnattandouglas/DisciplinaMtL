@@ -49,7 +49,7 @@ Custo online (mediana por dataset, s) e acurácia média:
   Média        custo=    1.8 s  total= 0.38 h  acc=0.8304
   Rec. k=1     custo=    1.8 s  total= 0.38 h  acc=0.7961
   SMBO-Sim     custo=   13.3 s  total= 0.72 h  acc=0.8189
-Custo offline estimado da matriz (3.456 configs x 120 datasets na nossa GPU): 87.0 h
+Custo offline estimado da matriz (3.456 configs x 120 datasets na nossa GPU): 1207.8 h
 
 Membro de maior peso do ASKL+ por orçamento: {30: {'random_forest': 64, 'dummy': 19, 'lda': 8, 'passive_aggressive': 6}, 60: {'random_forest': 43, 'passive_aggressive': 12, 'mlp': 11, 'gradient_boosting': 11}, 120: {'random_forest': 39, 'adaboost': 14, 'mlp': 11, 'extra_trees': 11}}
 Fração em que o membro de maior peso é MLP (a família recomendada pela MtL): {30: 0.05, 60: 0.092, 120: 0.092}
