@@ -1,0 +1,125 @@
+D:\Projetos\DoutoradoIR\.venv\Lib\site-packages\pandas\core\nanops.py:1028: RuntimeWarning: invalid value encountered in subtract
+  sqr = _ensure_numeric((avg - values) ** 2)
+  1/120 abalone                                 1.40 s
+  2/120 acute-inflammation                      0.37 s
+  3/120 acute-nephritis                         0.34 s
+  4/120 adult                                   2.01 s
+  5/120 annealing                               1.25 s
+  6/120 arrhythmia                              6.64 s
+  7/120 audiology-std                           1.52 s
+  8/120 balance-scale                           0.30 s
+  9/120 balloons                                0.12 s
+ 10/120 bank                                    2.08 s
+ 11/120 blood                                   0.64 s
+ 12/120 breast-cancer                           0.99 s
+ 13/120 breast-cancer-wisc                      1.02 s
+ 14/120 breast-cancer-wisc-diag                 2.20 s
+ 15/120 breast-cancer-wisc-prog                 1.61 s
+ 16/120 breast-tissue                           0.65 s
+ 17/120 car                                     0.46 s
+ 18/120 cardiotocography-10clases               1.80 s
+ 19/120 cardiotocography-3clases                1.63 s
+ 20/120 chess-krvk                              0.79 s
+ 21/120 chess-krvkp                             1.79 s
+ 22/120 congressional-voting                    0.98 s
+ 23/120 conn-bench-sonar-mines-rocks            1.75 s
+ 24/120 conn-bench-vowel-deterding              1.26 s
+ 25/120 connect-4                               4.20 s
+ 26/120 contrac                                 1.08 s
+ 27/120 credit-approval                         1.53 s
+ 28/120 cylinder-bands                          1.48 s
+ 29/120 dermatology                             1.30 s
+ 30/120 echocardiogram                          0.73 s
+ 31/120 ecoli                                   0.47 s
+ 32/120 energy-y1                               0.56 s
+ 33/120 energy-y2                               0.54 s
+ 34/120 fertility                               0.53 s
+ 35/120 flags                                   1.01 s
+ 36/120 glass                                   0.77 s
+ 37/120 haberman-survival                       0.34 s
+ 38/120 hayes-roth                              0.31 s
+ 39/120 heart-cleveland                         1.46 s
+ 40/120 heart-hungarian                         1.23 s
+ 41/120 heart-switzerland                       1.14 s
+ 42/120 heart-va                                1.14 s
+ 43/120 hepatitis                               1.02 s
+ 44/120 hill-valley                             5.48 s
+ 45/120 horse-colic                             1.22 s
+ 46/120 ilpd-indian-liver                       0.81 s
+ 47/120 image-segmentation                      1.97 s
+ 48/120 ionosphere                              1.25 s
+ 49/120 iris                                    0.24 s
+ 50/120 led-display                             0.55 s
+ 51/120 lenses                                  0.27 s
+ 52/120 letter                                  2.74 s
+ 53/120 libras                                  2.67 s
+ 54/120 low-res-spect                           2.80 s
+ 55/120 lung-cancer                             1.38 s
+ 56/120 lymphography                            1.02 s
+ 57/120 magic                                   1.68 s
+ 58/120 mammographic                            0.31 s
+ 59/120 miniboone                               6.50 s
+ 60/120 molec-biol-promoter                     1.18 s
+ 61/120 molec-biol-splice                       3.18 s
+ 62/120 monks-1                                 0.40 s
+ 63/120 monks-2                                 0.33 s
+ 64/120 monks-3                                 0.32 s
+ 65/120 mushroom                                1.82 s
+ 66/120 musk-1                                  3.33 s
+ 67/120 musk-2                                 14.90 s
+ 68/120 nursery                                 0.77 s
+ 69/120 oocytes_merluccius_nucleus_4d           1.54 s
+ 70/120 oocytes_merluccius_states_2f            1.24 s
+ 71/120 oocytes_trisopterus_nucleus_2f          1.37 s
+ 72/120 oocytes_trisopterus_states_5b           1.49 s
+ 73/120 optical                                 6.00 s
+ 74/120 ozone                                   3.60 s
+ 75/120 page-blocks                             1.71 s
+ 76/120 parkinsons                              0.91 s
+ 77/120 pendigits                               2.12 s
+ 78/120 pima                                    0.52 s
+ 79/120 pittsburg-bridges-MATERIAL              0.36 s
+ 80/120 pittsburg-bridges-REL-L                 0.42 s
+ 81/120 pittsburg-bridges-SPAN                  0.39 s
+ 82/120 pittsburg-bridges-T-OR-D                0.34 s
+ 83/120 pittsburg-bridges-TYPE                  0.39 s
+ 84/120 planning                                0.93 s
+ 85/120 plant-margin                            8.46 s
+ 86/120 plant-shape                            10.03 s
+ 87/120 plant-texture                           8.61 s
+ 88/120 post-operative                          0.53 s
+ 89/120 primary-tumor                           1.57 s
+ 90/120 ringnorm                                5.45 s
+ 91/120 seeds                                   0.69 s
+ 92/120 semeion                                13.53 s
+ 93/120 soybean                                 2.08 s
+ 94/120 spambase                                5.10 s
+ 95/120 spect                                   1.15 s
+ 96/120 spectf                                  1.58 s
+ 97/120 statlog-australian-credit               1.13 s
+ 98/120 statlog-german-credit                   1.27 s
+ 99/120 statlog-heart                           1.03 s
+100/120 statlog-image                           1.73 s
+101/120 statlog-landsat                         3.77 s
+102/120 statlog-shuttle                         1.26 s
+103/120 statlog-vehicle                         1.20 s
+104/120 steel-plates                            1.79 s
+105/120 synthetic-control                       1.78 s
+106/120 teaching                                0.28 s
+107/120 thyroid                                 1.86 s
+108/120 tic-tac-toe                             0.63 s
+109/120 titanic                                 0.30 s
+110/120 twonorm                                 3.81 s
+111/120 vertebral-column-2clases                0.35 s
+112/120 vertebral-column-3clases                0.36 s
+113/120 wall-following                          2.40 s
+114/120 waveform                                3.43 s
+115/120 waveform-noise                          5.75 s
+116/120 wine                                    0.86 s
+117/120 wine-quality-red                        0.99 s
+118/120 wine-quality-white                      1.94 s
+119/120 yeast                                   0.64 s
+120/120 zoo                                     0.77 s
+
+PyMFE por dataset: mediana 1.23 s, média 1.94 s, máximo 14.9 s (musk-2), total 3.9 min, falhas 0
+Consulta 1-NN: mediana 0.105 ms
